@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2a05tba8uet4i",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "[多云运维管理][资源纳管][资源同步] 定时同步",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_workflow-2ap98rgawwaky"
+    },
+    "state": {},
+    "children": [],
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

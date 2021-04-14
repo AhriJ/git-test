@@ -1,0 +1,94 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3c7fg089xqogr",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Tar包（客户定制数据）",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_ql-110stagpfsq4g",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_mpage-3c7fg089xqogr",
+            "cmdb_mpage-1wycdgg5oe77e",
+            "cmdb_mpage-1ap7x7kct3brj",
+            "cmdb_x-lllj1pucib5q",
+            "cmdb_x-lmi202egpm1a",
+            "cmdb_x-lwkzumsbdwad",
+            "cmdb_x-mqegy7yfkulj",
+            "cmdb_x-mrv5lqtb50pb",
+            "cmdb_x-mypuk9dflw1",
+            "cmdb_x-nvrerz57k3b4"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "Tar包（模型\u0026关联\u0026数据模版\u0026视图模版）(自定义)(自定义)",
+            "Tar包（模型\u0026关联\u0026数据模版\u0026视图模版）(自定义)(自定义)",
+            "Tar包（模型\u0026关联\u0026数据模版\u0026视图模版）(自定义)",
+            "证书类型",
+            "所属云资源配置",
+            "服务",
+            "是否自动续费",
+            "证书生效时间",
+            "资源组创建人",
+            "关联云账户"
+          ]
+        },
+        "inode.schema_id": {
+          "action_config": {},
+          "data": [
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_mpage-1",
+            "cmdb_schema_x-2cc07zkxuurwn",
+            "cmdb_schema_x-2cc07zkxuurwn",
+            "cmdb_schema_x-2cc07zkxuurwn",
+            "cmdb_schema_x-2bbnpb7xawvdc",
+            "cmdb_schema_x-2cc07zkxuurwn",
+            "cmdb_schema_x-2cc07zkxuurwn",
+            "cmdb_schema_x-2cc07zkxuurwn"
+          ]
+        }
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-tar",
+    "cmdb_index-mpage_component_type": "TAR"
+  }
+}

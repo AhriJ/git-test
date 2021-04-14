@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3m2n7oqntov69",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "未归纳资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-39n95yr60kht5"
+    },
+    "children": {
+      "children.ffe4b735b4be.state.__lib__.view_id": "cmdb_view-1j5bir9td5ytr"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1bd2a0n0kle37",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "测试查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "9445d5ea2278"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_ql-183wyzboqgi6r",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__table_data__": {},
+      "__trigger__": {},
+      "fragment": true,
+      "rowSelection": {
+        "objects": []
+      },
+      "setting": {
+        "sorts": []
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-16uft0zsazumc"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

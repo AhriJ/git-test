@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1dk29xh8bspds",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工作流执行详情",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 0 8px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"workflow_job_id\":{\"type\":\"string\"}},\"required\":[]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.c3091d18ad06.state.onClick.0.trigger": "{var: children.0c9ef593451e.state.__trigger__.show}",
+      "children.0c9ef593451e.children.6244b93cf775.config.resId": "{var: state.__lib__.workflow_job_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "c3091d18ad06"
+      },
+      {
+        "uuid": "0c9ef593451e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-25a15lmjoxjc6",
+      "cmdb_mpage-qcj5wqapghad"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

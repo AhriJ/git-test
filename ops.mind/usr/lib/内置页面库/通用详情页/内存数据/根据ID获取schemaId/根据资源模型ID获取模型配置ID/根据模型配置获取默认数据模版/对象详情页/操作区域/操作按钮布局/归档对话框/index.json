@@ -1,0 +1,85 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1v16z86v4xdg1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "归档对话框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.onOk.0": "NOT_EXPORTED",
+      "state.onOk.0.args": "NOT_EXPORTED",
+      "state.onOk.0.trigger": "NOT_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.hide": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "title": "归档",
+      "onOk": [
+        {
+          "trigger": "{var: children.8ecee90c4114.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.8ecee90c4114.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.8ecee90c4114.state.onSuccess.1.trigger": "{var: children.315388bade4d.state.__trigger__.success}",
+      "children.3e33fc1457e2.state.onFail.0.trigger": "{var: children.315388bade4d.state.__trigger__.error}",
+      "children.3e33fc1457e2.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.3e33fc1457e2.state.onSuccess.1.trigger": "{var: children.315388bade4d.state.__trigger__.success}",
+      "children.315388bade4d.state.message": "{var: children.8ecee90c4114.state.output.result_name}",
+      "children.8ecee90c4114.state.onFail.0.trigger": "{var: children.315388bade4d.state.__trigger__.error}",
+      "children.315388bade4d.state.description": "{var: children.8ecee90c4114.state.output.message}",
+      "children.8ecee90c4114.state.onSuccess.2.trigger": "{var: children.52577607ff6e.state.__trigger__.back}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "19c5728fe7a2",
+        "u81e028e3b41": "u81e028e3b41"
+      },
+      {
+        "uuid": "315388bade4d",
+        "ud55c8964728": "ud55c8964728"
+      },
+      {
+        "uuid": "8ecee90c4114",
+        "uc87057cecbc": "uc87057cecbc"
+      },
+      {
+        "uuid": "52577607ff6e",
+        "ub79efc95c91": "ub79efc95c91"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-msdveuszz65s",
+      "cmdb_mpage-ftekktr7cvpv",
+      "cmdb_mpage-25jfql22pa07m",
+      "cmdb_mpage-30y4frieia4jx"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-dialog",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-8qy11wgju4r8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询所有模型操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "background": "",
+        "textAlign": "",
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "resId": "",
+      "autoRefreshInterval": 0
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.4ddaeb17a323.state.value": "{var: state.loop.item.indexes.cmdb_index-3b01as46nc0b7}",
+      "children.da84715cfd2c.state.onClick.0.trigger": "{var: children.d8894bfda2ae.state.__trigger__.show}",
+      "children.4ddaeb17a323.children.37b704538e60.state.onClick.0.trigger": "{var: children.d8894bfda2ae.state.__trigger__.show}",
+      "children.1fb8ff34cb80.children.ab0d7fcc28df.state.input.idList.0": "{var: state.loop.item.inode.id}",
+      "children.d8894bfda2ae.children.18b095c34a74.state.form_data.describe": "{var: state.loop.item.inode.descr}",
+      "children.d8894bfda2ae.children.18b095c34a74.state.form_data.id": "{var: state.loop.item.data.id}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.input.name": "{var: children.d8894bfda2ae.children.18b095c34a74.state.form_data.name}",
+      "children.1912b60d4ab6.state.value": "{var: state.loop.item.indexes.cmdb_index-3b01as46nc0b7}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.input.describe": "{var: children.d8894bfda2ae.children.18b095c34a74.state.form_data.describe}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.input.id": "{var: state.loop.item.inode.id}",
+      "children.d8894bfda2ae.children.18b095c34a74.state.form_data.menu_visible": "{var: state.loop.item.data.menu_visible}",
+      "children.1fb8ff34cb80.children.ab0d7fcc28df.state.onSuccess.2.trigger": "{var: state.loop.trigger.query}",
+      "children.9ee3a4ea6775.state.description": "{var: children.d8894bfda2ae.children.5ca61fea3a3d.state.output.message}",
+      "children.9ee3a4ea6775.state.message": "{var: children.d8894bfda2ae.children.5ca61fea3a3d.state.output.result_name}",
+      "children.d8894bfda2ae.children.18b095c34a74.state.form_data.icon": "{var: state.loop.item.data.icon}",
+      "children.6d8c85697b4c.state.onClick.0.trigger": "{var: children.1fb8ff34cb80.state.__trigger__.show}",
+      "children.1fb8ff34cb80.children.ab0d7fcc28df.state.onSuccess.1.trigger": "{var: children.f33591939e1e.state.__trigger__.success}",
+      "children.d8894bfda2ae.children.18b095c34a74.state.form_data.name": "{var: state.loop.item.inode.name}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.onSuccess.1.trigger": "{var: children.9ee3a4ea6775.state.__trigger__.success}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.onSuccess.2.trigger": "{var: state.loop.trigger.query}",
+      "children.f33591939e1e.state.message": "{var: children.1fb8ff34cb80.children.ab0d7fcc28df.state.output.result_name}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.input.icon": "{var: children.d8894bfda2ae.children.18b095c34a74.state.form_data.icon}",
+      "children.d8894bfda2ae.children.5ca61fea3a3d.state.onFail.0.trigger": "{var: children.9ee3a4ea6775.state.__trigger__.error}",
+      "children.f33591939e1e.state.description": "{var: children.1fb8ff34cb80.children.ab0d7fcc28df.state.output.message}",
+      "children.1fb8ff34cb80.children.ab0d7fcc28df.state.onFail.0.trigger": "{var: children.f33591939e1e.state.__trigger__.error}",
+      "children.1912b60d4ab6.children.19e278d9ea1e.state.onClick.0.trigger": "{var: children.1fb8ff34cb80.state.__trigger__.show}",
+      "children.1fb8ff34cb80.children.95fbf95a3aa3.state.text": "{var: state.loop.item.inode.name}"
+    },
+    "childrenConfig": [
+      {
+        "md": 6,
+        "uuid": "d8894bfda2ae"
+      },
+      {
+        "md": 6,
+        "uuid": "1fb8ff34cb80"
+      },
+      {
+        "md": 6,
+        "uuid": "9ee3a4ea6775"
+      },
+      {
+        "md": 6,
+        "uuid": "f33591939e1e"
+      },
+      {
+        "uuid": "4ddaeb17a323"
+      },
+      {
+        "uuid": "1912b60d4ab6"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-25tic30lcg6xl",
+      "cmdb_mpage-2nbq3khk6698e",
+      "cmdb_mpage-321plrxjv0e9g",
+      "cmdb_mpage-1j9bz8a9zpxcb",
+      "cmdb_mpage-8g3boco9z5gw",
+      "cmdb_mpage-1lgj9wmfg4cr3"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

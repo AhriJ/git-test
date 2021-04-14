@@ -1,0 +1,122 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-27b31pmpzp61d",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "顶级业务树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".indexes.cmdb_index-2sl8fe4yktkn4",
+                "op": "=",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": null,
+                "pkg_id": null,
+                "widget": null,
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                "op": "=",
+                "value": null,
+                "pkg_id": "cmdb_x-27b31pmpzp61d",
+                "widget": "select",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-2sl8fe4yktkn4",
+        "name": "层级"
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "name": "父节点"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_tree-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_parent\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".indexes.cmdb_index-2sl8fe4yktkn4\",\"op\":\"=\",\"value\":\"1\"}]}]},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_parent}\"}]}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-2sl8fe4yktkn4 as 层级\",\".indexes.cmdb_index-18gs5gfejka3i as 父节点\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_parent\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"父节点\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-rn2ngogupqk0",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-j57tkdf0rdo3"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3gd4qrumxwwuj",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2vfy7nuhkiwdl",
+      "data": null
+    },
+    "ql": "cmdb_ql-2kvjel8j1ler4",
+    "object_id": "cmdb_object_ql-2vf0knsh2aamk",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-hpaahbsz8vpi"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_project-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "区服",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "aliasname": {
+          "type": "string",
+          "title": "简称"
+        }
+      },
+      "required": [
+        "aliasname"
+      ]
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-3cmb8b5dxiyko",
+        "required": true,
+        "key": "game"
+      }
+    ]
+  },
+  "indexes": {}
+}

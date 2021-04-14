@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3szjqdfbiob4w",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "AliCloud 资源组",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "index_21",
+    "field_name": "AliCloud 资源组",
+    "field_type": "id",
+    "is_array": false,
+    "searched": true,
+    "required": false,
+    "index_id": "cmdb_x-i_da23d881"
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_schema_acs_resource_group-0",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_9d1be989",
+    "cmdb_index-3b01as46nc0b7": false
+  }
+}

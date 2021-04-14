@@ -1,0 +1,152 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-132c557miiun9",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[cmdb]更新模型配置",
+    "namespace": "/cmdb",
+    "descr": "[cmdb]更新模型配置",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              },
+              "describe": {
+                "type": "string"
+              },
+              "menu_visible": {
+                "type": "boolean",
+                "default": false
+              },
+              "required": {
+                "type": "boolean",
+                "title": "是否必填"
+              },
+              "group": {
+                "type": "string",
+                "title": "分组"
+              }
+            },
+            "title": "input",
+            "required": [
+              "id",
+              "name",
+              "icon",
+              "describe",
+              "menu_visible"
+            ]
+          }
+        },
+        "inputs": {
+          "*": {
+            "id": "cmdb_x-34yvjydstoine",
+            "name": "update_test",
+            "icon": "update_test",
+            "describe": "update_test",
+            "menu_visible": ""
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "enum": [
+                  "FAILED",
+                  "SUCCEEDED"
+                ]
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "result",
+              "result_name",
+              "message"
+            ]
+          }
+        },
+        "inputs": {
+          "更新模型配置": {
+            "message": "{var:更新模型配置.output.message}",
+            "result": "{var:更新模型配置.output.result}",
+            "result_name": "{var:更新模型配置.output.result_name}"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "settings": {},
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-132c557miiun9.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"title\":\"input\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"title\":\"title\",\"properties\":{\"result\":{\"type\":\"string\",\"enum\":[\"FAILED\",\"SUCCESSED\"]},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"required\":[\"result\",\"result_name\",\"message\"]}"
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "name": "更新模型配置"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600,
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "更新模型配置"
+      },
+      {
+        "from": "更新模型配置",
+        "to": "__END__"
+      }
+    ],
+    "icon": "[cmdb]更新模型配置"
+  },
+  "indexes": {}
+}

@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-s_8dcae72a",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "关系型数据库实例",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "menu_visible": true,
+    "describe": null,
+    "name": "关系型数据库实例",
+    "group": "系统",
+    "id": "",
+    "pkg_id": "cmdb_x-3nmn30tj8o1k2",
+    "workflows": {
+      "create": "cmdb_workflow-i6bxnc8n115d",
+      "delete": "cmdb_workflow-ysy4t1xtzjq5",
+      "update": "cmdb_workflow-30waeylv232tc",
+      "batch_update": "cmdb_workflow-247qe1igywt82"
+    },
+    "ql_id": "cmdb_ql-30kf6tsrlv6l6",
+    "icon": null
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_x-2hdvja263xo1d",
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-30jzuzvh0qwbe",
+      "cmdb_x-i_98a59817",
+      "cmdb_x-i_5f9d2583",
+      "cmdb_x-i_a3e8994d",
+      "cmdb_x-i_68f2b9c5",
+      "cmdb_x-i_92821823",
+      "cmdb_x-i_531431c1",
+      "cmdb_x-i_90970a69",
+      "cmdb_x-i_589578dc",
+      "cmdb_x-i_3dc2635",
+      "cmdb_x-i_4405f339",
+      "cmdb_x-i_28f0685a",
+      "cmdb_x-i_d5ab1a8a",
+      "cmdb_x-i_fcc211ad",
+      "cmdb_x-i_bfca4d48",
+      "cmdb_x-i_77fca1e7",
+      "cmdb_x-i_76cfd3ef",
+      "cmdb_x-i_47810074"
+    ]
+  }
+}

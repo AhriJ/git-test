@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-hpaahbsz8vpi",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "业务树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": null,
+    "menu_visible": true,
+    "id": "tree",
+    "name": "业务树",
+    "describe": null,
+    "group": null,
+    "xx": null,
+    "pkg_id": "cmdb_x-2be0tz2k84feb",
+    "workflows": {
+      "create": "cmdb_workflow-2vfy7nuhkiwdl",
+      "delete": "cmdb_workflow-j57tkdf0rdo3",
+      "update": "cmdb_workflow-3gd4qrumxwwuj",
+      "batch_update": "cmdb_workflow-rn2ngogupqk0"
+    },
+    "ql_id": "cmdb_ql-1mgjkjvojduoo"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_tree-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-i_17920bd6",
+      "cmdb_x-euw88ja4g9rn",
+      "cmdb_x-2p85nye9byl99",
+      "cmdb_x-22dhkv8ov2s4x",
+      "cmdb_x-2yfqedoszsale"
+    ]
+  }
+}

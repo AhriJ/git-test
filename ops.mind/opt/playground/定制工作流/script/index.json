@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-v7j956ifytz8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "script",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {},
+      "resId": "cmdb_workflow-2pum5jw033pd0",
+      "style": {},
+      "hide": true
+    },
+    "publics": {
+      "state.__trigger__": "FULL_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.output": "FULL_EXPORTED",
+      "state.output.output": "FULL_EXPORTED",
+      "state": "FULL_EXPORTED",
+      "state.input.script": "FULL_EXPORTED",
+      "state.input.server": "FULL_EXPORTED",
+      "state.running": "FULL_EXPORTED",
+      "state.input": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {},
+      "input": {},
+      "output": {
+        "field_1": [],
+        "field_2": {}
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

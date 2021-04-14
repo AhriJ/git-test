@@ -1,0 +1,52 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3hcht4o7savuv",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "运行日志",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.03556032a032.state.onClick.trigger": "{var: children.90e5681bc8e4.state.__trigger__.show}",
+      "children.90e5681bc8e4.children.2e3fa00281d5.children.6a4fb17e2144.state.value": "{var: state.loop.item.data.stdout}",
+      "children.90e5681bc8e4.children.2e3fa00281d5.children.f16594864a1f.state.value": "{var: state.loop.item.data.stderr}",
+      "children.90e5681bc8e4.children.a1c79fbc1370.children.0cb3088be3d2.state.text": "{var: state.loop.item.data.stdout}",
+      "children.90e5681bc8e4.children.e2046927e416.children.704afdeaa34e.state.text": "{var: state.loop.item.data.stderr}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "03556032a032"
+      },
+      {
+        "uuid": "90e5681bc8e4"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-20cxhrwk137fm",
+      "cmdb_mpage-3gugt7y4911ak"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

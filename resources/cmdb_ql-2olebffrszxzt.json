@@ -1,0 +1,123 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2olebffrszxzt",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "对象存储桶",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-266zz02e8qr5h"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_12",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-vendor",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_1}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_account",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_12}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.location as 位置",
+        ".data.endpoint.extranet as 地域节点(外网)",
+        ".data.endpoint.intranet as 地域节点(内网)",
+        ".data.storage_class as 存储类型",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
+        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-sync_marker as 同步标记",
+        ".indexes.cmdb_index-synced_at as 最后同步时间",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "供应商"
+              },
+              "indexes_index_12": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

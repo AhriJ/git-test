@@ -1,0 +1,104 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-19o0kbgkdbaa5",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "关系型数据库",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-2hdvja263xo1d"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.version as 数据库版本",
+        ".data.type as type",
+        ".data.engine as engine",
+        ".data.network_type as 网络类型",
+        ".data.description as 描述",
+        ".data.endpoints.mode as endpoints.mode",
+        ".data.endpoints.endpoint_type as endpoints.endpoint_type",
+        ".data.endpoints.addresses.domain as endpoints.addresses.domain",
+        ".data.endpoints.addresses.port as endpoints.addresses.port",
+        ".data.endpoints.addresses.net_type as endpoints.addresses.net_type",
+        ".data.endpoints.addresses.ip as endpoints.addresses.ip",
+        ".data.storage as 存储大小(GB)",
+        ".data.memory as 内存大小(MB)",
+        ".data.cpu as CPU数量",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
+        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-sync_marker as 同步标记",
+        ".indexes.cmdb_index-synced_at as 最后同步时间",
+        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
+        ".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-20imuexamk23l as 关联多个IP",
+        ".indexes.cmdb_index-2zawg87yjhh2n as 关联多个域名",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

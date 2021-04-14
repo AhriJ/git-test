@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-1enajifbxajif",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "人员常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": [
+            "cmdb_schema_x-d97uo84ongx8"
+          ]
+        },
+        {
+          "field": ".indexes.cmdb_index-p3p67nqbgcz0",
+          "op": "!=",
+          "value": "$null"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".indexes.cmdb_index-account_username as 用户名 ID",
+        ".indexes.cmdb_index-p3p67nqbgcz0 as 企业微信组织架构"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {}
+    }
+  },
+  "indexes": {}
+}

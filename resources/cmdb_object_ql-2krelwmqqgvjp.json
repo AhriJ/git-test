@@ -1,0 +1,78 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-2krelwmqqgvjp",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "RAM权限策略",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-14yba7hm8xw4y"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.attachment_count as 引用次数",
+        ".data.default_version as 默认版本",
+        ".data.description as 权限策略描述",
+        ".data.policy_type as 类型",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

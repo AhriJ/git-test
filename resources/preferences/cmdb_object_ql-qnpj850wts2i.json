@@ -1,0 +1,109 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-qnpj850wts2i",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "根据模型配置获取默认数据模版",
+    "namespace": "/preferences",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-ghkfn72ezw6k"
+            ],
+            "sorts": [],
+            "limit": 50,
+            "offset": 0,
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": ".indexes.cmdb_index-5idpkmb7eqne",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": ".indexes.cmdb_index-3b01as46nc0b7",
+          "op": "=",
+          "value": true
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 1,
+      "offset": 0,
+      "multi": false,
+      "selects": [
+        ".data.ql",
+        ".data.object_id",
+        ".data.editable",
+        ".data.delete_data.wf_id as 删除对象工作流",
+        ".data.batch_edit_data.wf_id as 批量编辑工作流",
+        ".data.edit_data.wf_id as 编辑工作流",
+        ".data.new_data.wf_id as 创建工作流",
+        ".data.new_data.data as 新建 schema字符串",
+        ".data.edit_data.data as 编辑schema字符串",
+        ".data.editable"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型配置ID"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

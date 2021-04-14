@@ -1,0 +1,21 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1z75u8dfrcu70",
+    "schema_id": "cmdb_schema_x-schema_plugin",
+    "name": "数据自维护",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {},
+  "indexes": {
+    "cmdb_index-1h838qkf66fgl": "cmdb_plugin-2ct4es5acdzfi",
+    "cmdb_index-1v7ez1guly8u6": "cmdb_x-gqtl2mnmtpss"
+  }
+}

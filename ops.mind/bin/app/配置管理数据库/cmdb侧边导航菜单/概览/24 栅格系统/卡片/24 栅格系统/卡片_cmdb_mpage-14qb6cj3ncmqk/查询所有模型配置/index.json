@@ -1,0 +1,132 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1rfyjp69pyp2v",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询所有模型配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_ql-dg59o5zux8yr",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.total_rows": "FULL_EXPORTED"
+    },
+    "state": {
+      "__table_data__": {
+        "inode.mtime": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.schema_id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.lock": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "__trigger__": {},
+      "rowSelection": {
+        "objects": []
+      },
+      "setting": {
+        "sorts": []
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1oopdv8q89fvq",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "帮助文档",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "f873358410b1",
+        "md": 24
+      },
+      {
+        "uuid": "eaddd96d50af",
+        "md": 24
+      },
+      {
+        "uuid": "433b05daecb8",
+        "md": 24
+      },
+      {
+        "uuid": "412408b4d9bc",
+        "md": 24
+      },
+      {
+        "uuid": "53ec9280ce63",
+        "md": 24
+      },
+      {
+        "uuid": "fb14d89655f0",
+        "md": 24
+      },
+      {
+        "uuid": "a417cbbb3d79",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-28quuipljut5x",
+      "cmdb_mpage-ufzk7ui2rsnn",
+      "cmdb_mpage-np3xy2e8se2e",
+      "cmdb_mpage-pjifnbcau8me",
+      "cmdb_mpage-cqp11x3jabvc",
+      "cmdb_mpage-3aqs0in78dquy",
+      "cmdb_mpage-3tibwd4eg8c6l"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-17yabam45ywv8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "卡片常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "config.resId": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "state.workOrderList": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "15px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "fragment": true,
+      "setting": {
+        "sorts": [],
+        "limit": 100
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [
+        null,
+        null,
+        null
+      ],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.bb215aeb9c51.children.4975fc75a174.children.5a9c287576b6.state.qlConfig.ql_id": "{var: config.resId}",
+      "children.bb215aeb9c51.state.__lib__.workOrderList": "{var: state.workOrderList}",
+      "children.bb215aeb9c51.state.__lib__.workOrderList.0": null,
+      "children.bb215aeb9c51.state.__lib__.workOrderList.1": null,
+      "children.bb215aeb9c51.state.__lib__.workOrderList.2": null
+    },
+    "childrenConfig": [
+      {
+        "uuid": "bb215aeb9c51",
+        "index": 0,
+        "inserted": false,
+        "inserted_name": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-33f437btx32h9"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

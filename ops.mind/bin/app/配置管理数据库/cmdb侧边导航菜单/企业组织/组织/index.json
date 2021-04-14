@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-uku1m4xpvye1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "组织",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "组织",
+      "desc": null,
+      "icon": null
+    },
+    "childrenConfig": [
+      {
+        "uuid": "4dded1d98c9b"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2ak9zanfaic9z"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

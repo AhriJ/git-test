@@ -1,0 +1,76 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2dvsgrdmy3v7v",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "操作按钮布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.378404a94f67.state.onClick.0.trigger": "{var: children.fa868b039ece.state.__trigger__.show}",
+      "children.378404a94f67.state.onClick.1.trigger": "{var: children.e8b7a24bf0ce.state.__trigger__.createWfJob}",
+      "children.877eece26c7f.state.onClick.0.trigger": "{var: children.9bb66394cf74.state.__trigger__.show}",
+      "children.fa868b039ece.children.a36610f41512.state.form_data": "{var: children.e8b7a24bf0ce.state.output.output}",
+      "children.28a7bd498017.state.onClick.0.trigger": "{var: children.7466fa24c033.state.__trigger__.show}",
+      "children.7466fa24c033.children.3527a9fff641.state.schema_id": "{var: children.dbb0c457ecdd.state.__row__.indexes.cmdb_index-1llredm1yz8zm.inode.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "e8b7a24bf0ce"
+      },
+      {
+        "uuid": "378404a94f67"
+      },
+      {
+        "uuid": "877eece26c7f"
+      },
+      {
+        "uuid": "fa868b039ece"
+      },
+      {
+        "uuid": "9bb66394cf74"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3k4llccfe2fsn",
+      "cmdb_mpage-7fxhzw34i8fd",
+      "cmdb_mpage-2iv0h2v3g0wmk",
+      "cmdb_mpage-2xjljmunv5xwr",
+      "cmdb_mpage-36nzo8wp56tti"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

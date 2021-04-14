@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1wvcig3fb0kyh",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "字段映射",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "hide": false,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.a5804e1f7cfd.children.c4ee1ff044ec.state.value": "{var: state.loop.item.data.field_map}",
+      "children.2e27651db323.state.onClick.0.trigger": "{var: children.a5804e1f7cfd.state.__trigger__.show}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "2e27651db323"
+      },
+      {
+        "uuid": "a5804e1f7cfd"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-189nohr9nymm8",
+      "cmdb_mpage-255uiu59nctik"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

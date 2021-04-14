@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-52f6ahujkz1y",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "持久化级别",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "value": "{var: state.loop.item.data.persist_level}",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "case": "job_unit",
+        "uuid": "e5ca7a131154"
+      },
+      {
+        "case": "job",
+        "uuid": "8acf02a7b637"
+      },
+      {
+        "case": "none",
+        "uuid": "ac7800287b3f"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1i3yn5z0a6rm8",
+      "cmdb_mpage-245a084giz6am",
+      "cmdb_mpage-3qmtuluz152si"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

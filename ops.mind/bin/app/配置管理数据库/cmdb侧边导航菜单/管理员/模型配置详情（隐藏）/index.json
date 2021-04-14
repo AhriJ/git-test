@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-11v556n9brol4",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型配置详情（隐藏）",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "name": "模型配置详情",
+      "desc": "自定义模型管理，支持用户自定义关联关系并自动生成图数据库。",
+      "hide": true,
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "9254a4016124"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-agjuk1rn0kbd"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

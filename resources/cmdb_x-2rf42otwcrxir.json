@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2rf42otwcrxir",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "企业微信组织",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "weChatDep",
+    "field_name": "企业微信组织",
+    "field_type": "id",
+    "searched": true,
+    "is_array": true,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "index_id": "cmdb_x-34jq077af23ki",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_x-2h4587tjguher",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_410fec1a"
+  }
+}

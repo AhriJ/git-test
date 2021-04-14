@@ -1,0 +1,59 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-38hd2jq4tx7mh",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "JsonSchema表单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "style": {
+        "textAlign": "",
+        "background": "",
+        "color": "",
+        "fontSize": "",
+        "margin": "",
+        "padding": ""
+      },
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "resId": ""
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "form_data": {
+        "department": [],
+        "field": [],
+        "id": {
+          "ql_input": {
+            "conditions": [],
+            "objects": []
+          }
+        },
+        "power": null
+      },
+      "schema": "{\"type\":\"object\",\"title\":\"root\",\"properties\":{\"name\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2up4h1j93xf47\u0026select_mode=single\",\"title\":\"table单选ID\"},\"field\":{\"type\":\"array\",\"format\":\"ql-selector?id=cmdb_ql-2up4h1j93xf47\u0026select_mode=multi\",\"title\":\"table多选ID\",\"items\":{\"type\":\"string\"}},\"id\":{\"type\":\"object\",\"format\":\"ql-selector?id=cmdb_ql-2up4h1j93xf47\u0026select_mode=multi\u0026spec=ql\",\"properties\":{\"ql_id\":{\"type\":\"string\"},\"ql_input\":{\"type\":\"object\",\"properties\":{\"conditions\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\"},\"op\":{\"type\":\"string\"},\"value\":{\"type\":\"string\"}},\"required\":[]}},\"objects\":{\"type\":\"array\",\"items\":{\"type\":\"string\"}}},\"required\":[]}},\"required\":[],\"title\":\"table输出ql\"},\"department\":{\"type\":\"array\",\"format\":\"ql-selector?id=cmdb_ql-34m4rovd31y20\u0026select_mode=multi\u0026widget=select\",\"items\":{\"type\":\"string\"},\"title\":\"所属部门\"},\"power\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1bv3s2e165rg9\u0026select_mode=single\u0026widget=select\",\"title\":\"分配权限角色\"},\"forbidden\":{\"type\":\"boolean\",\"title\":\"禁用此用户（无法登陆、调用任何 API）\"},\"jsonschema\":{\"type\":\"string\",\"title\":\"jsonschema\",\"format\":\"json-schema\"},\"time\":{\"type\":\"number\",\"title\":\"时间戳\",\"format\":\"date-time\"},\"str\":{\"type\":\"string\",\"title\":\"字符串变量\"},\"img\":{\"type\":\"string\",\"title\":\"图片\",\"format\":\"image\"},\"num\":{\"type\":\"number\",\"title\":\"数字\"}},\"required\":[]}"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

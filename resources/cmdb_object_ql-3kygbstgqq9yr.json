@@ -1,0 +1,78 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-3kygbstgqq9yr",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "RAM角色",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-1zvwznqdh7v4g"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.arn as Arn",
+        ".data.description as 介绍",
+        ".data.max_session_duration as 角色最大会话时间",
+        ".data.assume_role_policy_document as 扮演角色的权限策略",
+        ".indexes.cmdb_index-w0tm6jcyczjb as 关联RAM权限策略",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_outband_stub-2xjatam12rraa",
+    "schema_id": "cmdb_schema_outband_stub-alicloud",
+    "name": "测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "extra": {
+      "access_key": "LTAI4GAEC5JBU7TY2b9yi6kx",
+      "secret_key": "cmdb_secret-14dtau4bhpi6p",
+      "region": "cn-shanghai",
+      "tid": null
+    },
+    "type": "alicloud",
+    "stub": "terraform://terraform-provider-alicloud-v1.94.0",
+    "stub_config": "{var:extra}"
+  },
+  "indexes": {
+    "cmdb_index-sync_required": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3az9qk76cy8ro",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工作流任务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "config": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "link": "#portal_app=__ROOT__.f797870b41ac.workflow.wf_detail\u0026wf_id=",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "builtin:wfjob",
+    "cmdb_index-mpage_component_type": "WF_JOB"
+  }
+}

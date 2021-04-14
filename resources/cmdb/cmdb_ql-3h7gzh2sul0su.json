@@ -1,0 +1,123 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3h7gzh2sul0su",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "所有数据自维护",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              },
+              {
+                "field": ".inode.id",
+                "op": "=~",
+                "value": "cmdb_schema_x-10ciglth11xvq"
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-10ciglth11xvq"
+            ],
+            "sorts": [],
+            "limit": 50,
+            "offset": 0,
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": "inode.name",
+          "op": "=",
+          "value": "{var:vars.name}"
+        },
+        {
+          "field": ".indexes.cmdb_index-1vswnpvg373pv",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.name",
+          "op": "=",
+          "value": "$empty"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 任务名称",
+        ".data.source_pkg_id as 源数据模板",
+        ".data.dest_pkg_id as 目标数据模板",
+        ".data.field_map as 字段映射",
+        ".data.interval_time as 任务执行间隔时间（s）",
+        ".indexes.cmdb_index-wf as 关联工作流",
+        ".indexes.cmdb_index-ry962jcuu1ux as 关联派生工作流",
+        ".data.sync_type as 同步类型",
+        ".inode.mtime",
+        ".inode.last_editor"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "任务ID"
+              },
+              "name": {
+                "type": "string",
+                "title": "任务名称"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

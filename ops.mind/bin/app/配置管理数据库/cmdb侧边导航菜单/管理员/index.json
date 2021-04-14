@@ -1,0 +1,105 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1rqfuijrzzegz",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "管理员",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "logo": {},
+      "name": "管理员",
+      "icon": "team",
+      "hide": true,
+      "openKeys": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "3229a9fd0f57"
+      },
+      {
+        "uuid": "e7c5306c7e6e"
+      },
+      {
+        "uuid": "5e182e76b501"
+      },
+      {
+        "uuid": "d6aba86e9ed1"
+      },
+      {
+        "uuid": "9abedebf466c"
+      },
+      {
+        "uuid": "26b2cad2b45d"
+      },
+      {
+        "uuid": "54c6f18140e4"
+      },
+      {
+        "uuid": "cdf38a4465aa"
+      },
+      {
+        "uuid": "6e8bf44204d2"
+      },
+      {
+        "uuid": "26abfb87c8fc"
+      },
+      {
+        "uuid": "8480690a21d4"
+      },
+      {
+        "uuid": "422ff6f2dc5c"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1cqyju53s7nel",
+      "cmdb_mpage-1dmi3d4ggscg6",
+      "cmdb_mpage-11v556n9brol4",
+      "cmdb_mpage-2gfgrfj6rex50",
+      "cmdb_mpage-y8yno4eslavv",
+      "cmdb_mpage-9dykau9apq8b",
+      "cmdb_mpage-1cuze5zgi65ll",
+      "cmdb_mpage-3h9wlllquqctu",
+      "cmdb_mpage-3hcyg0591el1e",
+      "cmdb_mpage-2mg92dvz86b9q",
+      "cmdb_mpage-5cg7f6oms5ir",
+      "cmdb_mpage-ucecmohcqf6z"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-tt3ta0j9gk5i",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "三方认证列表（含企业微信、钉钉）常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": [
+            "cmdb_schema_workwx_auth-0",
+            "cmdb_schema_dingtalk_auth-0"
+          ]
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".inode.descr as 描述",
+        ".inode.schema_id",
+        ".inode.mtime",
+        ".inode.last_editor"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {}
+    }
+  },
+  "indexes": {}
+}

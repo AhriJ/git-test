@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-4cnhpz2ohuip",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "详情页",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\"view_id\":{\"type\":\"string\",\"title\":\"视图模版ID\"}},\"required\":[]}",
+      "readonly": false,
+      "vars": {},
+      "global": {
+        "view_id": "view_id"
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.187359bf9f6c.state.__vars__.vars.id.value": "{var: state.vars.view_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "187359bf9f6c"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2f1gi0b787xp1"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-vars",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

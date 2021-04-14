@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2u476sf6q8ewq",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "业务管理资源树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-kgokj49uf2in"
+    },
+    "children": {
+      "children.85ec21c5330f.state.__lib__.view_id": "cmdb_view-1mn1uyqk0b7y"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

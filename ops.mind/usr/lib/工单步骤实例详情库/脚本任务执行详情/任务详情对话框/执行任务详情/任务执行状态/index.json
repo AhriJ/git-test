@@ -1,0 +1,45 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2rejv4hkijle5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "任务执行状态",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "d83750bfbba6"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "align": "center",
+      "direction": "row",
+      "justify": "flex-start"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2dcvqlvvv8lwq"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

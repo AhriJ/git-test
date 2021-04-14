@@ -1,0 +1,40 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2dfcvbtnhgtxe",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "标题组件",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "",
+        "color": "#2b2f9d"
+      },
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "text": "404",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_title",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

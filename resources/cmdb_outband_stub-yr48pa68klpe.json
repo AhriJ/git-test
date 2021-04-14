@@ -1,0 +1,31 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_outband_stub-yr48pa68klpe",
+    "schema_id": "cmdb_schema_outband_stub-alicloud",
+    "name": "莉莉丝",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "extra": {
+      "access_key": "LTAI4G7R6tMUa7ZLpeo1KfJx",
+      "secret_key": "cmdb_secret-3eoict9xszoeo",
+      "region": "cn-shanghai",
+      "tid": null
+    },
+    "type": "alicloud",
+    "stub": "terraform://terraform-provider-alicloud-v1.94.0",
+    "stub_config": "{var:extra}"
+  },
+  "indexes": {
+    "cmdb_index-sync_metric_required": true,
+    "cmdb_index-sync_required": true
+  }
+}

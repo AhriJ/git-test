@@ -1,0 +1,107 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-29mvr0dfqmy5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "抽屉",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.onOk.0": "NOT_EXPORTED",
+      "state.onOk.0.trigger": "NOT_EXPORTED",
+      "state.onOk.0.args": "NOT_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "visible": false,
+      "title": "创建工单模板",
+      "width": "80vw",
+      "footer": true,
+      "destroyOnClose": true,
+      "onOk": [
+        {
+          "trigger": "{var: children.270559a7e906.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.f37e08329903.children.429493632e4b.state.__lib__.onClick.1.trigger": "{var: state.__trigger__.hide}",
+      "children.f37e08329903.children.87608f9acaf1.state.__lib__.onClick.1.trigger": "{var: state.__trigger__.hide}",
+      "children.f37e08329903.children.66aa5eb165bd.state.__lib__.event.0.trigger": "{var: state.__trigger__.hide}",
+      "children.849118d74adc.state.message": "{var: children.270559a7e906.state.output.result_name}",
+      "children.849118d74adc.state.description": "{var: children.270559a7e906.state.output.message}",
+      "children.270559a7e906.state.onSuccess.0.trigger": "{var: children.849118d74adc.state.__trigger__.success}",
+      "children.270559a7e906.state.onSuccess.1.trigger": "{var: state.__trigger__.hide}",
+      "children.270559a7e906.state.onFail.0.trigger": "{var: children.849118d74adc.state.__trigger__.error}",
+      "children.270559a7e906.state.input.ticket_template.ticket_name": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.ticket_name}",
+      "children.270559a7e906.state.input.ticket_template.ticket_descr": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.ticket_descr}",
+      "children.270559a7e906.state.input.ticket_template.logo_link": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.logo_link}",
+      "children.270559a7e906.state.input.ticket_template.ticket_type": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.ticket_type}",
+      "children.270559a7e906.state.input.ticket_template.input_schema": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.input_schema}",
+      "children.270559a7e906.state.input.ticket_template.vars_schema": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.vars_schema}",
+      "children.270559a7e906.state.input.ticket_template.steps": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.steps}",
+      "children.270559a7e906.state.input.ticket_template.notify_config": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.notify_config}",
+      "children.270559a7e906.state.input.ticket_template.handler_config": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.handler_config}",
+      "children.270559a7e906.state.input.ticket_template.su": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.su}",
+      "children.270559a7e906.state.input.ticket_template.model_id": "{var: children.b27a460ab814.children.3d3d02a5542d.state.__lib__.form.ticket_template.model_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b27a460ab814"
+      },
+      {
+        "uuid": "270559a7e906"
+      },
+      {
+        "uuid": "849118d74adc"
+      },
+      {
+        "uuid": "ca08251e6730"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-tt6fdbs2gisg",
+      "cmdb_mpage-2fpws3adic8cw",
+      "cmdb_mpage-1ybkec3vottdk",
+      "cmdb_mpage-3brttdtn3r2w3"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-drawer",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

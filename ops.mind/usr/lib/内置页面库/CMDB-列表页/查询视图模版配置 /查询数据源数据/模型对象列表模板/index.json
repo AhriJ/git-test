@@ -1,0 +1,200 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-4quicpvhsscu",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表模板",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__lib__.common_list.0.name": "NOT_EXPORTED",
+      "state.__lib__.common_list.1": "NOT_EXPORTED",
+      "state.__lib__.common_list.1.id": "NOT_EXPORTED",
+      "state.__lib__.common_list.1.name": "NOT_EXPORTED",
+      "state.__lib__.common_list.0": "NOT_EXPORTED",
+      "state.__lib__.common_list.0.id": "NOT_EXPORTED",
+      "state.__lib__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__lib__.data_id": "FULL_EXPORTED",
+      "state.__lib__.new_data": "SEMI_EXPORTED",
+      "state.__lib__.new_data.data": "FULL_EXPORTED",
+      "state.__lib__.new_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.edit_data": "SEMI_EXPORTED",
+      "state.__lib__.edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.delete_data": "SEMI_EXPORTED",
+      "state.__lib__.delete_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.batch_edit_data": "SEMI_EXPORTED",
+      "state.__lib__.batch_edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.batch_edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.model_id": "FULL_EXPORTED",
+      "state.__lib__.detail_uuid": "FULL_EXPORTED",
+      "state.__lib__.editable": "FULL_EXPORTED",
+      "state.__lib__.ql_vars": "FULL_EXPORTED",
+      "state.__lib__.pkg_id": "FULL_EXPORTED",
+      "state.__lib__.ql_action": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hide": true,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"data_id\":{\"type\":\"string\",\"title\":\"常用查询ID\"},\"new_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"新建时数据\",\"required\":[\"data\",\"wf_id\"]},\"edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"修改时数据\",\"required\":[\"data\",\"wf_id\"]},\"delete_data\":{\"type\":\"object\",\"properties\":{\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"删除时数据\",\"required\":[\"wf_id\"]},\"batch_edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"title\":\"表单模型\",\"format\":\"json-schema\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"批量编辑数据\",\"required\":[\"data\",\"wf_id\"]},\"model_id\":{\"type\":\"string\",\"title\":\"模型配置ID\"},\"detail_uuid\":{\"type\":\"string\",\"title\":\"详情页uuid\"},\"editable\":{\"type\":\"boolean\",\"default\":true,\"title\":\"是否可编辑新建\"},\"ql_vars\":{\"type\":\"string\",\"title\":\"常用查询变量\"},\"pkg_id\":{\"type\":\"string\",\"title\":\"数据模板ID\"},\"ql_action\":{\"type\":\"object\",\"properties\":{},\"title\":\"动作配置\"}},\"required\":[\"data_id\",\"new_data\",\"edit_data\",\"delete_data\",\"model_id\",\"batch_edit_data\",\"detail_uuid\"],\"title\":\"可选参数\"}",
+      "__lib__": {
+        "new_data": {
+          "data": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+          "wf_id": "cmdb_workflow-5sp0ru7mpc2f"
+        },
+        "edit_data": {
+          "data": "{\"type\":\"object\",\"properties\":{}}",
+          "wf_id": "cmdb_workflow-1jqghoygsso3e"
+        },
+        "delete_data": {
+          "wf_id": "cmdb_workflow-20rzvhtg3skaj"
+        },
+        "batch_edit_data": {
+          "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\"],\"enumNames\":[\"名称\",\"描述\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"}}}",
+          "wf_id": "cmdb_workflow-18mz4b9s282vr"
+        },
+        "editable": true,
+        "ql_action": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.2bddb734b0b1.children.b63f6224f680.children.65ffe35184d7.children.6c7fc7d98945.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.3b358b057815.children.60ea911094f4.children.ebc76d459561.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.3b358b057815.children.60ea911094f4.children.ebc76d459561.state.var_schema": "{var: state.__lib__.new_json_schema.vars_data}",
+      "children.2bddb734b0b1.children.80516c2bd285.children.9bd6e24ddf43.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.c4e78c897576.children.1f7fc1a514bb.children.e5fefd806da8.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.2bddb734b0b1.children.27713c4b1a5d.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.3b358b057815.children.7da4c0901a9b.children.dca2e17877c1.state.array": "{var: state.__lib__.common_list}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.ids.2": null,
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.3b358b057815.children.60ea911094f4.children.0a603fb9e9b2.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.3b358b057815.children.60ea911094f4.children.0a603fb9e9b2.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.60ea911094f4.state.title": "{var: children.0f1f2badc5dd.state.output}",
+      "children.3b358b057815.children.c0c4d320a16b.children.03e17ac5d13a.state.schema": "{var: state.__lib__.batch_edit_data.data}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.config.resId": "{var: state.__lib__.batch_edit_data.wf_id}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.state.input.ids": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.c0c4d320a16b.children.54c4f46cc74f.config.resId": "{var: state.__lib__.batch_edit_data.wf_id}",
+      "children.3b358b057815.children.6baf7ee01618.children.1d79f6d134c4.state.click": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.ids": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.ids.1": null,
+      "children.3b358b057815.children.60ea911094f4.children.348a2a75b570.state.onSuccess.2.trigger": "{var: children.c4e78c897576.children.1f7fc1a514bb.state.__trigger__.query}",
+      "children.2bddb734b0b1.children.27713c4b1a5d.config.jump.vars.2": "{var: state.__lib__.model_id}",
+      "children.3b358b057815.children.6baf7ee01618.children.18463bc38de0.state.click": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.06c42a118cd5.state.input.ids": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.60ea911094f4.children.84f7b5d6ea48.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.3b358b057815.children.1885e92fc752.children.7296edc8dc93.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.2bddb734b0b1.children.8d8887c4c7bf.config.jump.vars.1": "{var: state.__lib__.detail_uuid}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.06c42a118cd5.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.60ea911094f4.children.a4a28f3a87d4.state.schema": "{var: state.__lib__.new_data.data}",
+      "children.3b358b057815.children.60ea911094f4.children.765cd32175e4.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.3b358b057815.children.60ea911094f4.children.765cd32175e4.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.1885e92fc752.children.7296edc8dc93.state.input.ids": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.2bddb734b0b1.children.b63f6224f680.children.6c06c0fb8f83.children.b35bab6caf6c.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.3b358b057815.children.7da4c0901a9b.children.7185fa566f86.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.ids.0": null,
+      "children.3b358b057815.children.10c7cbcbdf62.children.55141cf43505.state.schema": "{var: state.__lib__.batch_edit_data.data}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.06c42a118cd5.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.60ea911094f4.children.348a2a75b570.config.resId": "{var: state.__lib__.new_data.wf_id}",
+      "children.3b358b057815.children.1885e92fc752.children.7296edc8dc93.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.c0c4d320a16b.children.54c4f46cc74f.state.onSuccess.2.trigger": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.2bddb734b0b1.children.b63f6224f680.children.65ffe35184d7.children.a62d0b9eb1d8.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.2bddb734b0b1.children.b63f6224f680.children.65ffe35184d7.children.9a15717359b4.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.d0830a601cd4.state.selected": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.2bddb734b0b1.config.resId": "{var: state.__lib__.data_id}",
+      "children.2bddb734b0b1.children.3cf2decb8acb.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.2bddb734b0b1.children.27713c4b1a5d.config.jump.vars.3": "{var: state.__lib__.pkg_id}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.d0830a601cd4.state.id": "{var: state.__lib__.data_id}",
+      "children.3b358b057815.children.e9457a81082e.children.d3b22aad5a08.state.onOk.0": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.bf77826d2e96.children.7981b4ebf868.state.onOk.0": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.state.onSuccess.3.trigger": "{var: children.2bddb734b0b1.state.__trigger__.resetSelected}",
+      "children.2bddb734b0b1.children.10015c0e99d4.children.36dc2d23de54.children.afaad897506a.children.5f5e72f63517.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.2bddb734b0b1.children.10015c0e99d4.children.36dc2d23de54.children.afaad897506a.children.c6b8fae12617.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.2bddb734b0b1.children.10015c0e99d4.children.36dc2d23de54.children.21ed22d5828e.children.fc5a4232475a.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.2bddb734b0b1.state.__table_data__.inode.name.action_config.action_type": "link",
+      "children.2bddb734b0b1.state.__table_data__.inode.name.action_config.href": "{var: children.868cbd50f04c.state.output}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.f621c103a65f.children.4fb8bc419fec.state.__vars__.vars.id.value": "{var: state.__lib__.model_id}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.f621c103a65f.children.741612672a80.state.onOk.1": "{var: children.2bddb734b0b1.state.__trigger__.query}",
+      "children.2bddb734b0b1.state.__table_data__": "{var: state.__lib__.ql_action}",
+      "children.2bddb734b0b1.children.f677ededeaff.state.value": "{var: state.__lib__.editable}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.10a0370fcba8.state.source": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.d0830a601cd4.state.vars": "{var: children.2bddb734b0b1.state.__vars__}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.ql_id": "{var: children.2bddb734b0b1.config.resId}",
+      "children.3b358b057815.children.10c7cbcbdf62.children.2e6b37f737b9.state.input.conditions": "{var: children.2bddb734b0b1.state.conditionsConfig}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.state.input.ql_id": "{var: children.2bddb734b0b1.config.resId}",
+      "children.3b358b057815.children.3dcee1de8b5a.children.6ad781ff4252.state.input.conditions": "{var: children.2bddb734b0b1.state.conditionsConfig}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.3289e15a71f7.state.click": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.577f3202365d.state.click": "{var: children.2bddb734b0b1.state.rowSelection.objects}",
+      "children.b586741c2e2b.state.input_data.name": "{var: children.628afe04d5f6.state.__row__.inode.name}",
+      "children.0f1f2badc5dd.state.input_data.name": "{var: children.628afe04d5f6.state.__row__.inode.name}",
+      "children.2bddb734b0b1.children.b63f6224f680.children.65ffe35184d7.state.title": "{var: children.b586741c2e2b.state.output}"
+    },
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "3b358b057815",
+        "uebbb6cd2721": "uebbb6cd2721"
+      },
+      {
+        "md": 24,
+        "uuid": "2bddb734b0b1",
+        "u36902ca1fa0": "u36902ca1fa0"
+      },
+      {
+        "uuid": "868cbd50f04c"
+      },
+      {
+        "uuid": "0f1f2badc5dd"
+      },
+      {
+        "uuid": "b586741c2e2b"
+      },
+      {
+        "uuid": "628afe04d5f6"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2yp7ev7p5nbzg",
+      "cmdb_mpage-q88jsgvypvdd",
+      "cmdb_mpage-1yyzcjch5xekf",
+      "cmdb_mpage-1rmbkg6q7jnzn",
+      "cmdb_mpage-3qmjxmy1plzke",
+      "cmdb_mpage-2d8k9v02a2kxf"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-17uoe0di94sk2",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对象详情页LIB",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_mpage-g0xokh5gpofu"
+    },
+    "state": {},
+    "children": [],
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

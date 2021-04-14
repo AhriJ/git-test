@@ -1,0 +1,53 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-35en6c3rokrxl",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "输出",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.0b8d6c8a46b2.children.01499885bbbc.state.form_data": "{var: state.loop.item.data.output}",
+      "children.0b8d6c8a46b2.children.01499885bbbc.state.schema": "{var: state.loop.item.data.snapshot.output_schema}",
+      "children.1c88bc95e325.state.onClick.trigger": "{var: children.0b8d6c8a46b2.state.__trigger__.show}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "1c88bc95e325"
+      },
+      {
+        "uuid": "0b8d6c8a46b2"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-y7i69u0z4u32",
+      "cmdb_mpage-3niatfnliv5xp"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

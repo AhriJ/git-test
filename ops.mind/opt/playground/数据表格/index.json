@@ -1,0 +1,163 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2ts0movknkcqc",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "数据表格",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "state": {
+      "__vars__": {
+        "vars.name": {},
+        "vars.namespace": {}
+      },
+      "conditions": true,
+      "rowSelection": {
+        "multi": false,
+        "objects": [],
+        "selected": true
+      },
+      "setting": {
+        "sorts": []
+      },
+      "size": "small",
+      "update_allowed": true,
+      "__table_data__": {
+        "inode.schema_id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.lock": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.mtime": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.29c71e3979a6.state.onClick.trigger": "{var: state.__trigger__.query}",
+      "children.29c71e3979a6.state.text": "kkk",
+      "children.b4f941230c49.state.onClick.trigger": "{var: state.__trigger__.query}"
+    },
+    "childrenConfig": [
+      {
+        "index": 5,
+        "inserted": true,
+        "inserted_name": "测试",
+        "uuid": "dd411b98a0d7"
+      },
+      {
+        "index": 10,
+        "inserted": true,
+        "inserted_name": "操作",
+        "uuid": "b4f941230c49"
+      },
+      {
+        "index": 4,
+        "inserted": false,
+        "uuid": "e2a6032b3afd"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_ql-2up4h1j93xf47",
+      "style": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-evqo7qacqs5e",
+      "cmdb_mpage-36t9plpoke3zu",
+      "cmdb_mpage-14gaeeenpgiqt"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

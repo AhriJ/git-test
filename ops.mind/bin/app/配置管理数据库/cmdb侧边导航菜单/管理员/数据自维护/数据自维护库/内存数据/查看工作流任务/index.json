@@ -1,0 +1,162 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2ga6ueqqckx33",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查看工作流任务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.rowSelection.objects": "FULL_EXPORTED",
+      "state.rowSelection": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__.query": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-3h7gzh2sul0su",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "conditions": true,
+      "conditions_open": true,
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "selected": true,
+        "multi": true,
+        "dynamic": true,
+        "objects": [],
+        "pkg_list": []
+      },
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            null
+          ]
+        },
+        "indexes.cmdb_index-1vswnpvg373pv": {
+          "data": [
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null
+          ]
+        },
+        "data.source_pkg_id": {
+          "data": [
+            null
+          ]
+        },
+        "data.dest_pkg_id": {
+          "data": [
+            null
+          ]
+        },
+        "data.field_map": {
+          "hidden": true,
+          "data": [
+            null
+          ]
+        },
+        "data.interval_time": {
+          "data": [
+            null
+          ]
+        },
+        "indexes.cmdb_index-wf": {
+          "hidden": true,
+          "data": [
+            null
+          ]
+        },
+        "indexes.cmdb_index-ry962jcuu1ux": {
+          "hidden": true,
+          "data": [
+            null
+          ]
+        },
+        "inode.mtime": {
+          "data": [
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.id": {},
+        "vars.name": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "346eee7bff05",
+        "index": 2
+      },
+      {
+        "uuid": "6554e7cc6639",
+        "index": 3
+      },
+      {
+        "uuid": "a8b67c85347f",
+        "inserted_name": "关联工作流",
+        "index": 1
+      },
+      {
+        "uuid": "b8c1f0f845ec",
+        "index": 99,
+        "inserted": true,
+        "inserted_name": "操作"
+      },
+      {
+        "uuid": "1fa94c1ba0c6",
+        "index": 4,
+        "inserted": true,
+        "inserted_name": "执行状态"
+      },
+      {
+        "uuid": "9b035458873c",
+        "index": 5
+      },
+      {
+        "uuid": "949bd45e7f8a",
+        "index": 6,
+        "inserted": true,
+        "inserted_name": "字段映射"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1sa9aahyisiry",
+      "cmdb_mpage-ym1wlefmwnw6",
+      "cmdb_mpage-22p68nuc986nb",
+      "cmdb_mpage-3b265rn7z87z",
+      "cmdb_mpage-17850jduutklh",
+      "cmdb_mpage-38cbp1ln9l55s",
+      "cmdb_mpage-1wvcig3fb0kyh"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

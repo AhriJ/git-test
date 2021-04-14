@@ -1,0 +1,101 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3akfex1o7zgc",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "关联工单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              },
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "研发"
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-2e47fg39ml9ml"
+            ],
+            "sorts": [],
+            "limit": 50,
+            "offset": 0,
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": ".indexes.cmdb_index-1h9mxglz3uxt0",
+          "op": "=",
+          "value": "{var:vars.member}"
+        },
+        {
+          "field": "vars.member",
+          "op": "=",
+          "value": "$me"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".inode.schema_id",
+        ".inode.lock",
+        ".inode.mtime",
+        ".inode.last_editor"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "member": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {}
+}

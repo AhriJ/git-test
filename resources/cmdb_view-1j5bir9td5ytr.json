@@ -1,0 +1,36 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-1j5bir9td5ytr",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "游离资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "update": null,
+      "viewData": [
+        "cmdb_view-1iz7ktnvfgtet",
+        "cmdb_view-13d4vvtse249w",
+        "cmdb_view-1oqrnvsw9d6hq",
+        "cmdb_view-6gy8z4wxm9we",
+        "cmdb_view-wdkdj4rkcc9k"
+      ],
+      "forms": [],
+      "type": "layout"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-rt8i99bqaqqw",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-39n95yr60kht5"
+  }
+}

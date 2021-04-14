@@ -1,0 +1,65 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-qoiyn52jacbg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询数据模版配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-1bvxbbmlgh94l",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.batch_edit_data": {},
+        "data.delete_data": {},
+        "data.edit_data": {},
+        "data.new_data": {}
+      },
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.0d9de74b7221.children.6ce423118d9a.config.resId": "{var: state.__row__.data.ql}",
+      "children.0d9de74b7221.children.6ce423118d9a.children.bb215aeb9c51.children.3fb01d4090d2.state.qlConfig.ql_id": "{var: state.__row__.data.ql}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "0d9de74b7221"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-xziy65j3au39"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

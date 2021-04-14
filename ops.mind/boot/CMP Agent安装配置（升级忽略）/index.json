@@ -1,0 +1,75 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-388ty9ho9zsgz",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "CMP Agent安装配置（升级忽略）",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.list.1": "NOT_EXPORTED",
+      "state.input.list.2": "NOT_EXPORTED",
+      "state.input.list.3": "NOT_EXPORTED",
+      "state.input.list.4": "NOT_EXPORTED",
+      "state.input.list.5": "NOT_EXPORTED",
+      "state.input.list.6": "NOT_EXPORTED",
+      "state.input.list.7": "NOT_EXPORTED",
+      "state.input.list.8": "NOT_EXPORTED",
+      "state.input.list.9": "NOT_EXPORTED",
+      "state.input.list.10": "NOT_EXPORTED",
+      "state.input.list.11": "NOT_EXPORTED",
+      "state.input.list.12": "NOT_EXPORTED",
+      "state.input.list.13": "NOT_EXPORTED",
+      "state.input.list.14": "NOT_EXPORTED",
+      "state.input.list.15": "NOT_EXPORTED",
+      "state.input.list.16": "NOT_EXPORTED",
+      "state.input.list.17": "NOT_EXPORTED",
+      "state.input.list.18": "NOT_EXPORTED",
+      "state.input.list.19": "NOT_EXPORTED",
+      "state.input.list.20": "NOT_EXPORTED",
+      "state.input.list.21": "NOT_EXPORTED",
+      "state.input.list.22": "NOT_EXPORTED",
+      "state.input.list.23": "NOT_EXPORTED",
+      "state.input.list.24": "NOT_EXPORTED",
+      "state.input.list.0": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-4uedtiggetan",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "input": {
+        "list": [
+          "{\"inode\":{\"id\":\"cmdb_cmp_config-0\",\"schema_id\":\"cmdb_schema_cmp_config-0\",\"name\":\"多云运维管理配置\",\"namespace\":\"多云运维管理\"},\"data\":{},\"indexes\":{}}"
+        ]
+      },
+      "output": {
+        "output": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

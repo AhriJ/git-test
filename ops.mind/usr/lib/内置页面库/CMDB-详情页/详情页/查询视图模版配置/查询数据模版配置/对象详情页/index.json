@@ -1,0 +1,138 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1gfuwz57nr455",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对象详情页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__lib__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__lib__.object_id": "FULL_EXPORTED",
+      "state.__lib__.edit_data": "SEMI_EXPORTED",
+      "state.__lib__.edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.delete_data": "SEMI_EXPORTED",
+      "state.__lib__.delete_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.navs_uuid": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hide": true,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"object_id\":{\"type\":\"string\",\"title\":\"常用对象查询ID\"},\"edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"format\":\"json-schema\",\"title\":\"表单模型\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"编辑时数据\",\"required\":[\"data\",\"wf_id\"]},\"delete_data\":{\"type\":\"object\",\"properties\":{\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"删除时数据\",\"required\":[\"wf_id\"]},\"navs_uuid\":{\"type\":\"string\",\"title\":\"导航uuid\"}},\"title\":\"可选参数\",\"required\":[\"object_id\",\"edit_data\",\"delete_data\",\"navs_uuid\"]}",
+      "__lib__": {
+        "object_id": "cmdb_object_ql-2816eli7pozs1",
+        "edit_data": {
+          "wf_id": "cmdb_workflow-15r7nqhl91lup"
+        },
+        "delete_data": {
+          "wf_id": "cmdb_workflow-1kb9jb7ytdep9"
+        }
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.fb703287febc.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.2e349847605e.children.bff100265140.state.__vars__.vars.id.value": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.7a7c1d74314a.children.f990dd50989b.state.input.inode": "{var: children.2e349847605e.children.5de5b180e866.state.__row__}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.dd7fdba5c403.children.4e71c311f3ae.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.dd7fdba5c403.children.1bfacfeb42ad.state.onSuccess.2.trigger": "{var: state.__trigger__.refresh}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.a7e57ac98de0.state.onSuccess.3.trigger": "{var: children.480b97ef9067.children.cb479a3845c2.state.__trigger__.refresh}",
+      "children.eb57ae90c9e2.children.7a7c1d74314a.children.f990dd50989b.state.input.id": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.dd7fdba5c403.children.1bfacfeb42ad.state.input.ids.0": "{var: children.26e715f132d5.state.vars.id}",
+      "children.2e349847605e.children.5de5b180e866.state.__vars__.vars.id.value": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.41c8a9d6944b.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.2e349847605e.children.bff100265140.config.resId": "{var: state.__lib__.object_id}",
+      "children.eb57ae90c9e2.children.51da168fc080.children.c9033387fecc.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.480b97ef9067.children.cb479a3845c2.state.id": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.a7e57ac98de0.state.onSuccess.2.trigger": "{var: children.2e349847605e.state.__trigger__.refresh}",
+      "children.a5fa1152ae4a.children.8c23a83e82d9.state.cmdb_id": "{var: children.26e715f132d5.state.vars.id}",
+      "children.2e349847605e.children.5de5b180e866.config.resId": "{var: state.__lib__.object_id}",
+      "children.eb57ae90c9e2.children.7a7c1d74314a.children.f990dd50989b.state.onSuccess.2.trigger": "{var: children.2e349847605e.children.5de5b180e866.state.__trigger__.refresh}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.dd7fdba5c403.children.4e71c311f3ae.state.input.ids.0": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.36c967534b95.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.dd7fdba5c403.children.95fde20a44b6.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.fb703287febc.state.onSuccess.2.trigger": "{var: children.2e349847605e.state.__trigger__.refresh}",
+      "children.eb57ae90c9e2.children.7a7c1d74314a.children.f990dd50989b.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.eb57ae90c9e2.children.7a7c1d74314a.children.955ef124a35b.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.5e77de361f6d.config.jump.vars.0": "{var: children.2e349847605e.children.bff100265140.state.__row__.inode.schema_id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.51ce663b2ca5.children.a7e57ac98de0.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.38b113529e57.state.input.id": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.51da168fc080.children.c9033387fecc.state.input.ids.0": "{var: children.26e715f132d5.state.vars.id}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.3e01229fdeda.state.__vars__.vars.id.value": "{var: children.26e715f132d5.state.vars.id}",
+      "children.480b97ef9067.children.cb479a3845c2.state.object_ql_id": "{var: children.2e349847605e.children.bff100265140.config.resId}",
+      "children.eb57ae90c9e2.children.70771b3d12e1.children.766d71b04162.state.qlConfig.ql_input.objects.0": "{var: children.26e715f132d5.state.vars.id}",
+      "children.c99c1d5ab986.state.qlConfig.ql_input.objects.0": "{var: children.26e715f132d5.state.vars.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "26e715f132d5",
+        "u71b8e9c0744": "u71b8e9c0744"
+      },
+      {
+        "uuid": "c99c1d5ab986"
+      },
+      {
+        "md": 24,
+        "uuid": "2e349847605e",
+        "u0ca062f3c02": "u0ca062f3c02"
+      },
+      {
+        "md": 24,
+        "uuid": "eb57ae90c9e2",
+        "u5185c5e0802": "u5185c5e0802"
+      },
+      {
+        "md": 24,
+        "uuid": "480b97ef9067",
+        "u4c6db96fd03": "u4c6db96fd03"
+      },
+      {
+        "md": 24,
+        "uuid": "a5fa1152ae4a",
+        "u784ca890b90": "u784ca890b90"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1p59trm6jo99",
+      "cmdb_mpage-2xdb8nc349smb",
+      "cmdb_mpage-12ig5ik3i5t4z",
+      "cmdb_mpage-3b9nlwks29k1w",
+      "cmdb_mpage-33lhv123ds390",
+      "cmdb_mpage-etmozr7eepxq"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

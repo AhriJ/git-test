@@ -1,0 +1,26 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_lufei_id-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "lufei_name",
+    "namespace": "",
+    "descr": "lufei created.",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {},
+      "required": []
+    },
+    "indexes": []
+  },
+  "indexes": {}
+}

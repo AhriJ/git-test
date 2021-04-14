@@ -1,0 +1,57 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3cagcdtq2wces",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "时序数据查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "1a5af3fe0132"
+      }
+    ],
+    "config": {
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "jump": {
+        "target": "default"
+      },
+      "resId": "cmdb_ql-35xrg3gk65rlw",
+      "style": {
+        "padding": "",
+        "textAlign": "",
+        "background": "",
+        "color": "",
+        "fontSize": "",
+        "margin": ""
+      }
+    },
+    "publics": {},
+    "state": {
+      "sorts": [],
+      "__table_options__": {
+        "step": 30
+      },
+      "__vars__": {},
+      "fragment": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3uyi1puxvg9s3"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

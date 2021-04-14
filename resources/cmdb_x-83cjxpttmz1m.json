@@ -1,0 +1,118 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-83cjxpttmz1m",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "VPC",
+    "namespace": "",
+    "descr": "游离资源",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "op": "=",
+        "value": null,
+        "is_array": false,
+        "widget": "table",
+        "pkg_id": null
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".data.brief",
+        "name": "简介"
+      },
+      {
+        "field": ".data.cidr",
+        "name": "CIDR"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "name": "同步标记"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_infra_vpc-0\"},{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_1}\"},{\"field\":\"vars.indexes_index_1\",\"op\":\"=\",\"value\":\"$empty\"}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".data.brief as 简介\",\".data.cidr as CIDR\",\".indexes.cmdb_index-vendor as 供应商\",\".indexes.cmdb_index-external_id as 外部ID\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-sync_marker as 同步标记\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_index_1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-3fj71ehehvjez",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-38d9oe4nsu42z"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-331wj1y7czbbp",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-900qx63eeda0",
+      "data": null
+    },
+    "ql": "cmdb_ql-1bffa78a07ubm",
+    "object_id": "cmdb_object_ql-3nq3jr005cnd6",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_22b14eab"
+  }
+}

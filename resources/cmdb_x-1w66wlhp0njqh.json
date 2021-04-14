@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1w66wlhp0njqh",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "姓名",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "name",
+    "field_name": "姓名",
+    "field_type": "string",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "enum": ""
+    },
+    "number_option": null,
+    "boolean_option": null,
+    "object_option": [],
+    "id": "",
+    "index_id": "cmdb_x-10hjncjrx5p4e",
+    "required": true
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-ktb7p3i9jaad"
+  }
+}

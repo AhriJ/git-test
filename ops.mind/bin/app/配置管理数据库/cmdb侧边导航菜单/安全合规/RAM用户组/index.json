@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-29kfls5sxriqf",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "RAM用户组",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "RAM用户组",
+      "desc": null,
+      "icon": null
+    },
+    "childrenConfig": [
+      {
+        "uuid": "d215e6d591c8"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1dap20wr6tghw"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

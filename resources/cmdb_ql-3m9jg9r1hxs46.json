@@ -1,0 +1,225 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3m9jg9r1hxs46",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "服务器常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-3bn8no4n0zd71"
+        },
+        {
+          "field": ".inode.name",
+          "op": "=",
+          "value": "{var:vars.inode_name}"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-10tvsknco3zx5",
+          "op": "=",
+          "value": "{var:vars.service}"
+        },
+        {
+          "field": "vars.service",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.region",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-290dn7d3j221q",
+          "op": "=",
+          "value": "{var:vars.indexes_index_17}"
+        },
+        {
+          "field": "vars.indexes_index_17",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-cloud_account",
+          "op": "=",
+          "value": "{var:vars.indexes_index_21}"
+        },
+        {
+          "field": "vars.indexes_index_21",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+          "op": "=",
+          "value": "{var:vars.indexes_index_22}"
+        },
+        {
+          "field": "vars.indexes_index_22",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+          "op": "=",
+          "value": "{var:vars.indexes_index_22}"
+        },
+        {
+          "field": "vars.indexes_index_22",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "op": "=",
+          "value": "{var:vars.indexes_index_1}"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-2c3gcau1bnk85",
+          "op": "=",
+          "value": "{var:vars.indexes_index_13}"
+        },
+        {
+          "field": "vars.indexes_index_13",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-xgm9kh3lu3mg",
+          "op": "=",
+          "value": "{var:vars.indexes_index_14}"
+        },
+        {
+          "field": "vars.indexes_index_14",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-maep9bejx114",
+          "op": "!=",
+          "value": "$null"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 名称",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
+        ".indexes.cmdb_index-maep9bejx114.inode.name as 业务树",
+        ".indexes.cmdb_index-agent_status as agent状态",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机",
+        ".data.os as 操作系统",
+        ".data.cpu as vCPU 核数",
+        ".data.memory as 内存（MB）",
+        ".data.launch_time as 启动时间",
+        ".data.hostname as HOSTNAME",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
+        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 操作系统类型",
+        ".indexes.cmdb_index-maep9bejx114.inode.name as 服务",
+        ".indexes.cmdb_index-maep9bejx114.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-maep9bejx114.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_17": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2mnoco73jatdz\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "所在VPC"
+              },
+              "indexes_index_21": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              },
+              "indexes_index_22": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-21o3dndyr8e1n\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联虚拟交换机"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "供应商"
+              },
+              "indexes_index_13": {
+                "type": "string",
+                "title": "内网IP"
+              },
+              "indexes_index_14": {
+                "type": "string",
+                "title": "外网IP"
+              },
+              "region": {
+                "type": "string",
+                "title": "区服",
+                "format": "ql-selector?id=cmdb_ql-1p031k2idm2ke\u0026select_mode=single\u0026spec=id\u0026widget=table"
+              },
+              "service": {
+                "type": "string",
+                "title": "服务",
+                "format": "ql-selector?id=cmdb_ql-126bupvlxmh7a\u0026select_mode=single\u0026spec=id\u0026widget=table"
+              },
+              "tree_list": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "title": "业务树",
+                "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=multi\u0026spec=id-list\u0026widget=select"
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": false
+  }
+}

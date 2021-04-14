@@ -1,0 +1,86 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-vkjl099z23ul",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "企业微信应用",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.api_server\":{\"type\":\"string\",\"format\":\"uri\",\"default\":\"https://qyapi.weixin.qq.com\",\"title\":\"ApiServer\"},\".data.corp_id\":{\"type\":\"string\",\"title\":\"CorpId\"},\".data.agent_id\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"AgentId\"},\".data.corp_secret\":{\"type\":\"string\",\"format\":\"password\",\"title\":\"CorpSecret\"}},\"required\":[\".inode.name\",\".data.api_server\",\".data.corp_id\",\".data.agent_id\",\".data.corp_secret\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.api_server\":{\"type\":\"string\",\"format\":\"uri\",\"default\":\"https://qyapi.weixin.qq.com\",\"title\":\"ApiServer\"},\".data.corp_id\":{\"type\":\"string\",\"title\":\"CorpId\"},\".data.agent_id\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"AgentId\"},\".data.corp_secret\":{\"type\":\"string\",\"format\":\"password\",\"title\":\"CorpSecret\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".data.api_server\",\".data.corp_id\",\".data.agent_id\",\".data.corp_secret\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".data.api_server\",\".data.corp_id\",\".data.agent_id\",\".data.corp_secret\"],\"enumNames\":[\"名称\",\"ApiServer\",\"CorpId\",\"AgentId\",\"CorpSecret\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".data.api_server\":{\"type\":\"string\",\"format\":\"uri\",\"default\":\"https://qyapi.weixin.qq.com\",\"title\":\"ApiServer\",\"ui:hidden\":\"{{ rootValue.field !== '.data.api_server' }}\"},\".data.corp_id\":{\"type\":\"string\",\"title\":\"CorpId\",\"ui:hidden\":\"{{ rootValue.field !== '.data.corp_id' }}\"},\".data.agent_id\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"AgentId\",\"ui:hidden\":\"{{ rootValue.field !== '.data.agent_id' }}\"},\".data.corp_secret\":{\"type\":\"string\",\"format\":\"password\",\"title\":\"CorpSecret\",\"ui:hidden\":\"{{ rootValue.field !== '.data.corp_secret' }}\"}}}",
+      "viewData": [],
+      "forms": [
+        {
+          "default": null,
+          "title": "名称",
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".data.api_server",
+          "title": "ApiServer",
+          "ui_status": "show",
+          "default": "",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".data.corp_id",
+          "title": "CorpId",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".data.agent_id",
+          "title": "AgentId",
+          "ui_status": "show",
+          "default": "",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".data.corp_secret",
+          "ui_status": "show",
+          "default": "",
+          "widget": null,
+          "disabled": true
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x-2mxkijm03dk1y",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "silence",
+            "view_id": null,
+            "open_type": "silence",
+            "type": "silence"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-33f6d81lnz2zq"
+  }
+}

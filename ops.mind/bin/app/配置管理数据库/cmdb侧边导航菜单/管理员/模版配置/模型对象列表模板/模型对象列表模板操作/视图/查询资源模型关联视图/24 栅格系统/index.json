@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3h7msifzygo9a",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "24 栅格系统",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.b06c3faff1b4.state.text": "{var: state.loop.item.inode.name}",
+      "children.1601ef709f11.children.40cac78c2015.config.resId": "{var: state.loop.item.inode.id}",
+      "children.1601ef709f11.children.64e61a83303a.config.resId": "{var: state.loop.item.indexes.cmdb_index-21bqd55ohdq6w.inode.id}",
+      "children.1601ef709f11.children.64e61a83303a.state.__vars__.vars.id.value": "{var: state.loop.item.indexes.cmdb_index-21bqd55ohdq6w.inode.id}",
+      "children.1601ef709f11.children.74fa8d3c9bff.config.resId": "{var: state.loop.item.inode.id}",
+      "children.b06c3faff1b4.state.onClick.0.trigger": "{var: children.1601ef709f11.state.__trigger__.show}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b06c3faff1b4",
+        "md": 24
+      },
+      {
+        "uuid": "1601ef709f11"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-wz6tnk75nlrf",
+      "cmdb_mpage-7dzffw2aaq4d"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

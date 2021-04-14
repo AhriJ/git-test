@@ -1,0 +1,55 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1g91td0bdrsw1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "条件判断",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "value": "{var: state.loop.item.indexes.cmdb_index-3d2auxg8f3gdv.inode.id}",
+      "__trigger__": {}
+    },
+    "children": {
+      "children.99c477c5a053.state.text": "{var: state.loop.item.data.snapshot.ssh_config.host}",
+      "children.7d58daf1abe2.state.text": "{var: state.loop.item.indexes.cmdb_index-3d2auxg8f3gdv.inode.id}",
+      "children.cd0b5f28f15e.state.__vars__.vars.id.value": "{var: state.loop.item.indexes.cmdb_index-3d2auxg8f3gdv.inode.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "99c477c5a053",
+        "case": "$empty"
+      },
+      {
+        "uuid": "cd0b5f28f15e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-v7qk0sdqzeht",
+      "cmdb_mpage-97dgms7aal4q"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

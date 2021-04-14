@@ -1,0 +1,94 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-1oabxrqercls8",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "审批模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "editable": true,
+      "super_mode": false,
+      "user_form_data": {},
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "silence",
+            "view_id": null,
+            "open_type": "silence",
+            "type": "silence"
+          }
+        }
+      },
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-approval_type\":{\"type\":\"string\",\"default\":\"workwx\",\"enum\":[\"workwx\"],\"enumNames\":[\"企业微信\"],\"title\":\"第三方认证类型\"},\".indexes.cmdb_index-workwx_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1oz1g71mlt71y\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联企业微信\",\"ui:width\":\"50%\",\"ui:hidden\":\"{{rootValue['.indexes.cmdb_index-approval_type'] !== 'workwx'}}\"},\".indexes.cmdb_index-dingtalk_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2a1v6u93zcu08\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联钉钉认证\",\"ui:width\":\"50%\",\"ui:hidden\":\"{{rootValue['.indexes.cmdb_index-approval_type'] !== 'dingtalk'}}\"},\".data.template_id\":{\"type\":\"string\",\"ui:width\":\"50%\",\"title\":\"{{rootValue['.indexes.cmdb_index-approval_type'] === 'dingtalk' ? '钉钉模版ID':'企业微信模版ID'}}\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-approval_type\",\".data.template_id\",\".indexes.cmdb_index-dingtalk_auth\",\".indexes.cmdb_index-workwx_auth\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-approval_type\":{\"type\":\"string\",\"default\":\"workwx\",\"enum\":[\"workwx\"],\"enumNames\":[\"企业微信\"],\"title\":\"第三方认证类型\"},\".indexes.cmdb_index-workwx_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1oz1g71mlt71y\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联企业微信\",\"ui:width\":\"50%\",\"ui:hidden\":\"{{rootValue['.indexes.cmdb_index-approval_type'] !== 'workwx'}}\"},\".indexes.cmdb_index-dingtalk_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2a1v6u93zcu08\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联钉钉认证\",\"ui:width\":\"50%\",\"ui:hidden\":\"{{rootValue['.indexes.cmdb_index-approval_type'] !== 'dingtalk'}}\"},\".data.template_id\":{\"type\":\"string\",\"ui:width\":\"50%\",\"title\":\"{{rootValue['.indexes.cmdb_index-approval_type'] === 'dingtalk' ? '钉钉模版ID':'企业微信模版ID'}}\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-approval_type\",\".data.template_id\",\".indexes.cmdb_index-dingtalk_auth\",\".indexes.cmdb_index-workwx_auth\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".indexes.cmdb_index-approval_type\",\".indexes.cmdb_index-workwx_auth\",\".indexes.cmdb_index-dingtalk_auth\",\".data.template_id\"],\"enumNames\":[\"名称\",\"描述\",\"第三方认证类型\",\"关联企业微信\",\"关联钉钉认证\",\"模版ID\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".indexes.cmdb_index-approval_type\":{\"type\":\"string\",\"enum\":[\"dingtalk\",\"workwx\"],\"enumNames\":[\"钉钉认证\",\"企业微信\"],\"title\":\"第三方认证类型\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-approval_type' }}\"},\".indexes.cmdb_index-workwx_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1oz1g71mlt71y\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联企业微信\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-workwx_auth' }}\"},\".indexes.cmdb_index-dingtalk_auth\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2a1v6u93zcu08\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"关联钉钉认证\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-dingtalk_auth' }}\"},\".data.template_id\":{\"type\":\"string\",\"title\":\"模版ID\",\"ui:hidden\":\"{{ rootValue.field !== '.data.template_id' }}\"}}}",
+      "viewData": [],
+      "forms": [
+        {
+          "default": null,
+          "title": "名称",
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "title": "描述",
+          "field": ".inode.descr",
+          "ui_status": "show",
+          "default": null,
+          "widget": null
+        },
+        {
+          "title": "第三方认证类型",
+          "field": ".indexes.cmdb_index-approval_type",
+          "ui_status": "show",
+          "default": null,
+          "widget": null
+        },
+        {
+          "title": "关联企业微信",
+          "field": ".indexes.cmdb_index-workwx_auth",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": "cmdb_x_workwx_auth-0_default",
+          "widget": "select"
+        },
+        {
+          "title": "关联钉钉认证",
+          "field": ".indexes.cmdb_index-dingtalk_auth",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": "cmdb_x_dingtalk_auth-0_default",
+          "widget": "select"
+        },
+        {
+          "field": ".data.template_id",
+          "title": "模版ID",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        }
+      ],
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x-39eowdg9tjp71",
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-2pcgixc9gbbbi"
+  }
+}

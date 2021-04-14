@@ -1,0 +1,119 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-21g0fks0mw90e",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "定时工作流执行",
+    "namespace": "/preferences",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "list": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "title": "任务列表"
+              }
+            },
+            "required": []
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string"
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": [],
+            "title": "OUTPUT"
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "": {},
+          "执行定时工作流": "{var:执行定时工作流.output}"
+        }
+      },
+      {
+        "name": "执行定时工作流",
+        "component": "cmdb_component-interpreter_ecmascript_v2",
+        "descr": "新版 ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "input_schema": "{\"type\":\"object\",\"properties\":{},\"title\":\"INPUT\"}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"required\":[],\"title\":\"OUTPUT\"}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "script": "// WorkflowRuntimeContext 类型对象暴露 workflow 运行时方法\nvar ctx = new WorkflowRuntimeContext()\nvar input = ctx.input() // 获取input数据\n\nfunction main () {\n  var jobList = getAllList();\n  (input.list || []).forEach(function(id) {\n    var isRun = jobList.every(function(e) {\n      return e.id != id;\n    });\n\n    if (!isRun) {\n      ctx.ecu.workflow.startAndWaitWorkflowJobFirstOutput(\n        e.id,\n          {\n          },\n          \"normal\"\n      );\n    }\n  });\n\n  return {\n    result: \"SUCCEEDED\",\n    result_name: \"执行定时任务成功\",\n    message: \"执行定时任务成功\"\n  };\n}\n\ntry {\n  var output = main();\n  ctx.output(output);\n} catch(err) {\n  ctx.output({\n    result: \"FAILED\",\n    result_name: \"执行定时任务失败\",\n    message: \"执行定时任务失败\" + err\n  });\n}\n\n // 获取所有列表类视图模版\n function getAllList() {\n  var res = ctx.ecu.ql.queryQlTable(\n    {\n      \"conditions\": [\n        {\n          \"field\": \".inode.schema_id\",\n          \"op\": \"=\",\n          \"value\": \"cmdb_schema_wf_job-0\"\n        }\n      ],\n      \"objects\": [\n        \"$conditions\"\n      ],\n      \"selects\": [\n        \".data.state\",\n        \".indexes.cmdb_index-wf\"\n      ]\n    }\n  );\n\n  if (res \u0026\u0026 res.rows \u0026\u0026 res.rows.length) {\n    return res.rows.map(function(e) {\n      return {\n        id: e.data[2],\n        state: e.data[1]\n      };\n    })\n  }\n  return [];\n}",
+            "input": "{var:__START__.input}"
+          },
+          "__START__": {
+            "script": "// WorkflowRuntimeContext 类型对象暴露 workflow 运行时方法\nvar ctx = new WorkflowRuntimeContext()\nvar input = ctx.input() // 获取input数据\n\nfunction main() {\n  var jobList = getAllList();\n  (input.list || []).forEach(function (id) {\n    var has = jobList.indexOf(id) !== -1;\n\n    if (!has) {\n      ctx.ecu.workflow.createWorkflowJob(\n        id,\n        {\n        },\n        \"normal\"\n      );\n    }\n  });\n\n  return {\n    result: \"SUCCEEDED\",\n    result_name: \"执行定时任务成功\",\n    message: \"执行定时任务成功\"\n  };\n}\n\ntry {\n  var output = main();\n  ctx.output(output);\n} catch (err) {\n  ctx.output({\n    result: \"FAILED\",\n    result_name: \"执行定时任务失败\",\n    message: \"执行定时任务失败\" + err\n  });\n}\n\n// 获取所有工作流任务\nfunction getAllList() {\n  var res = ctx.ecu.ql.queryQlTable(\n    {\n      \"conditions\": [\n        {\n          \"field\": \".inode.schema_id\",\n          \"op\": \"=\",\n          \"value\": \"cmdb_schema_wf_job-0\"\n        },\n        {\n          \"field\": \".data.state\",\n          \"op\": \"=\",\n          \"value\": \"RUNNING\"\n        },\n        {\n          \"field\": \".indexes.cmdb_index-wf\",\n          \"op\": \"=-\",\n          \"value\": input.list\n        }\n      ],\n      \"objects\": [\n        \"$conditions\"\n      ],\n      \"selects\": [\n        \".indexes.cmdb_index-wf\"\n      ]\n    }\n  );\n\n  if (res \u0026\u0026 res.rows \u0026\u0026 res.rows.length) {\n    return res.rows.map(function (e) {\n      return e.data[1]\n    })\n  }\n  return [];\n}",
+            "input": "{var:__START__.input}"
+          },
+          "": {
+            "script": "// WorkflowRuntimeContext 类型对象暴露 workflow 运行时方法\nvar ctx = new WorkflowRuntimeContext()\nvar input = ctx.input() // 获取input数据\n// ctx.output({xxxx}) 输出\n",
+            "input": {}
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "执行定时工作流"
+      },
+      {
+        "from": "执行定时工作流",
+        "to": "__END__"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

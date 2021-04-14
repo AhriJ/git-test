@@ -1,0 +1,85 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-32qwf3oo7vogi",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[数据自维护][定时]资源关联业务树",
+    "namespace": "/数据自维护",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {}
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {}
+      },
+      {
+        "name": "服务器",
+        "component": "cmdb_component-workflow",
+        "descr": "派生 Workflow",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "id": "cmdb_workflow-311mdxrnhqu14"
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "sleep",
+        "component": "cmdb_component-ticker",
+        "descr": "固定时间间隔执行",
+        "auto_run": true,
+        "settings": {},
+        "config": {},
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "interval_s": 900,
+            "times": -1
+          },
+          "__START__": {
+            "interval_s": 900,
+            "times": -1,
+            "immediately": true
+          }
+        }
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "sleep"
+      },
+      {
+        "from": "sleep",
+        "to": "服务器"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

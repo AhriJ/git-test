@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3bb7pwafgrv1d",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "用户中心跳转",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "4027b99928cd",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1z8w9a0gsmkys"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

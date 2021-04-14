@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-29lh34f4f4h8x",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "动态展开测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "background": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "md": 6,
+        "uuid": "c23b5c164aff"
+      }
+    ],
+    "config": {
+      "resId": ""
+    },
+    "publics": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1q0g4n6taagto"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

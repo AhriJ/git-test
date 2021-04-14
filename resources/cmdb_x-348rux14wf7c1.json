@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-348rux14wf7c1",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "区服",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "project",
+    "name": "区服",
+    "describe": null,
+    "group": null,
+    "xx": null,
+    "pkg_id": "cmdb_x-2yapjc0wmfq04",
+    "workflows": {
+      "create": "cmdb_workflow-2837nw0s8zuzh",
+      "delete": "cmdb_workflow-almjfx7e09b3",
+      "update": "cmdb_workflow-18vstjlt1ws61",
+      "batch_update": "cmdb_workflow-7zmfksym9071"
+    },
+    "ql_id": "cmdb_ql-1p031k2idm2ke"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_project-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-3mrohua6vjg0v"
+    ]
+  }
+}

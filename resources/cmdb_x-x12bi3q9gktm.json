@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-x12bi3q9gktm",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "游戏",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "game",
+    "field_name": "游戏",
+    "field_type": "id",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "index_id": "cmdb_x-3mrohua6vjg0v",
+    "required": true
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_x-2xqcsdfn1dymu",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-348rux14wf7c1"
+  }
+}

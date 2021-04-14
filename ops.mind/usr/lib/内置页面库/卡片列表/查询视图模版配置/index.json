@@ -1,0 +1,72 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-zhpx6jpi65jo",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询视图模版配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-2m6ngrfq365yq",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.data_config": {},
+        "data.view_config.action_config": {},
+        "data.view_config.user_form_data": {},
+        "data.view_config.workOrderList": [
+          null,
+          null,
+          null
+        ]
+      },
+      "__vars__": {
+        "vars.id": {
+          "value": ""
+        }
+      }
+    },
+    "children": {
+      "children.677119191d98.state.__vars__.vars.id.value": "{var: state.__row__.data.view_config.data_id}",
+      "children.677119191d98.children.0d9de74b7221.children.6ce423118d9a.children.bb215aeb9c51.children.3fb01d4090d2.state.workOrderList": "{var: state.__row__.data.view_config.workOrderList}",
+      "children.677119191d98.children.0d9de74b7221.children.6ce423118d9a.state.workOrderList": "{var: state.__row__.data.view_config.workOrderList}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "677119191d98"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-qoiyn52jacbg"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

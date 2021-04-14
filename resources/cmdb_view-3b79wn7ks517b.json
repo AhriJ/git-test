@@ -1,0 +1,102 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-3b79wn7ks517b",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "Redis",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": null,
+      "update": null,
+      "batch": null,
+      "viewData": null,
+      "forms": [
+        {
+          "default": null,
+          "title": "名称",
+          "field": ".inode.name",
+          "pkg_id": null,
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "title": "供应商",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-external_id",
+          "title": "外部ID",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-status",
+          "title": "状态",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-sync_marker",
+          "title": "同步标记",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": null,
+          "disabled": true
+        }
+      ],
+      "editable": false,
+      "readOnly": true,
+      "type": "list",
+      "data_id": "cmdb_x-1hdchb8lcr4y",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "type": "default",
+            "open_type": "link",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-3b79wn7ks517b"
+          }
+        },
+        "data.zone_id": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": "cmdb_view-9nhm77phtvzy",
+            "open_type": "link",
+            "type": "custom",
+            "href": "$app=./cmdb_mpage-1dsmcf5f6w3qp\u0026view_id=cmdb_view-9nhm77phtvzy"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-6zioo097d17j"
+  }
+}

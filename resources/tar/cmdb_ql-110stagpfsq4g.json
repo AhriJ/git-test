@@ -1,0 +1,171 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-110stagpfsq4g",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "Tar包（客户自定义数据）",
+    "namespace": "/tar",
+    "descr": "仅导出L2层的模型、关联、数据模版、视图模版，包括关联在L0层的资源模型、工作流、页面等",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": ".inode.id",
+              "op": "=-",
+              "value": {
+                "conditions": [
+                  {
+                    "field": ".inode.schema_id",
+                    "op": "=-",
+                    "value": {
+                      "conditions": [
+                        {
+                          "field": ".inode.schema_id",
+                          "op": "=-",
+                          "value": [
+                            "cmdb_schema_schema_x-0"
+                          ]
+                        }
+                      ],
+                      "objects": [
+                        "cmdb_schema_x-3iwnis61xatk1",
+                        "cmdb_schema_outband_stub-vsphere",
+                        "cmdb_schema_outband_stub-aws",
+                        "cmdb_schema_outband_stub-alicloud",
+                        "cmdb_schema_outband_stub-tencentcloud",
+                        "cmdb_schema_outband_stub-azurerm"
+                      ],
+                      "selects": [
+                        ".inode.name",
+                        ".inode.schema_id"
+                      ]
+                    }
+                  }
+                ],
+                "objects": [
+                  "$conditions"
+                ],
+                "selects": [
+                  ".inode.name",
+                  ".inode.schema_id"
+                ],
+                "offset": 0
+              }
+            },
+            {
+              "field": ".inode.id",
+              "op": "=-",
+              "value": {
+                "conditions": [
+                  {
+                    "field": "inode.namespace",
+                    "op": "=~",
+                    "value": "/数据自维护"
+                  }
+                ],
+                "objects": [
+                  "$conditions"
+                ],
+                "selects": [
+                  ".inode.name",
+                  ".inode.schema_id"
+                ]
+              }
+            },
+            {
+              "field": ".inode.id",
+              "op": "=-",
+              "value": {
+                "conditions": [
+                  {
+                    "field": ".inode.schema_id",
+                    "op": "=-",
+                    "value": {
+                      "conditions": [
+                        {
+                          "field": ".inode.schema_id",
+                          "op": "=-",
+                          "value": [
+                            "cmdb_schema_schema_x-0"
+                          ]
+                        },
+                        {
+                          "field": "inode.name",
+                          "op": "=~",
+                          "value": "扩展包"
+                        }
+                      ],
+                      "objects": [
+                        "cmdb_schema_plugin-0",
+                        "cmdb_schema_x-schema_plugin"
+                      ],
+                      "sorts": [],
+                      "limit": 50,
+                      "offset": 0,
+                      "multi": true,
+                      "selects": [
+                        ".inode.name",
+                        ".inode.schema_id",
+                        ".inode.lock",
+                        ".inode.mtime",
+                        ".inode.last_editor"
+                      ],
+                      "comment": "",
+                      "function": "db",
+                      "vars": {}
+                    }
+                  }
+                ],
+                "objects": [
+                  "$conditions"
+                ],
+                "sorts": [],
+                "limit": 50,
+                "offset": 0,
+                "multi": true,
+                "selects": [
+                  ".inode.name",
+                  ".inode.schema_id",
+                  ".inode.lock",
+                  ".inode.mtime",
+                  ".inode.last_editor"
+                ],
+                "comment": "",
+                "function": "db",
+                "vars": {}
+              }
+            }
+          ]
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".inode.schema_id"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": false
+  }
+}

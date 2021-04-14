@@ -1,0 +1,42 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1tkysm1m8e31u",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "批量终止任务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.job_list": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__.cancel": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "job_list": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1s5bymf0ds3a1",
+    "cmdb_index-mpage_component_type": "BUSINESS"
+  }
+}

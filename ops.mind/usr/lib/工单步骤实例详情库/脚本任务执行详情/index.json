@@ -1,0 +1,62 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-lhy1pd5uc204",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "脚本任务执行详情",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 0 8px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"script_task_id\":{\"type\":\"string\",\"title\":\"脚本任务ID\"},\"step_id\":{\"type\":\"string\",\"title\":\"工单步骤ID\"}},\"required\":[],\"title\":\"暴露参数\"}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.33569ae7abf9.state.onClick.0.trigger": "{var: children.59da2eeaa991.state.__trigger__.show}",
+      "children.a78d8c97082d.state.onClick.0.trigger": "{var: children.59da2eeaa991.state.__trigger__.show}",
+      "children.59da2eeaa991.children.8b5d19a041d1.state.__lib__": "{var: state.__lib__.context}",
+      "children.33569ae7abf9.state.click": "{var: state.__lib__.script_task_id}",
+      "children.59da2eeaa991.children.173100a2952f.children.827617deecc2.state.__lib__.job_id": "{var: state.__lib__.script_task_id}",
+      "children.59da2eeaa991.children.173100a2952f.children.827617deecc2.state.__lib__.step_id": "{var: state.__lib__.step_id}",
+      "children.59da2eeaa991.children.173100a2952f.state.__lib__.job_id": "{var: state.__lib__.script_task_id}",
+      "children.59da2eeaa991.children.173100a2952f.state.__lib__.step_id": "{var: state.__lib__.step_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "33569ae7abf9"
+      },
+      {
+        "uuid": "59da2eeaa991"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-hulgce5af30z",
+      "cmdb_mpage-8j3k7wkfqjlo"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

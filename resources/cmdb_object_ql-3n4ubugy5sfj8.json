@@ -1,0 +1,86 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-3n4ubugy5sfj8",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "cmdb资源购买模版常用对象查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_ecsTemplate-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.resourcegroup as 资源组",
+        ".data.tag.Key as 标签键",
+        ".data.tag.Value as 标签值",
+        ".data.password as 密码",
+        ".data.autoRenew as 自动续费",
+        ".data.InternetChargeType as 网络收费类型",
+        ".indexes.cmdb_index-hqthvs7zfu6h as 镜像",
+        ".data.hostname as 主机名称",
+        ".data.networkType as 网络类型",
+        ".data.zone as 可用区",
+        ".indexes.cmdb_index-2e0wp2v7psuk2 as 交换机",
+        ".data.instanceType as 机型",
+        ".data.region as 区域",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

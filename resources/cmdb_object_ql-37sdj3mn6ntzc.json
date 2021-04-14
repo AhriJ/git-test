@@ -1,0 +1,92 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-37sdj3mn6ntzc",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "云服务器-业务树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_server-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.monitor as 监控",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
+        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
+        ".data.memory as 内存",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
+        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
+        ".data.cpu as CPU核数",
+        ".indexes.cmdb_index-39833o1pvvbm7 as OS",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
+        ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
+        ".indexes.cmdb_index-external_id as 唯一ID",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
+        ".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

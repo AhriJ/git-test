@@ -1,0 +1,102 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-9mjdw0r3y4ig",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "业务树",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "select",
+                "pkg_id": "cmdb_x-27b31pmpzp61d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "op": "=",
+        "value": null,
+        "is_array": false,
+        "widget": "select",
+        "pkg_id": "cmdb_x-27b31pmpzp61d"
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-2sl8fe4yktkn4",
+        "name": "层级"
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "name": "父节点"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_tree-0\"},{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_parent}\"},{\"field\":\"vars.indexes_parent\",\"op\":\"=\",\"value\":\"$empty\"}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-2sl8fe4yktkn4 as 层级\",\".indexes.cmdb_index-18gs5gfejka3i as 父节点\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_parent\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"父节点\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-rn2ngogupqk0",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-j57tkdf0rdo3"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3gd4qrumxwwuj",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2vfy7nuhkiwdl",
+      "data": null
+    },
+    "ql": "cmdb_ql-62iu9bf78q8a",
+    "object_id": "cmdb_object_ql-2hqf9v6m51ift",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-hpaahbsz8vpi"
+  }
+}

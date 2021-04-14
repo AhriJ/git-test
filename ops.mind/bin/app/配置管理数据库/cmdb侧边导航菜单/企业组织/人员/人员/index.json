@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3maz667ro3ovm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "人员",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-33xvv77zk3hgq"
+    },
+    "children": {
+      "children.ff00295e3ac7.state.__lib__.view_id": "cmdb_view-nmz3d0ar47ud"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

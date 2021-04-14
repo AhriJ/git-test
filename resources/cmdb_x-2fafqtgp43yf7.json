@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2fafqtgp43yf7",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "所属云资源配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "cloud_resource_config",
+    "field_name": "所属云资源配置",
+    "field_type": "id",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "index_id": "cmdb_x-i_3515c8f4",
+    "required": true,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_x-s_2867a7f6",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-2z772awr3qz01",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

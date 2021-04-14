@@ -1,0 +1,52 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2z5aamxz2pthg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "卡片",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.a51f7006f141.state.text": "{var: children.ec36371360ba.state.total_rows}",
+      "children.d7fdddcf4e5e.children.b4e43bc00bf6.state.data.0.y": "{var: children.f2f3c75c6dab.children.a9c02cc405eb.children.7b6faecaaa01.state.total_rows}",
+      "children.d7fdddcf4e5e.children.b4e43bc00bf6.state.data.1.y": "{var: children.f2f3c75c6dab.children.274139ebc174.children.89e6df3fb225.state.total_rows}",
+      "children.d7fdddcf4e5e.children.b4e43bc00bf6.state.data.2.y": "{var: children.f2f3c75c6dab.children.5664197ff84d.children.3c1a5dd79cc4.state.total_rows}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "f2f3c75c6dab"
+      }
+    ],
+    "config": {
+      "style": {
+        "margin": "0 0 10px 0"
+      },
+      "jump": {
+        "vars": []
+      },
+      "resId": ""
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "bordered": true,
+      "hoverable": false,
+      "title": "统计"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3pyxh1hjqu6pz"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_card",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

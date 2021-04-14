@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3ptt0tvhc7yrs",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Flex布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "5035d9e14033"
+      },
+      {
+        "uuid": "e403f18b714a"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "align": "center",
+      "justify": "center",
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2rfaeonfg3mgu",
+      "cmdb_mpage-1y9j9qf9djxcv"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

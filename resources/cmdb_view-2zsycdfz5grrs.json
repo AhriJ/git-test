@@ -1,0 +1,72 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-2zsycdfz5grrs",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "区服",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.aliasname\":{\"type\":\"string\",\"title\":\"简称\"},\".indexes.cmdb_index-3cmb8b5dxiyko\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3iqv2dm9cwahl\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"游戏\"}},\"required\":[\".inode.name\",\".data.aliasname\",\".indexes.cmdb_index-3cmb8b5dxiyko\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.aliasname\":{\"type\":\"string\",\"title\":\"简称\"},\".indexes.cmdb_index-3cmb8b5dxiyko\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3iqv2dm9cwahl\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"游戏\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".data.aliasname\",\".indexes.cmdb_index-3cmb8b5dxiyko\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".data.aliasname\",\".indexes.cmdb_index-3cmb8b5dxiyko\"],\"enumNames\":[\"名称\",\"简称\",\"游戏\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".data.aliasname\":{\"type\":\"string\",\"title\":\"简称\",\"ui:hidden\":\"{{ rootValue.field !== '.data.aliasname' }}\"},\".indexes.cmdb_index-3cmb8b5dxiyko\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3iqv2dm9cwahl\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"游戏\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-3cmb8b5dxiyko' }}\"}}}",
+      "viewData": null,
+      "forms": [
+        {
+          "default": null,
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true,
+          "title": "名称"
+        },
+        {
+          "field": ".data.aliasname",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "简称"
+        },
+        {
+          "field": ".indexes.cmdb_index-3cmb8b5dxiyko",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": "cmdb_x-18im1f5zqnhel",
+          "disabled": true,
+          "widget": "table",
+          "title": "游戏"
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x-2yapjc0wmfq04",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "type": "default",
+            "open_type": "link",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-2zsycdfz5grrs"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-2vr1ki4uizak9"
+  }
+}

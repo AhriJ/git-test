@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3ehmb03o8mr3x",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "资源",
+      "desc": null,
+      "icon": "sever"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "28cc5a8c6745"
+      },
+      {
+        "uuid": "e6759972e705"
+      },
+      {
+        "uuid": "ba7e52c8cbbb"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3qajgop7v17cv",
+      "cmdb_mpage-3rsg6hh2vxbfz",
+      "cmdb_mpage-390xwjadc78sy"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

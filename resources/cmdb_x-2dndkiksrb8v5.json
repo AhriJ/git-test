@@ -1,0 +1,256 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2dndkiksrb8v5",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "服务器",
+    "namespace": "",
+    "descr": "服务器-自定义",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": null,
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-maep9bejx114",
+        "op": "=-",
+        "value": [],
+        "pkg_id": "cmdb_x-2be0tz2k84feb",
+        "widget": "table",
+        "is_array": true
+      },
+      {
+        "field": ".indexes.cmdb_index-system_server",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-290dn7d3j221q",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-bpcupqkeo9v2",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-bpcupqkeo9v2",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-36je1wggke5wj",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-maep9bejx114",
+        "name": "业务"
+      },
+      {
+        "field": ".indexes.cmdb_index-system_server",
+        "name": "关联上报服务器"
+      },
+      {
+        "field": ".indexes.cmdb_index-2c3gcau1bnk85",
+        "name": "内网IP"
+      },
+      {
+        "field": ".indexes.cmdb_index-xgm9kh3lu3mg",
+        "name": "外网IP"
+      },
+      {
+        "field": ".indexes.cmdb_index-y0cucwrj1yoo",
+        "name": "服务器类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-1xiozej60zk1l",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-290dn7d3j221q",
+        "name": "所在VPC"
+      },
+      {
+        "field": ".indexes.cmdb_index-bpcupqkeo9v2",
+        "name": "所在宿主机"
+      },
+      {
+        "field": ".indexes.cmdb_index-3cqrpc9lj8yg8",
+        "name": "带外实例状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-agent_status",
+        "name": "agent状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "name": "关联虚拟交换机"
+      },
+      {
+        "field": ".indexes.cmdb_index-serial_number",
+        "name": "序列号"
+      },
+      {
+        "field": ".indexes.cmdb_index-bpcupqkeo9v2",
+        "name": "所在宿主机"
+      },
+      {
+        "field": ".indexes.cmdb_index-agent_status",
+        "name": "agent状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "name": "关联虚拟交换机"
+      },
+      {
+        "field": ".indexes.cmdb_index-serial_number",
+        "name": "序列号"
+      },
+      {
+        "field": ".data.kernel",
+        "name": "内核版本"
+      },
+      {
+        "field": ".data.os",
+        "name": "操作系统"
+      },
+      {
+        "field": ".data.cpu",
+        "name": "vCPU 核数"
+      },
+      {
+        "field": ".data.memory",
+        "name": "内存（MB）"
+      },
+      {
+        "field": ".data.hostname",
+        "name": "HOSTNAME"
+      },
+      {
+        "field": ".data.agent_version",
+        "name": "Agent版本"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-status",
+        "name": "状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-26mgotsn8v2tg",
+        "name": "操作系统类型"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_x-3bn8no4n0zd71\"},{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-maep9bejx114\",\"op\":\"=\",\"value\":\"{var:vars.indexes_node}\"},{\"field\":\"vars.indexes_node\",\"op\":\"=-\",\"value\":[]},{\"field\":\".indexes.cmdb_index-10tvsknco3zx5\",\"op\":\"=\",\"value\":\"{var:vars.indexes_service}\"},{\"field\":\"vars.indexes_service\",\"op\":\"=-\",\"value\":[\"$empty\"]},{\"field\":\".indexes.cmdb_index-system_server\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_12}\"},{\"field\":\"vars.indexes_index_12\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-290dn7d3j221q\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_17}\"},{\"field\":\"vars.indexes_index_17\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-bpcupqkeo9v2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_18}\"},{\"field\":\"vars.indexes_index_18\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_21}\"},{\"field\":\"vars.indexes_index_21\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-2e0wp2v7psuk2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_22}\"},{\"field\":\"vars.indexes_index_22\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-bpcupqkeo9v2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_18}\"},{\"field\":\"vars.indexes_index_18\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_21}\"},{\"field\":\"vars.indexes_index_21\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-2e0wp2v7psuk2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_22}\"},{\"field\":\"vars.indexes_index_22\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_1}\"},{\"field\":\"vars.indexes_index_1\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-36je1wggke5wj\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_3}\"},{\"field\":\"vars.indexes_index_3\",\"op\":\"=\",\"value\":\"$empty\"}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-maep9bejx114 as 业务\",\".indexes.cmdb_index-system_server as 关联上报服务器\",\".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP\",\".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP\",\".indexes.cmdb_index-y0cucwrj1yoo as 服务器类型\",\".indexes.cmdb_index-1xiozej60zk1l as 所在区域\",\".indexes.cmdb_index-290dn7d3j221q as 所在VPC\",\".indexes.cmdb_index-bpcupqkeo9v2 as 所在宿主机\",\".indexes.cmdb_index-3cqrpc9lj8yg8 as 带外实例状态\",\".indexes.cmdb_index-agent_status as agent状态\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机\",\".indexes.cmdb_index-serial_number as 序列号\",\".indexes.cmdb_index-bpcupqkeo9v2 as 所在宿主机\",\".indexes.cmdb_index-agent_status as agent状态\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机\",\".indexes.cmdb_index-serial_number as 序列号\",\".data.kernel as 内核版本\",\".data.os as 操作系统\",\".data.cpu as vCPU 核数\",\".data.memory as 内存（MB）\",\".data.hostname as HOSTNAME\",\".data.agent_version as Agent版本\",\".indexes.cmdb_index-vendor as 供应商\",\".indexes.cmdb_index-status as 状态\",\".indexes.cmdb_index-26mgotsn8v2tg as 操作系统类型\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_node\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=multi\u0026spec=id-list\u0026widget=select\",\"title\":\"业务\"},\"indexes_service\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-126bupvlxmh7a\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"服务\"},\"indexes_index_12\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-19cwvwpddz5xw\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联上报服务器\"},\"indexes_index_17\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2mnoco73jatdz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所在VPC\"},\"indexes_index_18\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-xl3oc84yxu96\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所在宿主机\"},\"indexes_index_21\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_index_22\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-21o3dndyr8e1n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联虚拟交换机\"},\"indexes_index_1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\"indexes_index_3\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-buvr8bg670p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联资源模板\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-3j91ai3r6buuc",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-35ki9gvnnbouv"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-yoxu632bxyoq",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2qxjqszl046va",
+      "data": null
+    },
+    "ql": "cmdb_ql-28hprp5x4n951",
+    "object_id": "cmdb_object_ql-2hj4pet29qp9f",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_c4f36c3d"
+  }
+}

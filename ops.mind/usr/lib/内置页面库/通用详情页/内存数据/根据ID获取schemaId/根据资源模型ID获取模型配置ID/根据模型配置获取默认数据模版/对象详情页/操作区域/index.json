@@ -1,0 +1,58 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1b7jno4ok4jjj",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "操作区域",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "align": "center",
+      "justify": "space-around",
+      "__trigger__": {}
+    },
+    "children": {
+      "children.f715f0280080.state.onClick.0.trigger": "{var: children.59839fca6632.state.__trigger__.show}",
+      "children.adf1b3d32c80.state.onClick.0.trigger": "{var: children.59839fca6632.state.__trigger__.show}"
+    },
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "dd12105e457e",
+        "udaa00c73ffd": "udaa00c73ffd"
+      },
+      {
+        "md": 24,
+        "uuid": "d14e7c4dc765",
+        "uec0e6818ae5": "uec0e6818ae5"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-32t6jtfob9dxb",
+      "cmdb_mpage-3g3wmc01xpvrr"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

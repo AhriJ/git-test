@@ -1,0 +1,51 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2zypstlgbtoky",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对话框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.91c3bd3540ae.state.onClick.trigger": "{var: children.9ea23dc8708b.state.__trigger__.show}",
+      "children.91c3bd3540ae.state.onClick.args.0": null
+    },
+    "childrenConfig": [
+      {
+        "md": 6,
+        "uuid": "91c3bd3540ae"
+      },
+      {
+        "uuid": "9ea23dc8708b",
+        "md": 6
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-13jffmht49lcy",
+      "cmdb_mpage-2420kambeqrwn"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

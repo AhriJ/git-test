@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2ak9zanfaic9z",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "组织",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-30nmyigfuqrnt"
+    },
+    "children": {
+      "children.617881065602.state.__lib__.view_id": "cmdb_view-2lam91bcmdx6g"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

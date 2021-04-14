@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2ejbps3es59q3",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "自动续费",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "autoRenew",
+    "field_name": "自动续费",
+    "field_type": "boolean",
+    "searched": false,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": true,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": true
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-232r61xber5s6"
+  }
+}

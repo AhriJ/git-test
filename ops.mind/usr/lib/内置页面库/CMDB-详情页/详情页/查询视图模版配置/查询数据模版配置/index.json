@@ -1,0 +1,69 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1pqmk2cyjhd23",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询数据模版配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-1bvxbbmlgh94l",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {
+        "data.batch_edit_data": {},
+        "data.delete_data": {},
+        "data.edit_data": {},
+        "data.new_data": {}
+      },
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.16f208d8e369.state.__lib__.object_id": "{var: state.__row__.data.object_id}",
+      "children.16f208d8e369.state.__lib__.delete_data.wf_id": "{var: state.__row__.data.delete_data.wf_id}",
+      "children.16f208d8e369.state.__lib__.edit_data.wf_id": "{var: state.__row__.data.edit_data.wf_id}",
+      "children.16f208d8e369.children.eb57ae90c9e2.children.70771b3d12e1.children.766d71b04162.state.qlConfig.ql_id": "{var: state.__row__.data.ql}",
+      "children.16f208d8e369.children.eb57ae90c9e2.children.70771b3d12e1.children.766d71b04162.state.qlConfig.ql_input.objects.0": null,
+      "children.16f208d8e369.children.c99c1d5ab986.state.qlConfig.ql_id": "{var: state.__row__.data.ql}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "16f208d8e369"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1gfuwz57nr455"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

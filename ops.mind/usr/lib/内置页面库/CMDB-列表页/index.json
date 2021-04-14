@@ -1,0 +1,61 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-tqhj9nh9tj44",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "CMDB-列表页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"view_id\":{\"type\":\"string\",\"title\":\"视图模版ID\"},\"varsFieldMap\":{\"type\":\"object\",\"properties\":{},\"title\":\"筛选条件初始值\"},\"varsSchemaMap\":{\"type\":\"object\",\"properties\":{},\"title\":\"创建schema字段初始值\"}},\"required\":[]}",
+      "__lib__": {
+        "view_id": "cmdb_view-um9nog57a1su",
+        "varsFieldMap": {},
+        "varsSchemaMap": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.5fa15da0bbf9.children.u1ce4acd1951.children.u36902ca1fa0.children.ub19fbeb377e.config.jump.vars.4": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.state.__vars__.vars.id.value": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.2bddb734b0b1.children.27713c4b1a5d.config.jump.vars.4": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.d0bdbd739e0e.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.2bddb734b0b1.children.b5252851caa1.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.868cbd50f04c.state.input_data.view_id": "{var: state.__lib__.view_id}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.2bddb734b0b1.state.varsFieldMap": "{var: state.__lib__.varsFieldMap}",
+      "children.c8c5898392f4.children.a0920843b335.children.b8e6c56e02ab.children.3b358b057815.children.aa50566b9bd1.children.22381817beb4.children.dc022047ec68.state.input.vars_map": "{var: state.__lib__.varsSchemaMap}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "c8c5898392f4",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2zed17gy7z3e2"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

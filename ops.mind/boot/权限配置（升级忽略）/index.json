@@ -1,0 +1,96 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-26x9d2o84l3t5",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "权限配置（升级忽略）",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.list.1": "NOT_EXPORTED",
+      "state.input.list.2": "NOT_EXPORTED",
+      "state.input.list.3": "NOT_EXPORTED",
+      "state.input.list.4": "NOT_EXPORTED",
+      "state.input.list.5": "NOT_EXPORTED",
+      "state.input.list.6": "NOT_EXPORTED",
+      "state.input.list.7": "NOT_EXPORTED",
+      "state.input.list.8": "NOT_EXPORTED",
+      "state.input.list.9": "NOT_EXPORTED",
+      "state.input.list.10": "NOT_EXPORTED",
+      "state.input.list.11": "NOT_EXPORTED",
+      "state.input.list.12": "NOT_EXPORTED",
+      "state.input.list.13": "NOT_EXPORTED",
+      "state.input.list.14": "NOT_EXPORTED",
+      "state.input.list.15": "NOT_EXPORTED",
+      "state.input.list.16": "NOT_EXPORTED",
+      "state.input.list.17": "NOT_EXPORTED",
+      "state.input.list.18": "NOT_EXPORTED",
+      "state.input.list.19": "NOT_EXPORTED",
+      "state.input.list.20": "NOT_EXPORTED",
+      "state.input.list.21": "NOT_EXPORTED",
+      "state.input.list.22": "NOT_EXPORTED",
+      "state.input.list.23": "NOT_EXPORTED",
+      "state.input.list.24": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-4uedtiggetan",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "input": {
+        "list": [
+          "{\"inode\":{\"id\":\"cmdb_u_mpage_grant-vg15wpme2ylc\",\"schema_id\":\"cmdb_schema_u_mpage_grant-0\",\"name\":\"管理员黑名单\"},\"data\":{},\"indexes\":{\"cmdb_index-1ha10lmxevbq7\":[\"cmdb_mpage-3s1eg420cmfd3\"],\"cmdb_index-1eidp4p9mgzz9\":[]}}",
+          "{\"inode\":{\"id\":\"cmdb_x-3qb19zxg0kz2o\",\"schema_id\":\"cmdb_schema_x-35ekw1phtb491\",\"name\":\"cmdb侧边导航菜单\"},\"data\":{\"hide\":false,\"icon\":null,\"idList\":null,\"is_model_create\":false,\"mount_id\":\"cmdb_mpage-1mjzna1g1l8ua\",\"navs_id\":\"cmdb_mpage-1e1kik0cp4ahm\",\"read_only\":false,\"type\":\"pane\"},\"indexes\":{\"cmdb_index-e57hbfqqbbl1\":[]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-admin\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"对象级管理员授权\",\"namespace\":\"/系统\"},\"data\":{\"scope\":\"{\\\"objects\\\":[\\\"$conditions\\\"]}\",\"type\":\"positive\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-create\",\"cmdb_operation-read\",\"cmdb_operation-update\",\"cmdb_operation-delete\",\"cmdb_operation-delete_bucket_file\",\"cmdb_operation-get_bucket_file\",\"cmdb_operation-put_bucket_file\",\"cmdb_operation-server_login_root\",\"cmdb_operation-server_session_monitor\",\"cmdb_operation-server_session_terminate\",\"cmdb_operation-csb9odvhtce5\",\"cmdb_operation-1tj2t5432t3yc\",\"cmdb_operation-1r69b372a5uir\",\"cmdb_operation-archive\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-2qqdrokx12k81\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"查看自己\",\"namespace\":\"/cmdb\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\"inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":[\\\"cmdb_schema_schema_x-0\\\"]},{\\\"field\\\":\\\"inode.name\\\",\\\"op\\\":\\\"=~\\\",\\\"value\\\":\\\"人员账户\\\"}],\\\"objects\\\":[\\\"cmdb_schema_account-0\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}},{\\\"field\\\":\\\"inode.id\\\",\\\"op\\\":\\\"=\\\",\\\"value\\\":\\\"$me\\\"}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\"},\"indexes\":{}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-z3suade9jr98\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"授权白名单\",\"namespace\":\"/cmdb\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":[\\\"cmdb_schema_x-ghkfn72ezw6k\\\",\\\"cmdb_schema_view-0\\\",\\\"cmdb_schema_mcomponent-1\\\",\\\"cmdb_schema_mpage-1\\\",\\\"cmdb_schema_u_mpage_grant-0\\\",\\\"cmdb_schema_lock-0\\\",\\\"cmdb_schema_index-0\\\",\\\"cmdb_schema_ql-0\\\",\\\"cmdb_schema_object_ql-0\\\",\\\"cmdb_schema_workflow-0\\\",\\\"cmdb_schema_component-0\\\",\\\"cmdb_schema_account-0\\\",\\\"cmdb_schema_organization-0\\\",\\\"cmdb_schema_grant-0\\\",\\\"cmdb_schema_schema_x-0\\\",\\\"cmdb_schema_server_session-0\\\",\\\"cmdb_schema_operation-0\\\",\\\"number\\\",\\\"integer\\\",\\\"string\\\",\\\"text\\\"]}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\"],\"cmdb_index-parent_grants\":[\"cmdb_grant-2qqdrokx12k81\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-3rd9rtkr1k2ou\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"Demo用户只读授权\"},\"data\":{\"scope\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\",\"cmdb_schema_mcomponent-1\",\"cmdb_schema_lock-0\",\"cmdb_schema_operation-0\",\"cmdb_schema_grant-0\",\"cmdb_schema_mpage-1\",\"cmdb_schema_organization-0\",\"cmdb_schema_account-0\",\"cmdb_schema_index-0\"]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}},\"type\":\"positive\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\"],\"cmdb_index-parent_grants\":[]}}",
+          "{\"inode\":{\"id\":\"cmdb_x-1m3ftez8de1ld\",\"schema_id\":\"cmdb_schema_x-1w2aoge344wug\",\"name\":\"admin\",\"namespace\":\"/cmdb\"},\"data\":{\"type\":\"positive\",\"flag\":{}},\"indexes\":{\"cmdb_index-3b01as46nc0b7\":true,\"cmdb_index-3o1x07bxl9qgz\":\"cmdb_grant-2w16k54bnbobd\",\"cmdb_index-emyea79q2439\":false,\"cmdb_index-operations\":[\"cmdb_operation-read\",\"cmdb_operation-server_login_root\",\"cmdb_operation-server_session_monitor\",\"cmdb_operation-server_session_terminate\",\"cmdb_operation-server_login\",\"cmdb_operation-update\",\"cmdb_operation-create\",\"cmdb_operation-delete\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-1v9c4lr6x7ld\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"服务器会话默认数据模板-授权\"},\"data\":{\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":[\\\"cmdb_schema_schema_x-0\\\"]},{\\\"field\\\":\\\".inode.name\\\",\\\"op\\\":\\\"=~\\\",\\\"value\\\":\\\"服务器\\\"}],\\\"objects\\\":[\\\"cmdb_schema_server_session-0\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\",\"type\":\"positive\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-server_session_monitor\",\"cmdb_operation-server_session_terminate\",\"cmdb_operation-read\"],\"cmdb_index-parent_grants\":[]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-3rpt3804wucvu\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"工作流执行权限\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\"$or\\\",\\\"value\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=\\\",\\\"value\\\":\\\"cmdb_schema_wf_job-0\\\"},{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=~\\\",\\\"value\\\":\\\"^cmdb_schema_wf_job_unit-0\\\"}]}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\",\"cmdb_operation-update\",\"cmdb_operation-create\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-272pnd0pfi2hj\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"查看服务器\"},\"data\":{\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":\\\"{\\\\\\\"conditions\\\\\\\":[{\\\\\\\"field\\\\\\\":\\\\\\\".inode.schema_id\\\\\\\",\\\\\\\"op\\\\\\\":\\\\\\\"=-\\\\\\\",\\\\\\\"value\\\\\\\":[\\\\\\\"cmdb_schema_schema_x-0\\\\\\\"]}],\\\\\\\"objects\\\\\\\":[\\\\\\\"cmdb_schema_server-0\\\\\\\"],\\\\\\\"sorts\\\\\\\":[],\\\\\\\"limit\\\\\\\":50,\\\\\\\"offset\\\\\\\":0,\\\\\\\"multi\\\\\\\":true,\\\\\\\"selects\\\\\\\":[\\\\\\\".inode.name\\\\\\\",\\\\\\\".inode.schema_id\\\\\\\",\\\\\\\".inode.lock\\\\\\\",\\\\\\\".inode.mtime\\\\\\\",\\\\\\\".inode.last_editor\\\\\\\"],\\\\\\\"comment\\\\\\\":\\\\\\\"请选择资源类型\\\\\\\"}\\\"}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\"}\",\"type\":\"positive\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\",\"cmdb_operation-delete\",\"cmdb_operation-server_login_root\",\"cmdb_operation-server_session_monitor\",\"cmdb_operation-server_session_terminate\",\"cmdb_operation-csb9odvhtce5\",\"cmdb_operation-1tj2t5432t3yc\",\"cmdb_operation-1r69b372a5uir\",\"cmdb_operation-create\",\"cmdb_operation-update\"],\"cmdb_index-parent_grants\":[\"cmdb_grant-369vomi8mxam6\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-v3x8wmnygfyn\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"Agent上报服务器只读权限\"},\"data\":{\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":[\\\"cmdb_schema_schema_x-0\\\"]},{\\\"field\\\":\\\".inode.name\\\",\\\"op\\\":\\\"=~\\\",\\\"value\\\":\\\"Agent\\\"}],\\\"objects\\\":[\\\"cmdb_schema_server-0\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\",\"type\":\"positive\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\"],\"cmdb_index-parent_grants\":[]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-l67yobpvsyoz\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"read_only\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"objects\\\":[\\\"$conditions\\\"]}\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\"],\"cmdb_index-parent_grants\":[\"cmdb_grant-3rpt3804wucvu\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_organization-27ucm9i0om75s\",\"schema_id\":\"cmdb_schema_organization-0\",\"name\":\"只读\"},\"data\":{},\"indexes\":{\"cmdb_index-grants\":[\"cmdb_grant-z3suade9jr98\",\"cmdb_grant-l67yobpvsyoz\"],\"cmdb_index-parent_organization\":\"\"}}",
+          "{\"inode\":{\"id\":\"cmdb_organization-1gexcjl9cnvtv\",\"schema_id\":\"cmdb_schema_organization-0\",\"name\":\"管理员\"},\"data\":{},\"indexes\":{\"cmdb_index-grants\":[\"cmdb_grant-admin\"],\"cmdb_index-parent_organization\":\"\"}}",
+          "{\"inode\":{\"org\":\"\",\"id\":\"cmdb_x-2m98ofjpzdlmh\",\"schema_id\":\"cmdb_schema_x-d14i1fk03omi\",\"name\":\"只读\",\"namespace\":\"\",\"descr\":\"\",\"ctime\":0,\"mtime\":0,\"creator\":\"\",\"last_editor\":\"\",\"archived\":false,\"lock\":\"\"},\"data\":{},\"indexes\":{\"cmdb_index-3b01as46nc0b7\":true,\"cmdb_index-rbys8yhm9dak\":\"cmdb_organization-27ucm9i0om75s\",\"cmdb_index-tuyqim7fms8f\":[\"cmdb_x-29tzs4cpxdluv\"]}}",
+          "{\"inode\":{\"org\":\"\",\"id\":\"cmdb_x-1k1d24arbkh0h\",\"schema_id\":\"cmdb_schema_x-d14i1fk03omi\",\"name\":\"管理员\",\"namespace\":\"\",\"descr\":\"\",\"ctime\":0,\"mtime\":0,\"creator\":\"\",\"last_editor\":\"\",\"archived\":false,\"lock\":\"\"},\"data\":{},\"indexes\":{\"cmdb_index-3b01as46nc0b7\":true,\"cmdb_index-rbys8yhm9dak\":\"cmdb_organization-1gexcjl9cnvtv\",\"cmdb_index-tuyqim7fms8f\":[\"cmdb_x-1m3ftez8de1ld\"]}}",
+          "{\"inode\":{\"org\":\"\",\"id\":\"cmdb_x-29tzs4cpxdluv\",\"schema_id\":\"cmdb_schema_x-1w2aoge344wug\",\"name\":\"read_only\",\"namespace\":\"/cmdb\",\"descr\":\"\",\"ctime\":0,\"mtime\":0,\"creator\":\"\",\"last_editor\":\"\",\"archived\":false,\"lock\":\"\"},\"data\":{\"type\":\"positive\"},\"indexes\":{\"cmdb_index-3b01as46nc0b7\":true,\"cmdb_index-3o1x07bxl9qgz\":\"cmdb_grant-l67yobpvsyoz\",\"cmdb_index-operations\":[\"cmdb_operation-read\"]}}",
+          "{\"inode\":{\"org\":\"\",\"id\":\"cmdb_account-5boe4795rkv4\",\"schema_id\":\"cmdb_schema_account-0\",\"name\":\"jumpbox\",\"namespace\":\"/jumpbox\",\"descr\":\"\",\"ctime\":0,\"mtime\":0,\"creator\":\"\",\"last_editor\":\"\",\"archived\":false,\"lock\":\"\"},\"data\":{},\"indexes\":{\"cmdb_index-account_username\":\"jumpbox\",\"cmdb_index-email_address\":\"jumpbox@opsmind.com\",\"cmdb_index-organizations\":[\"cmdb_organization-27ucm9i0om75s\"],\"cmdb_index-third_party_auth\":\"cmdb_third_party_auth-ldap_default\"}}",
+          "{\"inode\":{\"org\":\"\",\"id\":\"cmdb_x-2ay3z6g3ockvw\",\"schema_id\":\"cmdb_schema_x-1w2aoge344wug\",\"name\":\"查看跳板机审计日志\",\"namespace\":\"/cmdb\",\"descr\":\"\",\"ctime\":0,\"mtime\":0,\"creator\":\"\",\"last_editor\":\"\",\"archived\":false,\"lock\":\"\"},\"data\":{\"type\":\"positive\"},\"indexes\":{\"cmdb_index-3b01as46nc0b7\":true,\"cmdb_index-3o1x07bxl9qgz\":\"cmdb_grant-cu8zj8qb6ru\",\"cmdb_index-emyea79q2439\":false,\"cmdb_index-operations\":[\"cmdb_operation-update\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-cu8zj8qb6ru\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"查看jumpbox审计日志\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"conditions\\\":[{\\\"field\\\":\\\"inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":{\\\"conditions\\\":[{\\\"field\\\":\\\".inode.schema_id\\\",\\\"op\\\":\\\"=-\\\",\\\"value\\\":[\\\"cmdb_schema_schema_x-0\\\"]},{\\\"field\\\":\\\".inode.id\\\",\\\"op\\\":\\\"=~\\\",\\\"value\\\":\\\"cmdb_schema_server_session_command_record-0\\\"}],\\\"objects\\\":[\\\"cmdb_schema_server_session_command_record-0\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}}],\\\"objects\\\":[\\\"$conditions\\\"],\\\"sorts\\\":[],\\\"limit\\\":50,\\\"offset\\\":0,\\\"multi\\\":true,\\\"selects\\\":[\\\".inode.name\\\",\\\".inode.schema_id\\\",\\\".inode.lock\\\",\\\".inode.mtime\\\",\\\".inode.last_editor\\\"],\\\"comment\\\":\\\"\\\",\\\"function\\\":\\\"db\\\",\\\"vars\\\":{}}\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-read\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_grant-2w16k54bnbobd\",\"schema_id\":\"cmdb_schema_grant-0\",\"name\":\"admin\"},\"data\":{\"type\":\"positive\",\"scope\":\"{\\\"objects\\\":[\\\"$conditions\\\"]}\"},\"indexes\":{\"cmdb_index-operations\":[\"cmdb_operation-server_login_root\",\"cmdb_operation-server_session_monitor\",\"cmdb_operation-server_session_terminate\",\"cmdb_operation-update\",\"cmdb_operation-create\",\"cmdb_operation-read\",\"cmdb_operation-delete\",\"cmdb_operation-delete_bucket_file\",\"cmdb_operation-get_bucket_file\",\"cmdb_operation-put_bucket_file\",\"cmdb_operation-csb9odvhtce5\",\"cmdb_operation-1tj2t5432t3yc\",\"cmdb_operation-1r69b372a5uir\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_organization-3mgo1v7fydru2\",\"schema_id\":\"cmdb_schema_organization-0\",\"name\":\"普通用户\"},\"data\":{},\"indexes\":{\"cmdb_index-grants\":[\"cmdb_grant-z3suade9jr98\",\"cmdb_grant-l67yobpvsyoz\"]}}",
+          "{\"inode\":{\"id\":\"cmdb_third_party_auth-ldap_default\",\"schema_id\":\"cmdb_schema_third_party_auth-0\",\"name\":\"默认 LDAP 认证\",\"namespace\":\"/TPA\"},\"data\":{\"auth_type\":\"LDAP\",\"redirect_url\":\"https://example.private.opsmind.com:32717/#/cmdb\",\"om_auth_key\":\"auth_key\",\"auth_redirect_url\":\"https://127.0.0.1:80/\",\"ldap_auth\":{\"user_filter\":\"(cn=%s)\",\"user_id_attribute\":\"cn\",\"base_dn\":\"dc=example,dc=com\",\"bind_dn\":\"cn=Manager,dc=example,dc=com\",\"bind_password\":\"PASSWORD\",\"endpoint\":\"127.0.0.1:389\"}},\"indexes\":{}}"
+        ]
+      },
+      "output": {
+        "output": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2geu3g6636m8s",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "查看工作流任务",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=-",
+          "value": [
+            "cmdb_schema_wf_job-0"
+          ]
+        },
+        {
+          "field": ".indexes.cmdb_index-wf",
+          "op": "=",
+          "value": "{var:vars.wf}"
+        },
+        {
+          "field": ".indexes.cmdb_index-wf_job_state",
+          "op": "=",
+          "value": "{var:vars.state}"
+        },
+        {
+          "field": "vars.wf",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.state",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "inode.ctime",
+          "op": "=",
+          "value": "{var:vars.ctime}"
+        },
+        {
+          "field": "vars.ctime",
+          "op": "\u003e",
+          "value": 1
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name",
+        ".indexes.cmdb_index-wf.inode.name as 关联工作流",
+        ".indexes.cmdb_index-wf.inode.id as 关联工作流",
+        ".indexes.cmdb_index-wf_job_state as 工作流任务状态",
+        ".inode.mtime",
+        ".inode.last_editor"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "wf": {
+                "type": "string",
+                "title": "关联工作流",
+                "format": "ql-selector?id=cmdb_ql-1teb6fuur51nd\u0026select_mode=single"
+              },
+              "state": {
+                "type": "string",
+                "title": "任务状态",
+                "enum": [
+                  "$empty",
+                  "PENDING",
+                  "RUNNING",
+                  "FINISHED"
+                ],
+                "enumNames": [
+                  "所有状态",
+                  "等待中",
+                  "运行中",
+                  "已完成"
+                ]
+              },
+              "ctime": {
+                "type": "number",
+                "title": "创建时间",
+                "format": "date-time",
+                "default": 0
+              }
+            },
+            "required": []
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-1sgxmivu46ne6",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "MongoDB",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.max_connections\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_connections\"},\".data.max_iops\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_iops\"},\".data.expire_time\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"过期时间（时间戳）\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-status\":{\"type\":\"string\",\"title\":\"状态\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"}},\"required\":[\".inode.name\",\".data.max_connections\",\".data.max_iops\",\".data.expire_time\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-status\",\".indexes.cmdb_index-sync_marker\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".data.max_connections\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_connections\"},\".data.max_iops\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_iops\"},\".data.expire_time\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"过期时间（时间戳）\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-status\":{\"type\":\"string\",\"title\":\"状态\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".data.max_connections\",\".data.max_iops\",\".data.expire_time\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-status\",\".indexes.cmdb_index-sync_marker\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".data.max_connections\",\".data.max_iops\",\".data.expire_time\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-status\",\".indexes.cmdb_index-sync_marker\"],\"enumNames\":[\"名称\",\"max_connections\",\"max_iops\",\"过期时间（时间戳）\",\"供应商\",\"外部ID\",\"状态\",\"同步标记\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".data.max_connections\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_connections\",\"ui:hidden\":\"{{ rootValue.field !== '.data.max_connections' }}\"},\".data.max_iops\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"max_iops\",\"ui:hidden\":\"{{ rootValue.field !== '.data.max_iops' }}\"},\".data.expire_time\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"过期时间（时间戳）\",\"ui:hidden\":\"{{ rootValue.field !== '.data.expire_time' }}\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-vendor' }}\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-external_id' }}\"},\".indexes.cmdb_index-status\":{\"type\":\"string\",\"title\":\"状态\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-status' }}\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-sync_marker' }}\"}}}",
+      "viewData": null,
+      "forms": [
+        {
+          "default": null,
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true,
+          "title": "名称"
+        },
+        {
+          "field": ".data.max_connections",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "max_connections"
+        },
+        {
+          "field": ".data.max_iops",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "max_iops"
+        },
+        {
+          "field": ".data.expire_time",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "过期时间（时间戳）"
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": "table",
+          "disabled": true,
+          "title": "供应商"
+        },
+        {
+          "field": ".indexes.cmdb_index-external_id",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "外部ID"
+        },
+        {
+          "field": ".indexes.cmdb_index-status",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "状态"
+        },
+        {
+          "field": ".indexes.cmdb_index-sync_marker",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "同步标记"
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x-1cju22cxshoug",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "type": "default",
+            "open_type": "link",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-1sgxmivu46ne6"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-2drpojqo58rbx"
+  }
+}

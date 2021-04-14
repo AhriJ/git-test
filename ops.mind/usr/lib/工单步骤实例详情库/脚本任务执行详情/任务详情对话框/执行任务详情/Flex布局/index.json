@@ -1,0 +1,83 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-34to0g3tqept",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Flex布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.35bd38804644.state.onClick.trigger": "{var: children.c43212be9acb.state.__trigger__.show}",
+      "children.4c7b00edeb30.state.description": "{var: children.a999b14fbc5a.state.output.message}",
+      "children.4c7b00edeb30.state.message": "{var: children.a999b14fbc5a.state.output.result_name}",
+      "children.527dd98a6b89.state.onClick.0.trigger": "{var: children.a999b14fbc5a.state.__trigger__.createWfJob}",
+      "children.7862aad2f876.children.920ced43f121.state.onClick.trigger": "{var: children.2c62eaf3468c.state.__trigger__.show}",
+      "children.7862aad2f876.children.af31843fc72c.state.onClick.trigger": "{var: children.2c62eaf3468c.state.__trigger__.show}",
+      "children.a999b14fbc5a.state.onFail.0.trigger": "{var: children.4c7b00edeb30.state.__trigger__.error}",
+      "children.a999b14fbc5a.state.onSuccess.0.trigger": "{var: children.4c7b00edeb30.state.__trigger__.success}",
+      "children.aac8ce949048.state.onClick.trigger": "{var: children.2c62eaf3468c.state.__trigger__.show}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "35bd38804644"
+      },
+      {
+        "uuid": "7862aad2f876"
+      },
+      {
+        "uuid": "527dd98a6b89"
+      },
+      {
+        "uuid": "535ec2039240"
+      },
+      {
+        "uuid": "2c62eaf3468c"
+      },
+      {
+        "uuid": "c43212be9acb"
+      },
+      {
+        "uuid": "a999b14fbc5a"
+      },
+      {
+        "uuid": "4c7b00edeb30"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {
+        "margin": "0 0 20px 0"
+      }
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "direction": "row"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-4xjv9zjcjoit",
+      "cmdb_mpage-21div7lpr0p5r",
+      "cmdb_mpage-jxiro1b6g0v8",
+      "cmdb_mpage-t2u3al95srw2",
+      "cmdb_mpage-1dx2xpnz5tr35",
+      "cmdb_mpage-2k38mtbhdl9d2",
+      "cmdb_mpage-2vbtsfnziiupe",
+      "cmdb_mpage-ehhtugkddixa"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

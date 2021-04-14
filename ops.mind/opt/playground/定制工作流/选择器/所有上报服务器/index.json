@@ -1,0 +1,45 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-bk2wk1hvhvv4",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "所有上报服务器",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "childrenConfig": [
+      {
+        "uuid": "1237fd0f130a",
+        "index": 0
+      }
+    ],
+    "config": {
+      "jump": {},
+      "resId": "cmdb_ql-183wyzboqgi6r",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "fragment": true,
+      "setting": {
+        "limit": 1000,
+        "sorts": []
+      }
+    },
+    "children": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2kwldxjckjki4"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

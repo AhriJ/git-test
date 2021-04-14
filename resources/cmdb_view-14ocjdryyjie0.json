@@ -1,0 +1,120 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-14ocjdryyjie0",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "服务器详情页",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-2c3gcau1bnk85\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"title\":\"内网IP\",\"default\":[]},\".indexes.cmdb_index-y0cucwrj1yoo\":{\"type\":\"string\",\"enum\":[\"虚拟机\",\"宿主机\",\"裸金属\",\"云主机\"],\"title\":\"服务器类型\"},\".indexes.cmdb_index-3cqrpc9lj8yg8\":{\"type\":\"string\",\"title\":\"带外实例状态\"},\".indexes.cmdb_index-agent_status\":{\"type\":\"string\",\"title\":\"agent状态\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-status\":{\"type\":\"string\",\"title\":\"状态\"},\".indexes.cmdb_index-26mgotsn8v2tg\":{\"type\":\"string\",\"enum\":[\"Linux\",\"Windows\"],\"default\":\"Linux\",\"title\":\"操作系统类型\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-2c3gcau1bnk85\",\".indexes.cmdb_index-y0cucwrj1yoo\",\".indexes.cmdb_index-3cqrpc9lj8yg8\",\".indexes.cmdb_index-agent_status\",\".indexes.cmdb_index-3cqrpc9lj8yg8\",\".indexes.cmdb_index-agent_status\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-status\",\".indexes.cmdb_index-26mgotsn8v2tg\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-2c3gcau1bnk85\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"title\":\"内网IP\",\"default\":[]},\".indexes.cmdb_index-y0cucwrj1yoo\":{\"type\":\"string\",\"enum\":[\"虚拟机\",\"宿主机\",\"裸金属\",\"云主机\"],\"title\":\"服务器类型\"},\".indexes.cmdb_index-3cqrpc9lj8yg8\":{\"type\":\"string\",\"title\":\"带外实例状态\"},\".indexes.cmdb_index-agent_status\":{\"type\":\"string\",\"title\":\"agent状态\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-status\":{\"type\":\"string\",\"title\":\"状态\"},\".indexes.cmdb_index-26mgotsn8v2tg\":{\"type\":\"string\",\"enum\":[\"Linux\",\"Windows\"],\"default\":\"Linux\",\"title\":\"操作系统类型\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-2c3gcau1bnk85\",\".indexes.cmdb_index-y0cucwrj1yoo\",\".indexes.cmdb_index-3cqrpc9lj8yg8\",\".indexes.cmdb_index-agent_status\",\".indexes.cmdb_index-3cqrpc9lj8yg8\",\".indexes.cmdb_index-agent_status\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-status\",\".indexes.cmdb_index-26mgotsn8v2tg\"]}",
+      "viewData": null,
+      "forms": [
+        {
+          "default": null,
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-2c3gcau1bnk85",
+          "ui_status": "show",
+          "default": [],
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-y0cucwrj1yoo",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-3cqrpc9lj8yg8",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-agent_status",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-3cqrpc9lj8yg8",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-agent_status",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": "table",
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-external_id",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-sync_marker",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-status",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-26mgotsn8v2tg",
+          "ui_status": "show",
+          "default": "Linux",
+          "widget": null,
+          "disabled": true
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "details",
+      "data_id": "cmdb_x-26chij9945db7"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-1rvfxvkuc1e3z",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-1hsbugzycs31a"
+  }
+}

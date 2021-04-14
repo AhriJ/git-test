@@ -1,0 +1,133 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_u_webhook_manage-0_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "webhook管理默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "mpage": {},
+    "advanced": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3vo9i3cc3hk1p",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务节点\"},\".indexes.cmdb_index-1a6ad1dt6cl66\":{\"type\":\"string\",\"enum\":[\"wechat\",\"slack\"],\"title\":\"通知方式\"},\".indexes.cmdb_index-k1fvsgfi2zw1\":{\"type\":\"string\",\"title\":\"告警地址\"},\".indexes.cmdb_index-3fsgbvko7e0pc\":{\"type\":\"string\",\"title\":\"告警级别\"}},\"required\":[\".inode.name\"]}"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2v1qezcx9029u",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务节点\"},\".indexes.cmdb_index-1a6ad1dt6cl66\":{\"type\":\"string\",\"enum\":[\"wechat\",\"slack\"],\"title\":\"通知方式\"},\".indexes.cmdb_index-k1fvsgfi2zw1\":{\"type\":\"string\",\"title\":\"告警地址\"},\".indexes.cmdb_index-3fsgbvko7e0pc\":{\"type\":\"string\",\"title\":\"告警级别\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}"
+    },
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-2rutvr70sraje",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".indexes.cmdb_index-18gs5gfejka3i\",\".indexes.cmdb_index-1a6ad1dt6cl66\",\".indexes.cmdb_index-k1fvsgfi2zw1\",\".indexes.cmdb_index-3fsgbvko7e0pc\"],\"enumNames\":[\"名称\",\"描述\",\"业务节点\",\"通知方式\",\"告警地址\",\"告警级别\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务节点\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-18gs5gfejka3i' }}\"},\".indexes.cmdb_index-1a6ad1dt6cl66\":{\"type\":\"string\",\"enum\":[\"wechat\",\"slack\"],\"title\":\"通知方式\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-1a6ad1dt6cl66' }}\"},\".indexes.cmdb_index-k1fvsgfi2zw1\":{\"type\":\"string\",\"title\":\"告警地址\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-k1fvsgfi2zw1' }}\"},\".indexes.cmdb_index-3fsgbvko7e0pc\":{\"type\":\"string\",\"title\":\"告警级别\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-3fsgbvko7e0pc' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-25qav703t6qhx"
+    },
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "show": true,
+        "pkg_id": "cmdb_x-2be0tz2k84feb",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-1a6ad1dt6cl66",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-k1fvsgfi2zw1",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-3fsgbvko7e0pc",
+        "show": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "name": "业务节点"
+      },
+      {
+        "field": ".indexes.cmdb_index-1a6ad1dt6cl66",
+        "name": "通知方式"
+      },
+      {
+        "field": ".indexes.cmdb_index-k1fvsgfi2zw1",
+        "name": "告警地址"
+      },
+      {
+        "field": ".indexes.cmdb_index-3fsgbvko7e0pc",
+        "name": "告警级别"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "editable": true,
+    "ql": "cmdb_ql-1aamnu71pba3p",
+    "object_id": "cmdb_object_ql-2grl3v2kwnrio",
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_webhook_manage-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-18gs5gfejka3i as 业务节点\",\".indexes.cmdb_index-1a6ad1dt6cl66 as 通知方式\",\".indexes.cmdb_index-k1fvsgfi2zw1 as 告警地址\",\".indexes.cmdb_index-3fsgbvko7e0pc as 告警级别\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务节点\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-367qvuotoeso1"
+  }
+}

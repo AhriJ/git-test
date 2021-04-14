@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2h4587tjguher",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "企业微信组织架构",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "weChatDep",
+    "name": "企业微信组织架构",
+    "describe": null,
+    "group": null,
+    "xx": null,
+    "pkg_id": "cmdb_x-22uhrs9nypg36",
+    "workflows": {
+      "create": "cmdb_workflow-1pl79itulnlmb",
+      "delete": "cmdb_workflow-2rpqu7r6ghcgh",
+      "update": "cmdb_workflow-wwxkuf5jqntv",
+      "batch_update": "cmdb_workflow-2vr9bi4dvj9l2"
+    },
+    "ql_id": "cmdb_ql-2rjqy81xbfsh2"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_weChatDep-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-150iv1qwuuckb"
+    ]
+  }
+}

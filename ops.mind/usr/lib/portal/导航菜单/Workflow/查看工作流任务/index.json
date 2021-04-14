@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1un9ws0v1egac",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查看工作流任务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "b9966177a292"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "desc": "简单易用的可视化流程编排界面",
+      "hide": true,
+      "icon": "",
+      "name": "查看工作流任务"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3az9qk76cy8ro"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

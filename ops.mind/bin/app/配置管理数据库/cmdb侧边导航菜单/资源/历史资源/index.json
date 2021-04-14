@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-390xwjadc78sy",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "历史资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "历史资源",
+      "desc": null,
+      "icon": null
+    },
+    "childrenConfig": [
+      {
+        "uuid": "e2708ba4bfc4"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3b0j7f3g4864o"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

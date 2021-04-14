@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-242vdxkr5qom1",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "用户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "user",
+    "name": "用户",
+    "describe": null,
+    "group": "权限",
+    "xx": null,
+    "pkg_id": "cmdb_x-3rkgvqqlokitq",
+    "workflows": {
+      "create": "cmdb_workflow-2j8qdnp54rv2s",
+      "delete": "cmdb_workflow-3lmhrif4yh6bo",
+      "update": "cmdb_workflow-1a0gy2z6lion6",
+      "batch_update": "cmdb_workflow-416dbas86p0a"
+    },
+    "ql_id": "cmdb_ql-3c4frviu4cx10"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_user-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-i_b9565dc5"
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2j8h268wg6jkg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "工作流",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "b742b40c2d63"
+      },
+      {
+        "uuid": "bb3971f158f2"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "desc": "简单易用的可视化流程编排界面",
+      "icon": "rocket",
+      "name": "工作流"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-pe1fby2gka74",
+      "cmdb_mpage-19z9zn4he459d"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

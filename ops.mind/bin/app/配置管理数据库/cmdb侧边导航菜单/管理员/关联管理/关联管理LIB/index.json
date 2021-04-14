@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3eufzk9vrz66x",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "关联管理LIB",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_mpage-l7onz8vzwyxh",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.efefaa721990.state.__lib__.model_path": "cmdb_app=__ROOT__.923e1ed47e60.76c690a67126.5e182e76b501\u0026schema_id=$0"
+    },
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

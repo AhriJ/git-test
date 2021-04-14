@@ -1,0 +1,273 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2fzxs1s35t6t7",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云服务器",
+    "namespace": "",
+    "descr": "游离资源",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "name": "业务树"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "name": "关联云资源配置"
+      },
+      {
+        "field": ".indexes.cmdb_index-26mgotsn8v2tg",
+        "name": "系统类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-3bxtoukdedsor",
+        "name": "虚拟交换机"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "所属供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "带外ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "name": "所属云资源配置"
+      },
+      {
+        "field": ".indexes.cmdb_index-2c3gcau1bnk85",
+        "name": "内网IP"
+      },
+      {
+        "field": ".indexes.cmdb_index-1yhey410ex3f2",
+        "name": "VPC"
+      },
+      {
+        "field": ".data.memory",
+        "name": "内存"
+      },
+      {
+        "field": ".indexes.cmdb_index-dzm41ig72dbn",
+        "name": "带外实例类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-3nenrn062pzmn",
+        "name": "资源组"
+      },
+      {
+        "field": ".data.cpu",
+        "name": "CPU核数"
+      },
+      {
+        "field": ".indexes.cmdb_index-39833o1pvvbm7",
+        "name": "OS"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-xgm9kh3lu3mg",
+        "name": "外网IP"
+      },
+      {
+        "field": ".indexes.cmdb_index-1yam7nytu0lzp",
+        "name": "镜像"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "所属供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "关联云服务"
+      },
+      {
+        "field": ".indexes.cmdb_index-25d3b7mowaj2c",
+        "name": "关联数据盘"
+      },
+      {
+        "field": ".indexes.cmdb_index-1k4ffo3pyiwrv",
+        "name": "付费类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "唯一ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-3ly0jzx6ccciz",
+        "name": "系统盘"
+      },
+      {
+        "field": ".indexes.cmdb_index-zone",
+        "name": "可用区"
+      },
+      {
+        "field": ".indexes.cmdb_index-1h2jo6o503e6n",
+        "name": "到期时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-3si1uf8kjn4xt",
+        "name": "带外实例状态"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_resource_config",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-3bxtoukdedsor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_resource_config",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-1yhey410ex3f2",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-1yam7nytu0lzp",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-25d3b7mowaj2c",
+                "op": "=-",
+                "value": [
+                  "$empty"
+                ],
+                "is_array": true,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-3ly0jzx6ccciz",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_server-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_config\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_subnet\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_config\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_vpc\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_imageid\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_data_disks\",\"op\":\"=-\",\"value\":[\"$empty\"]},{\"field\":\"vars.indexes_system_disk\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_config}\"},{\"field\":\".indexes.cmdb_index-3bxtoukdedsor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_subnet}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_config}\"},{\"field\":\".indexes.cmdb_index-1yhey410ex3f2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_vpc}\"},{\"field\":\".indexes.cmdb_index-1yam7nytu0lzp\",\"op\":\"=\",\"value\":\"{var:vars.indexes_imageid}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-25d3b7mowaj2c\",\"op\":\"=\",\"value\":\"{var:vars.indexes_data_disks}\"},{\"field\":\".indexes.cmdb_index-3ly0jzx6ccciz\",\"op\":\"=\",\"value\":\"{var:vars.indexes_system_disk}\"}]}]},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"$null\"}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-18gs5gfejka3i as 业务树\",\".indexes.cmdb_index-cloud_resource_config as 关联云资源配置\",\".indexes.cmdb_index-26mgotsn8v2tg as 系统类型\",\".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机\",\".indexes.cmdb_index-vendor as 所属供应商\",\".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID\",\".indexes.cmdb_index-cloud_resource_config as 所属云资源配置\",\".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP\",\".indexes.cmdb_index-1yhey410ex3f2 as VPC\",\".data.memory as 内存\",\".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型\",\".indexes.cmdb_index-3lofvn1raniji as 创建时间\",\".indexes.cmdb_index-3nenrn062pzmn as 资源组\",\".data.cpu as CPU核数\",\".indexes.cmdb_index-39833o1pvvbm7 as OS\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP\",\".indexes.cmdb_index-1yam7nytu0lzp as 镜像\",\".indexes.cmdb_index-vendor as 所属供应商\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".indexes.cmdb_index-26lrotpomsf9d as 关联云服务\",\".indexes.cmdb_index-25d3b7mowaj2c as 关联数据盘\",\".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型\",\".indexes.cmdb_index-external_id as 唯一ID\",\".indexes.cmdb_index-3ly0jzx6ccciz as 系统盘\",\".indexes.cmdb_index-zone as 可用区\",\".indexes.cmdb_index-1h2jo6o503e6n as 到期时间\",\".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务树\"},\"indexes_cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\"indexes_subnet\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"虚拟交换机\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_vpc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\"},\"indexes_imageid\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3jdvwh6ek90nx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"镜像\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_data_disks\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-27h0eudlvmbpm\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"关联数据盘\",\"default\":[\"$empty\"]},\"indexes_system_disk\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-27h0eudlvmbpm\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"系统盘\"}}}}}}",
+    "advanced": true,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-qdhohjfvbozp",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-29d037ltdlslj"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-1lqkeq4cmo43n",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3f3swqlrp1sai",
+      "data": null
+    },
+    "ql": "cmdb_ql-m9hb6265ca6o",
+    "object_id": "cmdb_object_ql-38dxa8bz97qke",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-3gzp9ukve7jjr"
+  }
+}

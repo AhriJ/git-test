@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3ejy5aoa2a7uv",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对象信息",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "f551cd133e0f",
+        "u14960f5e12f": "u14960f5e12f"
+      },
+      {
+        "uuid": "d0fb85e28952",
+        "md": 24,
+        "ubdba61349a7": "ubdba61349a7"
+      }
+    ],
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-16eyplhnkkzhl",
+      "cmdb_mpage-qjamtult6zbg"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

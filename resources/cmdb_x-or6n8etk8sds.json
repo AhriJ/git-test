@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-or6n8etk8sds",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "业务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "node",
+    "field_name": "业务",
+    "field_type": "id",
+    "searched": true,
+    "is_array": true,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "index_id": "cmdb_x-30jzuzvh0qwbe",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_x-hpaahbsz8vpi",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_9d1be989"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1zb2fisj9uxyg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "资源操作组件",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 0 8px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"resource_task_id\":{\"type\":\"string\"}},\"required\":[]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.45845ad75601.state.onClick.0.trigger": "{var: children.19c14b3c463e.state.__trigger__.show}",
+      "children.19c14b3c463e.children.3171ac143ddc.children.0a458208e18c.state.__lib__.task_id": "{var: state.__lib__.resource_task_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "45845ad75601"
+      },
+      {
+        "uuid": "19c14b3c463e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1dc1yemj6eeqf",
+      "cmdb_mpage-2xhlco2yu4myh"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-uwsftdsyjoii",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "变更记录",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "4c1eb7c36adf"
+      },
+      {
+        "md": 24,
+        "uuid": "dfbf1e43c69b"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-38bfi7tc77y3a",
+      "cmdb_mpage-3m07jcnroab7a"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

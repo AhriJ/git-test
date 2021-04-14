@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1uvhjd1igdiqg",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "其他",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "other",
+    "field_name": "其他",
+    "field_type": "object",
+    "searched": false,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [
+      {
+        "inode_id": "cmdb_x-15f1cgbq1rvlo"
+      },
+      {
+        "inode_id": "cmdb_x-2ii9zs3yibadx"
+      }
+    ],
+    "id": "",
+    "index_id": "",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-ktb7p3i9jaad"
+  }
+}

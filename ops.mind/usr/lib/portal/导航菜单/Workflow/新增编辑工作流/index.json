@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1680rg472pxau",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "新增/编辑工作流",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "b66cdbd9ebf8"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {},
+      "desc": "简单易用的可视化流程编排界面",
+      "hide": true,
+      "icon": "",
+      "name": "新增/编辑工作流"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2yqvm0l9x3ij6"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

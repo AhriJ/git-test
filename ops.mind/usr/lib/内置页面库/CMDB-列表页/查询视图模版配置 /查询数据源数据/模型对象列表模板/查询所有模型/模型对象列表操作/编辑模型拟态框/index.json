@@ -1,0 +1,91 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2h6hqazuqvf5h",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "编辑模型拟态框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.onOk": "SEMI_EXPORTED",
+      "state.onOk.0.trigger": "FULL_EXPORTED",
+      "state.onShow.0.args": "NOT_EXPORTED",
+      "state.onShow.0.trigger": "NOT_EXPORTED",
+      "state.__trigger__.hide": "FULL_EXPORTED",
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.onOk.0": "SEMI_EXPORTED",
+      "state.onOk.0.args": "FULL_EXPORTED",
+      "state.onShow.0": "NOT_EXPORTED",
+      "state.title": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "title": "",
+      "onOk": [
+        {
+          "trigger": "{var: children.a62d0b9eb1d8.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.9a15717359b4.state.input": "{var: children.6c7fc7d98945.state.form_data}",
+      "children.9a15717359b4.state.input.describe": "{var: children.6c7fc7d98945.state.form_data.describe}",
+      "children.9a15717359b4.state.input.icon": "{var: children.6c7fc7d98945.state.form_data.icon}",
+      "children.9a15717359b4.state.input.name": "{var: children.6c7fc7d98945.state.form_data.name}",
+      "children.7292b02fb590.state.description": "{var: children.a62d0b9eb1d8.state.output.message}",
+      "children.7292b02fb590.state.message": "{var: children.a62d0b9eb1d8.state.output.result_name}",
+      "children.dc3179d1215c.state.onClick.0.trigger": "{var: children.a62d0b9eb1d8.state.__trigger__.refresh}",
+      "children.a62d0b9eb1d8.state.onFail.0.trigger": "{var: children.7292b02fb590.state.__trigger__.error}",
+      "children.a62d0b9eb1d8.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.a62d0b9eb1d8.state.onSuccess.1.trigger": "{var: children.7292b02fb590.state.__trigger__.success}",
+      "children.9a15717359b4.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.a62d0b9eb1d8.state.input": "{var: children.6c7fc7d98945.state.form_data}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "6c7fc7d98945",
+        "u6b74178d855": "u6b74178d855"
+      },
+      {
+        "uuid": "7292b02fb590",
+        "uac99af93174": "uac99af93174"
+      },
+      {
+        "uuid": "a62d0b9eb1d8",
+        "u53675577f0e": "u53675577f0e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1hw7d5ssmpesb",
+      "cmdb_mpage-2xlgn7tjmgcl7",
+      "cmdb_mpage-3of6oi4ql8k0l"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-dialog",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

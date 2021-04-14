@@ -1,0 +1,74 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3os88dy6d6puu",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "Redis",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-2x1axjjoeqs0y"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": []
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-maep9bejx114 as 业务",
+        ".data.zone_id as 可用区",
+        ".data.version as redis版本",
+        ".data.mem as mem",
+        ".data.qps as qps",
+        ".data.domain as 内网域名",
+        ".data.port as port",
+        ".data.ip as ip",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
+        ".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-20imuexamk23l as 关联多个IP",
+        ".indexes.cmdb_index-2zawg87yjhh2n as 关联多个域名"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {}
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

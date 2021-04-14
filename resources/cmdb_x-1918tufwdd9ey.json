@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1918tufwdd9ey",
+    "schema_id": "cmdb_schema_x-3iwnis61xatk1",
+    "name": "测试",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "descr": "",
+    "config": {
+      "access_key": "LTAI4GAEC5JBU7TY2b9yi6kx",
+      "secret_key": "cmdb_secret-14dtau4bhpi6p",
+      "region": "cn-shanghai",
+      "tid": null
+    }
+  },
+  "indexes": {
+    "cmdb_index-1kxofbjr18d04": "cmdb_outband_stub-2xjatam12rraa",
+    "cmdb_index-o3qlqbk088fv": "cmdb_x-2l8q09zs4f9fk"
+  }
+}

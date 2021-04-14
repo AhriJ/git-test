@@ -1,0 +1,26 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-612gazryge6y",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "域名到期时间",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-25aar3wijv96n",
+    "schema": {
+      "format": "date-time"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "integer",
+    "cmdb_index-24s4gq55rc6q2": false
+  }
+}

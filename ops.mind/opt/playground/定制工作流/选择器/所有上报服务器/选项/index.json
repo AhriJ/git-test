@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2kwldxjckjki4",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "选项",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "jump": {},
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "label": "{var: state.loop.item.inode.name}",
+      "loop": {
+        "item": {}
+      },
+      "value": "{var: state.loop.item.inode.id}"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_option",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

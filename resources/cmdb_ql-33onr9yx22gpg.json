@@ -1,0 +1,167 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-33onr9yx22gpg",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "历史关系型数据库常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-2hdvja263xo1d"
+        },
+        {
+          "field": ".inode.name",
+          "op": "=",
+          "value": "{var:vars.inode_name}"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "op": "=",
+          "value": "{var:vars.indexes_index_1}"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-290dn7d3j221q",
+          "op": "=",
+          "value": "{var:vars.indexes_index_12}"
+        },
+        {
+          "field": "vars.indexes_index_12",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+          "op": "=",
+          "value": "{var:vars.indexes_index_13}"
+        },
+        {
+          "field": "vars.indexes_index_13",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-cloud_account",
+          "op": "=",
+          "value": "{var:vars.indexes_index_14}"
+        },
+        {
+          "field": "vars.indexes_index_14",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 1
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 名称",
+        ".indexes.cmdb_index-3pzri82ts9n2a as owner",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
+        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
+        ".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-20imuexamk23l as 关联多个IP",
+        ".indexes.cmdb_index-2zawg87yjhh2n as 关联多个域名",
+        ".indexes.cmdb_index-3fjzk8poyr8ti as DBA",
+        ".indexes.cmdb_index-2n5kfv1oep1c5 as 关联到容器-集群",
+        ".indexes.cmdb_index-wwcuhjteocuc as 关联到一级平台",
+        ".data.version as 数据库版本",
+        ".data.type as type",
+        ".data.engine as engine",
+        ".data.network_type as 网络类型",
+        ".data.description as 描述",
+        ".data.endpoints.mode as endpoints.mode",
+        ".data.endpoints.endpoint_type as endpoints.endpoint_type",
+        ".data.endpoints.addresses.domain as endpoints.addresses.domain",
+        ".data.endpoints.addresses.port as endpoints.addresses.port",
+        ".data.endpoints.addresses.net_type as endpoints.addresses.net_type",
+        ".data.endpoints.addresses.ip as endpoints.addresses.ip",
+        ".data.cpu as cpu数量",
+        ".data.storage as 存储大小(GB)",
+        ".data.memory as 内存大小(MB)",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-3fjzk8poyr8ti as DBA",
+        ".indexes.cmdb_index-1ms2flxurpe0l as 业务",
+        ".indexes.cmdb_index-2n5kfv1oep1c5 as 集群",
+        ".indexes.cmdb_index-wwcuhjteocuc as 平台组",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2uzst44ss537t\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "供应商"
+              },
+              "indexes_index_12": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-1tq11luuv650w\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "所在VPC"
+              },
+              "indexes_index_13": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2ebsbi67kfgmj\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联虚拟交换机"
+              },
+              "indexes_index_14": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-3erg4ehmrorpl\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "indexes": {}
+}

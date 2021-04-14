@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-i_a410e57e",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "数据库实例",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-5amu5vabgkxb",
+    "schema": {
+      "format": "cmdb-object-selector-id"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "cmdb_x-s_8dcae72a",
+    "cmdb_index-24s4gq55rc6q2": false,
+    "cmdb_index-2juvlwf06k1a1": "cmdb_x-3nmn30tj8o1k2",
+    "cmdb_index-3b01as46nc0b7": true
+  }
+}

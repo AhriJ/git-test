@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-1mq1ie4eq3np3",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "AliCloud 资源组",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "cmdb_schema_acs_resource_group-0",
+    "schema": {
+      "type": "$index_type",
+      "format": "cmdb-object-selector-id",
+      "default": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.id\",\"op\":\"=~\",\"value\":\"cmdb_schema_acs_resource_group-0\"}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
+    }
+  },
+  "indexes": {}
+}

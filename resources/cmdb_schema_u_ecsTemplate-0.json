@@ -1,0 +1,180 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_ecsTemplate-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "服务器模版",
+    "namespace": "",
+    "descr": "阿里云服务器购买模版",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "dataDisk": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "数据磁盘",
+            "properties": {
+              "size": {
+                "type": "number",
+                "minimum": 20,
+                "maximum": 32768,
+                "title": "大小"
+              },
+              "category": {
+                "type": "string",
+                "title": "类型"
+              },
+              "name": {
+                "type": "string",
+                "title": "名称"
+              }
+            },
+            "required": []
+          },
+          "title": "数据磁盘"
+        },
+        "systemDisk": {
+          "type": "object",
+          "title": "系统盘",
+          "properties": {
+            "size": {
+              "type": "number",
+              "minimum": 20,
+              "maximum": 500,
+              "default": 40,
+              "format": "cmdb-unit:byte",
+              "title": "大小"
+            },
+            "category": {
+              "type": "string",
+              "format": "cmdb-unit:byte",
+              "title": "类型"
+            }
+          },
+          "required": [
+            "size",
+            "category"
+          ]
+        },
+        "resourcegroup": {
+          "type": "string",
+          "title": "资源组"
+        },
+        "tag": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "标签",
+            "properties": {
+              "Key": {
+                "type": "string",
+                "title": "标签键"
+              },
+              "Value": {
+                "type": "string",
+                "title": "标签值"
+              }
+            },
+            "required": []
+          },
+          "title": "标签"
+        },
+        "password": {
+          "type": "string",
+          "title": "密码"
+        },
+        "autoRenew": {
+          "type": "boolean",
+          "default": true,
+          "title": "自动续费"
+        },
+        "InternetChargeType": {
+          "type": "string",
+          "enum": [
+            "PayByBandwidth",
+            "PayByTraffic"
+          ],
+          "enumNames": [
+            "按固定带宽计费",
+            "按使用流量计费"
+          ],
+          "default": "PayByTraffic",
+          "title": "网络收费类型"
+        },
+        "hostname": {
+          "type": "string",
+          "title": "主机名称"
+        },
+        "networkType": {
+          "type": "string",
+          "enum": [
+            "classic",
+            "vpc"
+          ],
+          "enumNames": [
+            "经典网络",
+            "专有网络"
+          ],
+          "default": "vpc",
+          "title": "网络类型"
+        },
+        "zone": {
+          "type": "string",
+          "title": "可用区"
+        },
+        "instanceType": {
+          "type": "string",
+          "title": "机型"
+        },
+        "region": {
+          "type": "string",
+          "title": "区域"
+        }
+      },
+      "required": [
+        "autoRenew",
+        "InternetChargeType",
+        "zone",
+        "instanceType"
+      ]
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-maep9bejx114",
+        "required": false,
+        "key": "node"
+      },
+      {
+        "id": "cmdb_index-nejopcm0veer",
+        "required": false,
+        "key": "vpc"
+      },
+      {
+        "id": "cmdb_index-218yhteijpj5l",
+        "required": false,
+        "key": "securityGroup"
+      },
+      {
+        "id": "cmdb_index-hqthvs7zfu6h",
+        "required": false,
+        "key": "imageID"
+      },
+      {
+        "id": "cmdb_index-2e0wp2v7psuk2",
+        "required": false,
+        "key": "switch"
+      }
+    ]
+  },
+  "indexes": {}
+}

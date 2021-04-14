@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1cuze5zgi65ll",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "审计日志",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "name": "审计日志管理",
+      "icon": "yewu1",
+      "desc": "每次的模型修改操作都会产生操作日志，包括基础信息的修改、字段的修改、数据模板的修改。",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "9b5a73f59a65"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-yws6e2io3b70"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

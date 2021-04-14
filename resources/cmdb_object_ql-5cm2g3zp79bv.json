@@ -1,0 +1,88 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-5cm2g3zp79bv",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "对象存储桶-历史资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_oss_bucket-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
+        ".indexes.cmdb_index-ysb3o2x24f23 as 内网域名",
+        ".indexes.cmdb_index-vendor as 所属供应商",
+        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".data.location as 位置",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-3cusqv3bta1lq as 存储类型",
+        ".indexes.cmdb_index-cloud_resource_config as 所属云资源配置",
+        ".indexes.cmdb_index-2tury4uwxrimy as 访问控制类型",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-2fmrqmdx8dahw as 外网域名",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

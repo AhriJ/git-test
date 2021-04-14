@@ -1,0 +1,94 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-39eowdg9tjp71",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "审批模版列表",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-approval_type",
+        "name": "第三方认证类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-workwx_auth",
+        "name": "关联企业微信"
+      },
+      {
+        "field": ".data.template_id",
+        "name": "模版ID"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_approval_template-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_auth_type\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"}]},{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".indexes.cmdb_index-approval_type\",\"op\":\"=\",\"value\":\"{var:vars.indexes_auth_type}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-approval_type as 第三方认证类型\",\".indexes.cmdb_index-workwx_auth as 关联企业微信\",\".data.template_id as 模版ID\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_auth_type\":{\"type\":\"string\",\"enum\":[\"dingtalk\",\"workwx\"],\"title\":\"第三方认证类型\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-le89458h1eem",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-s62tw8yjny0n"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2wo79jtfmaxjc",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-25jfp6tk1z358",
+      "data": null
+    },
+    "ql": "cmdb_ql-1dkqpq5ozbm5u",
+    "object_id": "cmdb_object_ql-1t52ba6nzpf96",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-1yeqm8zqa9epv"
+  }
+}

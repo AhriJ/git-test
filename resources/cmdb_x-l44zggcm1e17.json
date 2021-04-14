@@ -1,0 +1,24 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-l44zggcm1e17",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "加速区域",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-1u6qp5arpwoml",
+    "schema": {}
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "string",
+    "cmdb_index-24s4gq55rc6q2": false
+  }
+}

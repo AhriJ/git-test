@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3s5ql8r89lcor",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "数据管理",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "数据管理",
+      "desc": null,
+      "icon": "folder"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "4cfbc6ed9aa6"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-35bi39iohszke"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

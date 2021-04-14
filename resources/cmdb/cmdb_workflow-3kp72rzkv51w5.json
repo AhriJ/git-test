@@ -1,0 +1,153 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-3kp72rzkv51w5",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "生成同步任务",
+    "namespace": "/cmdb",
+    "descr": "生成同步任务",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "source_pkg_id": {
+                "type": "string"
+              },
+              "dest_pkg_id": {
+                "type": "string"
+              },
+              "sync_type": {
+                "type": "string"
+              },
+              "field_map": {
+                "type": "object",
+                "properties": {}
+              },
+              "interval_time": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id",
+              "name",
+              "source_pkg_id",
+              "dest_pkg_id",
+              "field_map",
+              "interval_time",
+              "sync_type"
+            ]
+          }
+        },
+        "inputs": {
+          "*": {
+            "id": "test_1",
+            "name": "test_1",
+            "source_pkg_id": "cmdb_x-nvw6zln7htco",
+            "dest_pkg_id": "cmdb_x-xp7f5b58hfyc",
+            "field_map": {},
+            "interval_time": 100,
+            "sync_type": "mirror"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string"
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            },
+            "required": []
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "未命名节点-2": {
+            "result": "{var:未命名节点-2.output.result}",
+            "result_name": "{var:未命名节点-2.output.result_name}",
+            "message": "{var:未命名节点-2.output.message}"
+          },
+          "生成同步任务": {
+            "result": "{var:生成同步任务.output.result}",
+            "result_name": "{var:生成同步任务.output.result_name}",
+            "message": "{var:生成同步任务.output.message}"
+          }
+        }
+      },
+      {
+        "name": "生成同步任务",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-3kp72rzkv51w5.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"}},\"required\":[]}",
+          "timeout_s": 30
+        },
+        "merge": {
+          "enable": true
+        },
+        "inputs": {
+          "*": "{var:__START__.output}",
+          "__START__": "{var:__START__.output}"
+        },
+        "debug": true
+      }
+    ],
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "生成同步任务"
+      },
+      {
+        "from": "生成同步任务",
+        "to": "__END__"
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

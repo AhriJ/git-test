@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-26vfcz1lwo580",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "人员",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "logo": {},
+      "name": "展开人员",
+      "icon": "bank",
+      "openKeys": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "514a247e2011"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3acs13dh3b2fj"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

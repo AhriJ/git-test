@@ -1,0 +1,94 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3nnt7vso6hbzv",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "XGAME版本发布默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".data.version",
+        "show": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".data.version",
+        "name": "版本号"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": "$empty",
+        "is_array": false
+      }
+    ],
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wi92x7ydutfa",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".data.version\"],\"enumNames\":[\"名称\",\"描述\",\"版本号\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".data.version\":{\"type\":\"string\",\"title\":\"版本号\",\"ui:hidden\":\"{{ rootValue.field !== '.data.version' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1om0ojrrdhqc0"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3hekhyfx539t3",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.version\":{\"type\":\"string\",\"title\":\"版本号\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-1pvaim6smsoqa",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.version\":{\"type\":\"string\",\"title\":\"版本号\"}},\"required\":[\".inode.name\"]}"
+    },
+    "ql": "cmdb_ql-2w0jozkqgbsb5",
+    "object_id": "cmdb_object_ql-1b6cwoymknx87",
+    "mpage": {
+      "detail_page": "cmdb_mpage-uvjht15watny",
+      "detail_uuid": "u91ea3a534ce",
+      "tabs_id": "cmdb_mpage-1njt3arsksrap",
+      "list_page": "cmdb_mpage-3a0u8m70e6tlx",
+      "list_uuid": "ua700dc7583e",
+      "navs_id": "cmdb_mpage-1y5ltsxxj2qcx",
+      "navs_uuid": null
+    }
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-1dmhtp3641ubo"
+  }
+}

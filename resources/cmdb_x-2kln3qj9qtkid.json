@@ -1,0 +1,168 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2kln3qj9qtkid",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源操作-云镜像数据模板",
+    "namespace": "",
+    "descr": "添加区域筛选条件",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "所属供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "name": "关联云资源配置"
+      },
+      {
+        "field": ".indexes.cmdb_index-19velfjlzm7au",
+        "name": "镜像状态"
+      },
+      {
+        "field": ".data.description",
+        "name": "镜像描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "带外ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-1hz5nv31f0vcj",
+        "name": "镜像大小"
+      },
+      {
+        "field": ".indexes.cmdb_index-3vbvgwizkcyk6",
+        "name": "镜像操作系统"
+      },
+      {
+        "field": ".data.architecture",
+        "name": "镜像架构"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "服务"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-2sxc8gy3u7f8t",
+        "name": "镜像类型"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_vendor-0_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_resource_config",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_x-6iplof81wxv_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_x-3iwnis61xatk1_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-region",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_image-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_conf\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_region\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_conf}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-region\",\"op\":\"=\",\"value\":\"{var:vars.indexes_region}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-vendor as 所属供应商\",\".indexes.cmdb_index-cloud_resource_config as 关联云资源配置\",\".indexes.cmdb_index-19velfjlzm7au as 镜像状态\",\".data.description as 镜像描述\",\".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID\",\".indexes.cmdb_index-external_id as 外部ID\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".indexes.cmdb_index-1hz5nv31f0vcj as 镜像大小\",\".indexes.cmdb_index-3vbvgwizkcyk6 as 镜像操作系统\",\".data.architecture as 镜像架构\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-2sxc8gy3u7f8t as 镜像类型\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3bkpth7xajnpx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-6ybhffhrbq55\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2w8z5498z0tlp\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_region\":{\"type\":\"string\",\"title\":\"所在区域\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-2nk2e7cyigv8l",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-16j7xklj11pes"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3szu8g1y0wd3l",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3ceffi8e059z6",
+      "data": null
+    },
+    "ql": "cmdb_ql-273rboqewxc3g",
+    "object_id": "cmdb_object_ql-2m7p8swsu8gac",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-13is3km860xtt"
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-2ap98rgawwaky",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[多云运维管理][资源纳管][资源同步] 定时同步",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "固定间隔"
+      },
+      {
+        "from": "固定间隔",
+        "to": "VMWare"
+      },
+      {
+        "from": "固定间隔",
+        "to": "DCM"
+      },
+      {
+        "from": "固定间隔",
+        "to": "Alicloud"
+      },
+      {
+        "from": "VMWare",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "DCM",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "Alicloud",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "固定间隔",
+        "to": "Tencentcloud"
+      },
+      {
+        "from": "Tencentcloud",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "固定间隔",
+        "to": "Azure"
+      },
+      {
+        "from": "Azure",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "固定间隔",
+        "to": "AWS"
+      },
+      {
+        "from": "AWS",
+        "to": "优先同步OpsMind资源"
+      },
+      {
+        "from": "固定间隔",
+        "to": "首都在线"
+      },
+      {
+        "from": "首都在线",
+        "to": "优先同步OpsMind资源"
+      }
+    ],
+    "icon": "",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {}
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-ticker",
+        "config": {},
+        "descr": "固定时间间隔执行",
+        "inputs": {
+          "*": {
+            "immediately": true,
+            "interval_s": 600,
+            "times": -1
+          },
+          "__START__": {
+            "immediately": true,
+            "interval_s": 600,
+            "times": -1
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "name": "固定间隔",
+        "settings": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-workflow",
+        "config": {
+          "continue_when_not_output": true,
+          "id": "cmdb_workflow-39hoqh4pyer3n"
+        },
+        "descr": "派生 Workflow",
+        "merge": {
+          "enable": false
+        },
+        "name": "VMWare",
+        "settings": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-workflow",
+        "config": {
+          "continue_when_not_output": true,
+          "id": "cmdb_workflow-mymuh2c0s7y3"
+        },
+        "descr": "派生 Workflow",
+        "merge": {
+          "enable": false
+        },
+        "name": "DCM",
+        "settings": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-workflow",
+        "config": {
+          "continue_when_not_output": true,
+          "id": "cmdb_workflow-17m7b584r1vxs"
+        },
+        "descr": "派生 Workflow",
+        "merge": {
+          "enable": false
+        },
+        "name": "Alicloud",
+        "settings": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-workflow",
+        "config": {
+          "continue_when_not_output": false,
+          "id": "cmdb_workflow-15o1sphxljwzb"
+        },
+        "descr": "派生 Workflow 当执行结束后才会同步其他云厂商资源",
+        "merge": {
+          "enable": true
+        },
+        "name": "优先同步OpsMind资源",
+        "settings": {}
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-workflow",
+        "config": {
+          "continue_when_not_output": true,
+          "id": "cmdb_workflow-23tv3sv9ygvgc"
+        },
+        "descr": "派生 Workflow",
+        "merge": {
+          "enable": false
+        },
+        "name": "Tencentcloud",
+        "settings": {}
+      },
+      {
+        "name": "Azure",
+        "component": "cmdb_component-workflow",
+        "descr": "派生 Workflow",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "id": "cmdb_workflow-2urps1ll0mnyz",
+          "continue_when_not_output": true
+        }
+      },
+      {
+        "name": "AWS",
+        "component": "cmdb_component-workflow",
+        "descr": "派生 Workflow",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "id": "cmdb_workflow-11m01iaxklh97",
+          "continue_when_not_output": true
+        }
+      },
+      {
+        "name": "首都在线",
+        "component": "cmdb_component-workflow",
+        "descr": "派生 Workflow",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "id": "cmdb_workflow-1ay3t2uwsd221",
+          "continue_when_not_output": true
+        },
+        "merge": {
+          "enable": false
+        }
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

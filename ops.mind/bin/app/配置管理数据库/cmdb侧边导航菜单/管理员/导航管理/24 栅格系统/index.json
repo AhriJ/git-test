@@ -1,0 +1,52 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3r91ygntana8z",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "24 栅格系统",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "padding": "10px 24px",
+        "background": "#d1d3de",
+        "border": "1px solid #2b2f9d"
+      },
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "198eeeee9f6c",
+        "md": 24
+      },
+      {
+        "uuid": "e92f51e4b0dc",
+        "md": 24
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1yzjwfuha2otl",
+      "cmdb_mpage-12d3nwa4ruumf"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

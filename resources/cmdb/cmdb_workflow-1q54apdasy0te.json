@@ -1,0 +1,155 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-1q54apdasy0te",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[cmdb]转换平台模型到CMDB配置",
+    "namespace": "/cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "index_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "limit": {
+                "type": "integer"
+              },
+              "without_readonly": {
+                "type": "boolean",
+                "default": true
+              },
+              "excludeSchemaId": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": []
+          }
+        },
+        "inputs": {
+          "*": {
+            "ids": [
+              "cmdb_schema_u_webhook_manage-0"
+            ],
+            "without_readonly": false
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object"
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {}
+      },
+      {
+        "name": "es5",
+        "settings": {},
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1q54apdasy0te.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "刷新模型对象操作工作流",
+        "component": "cmdb_component-workflow",
+        "descr": "派生 Workflow",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "id": "cmdb_workflow-1xqgrbo8lybw2"
+        }
+      },
+      {
+        "name": "刷新数据模版",
+        "component": "cmdb_component-interpreter_ecmascript",
+        "descr": "ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1q54apdasy0te.data.nodes.4.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "": {},
+          "刷新模型对象操作工作流": "{var:__START__.output}"
+        }
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600,
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "es5"
+      },
+      {
+        "from": "es5",
+        "to": "刷新模型对象操作工作流"
+      },
+      {
+        "from": "刷新模型对象操作工作流",
+        "to": "刷新数据模版"
+      },
+      {
+        "from": "刷新数据模版",
+        "to": "__END__"
+      }
+    ]
+  },
+  "indexes": {}
+}

@@ -1,0 +1,53 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1felx2aya0mzf",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "监控大屏",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "href": "{var: children.26f1fb0b8e5e.children.5b800574521f.state.output}",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "name": "监控大屏",
+      "icon": "jiankongshuju",
+      "desc": "",
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"mpage\":{\"type\":\"string\",\"title\":\"mpage\"}},\"required\":[]}",
+      "__lib__": {
+        "mpage": "cmdb_mpage-3n3z0ob427qmo"
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "26f1fb0b8e5e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3n3z0ob427qmo"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

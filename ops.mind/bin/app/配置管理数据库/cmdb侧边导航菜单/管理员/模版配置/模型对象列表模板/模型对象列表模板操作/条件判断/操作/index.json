@@ -1,0 +1,104 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1mzoag183itkz",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.onClick": "SEMI_EXPORTED",
+      "state.onClick.0": "SEMI_EXPORTED",
+      "state.onClick.0.args": "FULL_EXPORTED",
+      "state.onClick.0.trigger": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "0 0 0 10px",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "text": "新建",
+      "icon": "plus",
+      "size": "middle",
+      "type": null,
+      "onClick": [
+        {
+          "args": []
+        }
+      ],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.49b60ee68e15.state.onClick.0.trigger": "{var: children.2209b539f570.state.__trigger__.exoprtCsv}",
+      "children.8e6ca328d146.state.onClick.0.trigger": "{var: children.2fb55953a2c7.state.__trigger__.show}",
+      "children.263d4039ff27.state.click": "{var: children.cac982c58e32.state.result}",
+      "children.eb28b711569b.state.click": "{var: children.cac982c58e32.state.result}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b88c0c0778de"
+      },
+      {
+        "uuid": "263d4039ff27"
+      },
+      {
+        "uuid": "eb28b711569b"
+      },
+      {
+        "uuid": "2209b539f570"
+      },
+      {
+        "uuid": "49b60ee68e15"
+      },
+      {
+        "uuid": "8e6ca328d146"
+      },
+      {
+        "uuid": "cac982c58e32"
+      },
+      {
+        "uuid": "2fb55953a2c7"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-35ajtcpqx3kik",
+      "cmdb_mpage-265huqnr4t00u",
+      "cmdb_mpage-2gtfyjfyexpor",
+      "cmdb_mpage-1th004oitqjsk",
+      "cmdb_mpage-liq0rd8771sx",
+      "cmdb_mpage-tixsk31e7pzl",
+      "cmdb_mpage-1egob01bu9148",
+      "cmdb_mpage-1x67gab87na4b"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_button",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

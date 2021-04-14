@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-218yhteijpj5l",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "关联安全组",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "cmdb_schema_acs_sg-0",
+    "multi": true,
+    "schema": {
+      "type": "$index_type"
+    }
+  },
+  "indexes": {}
+}

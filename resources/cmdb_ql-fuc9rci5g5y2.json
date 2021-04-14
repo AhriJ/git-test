@@ -1,0 +1,66 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-fuc9rci5g5y2",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "部门默认数据模板常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_department-0"
+        },
+        {
+          "field": ".inode.name",
+          "op": "=",
+          "value": "{var:vars.inode_name}"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.aliasname as 简称",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-gyv990kmqnle",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "【官】导航菜单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.af8f28e329b1.state.__vars__.member": "{var: state.loop.item.inode.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "af8f28e329b1"
+      }
+    ],
+    "config": {
+      "resId": ""
+    },
+    "publics": {},
+    "state": {
+      "logo": {},
+      "loop": {
+        "item": {}
+      },
+      "name": "{var: state.loop.item.inode.name}",
+      "openKeys": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-ld3u9jdxjliv"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

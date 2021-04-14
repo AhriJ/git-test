@@ -1,0 +1,140 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3acs13dh3b2fj",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "人员账户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_ql-2up4h1j93xf47",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "fragment": true,
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": []
+      },
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.schema_id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.lock": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.mtime": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.name": {},
+        "vars.namespace": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "122855970255",
+        "index": 0
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2oye2pmq5m2g3"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

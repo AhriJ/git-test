@@ -1,0 +1,224 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2623a0yhwdf6m",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "人员",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": null,
+        "pkg_id": null,
+        "widget": null,
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-p3p67nqbgcz0",
+        "op": "=-",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": true
+      },
+      {
+        "field": ".indexes.cmdb_index-sys_account",
+        "op": "=",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-organizations",
+        "op": "=-",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": true
+      },
+      {
+        "field": ".indexes.cmdb_index-third_party_auth",
+        "op": "=",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-23prb3qw1k4ys",
+        "op": "=-",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": true
+      },
+      {
+        "field": ".indexes.cmdb_index-sys_account",
+        "op": "=",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-organizations",
+        "op": "=-",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": true
+      },
+      {
+        "field": ".indexes.cmdb_index-third_party_auth",
+        "op": "=",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-23prb3qw1k4ys",
+        "op": "=-",
+        "value": null,
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-p3p67nqbgcz0",
+        "name": "企业微信组织"
+      },
+      {
+        "field": ".indexes.cmdb_index-sys_account",
+        "name": "关联系统账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-organizations",
+        "name": "所属组织"
+      },
+      {
+        "field": ".indexes.cmdb_index-forbidden",
+        "name": "是否禁用"
+      },
+      {
+        "field": ".indexes.cmdb_index-third_party_auth",
+        "name": "第三方认证"
+      },
+      {
+        "field": ".indexes.cmdb_index-account_username",
+        "name": "用户名 ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-23prb3qw1k4ys",
+        "name": "所属部门"
+      },
+      {
+        "field": ".indexes.cmdb_index-sys_account",
+        "name": "关联系统账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-organizations",
+        "name": "所属组织"
+      },
+      {
+        "field": ".indexes.cmdb_index-forbidden",
+        "name": "是否禁用"
+      },
+      {
+        "field": ".indexes.cmdb_index-third_party_auth",
+        "name": "第三方认证"
+      },
+      {
+        "field": ".indexes.cmdb_index-account_username",
+        "name": "用户名 ID"
+      },
+      {
+        "field": ".data.sex",
+        "name": "性别"
+      },
+      {
+        "field": ".data.address",
+        "name": "联系地址"
+      },
+      {
+        "field": ".data.phone",
+        "name": "联系电话"
+      },
+      {
+        "field": ".data.wechat",
+        "name": "企业微信号"
+      },
+      {
+        "field": ".data.email",
+        "name": "邮箱"
+      },
+      {
+        "field": ".data.dingtalk",
+        "name": "钉钉号"
+      },
+      {
+        "field": ".data.uuid",
+        "name": "uuid"
+      },
+      {
+        "field": ".indexes.cmdb_index-23prb3qw1k4ys",
+        "name": "所属部门"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": true,
+    "content": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_x-d97uo84ongx8\"]},{\"field\":\".indexes.cmdb_index-p3p67nqbgcz0\",\"op\":\"!=\",\"value\":\"$null\"}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".indexes.cmdb_index-account_username as 用户名 ID\",\".indexes.cmdb_index-p3p67nqbgcz0 as 企业微信组织架构\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}",
+    "ql": "cmdb_ql-1enajifbxajif",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-2pxhmgg8ilov4",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-3bdvze6mls7ud"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2tw7xn5brz276",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-f9gzr2jguqo4",
+      "data": null
+    },
+    "object_id": "cmdb_object_ql-2lr7ik4mwht9u",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_410fec1a"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-ovunf71rnytm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "与我无关",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "daec98aa80b2"
+      }
+    ],
+    "config": {
+      "jump": {},
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "icon": "icon-",
+      "name": "与我无关"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2b24r148uk8dz"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

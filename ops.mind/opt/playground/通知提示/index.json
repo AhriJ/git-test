@@ -1,0 +1,66 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3iubghj7622ke",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "通知提示",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.046bd6033dc8.state.onClick.trigger": "{var: children.ab09595535f0.state.__trigger__.error}",
+      "children.3d710affc272.state.onClick.trigger": "{var: children.ab09595535f0.state.__trigger__.success}",
+      "children.8057114e5158.state.onClick.trigger": "{var: children.c9fed0758b59.state.__trigger__.error}",
+      "children.e36ab91894c0.state.onClick.trigger": "{var: children.c9fed0758b59.state.__trigger__.success}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "3d710affc272"
+      },
+      {
+        "uuid": "046bd6033dc8"
+      },
+      {
+        "uuid": "e36ab91894c0"
+      },
+      {
+        "uuid": "8057114e5158"
+      },
+      {
+        "md": 6,
+        "uuid": "ab09595535f0"
+      },
+      {
+        "uuid": "c9fed0758b59"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-27rmj9qzxl4do",
+      "cmdb_mpage-1zwitz71h681z",
+      "cmdb_mpage-3k80ezy2de32s",
+      "cmdb_mpage-iwuksng57g52",
+      "cmdb_mpage-1ygtwg0b5ylds",
+      "cmdb_mpage-38j04088eifk"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

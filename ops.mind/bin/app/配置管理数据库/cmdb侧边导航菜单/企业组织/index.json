@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-39rnqaalwq8xc",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "企业组织",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "企业组织",
+      "desc": null,
+      "icon": null
+    },
+    "childrenConfig": [
+      {
+        "uuid": "9bbeebf8644a"
+      },
+      {
+        "uuid": "e17bcf5b0fad"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-uku1m4xpvye1",
+      "cmdb_mpage-1vz8wyt6ip7b2"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

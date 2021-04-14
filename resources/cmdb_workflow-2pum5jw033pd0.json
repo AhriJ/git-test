@@ -1,0 +1,159 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-2pum5jw033pd0",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "script",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "执行参数中命令"
+      },
+      {
+        "to": "__END__",
+        "from": "执行参数中命令"
+      }
+    ],
+    "icon": "",
+    "nodes": [
+      {
+        "settings": {},
+        "auto_run": true,
+        "component": "cmdb_component-vars",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "server": {
+                "type": "string",
+                "title": "server",
+                "format": "cmdb-object-selector-id",
+                "default": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.name\",\"op\":\"=~\",\"value\":\"服务器\"}],\"objects\":[\"cmdb_schema_server-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
+              },
+              "script": {
+                "type": "string",
+                "title": "script",
+                "format": "editor-shell"
+              }
+            }
+          }
+        },
+        "descr": "自定义表单",
+        "inputs": {
+          "*": {
+            "script": "ls -lhtc",
+            "server": [
+              "cmdb_server-22vdw8pkwefpx"
+            ]
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "name": "__START__"
+      },
+      {
+        "name": "__END__",
+        "settings": {},
+        "auto_run": true,
+        "component": "cmdb_component-vars",
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "output": {
+                "type": "string",
+                "title": "output"
+              },
+              "err": {
+                "type": "string",
+                "title": "err"
+              },
+              "field_1": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "field_2": {
+                "type": "object",
+                "properties": {
+                  "field_3": {
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "field_3"
+                ]
+              }
+            },
+            "required": [
+              "field_2"
+            ]
+          }
+        },
+        "descr": "自定义表单",
+        "inputs": {
+          "执行参数中命令": {
+            "field_2": {
+              "field_3": "{var:执行参数中命令.output.exec_id}"
+            },
+            "output": "{var:执行参数中命令.output.stdout}"
+          },
+          "未命名节点-2": {
+            "err": "{var:未命名节点-2.error}",
+            "field_1": [
+              "222",
+              "333"
+            ],
+            "field_2": {
+              "field_3": "666"
+            },
+            "output": "{var:未命名节点-2.output.stdout}"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-task",
+        "config": {},
+        "descr": "远程任务执行",
+        "inputs": {
+          "__START__": {
+            "max_log_backward_bytes": 1048576,
+            "timeout": 1000000,
+            "body_type": "shell",
+            "dont_output_log": false,
+            "max_log_bytes_per_sec": 1048576,
+            "persist_log": true,
+            "stream_log_collect": false,
+            "target": "{var:__START__.input.server}",
+            "body": "#!/bin/bash\n\n{var:__START__.input.script}",
+            "log_streaming_interval_sec": 5
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "name": "执行参数中命令",
+        "settings": {}
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

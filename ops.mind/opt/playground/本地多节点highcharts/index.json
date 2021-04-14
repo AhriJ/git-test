@@ -1,0 +1,51 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1oaq04yr6z4xo",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "本地多节点highcharts",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "jump": {},
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "legend": {},
+      "subtitle": {},
+      "title": {},
+      "xAxis": {
+        "title": {}
+      },
+      "yAxis": {
+        "title": {}
+      },
+      "zAxis": {
+        "title": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "5c3b95a43dd0"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1bd2a0n0kle37"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_highcharts",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

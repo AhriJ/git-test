@@ -1,0 +1,193 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3e2d4sw1myjei",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "RAM用户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-3ke0fx9vva94g"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_11",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
+        },
+        {
+          "field": "vars.indexes_index_12",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
+        },
+        {
+          "field": "vars.indexes_index_13",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
+        },
+        {
+          "field": "vars.indexes_index_14",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_15",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-vendor",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_1}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-2rf1crzkzdjyx",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_11}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-1bsaj243nlayu",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_12}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-w0tm6jcyczjb",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_13}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-36je1wggke5wj",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_14}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_account",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_15}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.display_name as 展示名字",
+        ".indexes.cmdb_index-w0tm6jcyczjb as 关联RAM权限策略",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "供应商"
+              },
+              "indexes_index_11": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "format": "ql-selector?id=cmdb_ql-2wrefclx88goz\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "title": "所在RAM用户组",
+                "default": [
+                  "$empty"
+                ]
+              },
+              "indexes_index_12": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "format": "ql-selector?id=cmdb_ql-tsluzs3fhvn0\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "title": "关联RAM角色",
+                "default": [
+                  "$empty"
+                ]
+              },
+              "indexes_index_13": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "format": "ql-selector?id=cmdb_ql-znbc2096cohv\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "title": "关联RAM权限策略",
+                "default": [
+                  "$empty"
+                ]
+              },
+              "indexes_index_14": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-buvr8bg670p\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联资源模板"
+              },
+              "indexes_index_15": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

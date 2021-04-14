@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-38j04088eifk",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "全局提示",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "childrenConfig": [],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.error": "FULL_EXPORTED",
+      "state.__trigger__.info": "FULL_EXPORTED",
+      "state.__trigger__.success": "FULL_EXPORTED",
+      "state.__trigger__.warning": "FULL_EXPORTED"
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-message",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

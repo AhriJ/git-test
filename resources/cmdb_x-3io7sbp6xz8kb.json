@@ -1,0 +1,73 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3io7sbp6xz8kb",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "XGAME版本发布数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": "$empty",
+        "is_array": false
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".data.version",
+        "name": "版本号"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_u_xgame_package_publish-0\"]}],\"objects\":[],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"function\":\"db\"}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-wi92x7ydutfa",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1om0ojrrdhqc0"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3hekhyfx539t3",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-1pvaim6smsoqa",
+      "data": null
+    },
+    "ql": "cmdb_ql-3tr7qvkiiuvwr",
+    "object_id": "cmdb_object_ql-1p5osy187c1ja"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-1dmhtp3641ubo"
+  }
+}

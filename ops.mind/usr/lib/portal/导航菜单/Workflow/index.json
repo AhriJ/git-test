@@ -1,0 +1,69 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-vefj21115m4q",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Workflow",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "logo": {},
+      "name": "Workflow",
+      "icon": "rocket",
+      "openKeys": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "list"
+      },
+      {
+        "uuid": "job"
+      },
+      {
+        "uuid": "wf_detail"
+      },
+      {
+        "uuid": "wf_job_detail"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2j8h268wg6jkg",
+      "cmdb_mpage-d0vlp54eh90s",
+      "cmdb_mpage-1680rg472pxau",
+      "cmdb_mpage-1un9ws0v1egac"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

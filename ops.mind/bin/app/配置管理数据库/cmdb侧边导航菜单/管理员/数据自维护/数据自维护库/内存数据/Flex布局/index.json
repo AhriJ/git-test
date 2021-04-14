@@ -1,0 +1,89 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2nz7jaybafnzs",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Flex布局",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "10px 0"
+      },
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "direction": "row-reverse",
+      "__trigger__": {}
+    },
+    "children": {
+      "children.48c82aea179b.state.onClick.0.trigger": "{var: children.40ce442cad7d.state.__trigger__.show}",
+      "children.40ce442cad7d.state.onOk.0.trigger": "{var: children.d9f436ee13ad.state.__trigger__.createWfJob}",
+      "children.d9f436ee13ad.state.onSuccess.0.trigger": "{var: children.40ce442cad7d.state.__trigger__.hide}",
+      "children.dc99a2d62744.state.message": "{var: children.d9f436ee13ad.state.output.result_name}",
+      "children.dc99a2d62744.state.description": "{var: children.d9f436ee13ad.state.output.message}",
+      "children.d9f436ee13ad.state.onSuccess.2.trigger": "{var: children.dc99a2d62744.state.__trigger__.success}",
+      "children.d9f436ee13ad.state.onFail.0.trigger": "{var: children.dc99a2d62744.state.__trigger__.error}",
+      "children.95786d20c96e.state.onSuccess.0.trigger": "{var: children.d2feb1298a59.state.__trigger__.success}",
+      "children.95786d20c96e.state.onFail.0.trigger": "{var: children.d2feb1298a59.state.__trigger__.error}",
+      "children.d2feb1298a59.state.message": "{var: children.95786d20c96e.state.output.result_name}",
+      "children.d2feb1298a59.state.description": "{var: children.95786d20c96e.state.output.message}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "48c82aea179b"
+      },
+      {
+        "uuid": "e214d49686d5"
+      },
+      {
+        "uuid": "be65dd93f081"
+      },
+      {
+        "uuid": "fdfd851b6846"
+      },
+      {
+        "uuid": "d9f436ee13ad"
+      },
+      {
+        "uuid": "40ce442cad7d"
+      },
+      {
+        "uuid": "dc99a2d62744"
+      },
+      {
+        "uuid": "95786d20c96e"
+      },
+      {
+        "uuid": "d2feb1298a59"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2sc2f0gn21e1t",
+      "cmdb_mpage-283z4cb6nithz",
+      "cmdb_mpage-2igjs9vnul55j",
+      "cmdb_mpage-1tkysm1m8e31u",
+      "cmdb_mpage-2r6bqcyu1o0l3",
+      "cmdb_mpage-3shn4k47kh73s",
+      "cmdb_mpage-3snuyu728zsc8",
+      "cmdb_mpage-2f4kbvkh8ccko",
+      "cmdb_mpage-2dpee221f7g02"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

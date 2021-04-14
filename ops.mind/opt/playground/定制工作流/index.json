@@ -1,0 +1,102 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3uot61v1kdjwd",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "定制工作流",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.e3c1f3bc048c.state.input.server": "{var: children.e4aebdba4640.state.value}",
+      "children.fe03eef8a06f.state.value": "ls /",
+      "children.52d1963b61bc.state.loading": "{var: children.e3c1f3bc048c.state.running}",
+      "children.52d1963b61bc.state.onClick.className": "children.e3c1f3bc048c.triggers.createWfJob",
+      "children.52d1963b61bc.state.onClick.trigger": "{var: children.e3c1f3bc048c.state.__trigger__.createWfJob}",
+      "children.c5e09cc79f57.state.text": "{var: children.e3c1f3bc048c.state.output.output}",
+      "children.e3c1f3bc048c.state.input.script": "{var: children.fe03eef8a06f.state.value}"
+    },
+    "childrenConfig": [
+      {
+        "hide": true,
+        "label": "label",
+        "md": 4,
+        "uuid": "0e8d73967a06"
+      },
+      {
+        "hide": true,
+        "label": "label",
+        "md": 20,
+        "uuid": "e4aebdba4640"
+      },
+      {
+        "label": "label",
+        "md": 4,
+        "uuid": "43ae28e7e99c",
+        "hide": true
+      },
+      {
+        "hide": true,
+        "label": "label",
+        "md": 20,
+        "uuid": "fe03eef8a06f"
+      },
+      {
+        "hide": true,
+        "label": "label",
+        "md": 24,
+        "uuid": "52d1963b61bc"
+      },
+      {
+        "hide": true,
+        "label": "label",
+        "md": 24,
+        "uuid": "d201eda95689"
+      },
+      {
+        "md": 24,
+        "uuid": "c5e09cc79f57",
+        "hide": true,
+        "label": "label"
+      },
+      {
+        "hide": true,
+        "label": "label",
+        "md": 0,
+        "uuid": "e3c1f3bc048c"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-384ltyt8ea8na",
+      "cmdb_mpage-rn2b3v7ypzpo",
+      "cmdb_mpage-3u0eohwbyrgnn",
+      "cmdb_mpage-1q2lvw199elr8",
+      "cmdb_mpage-24hr6uxy4om76",
+      "cmdb_mpage-m7mnh9olrgwi",
+      "cmdb_mpage-2k6uxhn3kvc3b",
+      "cmdb_mpage-v7j956ifytz8"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

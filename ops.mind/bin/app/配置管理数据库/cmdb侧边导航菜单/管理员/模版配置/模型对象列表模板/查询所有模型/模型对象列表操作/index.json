@@ -1,0 +1,102 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-pt11e2r7a9sq",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.f2fbdcbcaa1a.state.description": "{var: children.49b4ab9afe4e.children.a2ce18e1e75d.state.output.message}",
+      "children.73642cf827e6.children.ab809a76e740.state.onFail.0.trigger": "{var: children.847430a71968.state.__trigger__.error}",
+      "children.73642cf827e6.children.8001f514fff2.state.form_data": "{var: children.15c7db788aa9.state.output.output}",
+      "children.73642cf827e6.children.ab809a76e740.state.input.describe": "{var: children.73642cf827e6.children.8001f514fff2.state.form_data.describe}",
+      "children.73642cf827e6.children.bd05a57cb8e4.state.onSuccess.2.trigger": "{var: state.loop.trigger.query}",
+      "children.f2fbdcbcaa1a.state.message": "{var: children.49b4ab9afe4e.children.a2ce18e1e75d.state.output.result_name}",
+      "children.70fb0ce77c11.state.onClick.0.trigger": "{var: children.49b4ab9afe4e.state.__trigger__.show}",
+      "children.73642cf827e6.children.8001f514fff2.state.form_data.name": "{var: state.loop.item.inode.name}",
+      "children.49b4ab9afe4e.children.a2ce18e1e75d.state.input.idList.0": "{var: state.loop.item.inode.id}",
+      "children.49b4ab9afe4e.children.a2ce18e1e75d.state.onFail.0.trigger": "{var: children.f2fbdcbcaa1a.state.__trigger__.error}",
+      "children.73642cf827e6.children.8001f514fff2.state.form_data.describe": "{var: state.loop.item.inode.descr}",
+      "children.73642cf827e6.children.8001f514fff2.state.form_data.icon": "{var: state.loop.item.data.icon}",
+      "children.765f1a55868f.state.onClick.0.trigger": "{var: children.73642cf827e6.state.__trigger__.show}",
+      "children.73642cf827e6.children.ab809a76e740.state.onSuccess.2.trigger": "{var: children.847430a71968.state.__trigger__.success}",
+      "children.73642cf827e6.children.8001f514fff2.state.form_data.menu_visible": "{var: state.loop.item.data.menu_visible}",
+      "children.765f1a55868f.state.onClick.1.trigger": "{var: children.15c7db788aa9.state.__trigger__.createWfJob}",
+      "children.847430a71968.state.message": "{var: children.73642cf827e6.children.ab809a76e740.state.output.result_name}",
+      "children.73642cf827e6.children.ab809a76e740.state.onSuccess.1.trigger": "{var: state.loop.trigger.query}",
+      "children.49b4ab9afe4e.children.a2ce18e1e75d.state.input.ids.0": "{var: state.loop.item.inode.id}",
+      "children.86d50e9b5429.state.input.id": "{var: state.loop.item.inode.id}",
+      "children.49b4ab9afe4e.children.a2ce18e1e75d.state.onSuccess.2.trigger": "{var: state.loop.trigger.query}",
+      "children.49b4ab9afe4e.children.4abe06155561.state.text": "{var: state.loop.item.inode.name}",
+      "children.847430a71968.state.description": "{var: children.73642cf827e6.children.ab809a76e740.state.output.message}",
+      "children.73642cf827e6.children.ab809a76e740.state.input.icon": "{var: children.73642cf827e6.children.8001f514fff2.state.form_data.icon}",
+      "children.73642cf827e6.children.ab809a76e740.state.input.id": "{var: state.loop.item.inode.id}",
+      "children.73642cf827e6.children.ab809a76e740.state.input.name": "{var: children.73642cf827e6.children.8001f514fff2.state.form_data.name}",
+      "children.73642cf827e6.children.ab809a76e740.state.onSuccess.0.trigger": "{var: children.49b4ab9afe4e.state.__trigger__.hide}",
+      "children.15c7db788aa9.state.input.id": "{var: state.loop.item.inode.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "15c7db788aa9"
+      },
+      {
+        "md": 12,
+        "uuid": "765f1a55868f"
+      },
+      {
+        "md": 12,
+        "uuid": "70fb0ce77c11"
+      },
+      {
+        "md": 6,
+        "uuid": "73642cf827e6"
+      },
+      {
+        "md": 6,
+        "uuid": "49b4ab9afe4e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3i5uc1examsxi",
+      "cmdb_mpage-2mg7wjef9wqw6",
+      "cmdb_mpage-19ke1jdlka5xm",
+      "cmdb_mpage-2an7x9um2j81g",
+      "cmdb_mpage-257ew4yaiar2b"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

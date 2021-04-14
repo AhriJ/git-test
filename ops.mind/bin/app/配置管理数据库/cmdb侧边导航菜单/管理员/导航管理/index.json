@@ -1,0 +1,61 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-9dykau9apq8b",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "导航管理",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "name": "导航管理",
+      "icon": "Storedprocedure",
+      "desc": "用于对侧边导航栏进行自定义配置，可添加导航栏和数据模板两种类型",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "393e1a1ae20a"
+      },
+      {
+        "uuid": "11b8210fa3f0"
+      },
+      {
+        "uuid": "ded4706cead1"
+      },
+      {
+        "uuid": "47c997b4312c"
+      },
+      {
+        "uuid": "388956ea4086"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3r91ygntana8z",
+      "cmdb_mpage-2heaculabnrjb",
+      "cmdb_mpage-2me3t9m4g9i3b",
+      "cmdb_mpage-1whxedy4r5zjh",
+      "cmdb_mpage-3d0z7e9l31089"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

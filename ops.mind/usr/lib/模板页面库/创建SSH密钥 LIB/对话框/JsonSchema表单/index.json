@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3i1k0x01qpg9y",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "JsonSchema表单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.form_data": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.form_data..inode.name": "FULL_EXPORTED",
+      "state.form_data..inode.descr": "FULL_EXPORTED",
+      "state.form_data..data.public_key": "FULL_EXPORTED",
+      "state.form_data..data.private_key": "FULL_EXPORTED",
+      "state.form_data..data.passphrase": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":true},\".data.public_key\":{\"type\":\"string\",\"format\":\"cmdb-secret-textarea\",\"title\":\"公钥\",\"ui:hidden\":true},\".data.private_key\":{\"type\":\"string\",\"format\":\"cmdb-secret-textarea\",\"title\":\"私钥\"},\".data.passphrase\":{\"type\":\"string\",\"format\":\"cmdb-secret\",\"title\":\"生成口令\",\"description\":\"默认为空\"}},\"required\":[\".inode.name\",\".data.private_key\"]}",
+      "form_data": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

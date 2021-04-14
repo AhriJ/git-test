@@ -1,0 +1,74 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2w65su07h6a94",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "模型对象列表模板操作",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "direction": "row",
+      "align": "center",
+      "justify": "flex-end",
+      "__trigger__": {}
+    },
+    "children": {
+      "children.10668c6b467e.children.3e03cc06885e.state.onClick.0.trigger": "{var: children.685e47c0c300.state.__trigger__.show}",
+      "children.d4f05841244d.children.60599b200bf3.children.263d4039ff27.state.onClick.0.trigger": "{var: children.685e47c0c300.state.__trigger__.show}",
+      "children.d4f05841244d.children.60599b200bf3.children.b88c0c0778de.state.onClick.0.trigger": "{var: children.64aaf03b9785.state.__trigger__.show}",
+      "children.d4f05841244d.children.60599b200bf3.state.onClick.0.trigger": "{var: children.64aaf03b9785.state.__trigger__.show}",
+      "children.8fb271f43636.state.title": "删除模型",
+      "children.b82e059ef732.state.title": "编辑模型",
+      "children.10668c6b467e.children.00c3e6285d36.state.onClick.0.trigger": "{var: children.64aaf03b9785.state.__trigger__.show}",
+      "children.10668c6b467e.children.1e0a839a8101.state.onClick.0.trigger": "{var: children.c492c812606f.state.__trigger__.show}",
+      "children.d4f05841244d.children.60599b200bf3.children.eb28b711569b.state.onClick.0.trigger": "{var: children.c492c812606f.state.__trigger__.show}",
+      "children.6d53c059a64b.children.0f36f92cf7b2.state.onClick.0.trigger": "{var: children.a197da420158.state.__trigger__.show}",
+      "children.10668c6b467e.state.onClick.0.trigger": "{var: children.64aaf03b9785.state.__trigger__.show}",
+      "children.64aaf03b9785.state.width": 520
+    },
+    "childrenConfig": [
+      {
+        "uuid": "6d53c059a64b"
+      },
+      {
+        "uuid": "64aaf03b9785"
+      },
+      {
+        "uuid": "685e47c0c300"
+      },
+      {
+        "uuid": "c492c812606f"
+      },
+      {
+        "uuid": "d4f05841244d"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1z14as4yygtdb",
+      "cmdb_mpage-1zqvucz0voo9s",
+      "cmdb_mpage-2ri6dobl4zvx",
+      "cmdb_mpage-iybywhx2d4xq",
+      "cmdb_mpage-1bt90ga4uooc7"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

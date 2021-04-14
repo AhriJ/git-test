@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1ffvzxler52vm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "业务管理",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "业务管理",
+      "desc": null,
+      "icon": "cluster"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "64249a7e9ec7"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2u476sf6q8ewq"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

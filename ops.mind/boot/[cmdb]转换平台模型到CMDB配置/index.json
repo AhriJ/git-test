@@ -1,0 +1,107 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-doz5wwgnvkl1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "[cmdb]转换平台模型到CMDB配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.excludeSchemaId.0": "NOT_EXPORTED",
+      "state.input.excludeSchemaId.11": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-1q54apdasy0te",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "input": {
+        "ids": [],
+        "index_ids": [],
+        "limit": 20,
+        "without_readonly": false,
+        "excludeSchemaId": [
+          "cmdb_x-2opnvk36fg3as",
+          "cmdb_x-2uldzvi18y47n",
+          "cmdb_x-9m4qrw0wedf4",
+          "cmdb_x-3ltyqc6w284rt",
+          "cmdb_x-3phmd52vujfdx",
+          "cmdb_x-3qvsubm8e4t7t",
+          "cmdb_x-3qw6ddkfd3zqu",
+          "cmdb_x-3rtd1zm2n2whj",
+          "cmdb_x-3s80e5q3oo3a7",
+          "cmdb_x-61z78b6hmfif",
+          "cmdb_x-dy54rh0cdp72",
+          "cmdb_x-k5fs5yidfp63",
+          "cmdb_x-ln6izd34yfws",
+          "cmdb_x-ly80tmjxmezm",
+          "cmdb_x-nsy99e4wj9x",
+          "cmdb_x-ntoyl23idefh",
+          "cmdb_x-swfa6qjjibqo",
+          "cmdb_x-30ygeqxxna8na",
+          "cmdb_x-31yo97a8wi5c7",
+          "cmdb_x-3c6sye3epo91n",
+          "cmdb_x-3h8cbrfd6go75",
+          "cmdb_x-1pkfc6kqv4nlj",
+          "cmdb_x-1q32snlbdtfjv",
+          "cmdb_x-1r8feoczp5z5b",
+          "cmdb_x-1s5nx716ajmwz",
+          "cmdb_x-1sgsxn393vhj8",
+          "cmdb_x-1tofjrw1nx4ys",
+          "cmdb_x-1welbwr49xprk",
+          "cmdb_x-1yy81n9pgmpvs",
+          "cmdb_x-25rd595xc0udw",
+          "cmdb_x-25v5h8qeq8m3m",
+          "cmdb_x-28ysfwvdes4s7",
+          "cmdb_x-29vak0hua6xkb",
+          "cmdb_x-2bo4ozk81etnn",
+          "cmdb_x-2c28p4b4pq367",
+          "cmdb_x-2e5l7cx5xmd2z",
+          "cmdb_x-1brx3q337kfjw",
+          "cmdb_x-1c2hz6p0gj4do",
+          "cmdb_x-1gp9jotpcrvef",
+          "cmdb_x-1gqnrmxs7b4m5",
+          "cmdb_x-1jyezm0soetu8",
+          "cmdb_x-1mbon9jgorh69",
+          "cmdb_x-ulncnwh7eaor",
+          "cmdb_x-weqspvdy7k6g",
+          "cmdb_x-3gzp9ukve7jjr",
+          "cmdb_x-3nq3m2qr2nv5s",
+          "cmdb_x-g1cdq7hcim72",
+          "cmdb_x-gqtl2mnmtpss",
+          "cmdb_x-2z772awr3qz01",
+          "cmdb_x-37fm91i07jtcw",
+          "cmdb_x-13is3km860xtt",
+          "cmdb_x-1ly3ymdqq5y9m",
+          "cmdb_x-1qvdnjgh3juos",
+          "cmdb_x-1yeqm8zqa9epv"
+        ]
+      },
+      "output": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

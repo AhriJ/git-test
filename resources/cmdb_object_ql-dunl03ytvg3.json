@@ -1,0 +1,91 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-dunl03ytvg3",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "虚拟交换机",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-3mrhl2wjkwia6"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.ip_address as IP地址",
+        ".data.ports_num as 剩余网口数目",
+        ".data.max_ports_num as 最大网口数目",
+        ".data.cidr_block as CidrBlock",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-vendor as 供应商",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID",
+        ".indexes.cmdb_index-status as 状态",
+        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
+        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
+        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
+        ".indexes.cmdb_index-sync_marker as 同步标记",
+        ".indexes.cmdb_index-synced_at as 最后同步时间",
+        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1lgj9wmfg4cr3",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "归档条件判断",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "resId": ""
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "case": "true",
+        "uuid": "907ff44de7fe"
+      },
+      {
+        "uuid": "19e278d9ea1e"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-9dgufg9tnfqv",
+      "cmdb_mpage-11c3wj9dcjc5i"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

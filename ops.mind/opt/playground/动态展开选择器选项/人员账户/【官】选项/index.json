@@ -1,0 +1,36 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-281ag2o4oac62",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "【官】选项",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [],
+    "config": {
+      "resId": ""
+    },
+    "publics": {},
+    "state": {
+      "value": "{var: state.loop.item.inode.id}",
+      "label": "{var: state.loop.item.inode.name}",
+      "loop": {
+        "item": {}
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_option",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

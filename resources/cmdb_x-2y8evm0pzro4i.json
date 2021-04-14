@@ -1,0 +1,103 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2y8evm0pzro4i",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "XGame:Global:All:Hotfix",
+    "namespace": "",
+    "descr": "XGame",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".data.logo_link",
+        "name": "图标链接"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-3uhsq5xww0cy8",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "XGame:Global:All:Hotfix"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_x-xvbpbt1vit95\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_index_2\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=~\",\"value\":\"XGame:Global:All:Hotfix\"}]}]},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-3uhsq5xww0cy8\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_2}\"}]}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-3uhsq5xww0cy8 as 关联到模型配置\",\".data.logo_link as 图标链接\",\".data.input_schema as 执行参数规格\",\".data.vars_schema as 全局变量规格\",\".data.notify_config.other_accounts as 其他人员\",\".data.notify_config.executor as 工单执行人\",\".data.notify_config.type as 人员选择方式\",\".data.notify_config.roles as 角色列表\",\".data.notify_config.inherit as 是否强制继承\",\".data.handler_config.other_accounts as 其他人员\",\".data.handler_config.type as 人员选择方式\",\".data.handler_config.roles as 角色列表\",\".data.handler_config.inherit as 是否强制继承\",\".data.steps.name as 步骤名\",\".data.steps.component_id as 工单组件 ID\",\".data.steps.execute_policy as 执行流转方式\",\".data.steps.fail_policy as 失败流转方式\",\".data.steps.success_policy as 正常流转方式\",\".data.steps.set_vars.var_path as 变量路径\",\".data.steps.set_vars.var_value as 设置值\",\".data.steps.premise.var as steps.premise.var\",\".data.steps.premise.op as steps.premise.op\",\".data.steps.premise.val as steps.premise.val\",\".data.steps.notify_config.other_accounts as 其他人员\",\".data.steps.notify_config.executor as 工单执行人\",\".data.steps.notify_config.type as 人员选择方式\",\".data.steps.notify_config.roles as 角色列表\",\".data.steps.handler_config.executor as 工单执行人\",\".data.steps.handler_config.other_accounts as 其他人员\",\".data.steps.handler_config.type as 人员选择方式\",\".data.steps.handler_config.roles as 角色列表\",\".data.su as 提权\",\".data.model_id as 关联模型配置ID\",\".indexes.cmdb_index-1c8wfs912y3h0 as 工单模板类型\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_index_2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2yj8tkyi3m4as\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联到模型配置\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-36zo9m080assm",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-140d1eg4cvz1h"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3g3hvh4c0g0d1",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-r8fsss3e1n4v",
+      "data": null
+    },
+    "ql": "cmdb_ql-31zzkkas1k2m1",
+    "object_id": "cmdb_object_ql-2k7vksu1q2ezi",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_9460905e"
+  }
+}

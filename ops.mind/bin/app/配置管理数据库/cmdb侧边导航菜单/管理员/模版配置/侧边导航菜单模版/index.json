@@ -1,0 +1,42 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2vpoov7nxiair",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "侧边导航菜单模版",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "logo": {},
+      "name": "{var: state.__lib__.name}",
+      "icon": "{var: state.__lib__.icon}",
+      "openKeys": [],
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"title\":\"名称\"},\"icon\":{\"type\":\"string\",\"title\":\"图标\"}},\"required\":[\"name\"]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

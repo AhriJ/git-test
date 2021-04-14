@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1vecv2wi9w2al",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "申请模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-38u56wo1pruk7"
+    },
+    "children": {
+      "children.a1304673a518.state.__lib__.view_id": "cmdb_view-9c5sco9vbfpp"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

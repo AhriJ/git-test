@@ -1,0 +1,120 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-2mbu6ncnkfefw",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "强制更新对象",
+    "namespace": "/preferences",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "es5"
+      },
+      {
+        "from": "es5",
+        "to": "__END__"
+      }
+    ],
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "list": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "title": "原始数据"
+                },
+                "title": "升级初始化列表"
+              }
+            },
+            "required": []
+          }
+        },
+        "inputs": {
+          "*": {}
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "enum": [
+                  "SUCCEEDED",
+                  "FAILED"
+                ]
+              },
+              "result_name": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              },
+              "output": {
+                "type": "object",
+                "properties": {
+                  "failed_count": {
+                    "type": "integer"
+                  },
+                  "create_count": {
+                    "type": "integer"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "inputs": {
+          "es5": "{var:es5.output}"
+        }
+      },
+      {
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-2mbu6ncnkfefw.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{},\"required\":[]}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{\"result\":{\"type\":\"string\",\"enum\":[\"SUCCEEDED\",\"FAILED\"]},\"result_name\":{\"type\":\"string\"},\"message\":{\"type\":\"string\"},\"output\":{\"type\":\"object\",\"properties\":{\"failed_count\":{\"type\":\"integer\"},\"create_count\":{\"type\":\"integer\"}}}}}"
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "name": "es5",
+        "merge": {
+          "enable": false
+        }
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

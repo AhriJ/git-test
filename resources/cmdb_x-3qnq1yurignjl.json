@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3qnq1yurignjl",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "服务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "service",
+    "name": "服务",
+    "describe": null,
+    "group": null,
+    "xx": null,
+    "pkg_id": "cmdb_x-17b3qflo7800u",
+    "workflows": {
+      "create": "cmdb_workflow-2alczksqgzldt",
+      "delete": "cmdb_workflow-1aw742h5e6qtv",
+      "update": "cmdb_workflow-3ceyf0km37xkd",
+      "batch_update": "cmdb_workflow-20fqubm99ov7f"
+    },
+    "ql_id": "cmdb_ql-126bupvlxmh7a"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_service-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-1jsle2yix2qmt"
+    ]
+  }
+}

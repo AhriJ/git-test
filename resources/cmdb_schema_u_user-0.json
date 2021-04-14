@@ -1,0 +1,45 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_user-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "用户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "token": {
+          "type": "string",
+          "format": "cmdb-secret",
+          "title": "TOKEN"
+        },
+        "avatar": {
+          "type": "string",
+          "format": "icon",
+          "title": "头像"
+        }
+      },
+      "required": [
+        "token"
+      ]
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-1vswnpvg373pv",
+        "required": false,
+        "key": "email"
+      }
+    ]
+  },
+  "indexes": {}
+}

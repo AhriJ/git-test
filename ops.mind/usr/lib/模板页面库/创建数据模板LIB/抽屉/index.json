@@ -1,0 +1,70 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3mpq3nsz2zdi8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "抽屉",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.onOk.0": "NOT_EXPORTED",
+      "state.onOk.0.trigger": "NOT_EXPORTED",
+      "state.onOk.0.args": "NOT_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "visible": false,
+      "title": "创建数据模板",
+      "width": "80vw",
+      "onOk": [
+        {
+          "trigger": "{var: children.fbdf2d0d010d.children.8c76b35cf750.state.__lib__.onClick.0.trigger}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "__trigger__": {}
+    },
+    "children": {
+      "children.fbdf2d0d010d.children.807c93cf525e.state.__lib__.onClick.1.trigger": "{var: state.__trigger__.hide}",
+      "children.fbdf2d0d010d.children.11b11e48835a.state.__lib__.onClick.1.trigger": "{var: state.__trigger__.hide}",
+      "children.fbdf2d0d010d.children.8c76b35cf750.state.__lib__.onClick.1.trigger": "{var: state.__trigger__.hide}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "fbdf2d0d010d"
+      },
+      {
+        "uuid": "4edae808aaff"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3r92x3fn3ihlh",
+      "cmdb_mpage-afqgjpzc58ju"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-drawer",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

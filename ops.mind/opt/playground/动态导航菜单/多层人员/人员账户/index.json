@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-fqs3otbtyn9t",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "人员账户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "state": {
+      "fragment": true,
+      "sorts": []
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "2bf8ee0c7726"
+      }
+    ],
+    "config": {
+      "resId": "cmdb_ql-2up4h1j93xf47"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-gyv990kmqnle"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

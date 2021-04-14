@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1m4vdgk9ubcu0",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "核心模型对象拓扑",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "height": 500,
+      "jump": "cmdb_app=__ROOT__.923e1ed47e60.76c690a67126.5e182e76b501\u0026schema_id=$0",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-19lqnzu049iy3",
+    "cmdb_index-mpage_component_type": "BUSINESS"
+  }
+}

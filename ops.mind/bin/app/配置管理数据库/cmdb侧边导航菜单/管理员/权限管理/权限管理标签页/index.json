@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3ipnzk9qvecsf",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "权限管理标签页",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_mpage-1342gvslrkdsh"
+    },
+    "state": {},
+    "children": [],
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

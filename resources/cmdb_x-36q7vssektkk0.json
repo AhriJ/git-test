@@ -1,0 +1,25 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-36q7vssektkk0",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "关联多个XGAME版本发布",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-14etdvncockuo"
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "cmdb_x-1dmhtp3641ubo",
+    "cmdb_index-24s4gq55rc6q2": true,
+    "cmdb_index-2juvlwf06k1a1": "cmdb_x-3nnt7vso6hbzv",
+    "cmdb_index-3b01as46nc0b7": true
+  }
+}

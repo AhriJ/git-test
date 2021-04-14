@@ -1,0 +1,58 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-w6wns3845fbx",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "动态导航菜单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "looped": false,
+        "uuid": "4f19b7dc6786"
+      },
+      {
+        "looped": false,
+        "uuid": "7d9f2b02ea38"
+      },
+      {
+        "uuid": "db4f07cf0c08"
+      },
+      {
+        "uuid": "7d38b783b623"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "openKeys": [],
+      "selectedKey": "",
+      "logo": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2z2ol3xr4qzf2",
+      "cmdb_mpage-ovunf71rnytm",
+      "cmdb_mpage-26vfcz1lwo580",
+      "cmdb_mpage-1bre38tadpv36"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

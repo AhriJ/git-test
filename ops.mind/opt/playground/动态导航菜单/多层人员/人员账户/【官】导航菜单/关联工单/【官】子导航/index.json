@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-n5kq1mr1rrav",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "【官】子导航",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.42d73489b7d1.state.text": "{var: state.loop.item.inode.name}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "42d73489b7d1"
+      }
+    ],
+    "config": {
+      "resId": ""
+    },
+    "publics": {},
+    "state": {
+      "loop": {
+        "item": {}
+      },
+      "name": "{var: state.loop.item.inode.name}"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-r47z0duc7n5b"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

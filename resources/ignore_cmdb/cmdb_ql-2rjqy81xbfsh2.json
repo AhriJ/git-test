@@ -1,0 +1,83 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2rjqy81xbfsh2",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "企业微信组织架构默认数据模板常用查询",
+    "namespace": "/ignore_cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_weChatDep-0"
+        },
+        {
+          "field": ".inode.name",
+          "op": "=",
+          "value": "{var:vars.inode_name}"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-35g9n1tiuzbuh",
+          "op": "=",
+          "value": "{var:vars.indexes_parent_id}"
+        },
+        {
+          "field": "vars.indexes_parent_id",
+          "op": "=",
+          "value": "$empty"
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".data.dep_id as 组织id",
+        ".indexes.cmdb_index-35g9n1tiuzbuh as 上级组织",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_parent_id": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2rjqy81xbfsh2\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "上级组织"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

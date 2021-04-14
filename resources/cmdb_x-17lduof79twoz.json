@@ -1,0 +1,287 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-17lduof79twoz",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "服务器模版默认数据模板",
+    "namespace": "",
+    "descr": "阿里云服务器购买模版",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-maep9bejx114",
+        "show": true,
+        "pkg_id": "cmdb_x-2be0tz2k84feb",
+        "widget": "table"
+      },
+      {
+        "field": ".data.dataDisk",
+        "show": true
+      },
+      {
+        "field": ".data.systemDisk",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-nejopcm0veer",
+        "show": true,
+        "pkg_id": "cmdb_x-frcglwyrtlbi",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-218yhteijpj5l",
+        "show": true,
+        "pkg_id": "cmdb_x-1031uk314n1lv",
+        "widget": "table"
+      },
+      {
+        "field": ".data.resourcegroup",
+        "show": true
+      },
+      {
+        "field": ".data.tag",
+        "show": true
+      },
+      {
+        "field": ".data.password",
+        "show": true
+      },
+      {
+        "field": ".data.autoRenew",
+        "show": true
+      },
+      {
+        "field": ".data.InternetChargeType",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-hqthvs7zfu6h",
+        "show": true,
+        "pkg_id": "cmdb_x-1rxf8gwidn0hv",
+        "widget": "table"
+      },
+      {
+        "field": ".data.hostname",
+        "show": true
+      },
+      {
+        "field": ".data.networkType",
+        "show": true
+      },
+      {
+        "field": ".data.zone",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "show": true,
+        "pkg_id": "cmdb_x-1kkpnfh3tn2r4",
+        "widget": "table"
+      },
+      {
+        "field": ".data.instanceType",
+        "show": true
+      },
+      {
+        "field": ".data.region",
+        "show": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-maep9bejx114",
+        "name": "业务树服务"
+      },
+      {
+        "field": ".data.dataDisk.size",
+        "name": "大小"
+      },
+      {
+        "field": ".data.dataDisk.category",
+        "name": "类型"
+      },
+      {
+        "field": ".data.dataDisk.name",
+        "name": "名称"
+      },
+      {
+        "field": ".data.systemDisk.size",
+        "name": "大小"
+      },
+      {
+        "field": ".data.systemDisk.category",
+        "name": "类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-nejopcm0veer",
+        "name": "VPC"
+      },
+      {
+        "field": ".indexes.cmdb_index-218yhteijpj5l",
+        "name": "安全组"
+      },
+      {
+        "field": ".data.resourcegroup",
+        "name": "资源组"
+      },
+      {
+        "field": ".data.tag.Key",
+        "name": "标签键"
+      },
+      {
+        "field": ".data.tag.Value",
+        "name": "标签值"
+      },
+      {
+        "field": ".data.password",
+        "name": "密码"
+      },
+      {
+        "field": ".data.autoRenew",
+        "name": "自动续费"
+      },
+      {
+        "field": ".data.InternetChargeType",
+        "name": "网络收费类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-hqthvs7zfu6h",
+        "name": "镜像"
+      },
+      {
+        "field": ".data.hostname",
+        "name": "主机名称"
+      },
+      {
+        "field": ".data.networkType",
+        "name": "网络类型"
+      },
+      {
+        "field": ".data.zone",
+        "name": "可用区"
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "name": "交换机"
+      },
+      {
+        "field": ".data.instanceType",
+        "name": "机型"
+      },
+      {
+        "field": ".data.region",
+        "name": "区域"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": "$empty",
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-maep9bejx114",
+        "op": "=-",
+        "value": [
+          "$empty"
+        ],
+        "is_array": true,
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-nejopcm0veer",
+        "op": "=",
+        "value": "$empty",
+        "is_array": false,
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-218yhteijpj5l",
+        "op": "=-",
+        "value": [
+          "$empty"
+        ],
+        "is_array": true,
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-hqthvs7zfu6h",
+        "op": "=",
+        "value": "$empty",
+        "is_array": false,
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-2e0wp2v7psuk2",
+        "op": "=",
+        "value": "$empty",
+        "is_array": false,
+        "widget": "table"
+      }
+    ],
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-1vudhclffl2fu",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".indexes.cmdb_index-maep9bejx114\",\".data.dataDisk\",\".data.systemDisk\",\".indexes.cmdb_index-nejopcm0veer\",\".indexes.cmdb_index-218yhteijpj5l\",\".data.resourcegroup\",\".data.tag\",\".data.password\",\".data.autoRenew\",\".data.InternetChargeType\",\".indexes.cmdb_index-hqthvs7zfu6h\",\".data.hostname\",\".data.networkType\",\".data.zone\",\".indexes.cmdb_index-2e0wp2v7psuk2\",\".data.instanceType\",\".data.region\"],\"enumNames\":[\"名称\",\"描述\",\"业务树服务\",\"数据磁盘\",\"系统盘\",\"VPC\",\"安全组\",\"资源组\",\"标签\",\"密码\",\"自动续费\",\"网络收费类型\",\"镜像\",\"主机名称\",\"网络类型\",\"可用区\",\"交换机\",\"机型\",\"区域\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".indexes.cmdb_index-maep9bejx114\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"业务树服务\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-maep9bejx114' }}\"},\".data.dataDisk\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"数据磁盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":32768,\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"title\":\"类型\"},\"name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[]},\"title\":\"数据磁盘\",\"ui:hidden\":\"{{ rootValue.field !== '.data.dataDisk' }}\"},\".data.systemDisk\":{\"type\":\"object\",\"title\":\"系统盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":500,\"default\":40,\"format\":\"cmdb-unit:byte\",\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"format\":\"cmdb-unit:byte\",\"title\":\"类型\"}},\"required\":[\"size\",\"category\"],\"ui:hidden\":\"{{ rootValue.field !== '.data.systemDisk' }}\"},\".indexes.cmdb_index-nejopcm0veer\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2y380uej0oyqb\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-nejopcm0veer' }}\"},\".indexes.cmdb_index-218yhteijpj5l\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1yy1zp921jszn\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"安全组\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-218yhteijpj5l' }}\"},\".data.resourcegroup\":{\"type\":\"string\",\"title\":\"资源组\",\"ui:hidden\":\"{{ rootValue.field !== '.data.resourcegroup' }}\"},\".data.tag\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"标签\",\"properties\":{\"Key\":{\"type\":\"string\",\"title\":\"标签键\"},\"Value\":{\"type\":\"string\",\"title\":\"标签值\"}},\"required\":[]},\"title\":\"标签\",\"ui:hidden\":\"{{ rootValue.field !== '.data.tag' }}\"},\".data.password\":{\"type\":\"string\",\"title\":\"密码\",\"ui:hidden\":\"{{ rootValue.field !== '.data.password' }}\"},\".data.autoRenew\":{\"type\":\"boolean\",\"default\":true,\"title\":\"自动续费\",\"ui:hidden\":\"{{ rootValue.field !== '.data.autoRenew' }}\"},\".data.InternetChargeType\":{\"type\":\"string\",\"enum\":[\"PayByBandwidth\",\"PayByTraffic\"],\"default\":\"PayByTraffic\",\"title\":\"网络收费类型\",\"ui:hidden\":\"{{ rootValue.field !== '.data.InternetChargeType' }}\"},\".indexes.cmdb_index-hqthvs7zfu6h\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-17ngw0od8e8o8\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"镜像\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-hqthvs7zfu6h' }}\"},\".data.hostname\":{\"type\":\"string\",\"title\":\"主机名称\",\"ui:hidden\":\"{{ rootValue.field !== '.data.hostname' }}\"},\".data.networkType\":{\"type\":\"string\",\"enum\":[\"classic\",\"vpc\"],\"default\":\"vpc\",\"title\":\"网络类型\",\"ui:hidden\":\"{{ rootValue.field !== '.data.networkType' }}\"},\".data.zone\":{\"type\":\"string\",\"title\":\"可用区\",\"ui:hidden\":\"{{ rootValue.field !== '.data.zone' }}\"},\".indexes.cmdb_index-2e0wp2v7psuk2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-21o3dndyr8e1n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"交换机\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2e0wp2v7psuk2' }}\"},\".data.instanceType\":{\"type\":\"string\",\"title\":\"机型\",\"ui:hidden\":\"{{ rootValue.field !== '.data.instanceType' }}\"},\".data.region\":{\"type\":\"string\",\"title\":\"区域\",\"ui:hidden\":\"{{ rootValue.field !== '.data.region' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-34rmzwtkmgywr"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2psfqaw85j1v7",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-maep9bejx114\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"业务树服务\"},\".data.dataDisk\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"数据磁盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":32768,\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"title\":\"类型\"},\"name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[]},\"title\":\"数据磁盘\"},\".data.systemDisk\":{\"type\":\"object\",\"title\":\"系统盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":500,\"default\":40,\"format\":\"cmdb-unit:byte\",\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"format\":\"cmdb-unit:byte\",\"title\":\"类型\"}},\"required\":[\"size\",\"category\"]},\".indexes.cmdb_index-nejopcm0veer\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2y380uej0oyqb\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\"},\".indexes.cmdb_index-218yhteijpj5l\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1yy1zp921jszn\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"安全组\"},\".data.resourcegroup\":{\"type\":\"string\",\"title\":\"资源组\"},\".data.tag\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"标签\",\"properties\":{\"Key\":{\"type\":\"string\",\"title\":\"标签键\"},\"Value\":{\"type\":\"string\",\"title\":\"标签值\"}},\"required\":[]},\"title\":\"标签\"},\".data.password\":{\"type\":\"string\",\"title\":\"密码\"},\".data.autoRenew\":{\"type\":\"boolean\",\"default\":true,\"title\":\"自动续费\"},\".data.InternetChargeType\":{\"type\":\"string\",\"enum\":[\"PayByBandwidth\",\"PayByTraffic\"],\"enumNames\":[\"按固定带宽计费\",\"按使用流量计费\"],\"default\":\"PayByTraffic\",\"title\":\"网络收费类型\"},\".indexes.cmdb_index-hqthvs7zfu6h\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-17ngw0od8e8o8\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"镜像\"},\".data.hostname\":{\"type\":\"string\",\"title\":\"主机名称\"},\".data.networkType\":{\"type\":\"string\",\"enum\":[\"classic\",\"vpc\"],\"enumNames\":[\"经典网络\",\"专有网络\"],\"default\":\"vpc\",\"title\":\"网络类型\"},\".data.zone\":{\"type\":\"string\",\"title\":\"可用区\"},\".indexes.cmdb_index-2e0wp2v7psuk2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-21o3dndyr8e1n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"交换机\"},\".data.instanceType\":{\"type\":\"string\",\"title\":\"机型\"},\".data.region\":{\"type\":\"string\",\"title\":\"区域\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".data.autoRenew\",\".data.InternetChargeType\",\".data.zone\",\".data.instanceType\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3i1l1txqkglj1",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-maep9bejx114\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"业务树服务\"},\".data.dataDisk\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"数据磁盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":32768,\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"title\":\"类型\"},\"name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[]},\"title\":\"数据磁盘\"},\".data.systemDisk\":{\"type\":\"object\",\"title\":\"系统盘\",\"properties\":{\"size\":{\"type\":\"number\",\"min\":20,\"max\":500,\"default\":40,\"format\":\"cmdb-unit:byte\",\"title\":\"大小\"},\"category\":{\"type\":\"string\",\"format\":\"cmdb-unit:byte\",\"title\":\"类型\"}},\"required\":[\"size\",\"category\"]},\".indexes.cmdb_index-nejopcm0veer\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2y380uej0oyqb\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\"},\".indexes.cmdb_index-218yhteijpj5l\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1yy1zp921jszn\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"安全组\"},\".data.resourcegroup\":{\"type\":\"string\",\"title\":\"资源组\"},\".data.tag\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"标签\",\"properties\":{\"Key\":{\"type\":\"string\",\"title\":\"标签键\"},\"Value\":{\"type\":\"string\",\"title\":\"标签值\"}},\"required\":[]},\"title\":\"标签\"},\".data.password\":{\"type\":\"string\",\"title\":\"密码\"},\".data.autoRenew\":{\"type\":\"boolean\",\"default\":true,\"title\":\"自动续费\"},\".data.InternetChargeType\":{\"type\":\"string\",\"enum\":[\"PayByBandwidth\",\"PayByTraffic\"],\"enumNames\":[\"按固定带宽计费\",\"按使用流量计费\"],\"default\":\"PayByTraffic\",\"title\":\"网络收费类型\"},\".indexes.cmdb_index-hqthvs7zfu6h\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-17ngw0od8e8o8\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"镜像\"},\".data.hostname\":{\"type\":\"string\",\"title\":\"主机名称\"},\".data.networkType\":{\"type\":\"string\",\"enum\":[\"classic\",\"vpc\"],\"enumNames\":[\"经典网络\",\"专有网络\"],\"default\":\"vpc\",\"title\":\"网络类型\"},\".data.zone\":{\"type\":\"string\",\"title\":\"可用区\"},\".indexes.cmdb_index-2e0wp2v7psuk2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-21o3dndyr8e1n\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"交换机\"},\".data.instanceType\":{\"type\":\"string\",\"title\":\"机型\"},\".data.region\":{\"type\":\"string\",\"title\":\"区域\"}},\"required\":[\".inode.name\",\".data.autoRenew\",\".data.InternetChargeType\",\".data.zone\",\".data.instanceType\"]}"
+    },
+    "ql": "cmdb_ql-amveuetav1i2",
+    "object_id": "cmdb_object_ql-xp411acd1mnm",
+    "mpage": {
+      "detail_page": "cmdb_mpage-3gdp79l7fa0zm",
+      "detail_uuid": "ucd7901db7f0",
+      "tabs_id": "cmdb_mpage-308mg3hnxhzo",
+      "list_page": "cmdb_mpage-17olfjnm3pxy5",
+      "list_uuid": "ua717abceda4",
+      "navs_id": "cmdb_mpage-3pkt3ioo92rxu",
+      "navs_uuid": null
+    }
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-232r61xber5s6"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-aew1d51q3v6w",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "boot",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": [],
+        "locked": true
+      }
+    },
+    "state": {
+      "title": "boot",
+      "describe": "用于存放 dotMind 被加载（初次安装、升级）时需要执行的 Workflow",
+      "path": [],
+      "state": {
+        "children": []
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "9e63bf3e0ed1"
+      },
+      {
+        "uuid": "2b3502e2d055"
+      },
+      {
+        "uuid": "3e3789709ff8"
+      },
+      {
+        "uuid": "6c3c4f185995"
+      },
+      {
+        "uuid": "50ff092188ed"
+      },
+      {
+        "uuid": "c53d1293e60f"
+      },
+      {
+        "uuid": "eb59ffee40f0"
+      },
+      {
+        "uuid": "a6ff4d576fb0"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-doz5wwgnvkl1",
+      "cmdb_mpage-26x9d2o84l3t5",
+      "cmdb_mpage-3uudl0qofsiyn",
+      "cmdb_mpage-388ty9ho9zsgz",
+      "cmdb_mpage-1cp1sbca6e2lh",
+      "cmdb_mpage-22ouz00w40xrg",
+      "cmdb_mpage-29a2nxer380so",
+      "cmdb_mpage-2a05tba8uet4i"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-3o666587lf9r3",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

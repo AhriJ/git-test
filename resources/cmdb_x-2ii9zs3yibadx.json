@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2ii9zs3yibadx",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "结构体2",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "teststruct2",
+    "field_name": "结构体2",
+    "field_type": "string",
+    "searched": false,
+    "required": false,
+    "is_array": false,
+    "string_option": {
+      "format": null,
+      "pattern": null,
+      "enum": null,
+      "enumNames": null,
+      "default": null
+    },
+    "number_option": {
+      "format": null,
+      "minimum": null,
+      "maximum": null,
+      "default": null
+    },
+    "boolean_option": {
+      "default": null
+    },
+    "object_option": [],
+    "id": null,
+    "index_id": "",
+    "inode_id": ""
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-ktb7p3i9jaad",
+    "cmdb_index-3vtvm6lmltynj": "cmdb_x-1uvhjd1igdiqg"
+  }
+}

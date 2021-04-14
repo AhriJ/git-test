@@ -1,0 +1,89 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-lw1xe3glc2us",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "归档拟态框",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {
+      "children.b35bab6caf6c.state.onFail.0.trigger": "{var: children.85913b0632f2.state.__trigger__.error}",
+      "children.b35bab6caf6c.state.onSuccess.0.trigger": "{var: state.__trigger__.hide}",
+      "children.b35bab6caf6c.state.onSuccess.1.trigger": "{var: children.85913b0632f2.state.__trigger__.success}",
+      "children.85913b0632f2.state.description": "{var: children.b35bab6caf6c.state.output.message}",
+      "children.85913b0632f2.state.message": "{var: children.b35bab6caf6c.state.output.result_name}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "8c1353433f4e",
+        "u6bc700ba700": "u6bc700ba700"
+      },
+      {
+        "uuid": "b35bab6caf6c",
+        "ue46e7e59b58": "ue46e7e59b58"
+      },
+      {
+        "uuid": "85913b0632f2",
+        "ucd7487d87c6": "ucd7487d87c6"
+      }
+    ],
+    "config": {
+      "style": {
+        "fontSize": "",
+        "margin": "",
+        "padding": "",
+        "textAlign": "",
+        "background": "",
+        "color": ""
+      },
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "resId": ""
+    },
+    "publics": {
+      "state.__trigger__.refresh": "FULL_EXPORTED",
+      "state.onOk": "SEMI_EXPORTED",
+      "state.onOk.0.args": "FULL_EXPORTED",
+      "state.onOk.0.trigger": "FULL_EXPORTED",
+      "state.__trigger__.hide": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.__trigger__.show": "FULL_EXPORTED",
+      "state.onOk.0": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "state": {
+      "onOk": [
+        {
+          "trigger": "{var: children.b35bab6caf6c.state.__trigger__.createWfJob}",
+          "args": []
+        }
+      ],
+      "onShow": [],
+      "title": "归档操作",
+      "__trigger__": {},
+      "footer": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-b5oytq7z4019",
+      "cmdb_mpage-3dzkh6nf3ra0n",
+      "cmdb_mpage-2ft681eimihrj"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-dialog",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-136r3srp60sys",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "图标",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 10px 0",
+        "fontSize": "70px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "type": "jiankongshuju",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_icon",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

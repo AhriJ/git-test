@@ -1,0 +1,112 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-1ksbkl63zc5kq",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "RAM权限策略",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-14yba7hm8xw4y"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_11",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-vendor",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_1}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-cloud_account",
+                  "op": "=",
+                  "value": "{var:vars.indexes_index_11}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.attachment_count as 引用次数",
+        ".data.default_version as 默认版本",
+        ".data.description as 权限策略描述",
+        ".data.policy_type as 类型",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "供应商"
+              },
+              "indexes_index_11": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联云账户"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

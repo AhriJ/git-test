@@ -1,0 +1,43 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1bre38tadpv36",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "多层人员",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "7233d03f0832"
+      }
+    ],
+    "config": {
+      "jump": {},
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "logo": {},
+      "name": "人员",
+      "openKeys": [],
+      "icon": "quanxianguanli"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-fqs3otbtyn9t"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

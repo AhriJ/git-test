@@ -1,0 +1,31 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2b5wj3rgf1658",
+    "schema_id": "cmdb_schema_x-3iwnis61xatk1",
+    "name": "莉莉丝",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "descr": "莉莉丝",
+    "config": {
+      "access_key": "LTAI4G7R6tMUa7ZLpeo1KfJx",
+      "secret_key": "cmdb_secret-3eoict9xszoeo",
+      "region": "cn-shanghai",
+      "tid": null
+    }
+  },
+  "indexes": {
+    "cmdb_index-1kxofbjr18d04": "cmdb_outband_stub-yr48pa68klpe",
+    "cmdb_index-o3qlqbk088fv": "cmdb_x-2l8q09zs4f9fk",
+    "cmdb_index-sync_metric_required": true,
+    "cmdb_index-sync_required": true
+  }
+}

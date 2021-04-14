@@ -1,0 +1,178 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2d9an6jvxrtmi",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询所有模型配置",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "style": {},
+      "hide": true,
+      "jump": {
+        "vars": []
+      },
+      "resId": "cmdb_ql-2nmmmkbhnqps4"
+    },
+    "publics": {
+      "state": "SEMI_EXPORTED",
+      "state.total_rows": "FULL_EXPORTED"
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "__table_data__": {
+        "indexes.cmdb_index-1m8g2lnhu7s0u": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-24s4gq55rc6q2": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-2juvlwf06k1a1.data.mpage.navs_uuid": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.descr": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.mtime": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-2juvlwf06k1a1.inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "__trigger__": {},
+      "__vars__": {
+        "vars.name": {},
+        "vars.type": {}
+      },
+      "rowSelection": {
+        "objects": []
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

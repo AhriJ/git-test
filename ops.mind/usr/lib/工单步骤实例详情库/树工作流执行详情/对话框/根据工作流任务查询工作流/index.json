@@ -1,0 +1,61 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3kafbko277dbu",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "根据工作流任务查询工作流",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.id.value": "FULL_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__row__.indexes.cmdb_index-wf": "FULL_EXPORTED",
+      "state.__row__": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-9gflw2jo4qr8",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {},
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.b59818bf55a4.config.resId": "{var: state.__row__.indexes.cmdb_index-wf}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "b59818bf55a4"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3earcyghcwj8a"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}

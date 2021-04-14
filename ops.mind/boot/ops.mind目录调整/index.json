@@ -1,0 +1,53 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1cp1sbca6e2lh",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "ops.mind目录调整",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.list.0": "NOT_EXPORTED",
+      "state.input.list.1": "NOT_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-2mbu6ncnkfefw",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "onSuccess": [],
+      "onFail": [],
+      "input": {
+        "list": [
+          "{\"inode\":{\"id\":\"cmdb_mpage-root\",\"name\":\"ops.mind\",\"schema_id\":\"cmdb_schema_mpage-1\",\"namespace\":\"/m.js\"},\"indexes\":{\"cmdb_index-mpage_children\":[\"cmdb_mpage-aew1d51q3v6w\",\"cmdb_mpage-3fkl2i5f04ttb\",\"cmdb_mpage-infz0if4d6ir\",\"cmdb_mpage-gfd5hncjcyu9\",\"cmdb_mpage-3mqdvttlr99zq\",\"cmdb_mpage-2chrjuugnj53p\",\"cmdb_mpage-kaiyw7irx53s\"],\"cmdb_index-mpage_component\":\"cmdb_mcomponent-3o666587lf9r3\",\"cmdb_index-mpage_component_type\":\"UNKNOWN\"},\"data\":{\"publics\":{\"state.path.1\":\"NOT_EXPORTED\",\"config.mind.children.0\":\"NOT_EXPORTED\",\"config.mind.children.1\":\"NOT_EXPORTED\"},\"config\":{\"autoRefreshInterval\":0,\"cmdbCache\":\"R+W+\",\"hide\":false,\"style\":{\"margin\":\"\",\"padding\":\"\",\"color\":\"\",\"fontSize\":\"\",\"background\":\"\",\"textAlign\":\"\"},\"jump\":{\"target\":\"default\",\"vars\":[]},\"mind\":{\"children\":[],\"locked\":true}},\"state\":{\"title\":\"ops.mind\",\"describe\":\"ops.mind主入口\",\"path\":[],\"state\":{\"children\":[]},\"__trigger__\":{}},\"children\":{},\"childrenConfig\":[{\"uuid\":\"293dc573d3bb\"},{\"uuid\":\"e6a37f5f14ae\"},{\"uuid\":\"295d6d87d9bd\"},{\"uuid\":\"3e3de08e119b\"},{\"uuid\":\"04cd47cd83fd\"},{\"uuid\":\"f8493d9dffbc\"},{\"uuid\":\"9e12a338dba7\"}]}}",
+          "{\"inode\":{\"id\":\"cmdb_mpage-1v9jgwy68sgp9\",\"name\":\"portal\",\"schema_id\":\"cmdb_schema_mpage-1\"},\"indexes\":{\"cmdb_index-mpage_children\":[\"cmdb_mpage-sa0qrzrsd8sj\"],\"cmdb_index-mpage_component\":\"cmdb_mcomponent-vars\",\"cmdb_index-mpage_component_type\":\"UNKNOWN\"},\"data\":{\"publics\":{\"state\":\"SEMI_EXPORTED\"},\"config\":{\"resId\":\"\",\"style\":{},\"jump\":{\"vars\":[]},\"mind\":{\"children\":[]}},\"state\":{\"schema\":\"{   \\\"type\\\": \\\"object\\\",   \\\"title\\\": \\\"root\\\",   \\\"properties\\\": {     \\\"portal_app\\\": {       \\\"type\\\": \\\"string\\\"     },     \\\"wf_id\\\": {       \\\"type\\\": \\\"string\\\"     },     \\\"wf_job_id\\\": {       \\\"type\\\": \\\"string\\\"     }   },   \\\"required\\\": [] }\",\"vars\":{\"portal_app\":\"{var: children.f797870b41ac.state.selectedKey}\"},\"global\":{\"portal_app\":\"portal_app\",\"wf_id\":\"wf_id\",\"wf_job_id\":\"wf_job_id\"},\"__trigger__\":{}},\"children\":{\"children.f797870b41ac.state.selectedKey\":\"{var: state.vars.portal_app}\",\"children.f797870b41ac.children.workflow.children.wf_detail.children.b66cdbd9ebf8.config.resId\":\"{var: state.vars.wf_id}\",\"children.f797870b41ac.children.workflow.children.wf_job_detail.children.b9966177a292.config.resId\":\"{var: state.vars.wf_job_id}\"},\"childrenConfig\":[{\"uuid\":\"f797870b41ac\"}]}}"
+        ]
+      },
+      "output": {
+        "output": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}

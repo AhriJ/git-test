@@ -1,0 +1,50 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1v63edb2dcfq1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "关联视图",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "children": {},
+    "childrenConfig": [
+      {
+        "md": 24,
+        "uuid": "1f0ec62ca1a1",
+        "u3f144194d93": "u3f144194d93"
+      },
+      {
+        "md": 24,
+        "uuid": "c2cbde7c1865",
+        "uf9bac97ca52": "uf9bac97ca52"
+      }
+    ],
+    "config": {
+      "jump": {
+        "vars": []
+      },
+      "resId": "",
+      "style": {}
+    },
+    "publics": {},
+    "state": {
+      "__trigger__": {}
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-11i56s7zakbnm",
+      "cmdb_mpage-3lsqlwfif3aag"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

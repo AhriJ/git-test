@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-1su5ji5jtlwup",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "内存大小",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "integer",
+    "multi": false,
+    "schema": {
+      "type": "$index_type",
+      "format": "cmdb-unit"
+    }
+  },
+  "indexes": {}
+}

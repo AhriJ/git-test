@@ -1,0 +1,133 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_workflow-1tdcow7aetahz",
+    "schema_id": "cmdb_schema_workflow-0",
+    "name": "[cmdb]删除模型配置",
+    "namespace": "/cmdb",
+    "descr": "[cmdb]删除模型配置",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "edges": [
+      {
+        "from": "__START__",
+        "to": "执行cmdb模型归档"
+      },
+      {
+        "from": "执行cmdb模型归档",
+        "to": "__END__"
+      }
+    ],
+    "icon": "[cmdb]删除模型配置",
+    "nodes": [
+      {
+        "name": "__START__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "idList": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "title": "idList"
+              }
+            },
+            "title": "input",
+            "required": [
+              "idList"
+            ]
+          }
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "*": {
+            "idList": [
+              "cmdb_x-2jsw2n11ma6xz"
+            ]
+          }
+        }
+      },
+      {
+        "name": "__END__",
+        "component": "cmdb_component-vars",
+        "descr": "自定义表单",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "schema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "string",
+                "title": "结果",
+                "enum": [
+                  "SUCCEEDED",
+                  "FAILED"
+                ]
+              },
+              "result_name": {
+                "type": "string",
+                "title": "用于展示的结果名称"
+              },
+              "message": {
+                "type": "string",
+                "title": "结果补充信息"
+              }
+            },
+            "required": [
+              "result",
+              "result_name",
+              "message"
+            ],
+            "title": "output"
+          }
+        },
+        "inputs": {
+          "执行cmdb模型归档": {
+            "message": "{var:执行cmdb模型归档.output.message}",
+            "result": "{var:执行cmdb模型归档.output.result}",
+            "result_name": "{var:执行cmdb模型归档.output.result_name}"
+          }
+        },
+        "merge": {
+          "enable": false
+        }
+      },
+      {
+        "name": "执行cmdb模型归档",
+        "settings": {},
+        "auto_run": true,
+        "component": "cmdb_component-interpreter_ecmascript",
+        "config": {
+          "script": "resources/scripts/cmdb_workflow-1tdcow7aetahz.data.nodes.2.config.script.js",
+          "input_schema": "{\"type\":\"object\",\"properties\":{},\"title\":\"input\"}",
+          "output_schema": "{\"type\":\"object\",\"title\":\"output\",\"properties\":{\"message\":{\"type\":\"string\"},\"result_name\":{\"type\":\"string\"},\"result\":{\"type\":\"string\"}},\"required\":[\"message\",\"result_name\",\"result\"]}"
+        },
+        "descr": "ES2015 解析组件",
+        "inputs": {
+          "__START__": "{var:__START__.output}"
+        },
+        "merge": {
+          "enable": false
+        }
+      }
+    ],
+    "persist_level": "job_unit",
+    "persist_retention": 3600
+  },
+  "indexes": {}
+}

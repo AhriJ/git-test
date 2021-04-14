@@ -1,0 +1,59 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2sp1nu6krv6xp",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "树工作流执行详情",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 0 8px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"workflow_job_id\":{\"type\":\"string\"}},\"required\":[]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.6cd2f3cc9272.state.onClick.0.trigger": "{var: children.a1dde17f54c9.state.__trigger__.show}",
+      "children.a1dde17f54c9.children.f3859ff5f805.state.__vars__.vars.id.value": "{var: state.__lib__.workflow_job_id}",
+      "children.a1dde17f54c9.children.f3859ff5f805.children.b59818bf55a4.state.jobId": "{var: state.__lib__.workflow_job_id}",
+      "children.a1dde17f54c9.children.218f770d0056.state.__vars__.vars.id.value": "{var: state.__lib__.workflow_job_id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "6cd2f3cc9272"
+      },
+      {
+        "uuid": "a1dde17f54c9",
+        "flex": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2gol5xytn4r2l",
+      "cmdb_mpage-13t15nlboli96"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-flex",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

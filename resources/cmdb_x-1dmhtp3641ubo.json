@@ -1,0 +1,37 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1dmhtp3641ubo",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "XGAME版本发布",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": null,
+    "menu_visible": true,
+    "id": "xgame_package_publish",
+    "name": "XGAME版本发布",
+    "describe": null,
+    "group": "XGAME",
+    "xx": null,
+    "pkg_id": "cmdb_x-3nnt7vso6hbzv",
+    "workflows": {
+      "create": "cmdb_workflow-1pvaim6smsoqa",
+      "delete": "cmdb_workflow-1om0ojrrdhqc0",
+      "update": "cmdb_workflow-3hekhyfx539t3",
+      "batch_update": "cmdb_workflow-wi92x7ydutfa"
+    },
+    "ql_id": "cmdb_ql-2w0jozkqgbsb5"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_xgame_package_publish-0",
+    "cmdb_index-mzedvy1l9wcv": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-27ak8iu0hrjo",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "markdown",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "text": "* 导航配置类型：\n侧边导航栏/\n子导航/\n动态展开\n* 侧边导航栏                               \n* 嵌套规则：允许嵌套任意类型导航配置。\n * 更新规则：可修改名称、图标、对子级进行添加、删除。\n* 数据模板\n * 嵌套规则：不允许嵌套任何子节点。\n * 更新规则：可修改名称、图标。\n* 动态展开\n * 嵌套规则：只允许嵌套动态展开、动态展来至少包含两层结构、否则不允许提交。\n * 更新规则：可修改名称、图标、删除子节点。\n* 拖拽规则\n * 拖拽遵循嵌套规则。\n * 动态展开只支持拖拽root结点。",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_md",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-ij5oifalk1uf",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对象详情页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__lib__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__lib__.object_id": "FULL_EXPORTED",
+      "state.__lib__.edit_data": "SEMI_EXPORTED",
+      "state.__lib__.edit_data.data": "FULL_EXPORTED",
+      "state.__lib__.edit_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.delete_data": "SEMI_EXPORTED",
+      "state.__lib__.delete_data.wf_id": "FULL_EXPORTED",
+      "state.__lib__.navs_uuid": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hide": true,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"object_id\":{\"type\":\"string\",\"title\":\"常用对象查询ID\"},\"edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"format\":\"json-schema\",\"title\":\"表单模型\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"编辑时数据\",\"required\":[\"data\",\"wf_id\"]},\"delete_data\":{\"type\":\"object\",\"properties\":{\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"删除时数据\",\"required\":[\"wf_id\"]},\"navs_uuid\":{\"type\":\"string\",\"title\":\"导航uuid\"}},\"title\":\"可选参数\",\"required\":[\"object_id\",\"edit_data\",\"delete_data\",\"navs_uuid\"]}",
+      "__lib__": {
+        "object_id": "cmdb_object_ql-2816eli7pozs1",
+        "edit_data": {
+          "wf_id": "cmdb_workflow-15r7nqhl91lup"
+        },
+        "delete_data": {
+          "wf_id": "cmdb_workflow-1kb9jb7ytdep9"
+        }
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.6e1ccd4e278c.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.1e8341bd0551.children.d0fb85e28952.state.__vars__.vars.id.value": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.dc2f6e1d16f8.children.8e6731b8b50c.state.input.inode": "{var: children.1e8341bd0551.children.e7ad444725f5.state.__row__}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.11e6ac6ed8c5.children.8ecee90c4114.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.11e6ac6ed8c5.children.3e33fc1457e2.state.onSuccess.2.trigger": "{var: state.__trigger__.refresh}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.3e9f3f4d5ada.state.onSuccess.3.trigger": "{var: children.c8310b432ead.children.c2cbde7c1865.state.__trigger__.refresh}",
+      "children.cb03501e9011.children.dc2f6e1d16f8.children.8e6731b8b50c.state.input.id": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.11e6ac6ed8c5.children.3e33fc1457e2.state.input.ids.0": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.1e8341bd0551.children.e7ad444725f5.state.__vars__.vars.id.value": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.1c443b162dec.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.1e8341bd0551.children.d0fb85e28952.config.resId": "{var: state.__lib__.object_id}",
+      "children.cb03501e9011.children.59839fca6632.children.17ae26e8b6ad.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.c8310b432ead.children.c2cbde7c1865.state.id": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.3e9f3f4d5ada.state.onSuccess.2.trigger": "{var: children.1e8341bd0551.state.__trigger__.refresh}",
+      "children.f5c5cbb58155.children.b97afd2bd1f0.state.cmdb_id": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.1e8341bd0551.children.e7ad444725f5.config.resId": "{var: state.__lib__.object_id}",
+      "children.cb03501e9011.children.dc2f6e1d16f8.children.8e6731b8b50c.state.onSuccess.2.trigger": "{var: children.1e8341bd0551.children.e7ad444725f5.state.__trigger__.refresh}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.11e6ac6ed8c5.children.8ecee90c4114.state.input.ids.0": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.2ccff4c93c29.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.11e6ac6ed8c5.children.52577607ff6e.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.6e1ccd4e278c.state.onSuccess.2.trigger": "{var: children.1e8341bd0551.state.__trigger__.refresh}",
+      "children.cb03501e9011.children.dc2f6e1d16f8.children.8e6731b8b50c.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.cb03501e9011.children.dc2f6e1d16f8.children.044029ee0c99.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.8892a13fcea5.config.jump.vars.0": "{var: children.1e8341bd0551.children.d0fb85e28952.state.__row__.inode.schema_id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c62c328d67b9.children.3e9f3f4d5ada.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.419972fc2d9b.state.input.id": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.59839fca6632.children.17ae26e8b6ad.state.input.ids.0": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.c74047da2310.state.__vars__.vars.id.value": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.c8310b432ead.children.c2cbde7c1865.state.object_ql_id": "{var: children.1e8341bd0551.children.d0fb85e28952.config.resId}",
+      "children.cb03501e9011.children.d14e7c4dc765.children.e438d9d877a2.state.qlConfig.ql_input.objects.0": "{var: children.0fba205fc2b6.state.vars.id}",
+      "children.cc94dc499cc9.state.qlConfig.ql_input.objects.0": "{var: children.0fba205fc2b6.state.vars.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "0fba205fc2b6",
+        "u71b8e9c0744": "u71b8e9c0744"
+      },
+      {
+        "uuid": "cc94dc499cc9"
+      },
+      {
+        "md": 24,
+        "uuid": "1e8341bd0551",
+        "u0ca062f3c02": "u0ca062f3c02"
+      },
+      {
+        "md": 24,
+        "uuid": "cb03501e9011",
+        "u5185c5e0802": "u5185c5e0802"
+      },
+      {
+        "md": 24,
+        "uuid": "c8310b432ead",
+        "u4c6db96fd03": "u4c6db96fd03"
+      },
+      {
+        "md": 24,
+        "uuid": "f5c5cbb58155",
+        "u784ca890b90": "u784ca890b90"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3hz5wogbox91e",
+      "cmdb_mpage-2rngw8ynow35u",
+      "cmdb_mpage-3ejy5aoa2a7uv",
+      "cmdb_mpage-1b7jno4ok4jjj",
+      "cmdb_mpage-1v63edb2dcfq1",
+      "cmdb_mpage-u3ql7cxdhitv"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-sh8odzqid7lp",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "对象详情页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      }
+    },
+    "state": {
+      "hide": true,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"object_id\":{\"type\":\"string\",\"title\":\"常用对象查询ID\"},\"edit_data\":{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"string\",\"format\":\"json-schema\",\"title\":\"表单模型\"},\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"编辑时数据\",\"required\":[\"data\",\"wf_id\"]},\"delete_data\":{\"type\":\"object\",\"properties\":{\"wf_id\":{\"type\":\"string\",\"title\":\"工作流ID\"}},\"title\":\"删除时数据\",\"required\":[\"wf_id\"]},\"navs_uuid\":{\"type\":\"string\",\"title\":\"导航uuid\"}},\"title\":\"可选参数\",\"required\":[\"object_id\",\"edit_data\",\"delete_data\",\"navs_uuid\"]}",
+      "__lib__": {
+        "object_id": "cmdb_object_ql-2816eli7pozs1",
+        "edit_data": {
+          "wf_id": "cmdb_workflow-15r7nqhl91lup"
+        },
+        "delete_data": {
+          "wf_id": "cmdb_workflow-1kb9jb7ytdep9"
+        }
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.81224ff9a409.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.3accaea4a4dd.children.3220f8b74dd3.state.__vars__.vars.id.value": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.437efd09fdb5.children.e42f0c46e691.state.input.inode": "{var: children.3accaea4a4dd.children.e6c636253398.state.__row__}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.9bb66394cf74.children.ca12a9d8e616.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.9bb66394cf74.children.e10ae648e0ce.state.onSuccess.2.trigger": "{var: state.__trigger__.refresh}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.8536144ca16d.state.onSuccess.3.trigger": "{var: children.37d4997c771b.children.b03af26f3abb.state.__trigger__.refresh}",
+      "children.d9408cd2e7a5.children.437efd09fdb5.children.e42f0c46e691.state.input.id": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.9bb66394cf74.children.e10ae648e0ce.state.input.ids.0": "{var: children.413ed308c499.state.vars.id}",
+      "children.3accaea4a4dd.children.e6c636253398.state.__vars__.vars.id.value": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.ca0c571f8612.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.3accaea4a4dd.children.3220f8b74dd3.config.resId": "{var: state.__lib__.object_id}",
+      "children.d9408cd2e7a5.children.12eaae156c1a.children.37a37dddc998.config.resId": "{var: state.__lib__.delete_data.wf_id}",
+      "children.37d4997c771b.children.b03af26f3abb.state.id": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.8536144ca16d.state.onSuccess.2.trigger": "{var: children.3accaea4a4dd.state.__trigger__.refresh}",
+      "children.d8e50df3b0fd.children.dfbf1e43c69b.state.cmdb_id": "{var: children.413ed308c499.state.vars.id}",
+      "children.3accaea4a4dd.children.e6c636253398.config.resId": "{var: state.__lib__.object_id}",
+      "children.d9408cd2e7a5.children.437efd09fdb5.children.e42f0c46e691.state.onSuccess.2.trigger": "{var: children.3accaea4a4dd.children.e6c636253398.state.__trigger__.refresh}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.9bb66394cf74.children.ca12a9d8e616.state.input.ids.0": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.a36610f41512.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.9bb66394cf74.children.e392f09b140e.config.jump.vars.0": "{var: state.__lib__.navs_uuid}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.81224ff9a409.state.onSuccess.2.trigger": "{var: children.3accaea4a4dd.state.__trigger__.refresh}",
+      "children.d9408cd2e7a5.children.437efd09fdb5.children.e42f0c46e691.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.d9408cd2e7a5.children.437efd09fdb5.children.af8f9ed48f6d.state.schema": "{var: state.__lib__.edit_data.data}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.e6cb01fc1ea1.config.jump.vars.0": "{var: children.3accaea4a4dd.children.3220f8b74dd3.state.__row__.inode.schema_id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.fa868b039ece.children.8536144ca16d.config.resId": "{var: state.__lib__.edit_data.wf_id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.e8b7a24bf0ce.state.input.id": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.12eaae156c1a.children.37a37dddc998.state.input.ids.0": "{var: children.413ed308c499.state.vars.id}",
+      "children.d9408cd2e7a5.children.b8f0a87a83ce.children.dbb0c457ecdd.state.__vars__.vars.id.value": "{var: children.413ed308c499.state.vars.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "413ed308c499"
+      },
+      {
+        "md": 24,
+        "uuid": "3accaea4a4dd"
+      },
+      {
+        "md": 24,
+        "uuid": "d9408cd2e7a5"
+      },
+      {
+        "md": 24,
+        "uuid": "37d4997c771b"
+      },
+      {
+        "md": 24,
+        "uuid": "d8e50df3b0fd"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2s76ban6dcva",
+      "cmdb_mpage-2ftvbsy9mrk1e",
+      "cmdb_mpage-xsk5qj4aaih1",
+      "cmdb_mpage-1jnvrecon8iwv",
+      "cmdb_mpage-uwsftdsyjoii"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3n8dambt689h6",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "警告提示",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "message": "注意：",
+      "description": "是否进行删除操作？删除成功后，若需恢复数据，请联系系统管理员。",
+      "showIcon": true,
+      "type": "warning",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_alert",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

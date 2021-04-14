@@ -1,0 +1,93 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-37gekwh3hvshq",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "服务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": ".inode.name",
+        "op": "=~",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": null,
+        "is_array": false
+      },
+      {
+        "field": ".indexes.cmdb_index-1yjv93yv3135a",
+        "op": "=",
+        "value": "$empty",
+        "pkg_id": null,
+        "widget": "table",
+        "is_array": false
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-1yjv93yv3135a",
+        "name": "区服"
+      },
+      {
+        "field": ".data.aliasname",
+        "name": "简称"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": true,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_service-0\"},{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-3cmb8b5dxiyko\",\"op\":\"=\",\"value\":\"{var:vars.indexes_game}\"},{\"field\":\"vars.indexes_game\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-1yjv93yv3135a\",\"op\":\"=\",\"value\":\"{var:vars.indexes_project}\"},{\"field\":\"vars.indexes_project\",\"op\":\"=\",\"value\":\"$empty\"}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-1yjv93yv3135a.indexes.cmdb_index-3cmb8b5dxiyko as 游戏\",\".indexes.cmdb_index-1yjv93yv3135a.inode.name as 区服\",\".data.aliasname as 简称\",\".inode.mtime as 最后修改时间\",\".inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_game\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3iqv2dm9cwahl\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"游戏\"},\"indexes_project\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1p031k2idm2ke\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"区服\"}}}}}}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-20fqubm99ov7f",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1aw742h5e6qtv"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3ceyf0km37xkd",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2alczksqgzldt",
+      "data": null
+    },
+    "ql": "cmdb_ql-1w5bcnd58yjpt",
+    "object_id": "cmdb_object_ql-3ht1qxvmg9bnn",
+    "forms": null,
+    "mpage": {
+      "detail_page": "cmdb_mpage-26cizduprptcd",
+      "detail_uuid": "u27ebb31a24c",
+      "tabs_id": "cmdb_mpage-jgiq8uprcndx",
+      "list_page": "cmdb_mpage-6sfvrhefnglm",
+      "list_uuid": "u208337bfdf4",
+      "navs_id": "cmdb_mpage-1w94qmqh2s0q",
+      "navs_uuid": null
+    }
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-3qnq1yurignjl"
+  }
+}

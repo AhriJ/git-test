@@ -1,0 +1,207 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-3o07ltdkh9tyj",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "虚拟交换机",
+    "namespace": "",
+    "descr": "游离资源",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": null
+              },
+              {
+                "field": ".indexes.cmdb_index-290dn7d3j221q",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": null
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": null
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "op": "=",
+        "value": null,
+        "is_array": false,
+        "widget": "table",
+        "pkg_id": null
+      },
+      {
+        "field": ".indexes.cmdb_index-290dn7d3j221q",
+        "op": "=",
+        "value": null,
+        "is_array": false,
+        "widget": "table",
+        "pkg_id": null
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "op": "=",
+        "value": null,
+        "is_array": false,
+        "widget": "table",
+        "pkg_id": null
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".data.ip_address",
+        "name": "IP地址"
+      },
+      {
+        "field": ".data.ports_num",
+        "name": "剩余网口数目"
+      },
+      {
+        "field": ".data.max_ports_num",
+        "name": "最大网口数目"
+      },
+      {
+        "field": ".data.cidr_block",
+        "name": "CidrBlock"
+      },
+      {
+        "field": ".indexes.cmdb_index-zone",
+        "name": "可用区"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-dzm41ig72dbn",
+        "name": "带外实例类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-3jvclg63itz7m",
+        "name": "带外产品"
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "带外实例ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-status",
+        "name": "状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-1puskjh9jltjw",
+        "name": "实例创建时间(timestamp)"
+      },
+      {
+        "field": ".indexes.cmdb_index-3m0bddfcx1u4v",
+        "name": "实例释放时间(timestamp)"
+      },
+      {
+        "field": ".indexes.cmdb_index-1xiozej60zk1l",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "name": "同步标记"
+      },
+      {
+        "field": ".indexes.cmdb_index-synced_at",
+        "name": "最后同步时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-290dn7d3j221q",
+        "name": "所在VPC"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_x-3mrhl2wjkwia6\"},{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_2}\"},{\"field\":\"vars.indexes_index_2\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-290dn7d3j221q\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_13}\"},{\"field\":\"vars.indexes_index_13\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_14}\"},{\"field\":\"vars.indexes_index_14\",\"op\":\"=\",\"value\":\"$empty\"}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".data.ip_address as IP地址\",\".data.ports_num as 剩余网口数目\",\".data.max_ports_num as 最大网口数目\",\".data.cidr_block as CidrBlock\",\".indexes.cmdb_index-zone as 可用区\",\".indexes.cmdb_index-vendor as 供应商\",\".indexes.cmdb_index-external_id as 外部ID\",\".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型\",\".indexes.cmdb_index-3jvclg63itz7m as 带外产品\",\".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID\",\".indexes.cmdb_index-status as 状态\",\".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)\",\".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)\",\".indexes.cmdb_index-1xiozej60zk1l as 所在区域\",\".indexes.cmdb_index-sync_marker as 同步标记\",\".indexes.cmdb_index-synced_at as 最后同步时间\",\".indexes.cmdb_index-290dn7d3j221q as 所在VPC\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_index_2\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"供应商\"},\"indexes_index_13\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2mnoco73jatdz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所在VPC\"},\"indexes_index_14\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-35sy1yw7no4qm",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-2wk42aardz9uv"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3olvnig9ci3h4",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-39gbajtt60yg",
+      "data": null
+    },
+    "ql": "cmdb_ql-2av52qbrasdjz",
+    "object_id": "cmdb_object_ql-dunl03ytvg3",
+    "mpage": {
+      "detail_page": "cmdb_mpage-19fppdaulgi2c",
+      "detail_uuid": "u2f992b621ea",
+      "tabs_id": "cmdb_mpage-1j09r9pxxr97d",
+      "list_page": "cmdb_mpage-3aga2e85z1vvg",
+      "list_uuid": "ub1839790d4a",
+      "navs_id": "cmdb_mpage-l7bespdszp68",
+      "navs_uuid": null
+    },
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_6a5e3411"
+  }
+}

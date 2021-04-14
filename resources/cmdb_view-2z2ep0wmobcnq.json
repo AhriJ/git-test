@@ -1,0 +1,79 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-2z2ep0wmobcnq",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "关系型数据库实例",
+    "namespace": "",
+    "descr": "已归档资源",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": null,
+      "update": null,
+      "batch": null,
+      "viewData": null,
+      "forms": [
+        {
+          "default": null,
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true,
+          "title": "名称"
+        },
+        {
+          "field": ".indexes.cmdb_index-vendor",
+          "ui_status": "show",
+          "default": null,
+          "pkg_id": null,
+          "widget": "table",
+          "disabled": true,
+          "title": "供应商"
+        },
+        {
+          "field": ".indexes.cmdb_index-external_id",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true
+        },
+        {
+          "field": ".indexes.cmdb_index-status",
+          "ui_status": "show",
+          "default": null,
+          "widget": null,
+          "disabled": true,
+          "title": "状态"
+        }
+      ],
+      "editable": false,
+      "readOnly": true,
+      "type": "list",
+      "data_id": "cmdb_x-2lqop0w1fkgd8",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "type": "default",
+            "open_type": "link",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-2z2ep0wmobcnq"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-18dxtpy8ppcz4"
+  }
+}

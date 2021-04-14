@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2m3e7f1knn0sr",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "主机名称",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "hostname",
+    "field_name": "主机名称",
+    "field_type": "string",
+    "searched": false,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-232r61xber5s6"
+  }
+}

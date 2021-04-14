@@ -1,0 +1,58 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-pcvfd63paxvp",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "卡片",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 10px 0",
+        "color": "",
+        "background": "#fafafa"
+      },
+      "jump": {
+        "target": "default",
+        "href": "",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.40b7e0740ecc.state.text": "{var: children.7b6faecaaa01.state.total_rows}",
+      "children.5289dbb19795.children.6f2f505ef9e2.state.text": "{var: children.7b6faecaaa01.state.total_rows}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "7b6faecaaa01"
+      },
+      {
+        "uuid": "5289dbb19795"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-7m8mqh1o3l41",
+      "cmdb_mpage-1dmzb6zyqs9fo"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_card",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

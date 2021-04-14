@@ -1,0 +1,324 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-pmue7nhymadg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查看工作流任务",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.wf.value": "FULL_EXPORTED",
+      "state.__vars__.vars.wf": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.rowSelection.objects": "FULL_EXPORTED",
+      "state.rowSelection": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-2geu3g6636m8s",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "conditions": true,
+      "fragment": false,
+      "setting": {
+        "sorts": [],
+        "limit": 30
+      },
+      "rowSelection": {
+        "selected": true,
+        "multi": true,
+        "dynamic": true,
+        "objects": [],
+        "pkg_list": []
+      },
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-wf.inode.name": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-wf.inode.id": {
+          "hidden": true,
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-wf_job_state": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.mtime": {
+          "sort_allowed": true,
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "inode.last_editor": {
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.wf": {},
+        "vars.state": {
+          "value": "$empty"
+        },
+        "vars.ctime": {
+          "value": 0
+        }
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "index": 0,
+        "uuid": "5b0607e74a9c"
+      },
+      {
+        "index": 1,
+        "uuid": "5f8b06a80985"
+      },
+      {
+        "index": 2,
+        "uuid": "4002b49c7cf2"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1jr10jl3spyi",
+      "cmdb_mpage-2rizhsi03f431",
+      "cmdb_mpage-9vr6dxnfdujy"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

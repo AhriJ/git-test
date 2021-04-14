@@ -1,0 +1,66 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-go9inppatvex",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "根据模型配置获取默认数据模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__vars__.vars.id": "SEMI_EXPORTED",
+      "state.__vars__.vars.id.op": "FULL_EXPORTED",
+      "state.__vars__.vars.id.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_object_ql-qnpj850wts2i",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "read_only": true,
+      "children": true,
+      "onSuccess": [],
+      "onFail": [],
+      "__trigger__": {},
+      "__row__": {},
+      "__vars__": {
+        "vars.id": {}
+      }
+    },
+    "children": {
+      "children.e6ef7d3d95dc.state.text": "{var: state.__row__.data.edit_data.data}",
+      "children.e1b026f3c075.state.__lib__.object_id": "{var: state.__row__.data.object_id}",
+      "children.e1b026f3c075.state.__lib__.edit_data.data": "{var: state.__row__.data.edit_data.data}",
+      "children.e1b026f3c075.state.__lib__.edit_data.wf_id": "{var: state.__row__.data.edit_data.wf_id}",
+      "children.e1b026f3c075.state.__lib__.delete_data.wf_id": "{var: state.__row__.data.delete_data.wf_id}",
+      "children.e1b026f3c075.children.cb03501e9011.children.d14e7c4dc765.children.3d83504ac170.state.value": "{var: state.__row__.data.editable}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "e1b026f3c075"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-ij5oifalk1uf"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-cmdb_updater",
+    "cmdb_index-mpage_component_type": "CMDB_OBJECT"
+  }
+}
