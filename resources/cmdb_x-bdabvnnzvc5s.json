@@ -24,14 +24,6 @@
         "name": "描述"
       },
       {
-        "field": ".indexes.cmdb_index-cloud_resource_config",
-        "name": "关联云资源配置"
-      },
-      {
-        "field": ".indexes.cmdb_index-vendor",
-        "name": "所属供应商"
-      },
-      {
         "field": ".indexes.cmdb_index-19weuw20ws2lq",
         "name": "证书类型"
       },
@@ -53,7 +45,7 @@
       },
       {
         "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
-        "name": "带外ID"
+        "name": "实例ID"
       },
       {
         "field": ".indexes.cmdb_index-3lofvn1raniji",
@@ -74,10 +66,6 @@
       {
         "field": ".indexes.cmdb_index-15vdkzcny1lr3",
         "name": "资源组"
-      },
-      {
-        "field": ".indexes.cmdb_index-external_id",
-        "name": "外部ID"
       },
       {
         "field": ".indexes.cmdb_index-144b6sef0cp4k",
@@ -120,32 +108,12 @@
                 "is_array": false
               },
               {
-                "field": ".indexes.cmdb_index-cloud_resource_config",
-                "op": "=",
-                "value": "$empty",
-                "is_array": false,
-                "widget": "table"
-              },
-              {
-                "field": ".indexes.cmdb_index-vendor",
-                "op": "=",
-                "value": "$empty",
-                "is_array": false,
-                "widget": "table"
-              },
-              {
-                "field": ".indexes.cmdb_index-cloud_account",
-                "op": "=",
-                "value": "$empty",
-                "is_array": false,
-                "widget": "table"
-              },
-              {
                 "field": ".indexes.cmdb_index-15vdkzcny1lr3",
                 "op": "=",
-                "value": "$empty",
+                "value": null,
                 "is_array": false,
-                "widget": "table"
+                "widget": "table",
+                "pkg_id": "cmdb_x_u_crf_resourcegroups-0_default"
               }
             ]
           }
@@ -153,7 +121,7 @@
       }
     ],
     "conditions": [],
-    "content": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_u_crf_certificate-0\"]}],\"objects\":[],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"function\":\"db\"}",
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_certificate-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_config\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_project_info\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_config}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-15vdkzcny1lr3\",\"op\":\"=\",\"value\":\"{var:vars.indexes_project_info}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-19weuw20ws2lq as 证书类型\",\".indexes.cmdb_index-3p7x9dyxwkhiv as 证书生效时间\",\".data.product_zh_name as 颁发者\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".data.alias as 备注名称\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-region as 所在区域\",\".data.domain as 主域名\",\".indexes.cmdb_index-15vdkzcny1lr3 as 资源组\",\".indexes.cmdb_index-144b6sef0cp4k as 证书过期时间\",\".indexes.cmdb_index-ulk4ifz5gp89 as 证书套餐类型\",\".indexes.cmdb_index-q28jpmetvivl as 证书包含的多个域名\",\".data.validity_period as 证书有效期(月)\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_project_info\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2unnfmh3tk3ax\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"资源组\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
     "advanced": false,
     "batch_edit_data": {
       "wf_id": "cmdb_workflow-22eatq58imxdz",
@@ -172,7 +140,8 @@
       "data": null
     },
     "ql": "cmdb_ql-391r9hm0lvh3",
-    "object_id": "cmdb_object_ql-1onazpr56b36z"
+    "object_id": "cmdb_object_ql-1onazpr56b36z",
+    "forms": null
   },
   "indexes": {
     "cmdb_index-3b01as46nc0b7": false,

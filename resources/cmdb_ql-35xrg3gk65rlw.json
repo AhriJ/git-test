@@ -46,8 +46,6 @@
               "cmdb_server-3rpi0b6jm91c1"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -82,8 +80,6 @@
       ],
       "objects": [],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".metric.host",

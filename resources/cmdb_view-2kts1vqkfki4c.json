@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-2kts1vqkfki4c",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "业务树",
+    "namespace": "",
+    "descr": "业务树展示",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": null,
+      "update": null,
+      "viewData": [],
+      "forms": [],
+      "editable": false,
+      "readOnly": false,
+      "type": "user",
+      "data_id": null,
+      "action_config": {},
+      "userFormData": {
+        "model_id": "cmdb_x-hpaahbsz8vpi",
+        "view_list": [
+          "cmdb_view-zg3qbrr5abyq",
+          "cmdb_view-1qdeuoq2dib36",
+          "cmdb_view-2h5wbodbxtfj4",
+          "cmdb_view-v2wmv77xnosm"
+        ],
+        "wf_id": "cmdb_workflow-2x47vuq0txff5",
+        "is_created": false,
+        "descr": "工单模版，以卡片形式展示工单",
+        "lib_id": "cmdb_mpage-32h7o864i1azm",
+        "isUpdate": true
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-4x6m1bt61sk",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-32h7o864i1azm"
+  }
+}

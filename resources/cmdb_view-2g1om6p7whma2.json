@@ -1,0 +1,57 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-2g1om6p7whma2",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "安全组",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[\".inode.name\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\"],\"enumNames\":[\"名称\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"}}}",
+      "viewData": [],
+      "forms": [
+        {
+          "default": null,
+          "title": "名称",
+          "field": ".inode.name",
+          "ui_status": "show",
+          "widget": null,
+          "disabled": true
+        }
+      ],
+      "editable": true,
+      "readOnly": false,
+      "type": "list",
+      "data_id": "cmdb_x-3nftwzse1xo06",
+      "action_config": {
+        "inode.name": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": "cmdb_view-35lrfczpa3t36",
+            "user_view_id": null,
+            "open_type": "link",
+            "type": "details",
+            "href": "$app=./cmdb_mpage-2evoizz4csppr\u0026view_id=cmdb_view-35lrfczpa3t36"
+          }
+        }
+      },
+      "workOrderList": []
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-tqhj9nh9tj44",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-kq6ex4cmxolp"
+  }
+}

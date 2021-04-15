@@ -38,8 +38,6 @@
               "cmdb_schema_x-ghkfn72ezw6k"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -88,8 +86,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.name as 数据模板名称",

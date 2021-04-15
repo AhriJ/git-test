@@ -1,0 +1,166 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1kr9ei93jt5ni",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云硬盘",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-1h2jo6o503e6n",
+        "name": "到期时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "实例ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-15vdkzcny1lr3",
+        "name": "资源组"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-1k4ffo3pyiwrv",
+        "name": "付费类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-evc346rc1ooe",
+        "name": "是否加密"
+      },
+      {
+        "field": ".indexes.cmdb_index-zone",
+        "name": "可用区"
+      },
+      {
+        "field": ".indexes.cmdb_index-3222aht78ury2",
+        "name": "随实例删除"
+      },
+      {
+        "field": ".indexes.cmdb_index-dzm41ig72dbn",
+        "name": "磁盘类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-2mikgqe9du6lv",
+        "name": "所在服务器"
+      },
+      {
+        "field": ".indexes.cmdb_index-15jh701ee6jvw",
+        "name": "用途"
+      },
+      {
+        "field": ".indexes.cmdb_index-32d2w7uh4fleq",
+        "name": "磁盘大小"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "服务"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "name": "所属云资源"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-15vdkzcny1lr3",
+                "op": "=",
+                "value": null,
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_u_crf_resourcegroups-0_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-2mikgqe9du6lv",
+                "op": "=",
+                "value": null,
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_u_crf_server-0_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_resource_config",
+                "op": "=",
+                "value": null,
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_x-6iplof81wxv_default"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_cloud_disk-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_config\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_account\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_resourcegroup\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_instance\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_resource_config\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_config}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-cloud_account\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_account}\"},{\"field\":\".indexes.cmdb_index-15vdkzcny1lr3\",\"op\":\"=\",\"value\":\"{var:vars.indexes_resourcegroup}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-2mikgqe9du6lv\",\"op\":\"=\",\"value\":\"{var:vars.indexes_instance}\"},{\"field\":\".indexes.cmdb_index-cloud_resource_config\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_resource_config}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-1h2jo6o503e6n as 到期时间\",\".indexes.cmdb_index-external_id as 实例ID\",\".indexes.cmdb_index-15vdkzcny1lr3 as 资源组\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型\",\".indexes.cmdb_index-evc346rc1ooe as 是否加密\",\".indexes.cmdb_index-zone as 可用区\",\".indexes.cmdb_index-3222aht78ury2 as 随实例删除\",\".indexes.cmdb_index-dzm41ig72dbn as 磁盘类型\",\".indexes.cmdb_index-2mikgqe9du6lv as 所在服务器\",\".indexes.cmdb_index-15jh701ee6jvw as 用途\",\".indexes.cmdb_index-32d2w7uh4fleq as 磁盘大小\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".indexes.cmdb_index-cloud_resource_config as 所属云资源\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\"indexes_resourcegroup\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2unnfmh3tk3ax\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"资源组\"},\"indexes_instance\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-15o9z0my1neyo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所在服务器\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "advanced": false,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-42lt90ccco9i",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-5fny872aempd"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2jf38ww9gkc12",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-321d20j41pj0a",
+      "data": null
+    },
+    "ql": "cmdb_ql-3l8u6nzje8g8z",
+    "object_id": "cmdb_object_ql-2hhncvnr372pi",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-weqspvdy7k6g"
+  }
+}

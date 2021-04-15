@@ -38,8 +38,6 @@
               "cmdb_schema_x-2bbnpb7xawvdc"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -78,8 +76,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.name as 关联名称",

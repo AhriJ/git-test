@@ -57,7 +57,7 @@
       }
     ],
     "conditions": [],
-    "content": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_workwx_auth-0\",\"cmdb_schema_dingtalk_auth-0\"]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.descr as 描述\",\".inode.schema_id\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}",
+    "content": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_workwx_auth-0\",\"cmdb_schema_dingtalk_auth-0\"]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"multi\":true,\"selects\":[\".inode.name\",\".inode.descr as 描述\",\".inode.schema_id\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}",
     "advanced": true,
     "ql": "cmdb_ql-tt3ta0j9gk5i",
     "batch_edit_data": {

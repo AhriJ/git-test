@@ -17,73 +17,33 @@
     "data_config": {},
     "view_config": {
       "super_mode": false,
-      "create": null,
-      "update": null,
-      "batch": null,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[\".inode.name\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\"],\"enumNames\":[\"名称\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"}}}",
       "viewData": null,
       "forms": [
         {
           "default": null,
+          "title": "名称",
           "field": ".inode.name",
           "ui_status": "show",
           "widget": null,
           "disabled": true
-        },
-        {
-          "field": ".data.max_ports_num",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
-        },
-        {
-          "field": ".data.cidr_block",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-vendor",
-          "ui_status": "show",
-          "default": null,
-          "pkg_id": null,
-          "widget": "table",
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-external_id",
-          "ui_status": "show",
-          "default": null,
-          "widget": "table",
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-status",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-sync_marker",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
         }
       ],
-      "editable": false,
-      "readOnly": true,
+      "editable": true,
+      "readOnly": false,
       "type": "list",
-      "data_id": "cmdb_x-1kkpnfh3tn2r4",
+      "data_id": "cmdb_x-1jfj2wz8bro50",
       "action_config": {
         "inode.name": {
           "action_config": {
             "action_type": "link",
-            "type": "default",
+            "view_id": "cmdb_view-3dqc0kusxcogz",
+            "user_view_id": null,
             "open_type": "link",
-            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-105vyr2lo76r"
+            "type": "details",
+            "href": "$app=./cmdb_mpage-cdwi54ob035r\u0026view_id=cmdb_view-3dqc0kusxcogz"
           }
         }
       },

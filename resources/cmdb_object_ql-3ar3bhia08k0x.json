@@ -1,0 +1,86 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-3ar3bhia08k0x",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "域名管理详情",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_domain-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-kfaivv6m0c35 as 域名状态",
+        ".indexes.cmdb_index-2s733qa4a0bbd as 是否自动续费",
+        ".indexes.cmdb_index-1c9jslopwfkux as 域名后缀",
+        ".indexes.cmdb_index-1pxe8fsjdn0z1 as 域名绑定的ns",
+        ".indexes.cmdb_index-3sskkh0krgt1s as 域名购买状态",
+        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-external_id as 实例ID",
+        ".indexes.cmdb_index-1161brg3225ru as 域名注册时间",
+        ".indexes.cmdb_index-3paty8r6ywynr as 域名注册商类型",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-25aar3wijv96n as 域名到期时间",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

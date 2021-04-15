@@ -27,7 +27,8 @@
       "data_id": null,
       "action_config": {},
       "userFormData": {
-        "url": "/grafana/d/YiJ2dJ1Gz/a-li-yun-redis-jian-kong?orgId=1\u0026var-instanceId=${var-instanceId}"
+        "url": "/grafana/d/70GPFTwGk/alibaba-cloud-redis-dashboard?orgId=1\u0026refresh=5m\u0026from=now-3h\u0026to=now\u0026var-instanceId=${var-instanceId}",
+        "descr": "自定义内嵌站点，用于内嵌其它站点作为展示方法"
       }
     }
   },

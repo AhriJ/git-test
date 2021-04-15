@@ -33,8 +33,6 @@
               "cmdb_schema_x-ghkfn72ezw6k"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -70,8 +68,6 @@
                     "cmdb_schema_x-schema"
                   ],
                   "sorts": [],
-                  "limit": 50,
-                  "offset": 0,
                   "multi": true,
                   "selects": [
                     ".inode.name",
@@ -95,8 +91,6 @@
               "$conditions"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": false,
             "selects": [
               ". as ret"
@@ -121,8 +115,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".data.object_id"

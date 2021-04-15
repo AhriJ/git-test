@@ -38,8 +38,6 @@
               "cmdb_schema_workflow-0"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -88,8 +86,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.name",

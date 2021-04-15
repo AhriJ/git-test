@@ -33,8 +33,6 @@
               "cmdb_schema_x-l8a9znlzun9c"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -63,8 +61,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": false,
       "selects": [
         ".inode.name as 任务名",

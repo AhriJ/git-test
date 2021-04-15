@@ -37,11 +37,6 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "vars.indexes_vpc",
           "op": "=",
           "value": "$empty"
@@ -80,11 +75,6 @@
                   "value": "{var:vars.indexes_subnet}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
-                },
-                {
                   "field": ".indexes.cmdb_index-1yhey410ex3f2",
                   "op": "=",
                   "value": "{var:vars.indexes_vpc}"
@@ -118,22 +108,20 @@
       "multi": true,
       "selects": [
         ".inode.name as 名称",
+        ".data.monitor as 监控",
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
         ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
         ".indexes.cmdb_index-zone as 可用区",
         ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
         ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
         ".data.cpu as CPU核数",
         ".data.memory as 内存",
         ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
-        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
         ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
         ".indexes.cmdb_index-39833o1pvvbm7 as OS",
         ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
         ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
-        ".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
@@ -150,6 +138,16 @@
                 "title": "名称"
               },
               "indexes_tree": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
+                "title": "业务树"
+              },
+              "indexes_tree1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
+                "title": "业务树"
+              },
+              "indexes_tree2": {
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
                 "title": "业务树"

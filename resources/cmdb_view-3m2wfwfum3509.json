@@ -39,9 +39,21 @@
         "inode.name": {
           "action_config": {
             "action_type": "link",
-            "type": "default",
+            "view_id": "cmdb_view-184og9cthi399",
+            "user_view_id": null,
             "open_type": "link",
-            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-3m2wfwfum3509"
+            "type": "details",
+            "href": "$app=./cmdb_mpage-qgk2sht3gzcc\u0026view_id=cmdb_view-184og9cthi399"
+          }
+        },
+        "data.monitor": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": "cmdb_view-9nhm77phtvzy",
+            "open_type": "link",
+            "type": "custom",
+            "href": "$app=./cmdb_mpage-1dsmcf5f6w3qp\u0026view_id=cmdb_view-9nhm77phtvzy"
           }
         }
       },

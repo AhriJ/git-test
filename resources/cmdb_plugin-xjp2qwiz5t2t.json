@@ -17,7 +17,12 @@
     "data": {
       "type": "object",
       "title": "资源",
-      "properties": {},
+      "properties": {
+        "monitor": {
+          "type": "string",
+          "title": "监控"
+        }
+      },
       "required": []
     },
     "indexes": [

@@ -57,9 +57,11 @@
         "inode.name": {
           "action_config": {
             "action_type": "link",
-            "type": "default",
+            "view_id": "cmdb_view-3njorzptxt9so",
+            "user_view_id": null,
             "open_type": "link",
-            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-1t1h5b5jqodfo"
+            "type": "details",
+            "href": "$app=./cmdb_mpage-3ssne8t13k8hz\u0026view_id=cmdb_view-3njorzptxt9so"
           }
         }
       },

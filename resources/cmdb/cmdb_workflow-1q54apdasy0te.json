@@ -56,9 +56,8 @@
         },
         "inputs": {
           "*": {
-            "ids": [
-              "cmdb_schema_u_webhook_manage-0"
-            ],
+            "ids": [],
+            "limit": 20,
             "without_readonly": false
           }
         },

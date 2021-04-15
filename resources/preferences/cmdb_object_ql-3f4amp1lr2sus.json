@@ -41,8 +41,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": false,
       "selects": [
         ".indexes.cmdb_index-external_id"

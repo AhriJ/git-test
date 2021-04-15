@@ -20,10 +20,10 @@ var INDEX_external_id = "cmdb_index-309gefsjwfa5q" //业务树外部ID
 var INDEX_node_level = "cmdb_index-2sl8fe4yktkn4" //业务树层级
 
 //用作维护业务树和自动打标的资源
-var SCHEMA_AUTO_IDS = [SCHEMA_SERVER] // 服务器、关系型数据库
+// var SCHEMA_AUTO_IDS = [SCHEMA_SERVER] // 服务器、关系型数据库
+var SCHEMA_AUTO_IDS = [SCHEMA_SERVER,SCHEMA_RDS,SCHEMA_KV,SCHEMA_Mongo] // 服务器、关系型数据库、Redis、Mongodb
 
-
-// 获取所有实例
+// 获取所有实例,使用 SCHEMA_AUTO_IDS 中的所有模型
 function getInstances() {
     var ret = []
     var Query = {
@@ -44,6 +44,7 @@ function getInstances() {
         // limit: 100
     };
     var queryResult = ctx.ecu.cmdb.queryObjects(Query).objects;
+
     //循环检查符合规则的 inode.name 并返回
     queryResult.forEach(function (data) {
         if (checkRule(data.inode.name)) {
@@ -199,7 +200,7 @@ function get_tree_id(externalId) {
     return ret.objects[0].inode.id
 }
 
-// 更新服务器和业务树关系
+// 更新资源和业务树关系
 function updateRel(instances) {
     var updates = [".indexes." + INDEX_TREE]
     //将符合规则的资源进行打标

@@ -33,8 +33,6 @@
               "cmdb_schema_x-a307mljaapl2"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -93,8 +91,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.last_editor as 最后修改者",

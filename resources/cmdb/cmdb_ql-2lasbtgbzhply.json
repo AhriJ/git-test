@@ -33,8 +33,6 @@
               "cmdb_schema_x-schema"
             ],
             "sorts": [],
-            "limit": 5000,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -83,8 +81,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 5000,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.name as 模型名称",

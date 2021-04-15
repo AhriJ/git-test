@@ -33,8 +33,6 @@
               "cmdb_schema_view-0"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -63,8 +61,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": false,
       "selects": [
         ".data.data_config as 数据模版额外配置",

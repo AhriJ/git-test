@@ -37,9 +37,6 @@
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "52d3e403cf1a"
-      },
-      {
         "uuid": "6cbb62328fb9"
       },
       {
@@ -49,7 +46,6 @@
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-2xsw703mezm9m",
       "cmdb_mpage-1ap7x7kct3brj",
       "cmdb_mpage-3c7fg089xqogr"
     ],

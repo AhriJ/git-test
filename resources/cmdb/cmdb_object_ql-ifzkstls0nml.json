@@ -33,8 +33,6 @@
               "cmdb_schema_x-schema"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -63,8 +61,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": false,
       "selects": [
         ".indexes.cmdb_index-1llredm1yz8zm.inode.id as 资源模型ID"

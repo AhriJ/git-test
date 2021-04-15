@@ -37,22 +37,7 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_cloud_resource_conf",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "vars.indexes_vpc",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_account",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud",
           "op": "=",
           "value": "$empty"
         },
@@ -80,24 +65,9 @@
                   "value": "{var:vars.indexes_subnet}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_conf}"
-                },
-                {
                   "field": ".indexes.cmdb_index-1yhey410ex3f2",
                   "op": "=",
                   "value": "{var:vars.indexes_vpc}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_account",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_account}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-vendor",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud}"
                 }
               ]
             }
@@ -113,12 +83,13 @@
       "multi": true,
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
+        ".data.monitor as 监控",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
         ".indexes.cmdb_index-z2babe501rdm as 连接端口",
         ".data.cpu_num as CPU核数",
-        ".indexes.cmdb_index-external_id as 外部ID",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
         ".indexes.cmdb_index-26lrotpomsf9d as 服务",
         ".indexes.cmdb_index-1p0r59rn877tq as 到期时间",
         ".data.version as Version",
@@ -127,12 +98,9 @@
         ".data.pay_mode as 付费类型",
         ".data.disk_size as 磁盘空间",
         ".data.memory as 内存",
-        ".indexes.cmdb_index-cloud_resource_config as 关联云资源配置",
         ".indexes.cmdb_index-2tnsr7pzwgp4e as HOST",
         ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
-        ".indexes.cmdb_index-cloud_account as 关联云账户",
-        ".indexes.cmdb_index-vendor as 所属供应商",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
@@ -150,7 +118,7 @@
               },
               "indexes_tree": {
                 "type": "string",
-                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=select",
+                "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
                 "title": "业务树"
               },
               "indexes_subnet": {

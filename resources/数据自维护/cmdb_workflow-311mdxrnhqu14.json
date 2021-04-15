@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_workflow-311mdxrnhqu14",
     "schema_id": "cmdb_schema_workflow-0",
-    "name": "[数据自维护]服务器自动关联业务",
+    "name": "[数据自维护]资源业务自维护",
     "namespace": "/数据自维护",
     "descr": "",
     "ctime": 0,
@@ -33,7 +33,7 @@
         "config": {}
       },
       {
-        "name": "未命名节点-2",
+        "name": "维护业务树",
         "component": "cmdb_component-interpreter_ecmascript",
         "descr": "ES2015 解析组件",
         "auto_run": true,
@@ -44,16 +44,44 @@
         "merge": {
           "enable": false
         }
+      },
+      {
+        "name": "维护监控跳转",
+        "component": "cmdb_component-interpreter_ecmascript_v2",
+        "descr": "新版 ES2015 解析组件",
+        "auto_run": true,
+        "settings": {},
+        "config": {
+          "input_schema": "{\"type\":\"object\",\"properties\":{}}",
+          "output_schema": "{\"type\":\"object\",\"properties\":{}}"
+        },
+        "merge": {
+          "enable": false
+        },
+        "inputs": {
+          "": {
+            "script": "\nvar ctx = new WorkflowRuntimeContext()\nvar input = ctx.input() // 获取input数据\n// ctx.output({xxxx}) 输出\n",
+            "input": {}
+          },
+          "__START__": {
+            "script": "/**\n * - ECS资源同步到「服务器」模型\n **/\n\nvar ctx = new WorkflowRuntimeContext()\nvar input = ctx.input() // 获取input数据\n\n//模型ID\nvar SCHEMA_SERVER = \"cmdb_schema_u_crf_server-0\" //云服务器\nvar SCHEMA_RDS = \"cmdb_schema_u_crf_cloud_rds-0\" // 关系型数据库\nvar SCHEMA_KV = \"cmdb_schema_u_crf_redis-0\" //redis\nvar SCHEMA_Mongo = \"cmdb_schema_u_crf_mongodb-0\" //mongo\nvar SCHEMA_slb = \"cmdb_schema_u_crf_slb-0\" //slb\nvar SCHEMA_Tree = \"cmdb_schema_u_tree-0\" //业务树\n\n//索引ID\nvar INDEX_TREE = \"cmdb_index-18gs5gfejka3i\" // 关联的业务树\nvar INDEX_LAYER = \"cmdb_index-2sl8fe4yktkn4\" // 业务树层级\nvar INDEX_tree_mark = \"cmdb_index-23vblwi61ybha\" //业务树同步标记\nvar INDEX_external_id = \"cmdb_index-309gefsjwfa5q\" //业务树外部ID\nvar INDEX_node_level = \"cmdb_index-2sl8fe4yktkn4\" //业务树层级\n\n//用作维护业务树和自动打标的资源\nvar SCHEMA_AUTO_IDS = [SCHEMA_SERVER,SCHEMA_RDS,SCHEMA_KV,SCHEMA_Mongo,SCHEMA_slb] // 服务器、关系型数据库\n\n//获取所有监控为空的资源\nfunction getInstances() {\n    //查询\n    var Query = {\n        objects: [\"$conditions\"],\n        conditions: [{\n                field: \"inode.schema_id\",\n                op: \"=-\",\n                value: SCHEMA_AUTO_IDS\n            },\n            {\n                field: \"data.monitor\",\n                \"op\": \"=\",\n                value: \"$null\"\n            }\n        ],\n        selects: [\n            \".inode.id\"\n        ],\n        limit: 1\n    };\n\n    targetObj = {\n        data: {\n            monitor: \"监控\"\n        }\n    }\n    updates = [\"data.monitor\"]\n\n    var ret = ctx.ecu.cmdb.updateObjects(Query, {\n        object: targetObj,\n        updates: updates,\n    }, {\n        no_audit: true\n    })\n    //获取更新或插入对象的cmdbid\n    return ret.objects[0].inode.id\n\n}\n\n\n\nfunction main() {\n    //获取所有监控为空的资源\n    var Query = {\n        objects: [\"$conditions\"],\n        conditions: [{\n                field: \"inode.schema_id\",\n                op: \"=-\",\n                value: SCHEMA_AUTO_IDS\n            },\n            {\n                field: \"data.monitor\",\n                \"op\": \"=\",\n                value: \"$null\"\n            }\n        ],\n        selects: [\n            \".inode.id\"\n        ]\n    };\n\n    targetObj = {\n        data: {\n            monitor: \"监控\"\n        }\n    }\n\n    updates = [\"data.monitor\"]\n\n    var ret = ctx.ecu.cmdb.updateObjects(Query, {\n        object: targetObj,\n        updates: updates,\n    }, {\n        no_audit: true\n    })\n    //获取更新或插入对象的cmdbid\n    return ret.update_count\n\n\n}\n\nvar count=main()\nctx.output({\n    ok: true,\n    count:count\n})",
+            "input": {}
+          }
+        }
       }
     ],
     "edges": [
       {
         "from": "__START__",
-        "to": "未命名节点-2"
+        "to": "维护业务树"
       },
       {
-        "from": "未命名节点-2",
+        "from": "维护业务树",
         "to": "__END__"
+      },
+      {
+        "from": "__START__",
+        "to": "维护监控跳转"
       }
     ],
     "persist_level": "job_unit",

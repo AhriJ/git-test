@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-bnq49sp1woxg",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "对象存储桶-已纳管资源常用查询",
+    "name": "对象存储桶-已纳管资源",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -27,26 +27,6 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_tree",
-          "op": "!=",
-          "value": "$null"
-        },
-        {
-          "field": "vars.indexes_cloud",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_account",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "$or",
           "op": "=-",
           "value": [
@@ -58,61 +38,27 @@
                   "field": ".inode.name",
                   "op": "=",
                   "value": "{var:vars.inode_name}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-18gs5gfejka3i",
-                  "op": "=",
-                  "value": "{var:vars.indexes_tree}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-vendor",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_account",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_account}"
                 }
               ]
             }
           ]
         }
       ],
-      "objects": [
-        "$conditions"
-      ],
-      "sorts": [],
-      "limit": 50,
-      "offset": 0,
-      "multi": true,
+      "function": "db",
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
-        ".indexes.cmdb_index-ysb3o2x24f23 as 内网域名",
-        ".indexes.cmdb_index-vendor as 所属供应商",
         ".indexes.cmdb_index-26lrotpomsf9d as 服务",
-        ".indexes.cmdb_index-external_id as 外部ID",
         ".data.location as 位置",
         ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".indexes.cmdb_index-3cusqv3bta1lq as 存储类型",
-        ".indexes.cmdb_index-cloud_resource_config as 所属云资源配置",
         ".indexes.cmdb_index-2tury4uwxrimy as 访问控制类型",
         ".indexes.cmdb_index-region as 所在区域",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
+        ".indexes.cmdb_index-ysb3o2x24f23 as 内网域名",
         ".indexes.cmdb_index-2fmrqmdx8dahw as 外网域名",
-        ".indexes.cmdb_index-cloud_account as 关联云账户",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
-      "comment": "",
-      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -122,31 +68,16 @@
               "inode_name": {
                 "type": "string",
                 "title": "名称"
-              },
-              "indexes_tree": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=select",
-                "title": "业务树"
-              },
-              "indexes_cloud": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属供应商"
-              },
-              "indexes_cloud_resource_config": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属云资源配置"
-              },
-              "indexes_cloud_account": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "关联云账户"
               }
             }
           }
         }
-      }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
     }
   },
   "indexes": {

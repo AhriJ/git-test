@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-15tvggj6b1pob",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "云服务器-业务树",
+    "name": "云服务器-业务树常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -27,18 +27,6 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_tree",
-          "op": "=-",
-          "value": [
-            "$empty"
-          ]
-        },
-        {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "vars.indexes_subnet",
           "op": "=",
           "value": "$empty"
@@ -59,6 +47,13 @@
           "value": "$empty"
         },
         {
+          "field": "vars.indexes_tree",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
+        },
+        {
           "field": "$or",
           "op": "=-",
           "value": [
@@ -75,11 +70,6 @@
                   "field": ".indexes.cmdb_index-18gs5gfejka3i",
                   "op": "=",
                   "value": "{var:vars.indexes_tree}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
                 },
                 {
                   "field": ".indexes.cmdb_index-3bxtoukdedsor",
@@ -106,17 +96,24 @@
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
         ".data.monitor as 监控",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
         ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
         ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
         ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
         ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
         ".data.memory as 内存",
-        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
         ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
         ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
         ".data.cpu as CPU核数",
@@ -127,10 +124,11 @@
         ".indexes.cmdb_index-external_id as 唯一ID",
         ".indexes.cmdb_index-zone as 可用区",
         ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
-        ".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -146,16 +144,12 @@
                 "items": {
                   "type": "string"
                 },
-                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
                 "title": "业务树",
                 "default": [
                   "$empty"
-                ]
-              },
-              "indexes_cloud_resource_config": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属云资源配置"
+                ],
+                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "ui:readonly": true
               },
               "indexes_subnet": {
                 "type": "string",
@@ -178,12 +172,7 @@
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

@@ -22,7 +22,7 @@
     "schema": {
       "type": "$index_type",
       "format": "cmdb-object-selector-id",
-      "default": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.id\",\"op\":\"=~\",\"value\":\"cmdb_schema_acs_resource_group-0\"}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
+      "default": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.id\",\"op\":\"=~\",\"value\":\"cmdb_schema_acs_resource_group-0\"}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[\"cmdb_schema_acs_resource_group-0\"],\"sorts\":[],\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
     }
   },
   "indexes": {}

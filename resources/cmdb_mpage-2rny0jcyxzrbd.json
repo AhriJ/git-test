@@ -1,0 +1,31 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2rny0jcyxzrbd",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "阿里云Mongo监控模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-2geljkydxu8oy"
+    },
+    "children": {
+      "children.a68f8e29119d.state.__lib__": {
+        "url": "/grafana/d/G6K6FTwMk/alibaba-cloud-mongodb-dashboard?orgId=1\u0026refresh=5m\u0026from=now-3h\u0026to=now\u0026var-instanceId=${var-instanceId}",
+        "descr": "工单模版，以卡片形式展示工单"
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

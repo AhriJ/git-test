@@ -33,8 +33,6 @@
               "cmdb_schema_x-ghkfn72ezw6k"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",

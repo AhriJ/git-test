@@ -1,0 +1,26 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-26butupb206vq",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "云服务器详情页模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-1rvfxvkuc1e3z"
+    },
+    "children": {}
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

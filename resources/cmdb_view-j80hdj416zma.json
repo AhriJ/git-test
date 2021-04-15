@@ -17,53 +17,33 @@
     "data_config": {},
     "view_config": {
       "super_mode": false,
-      "create": null,
-      "update": null,
-      "batch": null,
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
+      "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"],\"enumNames\":[\"名称\",\"所属云资源\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cloud_resource_config' }}\"}}}",
       "viewData": null,
       "forms": [
         {
           "default": null,
+          "title": "名称",
           "field": ".inode.name",
-          "pkg_id": null,
           "ui_status": "show",
           "widget": null,
           "disabled": true
         },
         {
-          "field": ".indexes.cmdb_index-vendor",
+          "field": ".indexes.cmdb_index-cloud_resource_config",
+          "title": "所属云资源",
           "ui_status": "show",
           "default": null,
-          "pkg_id": null,
+          "pkg_id": "cmdb_x_x-6iplof81wxv_default",
           "widget": "table",
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-external_id",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-status",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
-          "disabled": true
-        },
-        {
-          "field": ".indexes.cmdb_index-sync_marker",
-          "ui_status": "show",
-          "default": null,
-          "widget": null,
           "disabled": true
         }
       ],
-      "editable": false,
-      "readOnly": true,
+      "editable": true,
+      "readOnly": false,
       "type": "list",
-      "data_id": "cmdb_x-i2jftlnbppg",
+      "data_id": "cmdb_x-1kr9ei93jt5ni",
       "action_config": {
         "inode.name": {
           "action_config": {

@@ -30,7 +30,12 @@
     "state": {
       "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"model_id\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2lasbtgbzhply\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"树结构数据来源\"},\"view_list\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"format\":\"ql-selector?id=cmdb_ql-1m98fe765segq\u0026select_mode=multi\u0026spec=id-list\u0026widget=table\",\"title\":\"可展示视图列表\"},\"wf_id\":{\"type\":\"string\",\"ui:hidden\":true,\"title\":\"处理自定义库组成的工作流ID\",\"default\":\"cmdb_workflow-2x47vuq0txff5\"},\"is_created\":{\"type\":\"boolean\",\"title\":\"允许创建树节点\"},\"descr\":{\"type\":\"string\",\"ui:hidden\":true,\"default\":\"资源树，用于展示树形结构配置\"}},\"required\":[]}",
       "__lib__": {
-        "view_list": [],
+        "model_id": "cmdb_x-hpaahbsz8vpi",
+        "view_list": [
+          "cmdb_view-zg3qbrr5abyq",
+          "cmdb_view-1qdeuoq2dib36",
+          "cmdb_view-2h5wbodbxtfj4"
+        ],
         "wf_id": "cmdb_workflow-2x47vuq0txff5"
       },
       "__trigger__": {}

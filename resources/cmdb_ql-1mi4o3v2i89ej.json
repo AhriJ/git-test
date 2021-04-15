@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-1mi4o3v2i89ej",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "关系型数据库实例-业务树",
+    "name": "关系型数据库实例-业务树常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -27,23 +27,6 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_tree",
-          "op": "=-",
-          "value": [
-            "$empty"
-          ]
-        },
-        {
-          "field": "vars.indexes_cloud",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "vars.indexes_subnet",
           "op": "=",
           "value": "$empty"
@@ -64,19 +47,18 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_cloud_account",
-          "op": "=",
-          "value": "$empty"
+          "field": "vars.indexes_tree",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
         },
         {
-          "field": "vars.indexes_cloud",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
+          "field": "vars.indexes_tree",
+          "op": "=-",
+          "value": [
+            "$empty"
+          ]
         },
         {
           "field": "$or",
@@ -97,16 +79,6 @@
                   "value": "{var:vars.indexes_tree}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-vendor",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
-                },
-                {
                   "field": ".indexes.cmdb_index-3bxtoukdedsor",
                   "op": "=",
                   "value": "{var:vars.indexes_subnet}"
@@ -125,34 +97,25 @@
                   "field": ".indexes.cmdb_index-g3g32q8xcffi",
                   "op": "=",
                   "value": "{var:vars.indexes_master}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_account",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_account}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-vendor",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
                 }
               ]
             }
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
-        ".indexes.cmdb_index-vendor as 所属供应商",
-        ".indexes.cmdb_index-cloud_resource_config as 关联云资源配置",
+        ".data.monitor as 监控",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
         ".data.version as 数据库版本",
         ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
         ".indexes.cmdb_index-26lrotpomsf9d as 服务",
@@ -172,15 +135,14 @@
         ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
         ".indexes.cmdb_index-cloud_account as 关联云账户",
         ".indexes.cmdb_index-vendor as 所属供应商",
-        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
-        ".indexes.cmdb_index-external_id as 外部ID",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
-        ".indexes.cmdb_index-cloud_resource_config as 所属云资源配置",
+        ".indexes.cmdb_index-external_id as 实例ID",
         ".data.connect.host as HOST",
         ".data.connect.port as 端口",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -196,21 +158,9 @@
                 "items": {
                   "type": "string"
                 },
-                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
                 "title": "业务树",
-                "default": [
-                  "$empty"
-                ]
-              },
-              "indexes_cloud": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属供应商"
-              },
-              "indexes_cloud_resource_config": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属云资源配置"
+                "format": "ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=multi\u0026spec=id-list\u0026widget=table",
+                "ui:readonly": true
               },
               "indexes_subnet": {
                 "type": "string",
@@ -231,21 +181,11 @@
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-3hew7qx2idh10\u0026select_mode=single\u0026spec=id\u0026widget=table",
                 "title": "关联主节点"
-              },
-              "indexes_cloud_account": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "关联云账户"
               }
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

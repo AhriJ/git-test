@@ -1,0 +1,33 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_plugin-n92kq3avr6vt",
+    "schema_id": "cmdb_schema_plugin-0",
+    "name": "数据自维护",
+    "namespace": "",
+    "descr": "莉莉丝数据自维护扩展包",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "monitor": {
+          "type": "string",
+          "title": "监控"
+        }
+      },
+      "required": []
+    },
+    "indexes": []
+  },
+  "indexes": {
+    "cmdb_schema_index_plugin-0": "cmdb_schema_u_crf_slb-0"
+  }
+}

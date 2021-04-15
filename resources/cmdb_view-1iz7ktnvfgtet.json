@@ -17,8 +17,8 @@
     "data_config": {},
     "view_config": {
       "super_mode": false,
-      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\",\".indexes.cmdb_index-vendor\"]}",
-      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\",\".indexes.cmdb_index-vendor\"]}",
+      "create": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
+      "update": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\"]}",
       "batch": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".indexes.cmdb_index-cloud_resource_config\",\".indexes.cmdb_index-vendor\"],\"enumNames\":[\"名称\",\"所属云资源配置\",\"所属供应商\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属云资源配置\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cloud_resource_config' }}\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-vendor' }}\"}}}",
       "viewData": [],
       "forms": [
@@ -32,7 +32,6 @@
         },
         {
           "field": ".indexes.cmdb_index-cloud_resource_config",
-          "title": "所属云资源配置",
           "ui_status": "show",
           "default": null,
           "pkg_id": "cmdb_x_x-6iplof81wxv_default",
@@ -41,7 +40,6 @@
         },
         {
           "field": ".indexes.cmdb_index-vendor",
-          "title": "所属供应商",
           "ui_status": "show",
           "default": null,
           "pkg_id": "cmdb_x-1khvopz12rtt7",
@@ -57,9 +55,21 @@
         "inode.name": {
           "action_config": {
             "action_type": "link",
-            "type": "default",
+            "view_id": "cmdb_view-3u2de8perss0o",
+            "user_view_id": null,
             "open_type": "link",
-            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-1iz7ktnvfgtet"
+            "type": "details",
+            "href": "$app=./cmdb_mpage-26butupb206vq\u0026view_id=cmdb_view-3u2de8perss0o"
+          }
+        },
+        "data.monitor": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": "cmdb_view-2msxbxtemuyul",
+            "open_type": "link",
+            "type": "custom",
+            "href": "$app=./cmdb_mpage-mgm9penwudrx\u0026view_id=cmdb_view-2msxbxtemuyul"
           }
         }
       },

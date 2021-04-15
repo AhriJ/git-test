@@ -33,8 +33,6 @@
               "cmdb_schema_x-3cu4v1w20seby"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -114,8 +112,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".indexes.cmdb_index-3kyli9jj9w7ua as 执行结果",

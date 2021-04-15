@@ -38,8 +38,6 @@
               "cmdb_schema_x-ff5hfq3u4eq7"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".inode.name",
@@ -75,8 +73,6 @@
                     "cmdb_schema_x-schema"
                   ],
                   "sorts": [],
-                  "limit": 50,
-                  "offset": 0,
                   "multi": true,
                   "selects": [
                     ".inode.name",
@@ -100,8 +96,6 @@
               "$conditions"
             ],
             "sorts": [],
-            "limit": 50,
-            "offset": 0,
             "multi": true,
             "selects": [
               ".indexes.cmdb_index-7oeahff14zua as ret"
@@ -121,8 +115,6 @@
         "$conditions"
       ],
       "sorts": [],
-      "limit": 50,
-      "offset": 0,
       "multi": true,
       "selects": [
         ".inode.name as 名称",

@@ -1,0 +1,79 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-rqgm3m4gr1sg",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "安全组详情",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_securitygroup-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-external_id as 实例ID",
+        ".data.permissions as 权限规则",
+        ".inode.last_editor as 最后修改者",
+        ".inode.mtime as 修改时间"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

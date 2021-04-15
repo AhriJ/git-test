@@ -38,7 +38,7 @@
                 "type": "string",
                 "title": "server",
                 "format": "cmdb-object-selector-id",
-                "default": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.name\",\"op\":\"=~\",\"value\":\"服务器\"}],\"objects\":[\"cmdb_schema_server-0\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
+                "default": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]},{\"field\":\".inode.name\",\"op\":\"=~\",\"value\":\"服务器\"}],\"objects\":[\"cmdb_schema_server-0\"],\"sorts\":[],\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[],\"sorts\":[],\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
               },
               "script": {
                 "type": "string",

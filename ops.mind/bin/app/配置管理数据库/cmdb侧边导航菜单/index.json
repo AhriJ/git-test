@@ -72,7 +72,7 @@
         "uuid": "ud9b611927d6"
       },
       {
-        "uuid": "b389dd44d869"
+        "uuid": "7eae708943bb"
       },
       {
         "uuid": "2682993428c2"
@@ -100,7 +100,7 @@
   "indexes": {
     "cmdb_index-mpage_children": [
       "cmdb_mpage-2uv3blnsvivng",
-      "cmdb_mpage-1847ba27ukedj",
+      "cmdb_mpage-1ekmr7bqrao71",
       "cmdb_mpage-3ehmb03o8mr3x",
       "cmdb_mpage-1lghwz5ghbnet",
       "cmdb_mpage-1rqfuijrzzegz",

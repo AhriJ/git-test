@@ -32,7 +32,6 @@
         },
         {
           "field": ".indexes.cmdb_index-vendor",
-          "title": "所属供应商",
           "ui_status": "show",
           "default": null,
           "pkg_id": "cmdb_x-1khvopz12rtt7",
@@ -41,7 +40,6 @@
         },
         {
           "field": ".indexes.cmdb_index-cloud_resource_config",
-          "title": "所属云资源配置",
           "ui_status": "show",
           "default": null,
           "pkg_id": "cmdb_x_x-6iplof81wxv_default",
@@ -57,9 +55,21 @@
         "inode.name": {
           "action_config": {
             "action_type": "link",
-            "type": "default",
+            "view_id": "cmdb_view-3njorzptxt9so",
+            "user_view_id": null,
             "open_type": "link",
-            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-13d4vvtse249w"
+            "type": "details",
+            "href": "$app=./cmdb_mpage-3ssne8t13k8hz\u0026view_id=cmdb_view-3njorzptxt9so"
+          }
+        },
+        "data.monitor": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": "cmdb_view-2bx61jnvllzob",
+            "open_type": "link",
+            "type": "custom",
+            "href": "$app=./cmdb_mpage-10wnu356fif6x\u0026view_id=cmdb_view-2bx61jnvllzob"
           }
         }
       },
