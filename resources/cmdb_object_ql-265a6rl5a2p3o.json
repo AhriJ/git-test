@@ -41,7 +41,9 @@
       "selects": [
         ".inode.name as 名称",
         ".data.monitor as 监控",
-        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
         ".indexes.cmdb_index-external_id as 实例ID",
         ".data.size as 内存大小",
         ".data.redis_version as 版本",

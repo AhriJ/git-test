@@ -29,7 +29,6 @@
       }
     },
     "state": {
-      "forceRender": true,
       "__trigger__": {}
     },
     "children": {},

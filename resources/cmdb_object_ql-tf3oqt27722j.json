@@ -40,7 +40,7 @@
       "function": "db",
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
+        ".data.monitor as 监控",
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
         ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
@@ -66,7 +66,7 @@
         ".data.connect.host as HOST",
         ".data.connect.port as 端口",
         ".inode.mtime as 最后修改时间",
-        "inode.last_editor as 最后修改者"
+        ".inode.last_editor as 最后修改者"
       ],
       "vars": {
         "type": "object",
