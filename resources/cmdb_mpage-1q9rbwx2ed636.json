@@ -1,7 +1,7 @@
 {
   "inode": {
     "org": "",
-    "id": "cmdb_mpage-3dxkawr4lumko",
+    "id": "cmdb_mpage-1q9rbwx2ed636",
     "schema_id": "cmdb_schema_mpage-1",
     "name": "标签页",
     "namespace": "",
@@ -29,46 +29,21 @@
       }
     },
     "state": {
-      "forceRender": true,
       "__trigger__": {}
     },
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "u644d93865c5",
+        "uuid": "u6d7a10c52fa",
         "name": "基本信息",
         "icon": "chakan",
-        "u644d93865c5": "u644d93865c5"
-      },
-      {
-        "uuid": "u9849a97d0c0",
-        "name": "云服务器",
-        "icon": "detail"
-      },
-      {
-        "uuid": "ufef2ad06230",
-        "name": "关系型数据库实例",
-        "icon": "detail"
-      },
-      {
-        "uuid": "u42766fd199b",
-        "name": "Redis",
-        "icon": "detail"
-      },
-      {
-        "uuid": "ucfe65afde88",
-        "name": "MongoDB",
-        "icon": "detail"
+        "u6d7a10c52fa": "u6d7a10c52fa"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-28u8kzxv9lmhm",
-      "cmdb_mpage-2hnmfmpnhx1q",
-      "cmdb_mpage-dq1o9efwwt3q",
-      "cmdb_mpage-nw2swrmv17uf",
-      "cmdb_mpage-3pesr96yutx07"
+      "cmdb_mpage-2dfg14gvtc8i9"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-m_tabs",
     "cmdb_index-mpage_component_type": "LAYOUT"

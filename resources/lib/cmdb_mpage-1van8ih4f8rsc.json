@@ -1,7 +1,7 @@
 {
   "inode": {
     "org": "",
-    "id": "cmdb_mpage-4x6m1bt61sk",
+    "id": "cmdb_mpage-1van8ih4f8rsc",
     "schema_id": "cmdb_schema_mpage-1",
     "name": "资源树",
     "namespace": "/lib",
@@ -36,23 +36,27 @@
       "__trigger__": {}
     },
     "children": {
-      "children.1bf086a94d7a.children.564e4d303d3a.state.__vars__.vars.id.value": "{var: children.b6c0cb985890.state.id}"
+      "children.ue73c6a88863.children.u15a3047d2de.state.__vars__.vars.id.value": "{var: children.uf6e47339e62.state.id}",
+      "children.uf6e47339e62.state.is_expand": "{var: state.__lib__.is_expand}",
+      "children.uf6e47339e62.state.is_search": "{var: state.__lib__.is_search}"
     },
     "childrenConfig": [
       {
-        "uuid": "b6c0cb985890",
-        "md": 6
+        "uuid": "uf6e47339e62",
+        "md": 6,
+        "uf6e47339e62": "uf6e47339e62"
       },
       {
-        "uuid": "1bf086a94d7a",
-        "md": 18
+        "uuid": "ue73c6a88863",
+        "md": 18,
+        "ue73c6a88863": "ue73c6a88863"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-2x3uj50gqb768",
-      "cmdb_mpage-2fq0whn7qs22i"
+      "cmdb_mpage-2n35bhsef1e3n",
+      "cmdb_mpage-1y8mnzcvw8e0s"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
     "cmdb_index-mpage_component_type": "LAYOUT"

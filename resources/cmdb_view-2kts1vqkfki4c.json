@@ -36,6 +36,8 @@
         ],
         "wf_id": "cmdb_workflow-2x47vuq0txff5",
         "is_created": false,
+        "is_expand": false,
+        "is_search": true,
         "descr": "工单模版，以卡片形式展示工单",
         "lib_id": "cmdb_mpage-32h7o864i1azm",
         "isUpdate": true

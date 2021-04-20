@@ -22,7 +22,10 @@
         "vars": []
       },
       "mind": {
-        "children": []
+        "children": [
+          "cmdb_mpage-3c7fg089xqogr",
+          "cmdb_mpage-1ap7x7kct3brj"
+        ]
       }
     },
     "state": {
@@ -37,17 +40,17 @@
     "children": {},
     "childrenConfig": [
       {
-        "uuid": "6cbb62328fb9"
+        "uuid": "d31729d656d0"
       },
       {
-        "uuid": "d31729d656d0"
+        "uuid": "6cbb62328fb9"
       }
     ]
   },
   "indexes": {
     "cmdb_index-mpage_children": [
-      "cmdb_mpage-1ap7x7kct3brj",
-      "cmdb_mpage-3c7fg089xqogr"
+      "cmdb_mpage-3c7fg089xqogr",
+      "cmdb_mpage-1ap7x7kct3brj"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-3o666587lf9r3",
     "cmdb_index-mpage_component_type": "UNKNOWN"

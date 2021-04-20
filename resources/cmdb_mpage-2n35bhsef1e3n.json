@@ -1,7 +1,7 @@
 {
   "inode": {
     "org": "",
-    "id": "cmdb_mpage-2x3uj50gqb768",
+    "id": "cmdb_mpage-2n35bhsef1e3n",
     "schema_id": "cmdb_schema_mpage-1",
     "name": "结构树",
     "namespace": "",
@@ -58,7 +58,11 @@
       "vars": {},
       "view_list": [],
       "varsSchemaMap": {},
-      "__trigger__": {}
+      "__trigger__": {},
+      "schema_id": "cmdb_schema_u_tree-0",
+      "is_created": false,
+      "is_expand": false,
+      "is_search": true
     },
     "children": {},
     "childrenConfig": []
