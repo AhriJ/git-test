@@ -58,12 +58,15 @@
         "cmdb_view-zg3qbrr5abyq",
         "cmdb_view-1qdeuoq2dib36",
         "cmdb_view-2h5wbodbxtfj4",
-        "cmdb_view-v2wmv77xnosm"
+        "cmdb_view-v2wmv77xnosm",
+        "cmdb_view-2qluyypsuyqjj"
       ],
       "varsSchemaMap": {},
       "__trigger__": {},
       "schema_id": "cmdb_schema_u_tree-0",
-      "is_created": false
+      "is_created": false,
+      "is_expand": false,
+      "is_search": true
     },
     "children": {},
     "childrenConfig": []

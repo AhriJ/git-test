@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-bnq49sp1woxg",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "对象存储桶-已纳管资源",
+    "name": "对象存储桶-已纳管资源常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -44,21 +44,29 @@
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
         ".indexes.cmdb_index-26lrotpomsf9d as 服务",
-        ".data.location as 位置",
-        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
-        ".indexes.cmdb_index-3cusqv3bta1lq as 存储类型",
-        ".indexes.cmdb_index-2tury4uwxrimy as 访问控制类型",
         ".indexes.cmdb_index-region as 所在区域",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
+        ".data.location as 位置",
         ".indexes.cmdb_index-ysb3o2x24f23 as 内网域名",
         ".indexes.cmdb_index-2fmrqmdx8dahw as 外网域名",
+        ".indexes.cmdb_index-3cusqv3bta1lq as 存储类型",
+        ".indexes.cmdb_index-2tury4uwxrimy as 访问控制类型",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -72,12 +80,7 @@
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

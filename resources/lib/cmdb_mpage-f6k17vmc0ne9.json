@@ -1,0 +1,82 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-f6k17vmc0ne9",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "标签页",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"view_id\":{\"type\":\"string\",\"title\":\"视图模版ID\"}},\"required\":[]}",
+      "__lib__": {
+        "view_id": ""
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "ucec8d08545e",
+        "name": "弹性公网IP"
+      },
+      {
+        "uuid": "u3b422d9d0d0",
+        "name": "安全组"
+      },
+      {
+        "uuid": "ufe5bf6996b6",
+        "name": "域名管理"
+      },
+      {
+        "uuid": "u5fe73b9c3e5",
+        "name": "证书管理"
+      },
+      {
+        "uuid": "u70e8acd9aa7",
+        "name": "虚拟交换机"
+      },
+      {
+        "uuid": "u89749b39727",
+        "name": "VPC"
+      },
+      {
+        "uuid": "ude1fe2541d1",
+        "name": "云硬盘"
+      },
+      {
+        "uuid": "u0b694518a0a",
+        "name": "对象存储桶"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2ym77vstoor8z",
+      "cmdb_mpage-kq6ex4cmxolp",
+      "cmdb_mpage-2qxlbb1grwum5",
+      "cmdb_mpage-3h4kp5zk4vk3e",
+      "cmdb_mpage-3oudlk5aa7vke",
+      "cmdb_mpage-o000jvx8n6o8",
+      "cmdb_mpage-156w6v7fzyte4",
+      "cmdb_mpage-1ry3hu9ydew73"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_tabs",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-17jcam1k3kgtx",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Agent服务器",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-efsojof3f13b"
+    },
+    "children": {
+      "children.25a1b47220fe.state.__lib__.view_id": "cmdb_view-27qiqdwzlkuvk"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

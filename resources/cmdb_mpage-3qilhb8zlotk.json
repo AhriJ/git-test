@@ -1,0 +1,31 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3qilhb8zlotk",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "11模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-20xaq50wa0jmm"
+    },
+    "children": {
+      "children.3d1f75696757.state.__lib__": {
+        "data_id": "cmdb_x-12mjql6q12kgw",
+        "descr": "工单模版，以卡片形式展示工单"
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

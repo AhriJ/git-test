@@ -1,0 +1,39 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-2adl7f1rhawz1",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "其它资源",
+    "namespace": "",
+    "descr": "不归纳资源",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "update": null,
+      "viewData": [
+        "cmdb_view-17pkuvj90mogr",
+        "cmdb_view-2g1om6p7whma2",
+        "cmdb_view-hqkstud4ains",
+        "cmdb_view-2gzext3301joq",
+        "cmdb_view-105vyr2lo76r",
+        "cmdb_view-2uz8q7ewff49f",
+        "cmdb_view-j80hdj416zma",
+        "cmdb_view-1gegfxkkbcgto"
+      ],
+      "forms": [],
+      "type": "layout"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-rt8i99bqaqqw",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-8b0lysadzksm"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-1g6aurbcxmnq8",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "云服务器-hgame",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_server-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".data.monitor as 监控",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
+        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
+        ".indexes.cmdb_index-external_id as 实例ID",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
+        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
+        ".data.memory as 内存",
+        ".data.cpu as CPU核数",
+        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
+        ".indexes.cmdb_index-vendor as 所属供应商",
+        ".indexes.cmdb_index-39833o1pvvbm7 as OS",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".indexes.cmdb_index-1yam7nytu0lzp as 镜像",
+        ".indexes.cmdb_index-25d3b7mowaj2c as 关联数据盘",
+        ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
+        ".indexes.cmdb_index-external_id as 实例ID",
+        ".indexes.cmdb_index-3ly0jzx6ccciz as 系统盘",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
+        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
+        ".indexes.cmdb_index-3si1uf8kjn4xt as 带外实例状态",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

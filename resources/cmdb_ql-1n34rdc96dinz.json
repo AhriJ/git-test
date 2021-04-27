@@ -27,9 +27,9 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_tree",
-          "op": "=",
-          "value": "$null"
+          "field": "vars.indexes_instance_id",
+          "op": "=~",
+          "value": "$empty"
         },
         {
           "field": "vars.indexes_subnet",
@@ -52,6 +52,11 @@
           "value": "$empty"
         },
         {
+          "field": "vars.indexes_tree",
+          "op": "=",
+          "value": "$null"
+        },
+        {
           "field": "$or",
           "op": "=-",
           "value": [
@@ -63,6 +68,11 @@
                   "field": ".inode.name",
                   "op": "=",
                   "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+                  "op": "=",
+                  "value": "{var:vars.indexes_instance_id}"
                 },
                 {
                   "field": ".indexes.cmdb_index-18gs5gfejka3i",
@@ -104,30 +114,27 @@
       "selects": [
         ".inode.name as 名称",
         ".data.monitor as 监控",
-        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
-        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
-        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
         ".data.version as 数据库版本",
+        ".data.connect.host as HOST",
+        ".data.connect.port as 端口",
+        ".indexes.cmdb_index-3jfp8m3pk5cgh as 角色",
         ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
-        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
         ".indexes.cmdb_index-1yhey410ex3f2 as 所属VPC",
         ".indexes.cmdb_index-3si1uf8kjn4xt as 状态",
         ".indexes.cmdb_index-15vdkzcny1lr3 as 资源组",
         ".indexes.cmdb_index-g3g32q8xcffi as 关联主节点",
         ".indexes.cmdb_index-zone as 可用区",
         ".data.cpu as CPU核数",
-        ".indexes.cmdb_index-36a7ibddg5piq as 磁盘容量",
-        ".indexes.cmdb_index-3jfp8m3pk5cgh as 角色",
-        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
-        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
         ".indexes.cmdb_index-1su5ji5jtlwup as 内存大小",
+        ".indexes.cmdb_index-36a7ibddg5piq as 磁盘容量",
         ".indexes.cmdb_index-region as 所在区域",
         ".data.quota.qps as 每秒查询数量",
         ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
         ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
-        ".data.connect.host as HOST",
-        ".data.connect.port as 端口",
+        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
         ".inode.mtime as 最后修改时间",
         ".inode.last_editor as 最后修改者"
       ],
@@ -142,6 +149,10 @@
               "inode_name": {
                 "type": "string",
                 "title": "名称"
+              },
+              "indexes_instance_id": {
+                "type": "string",
+                "title": "实例ID"
               },
               "indexes_tree": {
                 "type": "string",

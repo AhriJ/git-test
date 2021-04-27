@@ -28,6 +28,12 @@
       },
       {
         "uuid": "ba7e52c8cbbb"
+      },
+      {
+        "uuid": "2775f58f143e"
+      },
+      {
+        "uuid": "94a521de4d87"
       }
     ]
   },
@@ -35,7 +41,9 @@
     "cmdb_index-mpage_children": [
       "cmdb_mpage-3qajgop7v17cv",
       "cmdb_mpage-3rsg6hh2vxbfz",
-      "cmdb_mpage-390xwjadc78sy"
+      "cmdb_mpage-390xwjadc78sy",
+      "cmdb_mpage-3d3ott6f7vh69",
+      "cmdb_mpage-1gxq9k9ufj8se"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
     "cmdb_index-mpage_component_type": "SITEMAP"

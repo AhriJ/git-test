@@ -33,6 +33,8 @@
         ],
         "wf_id": "cmdb_workflow-2x47vuq0txff5",
         "is_created": false,
+        "is_expand": false,
+        "is_search": true,
         "descr": "资源树，用于展示树形结构配置",
         "lib_id": "cmdb_mpage-kgokj49uf2in",
         "isUpdate": true

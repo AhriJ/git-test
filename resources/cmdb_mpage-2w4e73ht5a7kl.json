@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2w4e73ht5a7kl",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "ugame ",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "state": {
+      "name": "ugame ",
+      "desc": "资源管理 ",
+      "icon": "appstore"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "2d33d33391bf"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-ifyg9bgi2o79"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-sub_nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

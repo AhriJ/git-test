@@ -20,16 +20,12 @@
         "name": "名称"
       },
       {
-        "field": ".inode.descr",
-        "name": "描述"
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "实例ID"
       },
       {
         "field": ".indexes.cmdb_index-kfaivv6m0c35",
         "name": "域名状态"
-      },
-      {
-        "field": ".indexes.cmdb_index-2s733qa4a0bbd",
-        "name": "是否自动续费"
       },
       {
         "field": ".indexes.cmdb_index-1c9jslopwfkux",
@@ -44,20 +40,8 @@
         "name": "域名购买状态"
       },
       {
-        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
-        "name": "实例ID"
-      },
-      {
         "field": ".indexes.cmdb_index-26lrotpomsf9d",
         "name": "服务"
-      },
-      {
-        "field": ".indexes.cmdb_index-3lofvn1raniji",
-        "name": "资源创建时间"
-      },
-      {
-        "field": ".indexes.cmdb_index-cloud_account",
-        "name": "关联云账户"
       },
       {
         "field": ".indexes.cmdb_index-1161brg3225ru",
@@ -72,8 +56,16 @@
         "name": "所在区域"
       },
       {
+        "field": ".indexes.cmdb_index-2s733qa4a0bbd",
+        "name": "是否自动续费"
+      },
+      {
         "field": ".indexes.cmdb_index-25aar3wijv96n",
         "name": "域名到期时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
       },
       {
         "field": ".inode.mtime",
@@ -111,8 +103,8 @@
       }
     ],
     "conditions": [],
-    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_domain-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_region\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-region\",\"op\":\"=\",\"value\":\"{var:vars.indexes_region}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-kfaivv6m0c35 as 域名状态\",\".indexes.cmdb_index-2s733qa4a0bbd as 是否自动续费\",\".indexes.cmdb_index-1c9jslopwfkux as 域名后缀\",\".indexes.cmdb_index-1pxe8fsjdn0z1 as 域名绑定的ns\",\".indexes.cmdb_index-3sskkh0krgt1s as 域名购买状态\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".indexes.cmdb_index-1161brg3225ru as 域名注册时间\",\".indexes.cmdb_index-3paty8r6ywynr as 域名注册商类型\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-25aar3wijv96n as 域名到期时间\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_region\":{\"type\":\"string\",\"title\":\"所在区域\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
-    "advanced": false,
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_domain-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_instance_id\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_region\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-2m0a8cdlkeajw\",\"op\":\"=\",\"value\":\"{var:vars.indexes_instance_id}\"},{\"field\":\".indexes.cmdb_index-region\",\"op\":\"=\",\"value\":\"{var:vars.indexes_region}\"}]}]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".indexes.cmdb_index-kfaivv6m0c35 as 域名状态\",\".indexes.cmdb_index-1c9jslopwfkux as 域名后缀\",\".indexes.cmdb_index-1pxe8fsjdn0z1 as 域名绑定的ns\",\".indexes.cmdb_index-3sskkh0krgt1s as 域名购买状态\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-1161brg3225ru as 域名注册时间\",\".indexes.cmdb_index-3paty8r6ywynr as 域名注册商类型\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-2s733qa4a0bbd as 是否自动续费\",\".indexes.cmdb_index-25aar3wijv96n as 域名到期时间\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_instance_id\":{\"type\":\"string\",\"title\":\"实例ID\"},\"indexes_region\":{\"type\":\"string\",\"title\":\"所在区域\"}}}}}}",
+    "advanced": true,
     "batch_edit_data": {
       "wf_id": "cmdb_workflow-2zs5u5yp5tnd6",
       "data": null

@@ -1,0 +1,116 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-dxb700x0gdw2",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "业务树-权限控制常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_tree-0"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_parent",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                  "op": "=",
+                  "value": "{var:vars.indexes_parent}"
+                }
+              ]
+            },
+            {
+              "field": ".indexes.cmdb_index-18gs5gfejka3i",
+              "op": "=",
+              "value": "{var:vars.indexes_parent}"
+            },
+            {
+              "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i",
+              "op": "=",
+              "value": "{var:vars.indexes_parent}"
+            },
+            {
+              "field": ".inode.id",
+              "op": "=",
+              "value": "{var:vars.indexes_parent}"
+            }
+          ]
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-3pzri82ts9n2a as 负责人",
+        ".indexes.cmdb_index-309gefsjwfa5q as 外部ID",
+        ".indexes.cmdb_index-23vblwi61ybha as 同步标记",
+        ".indexes.cmdb_index-2sl8fe4yktkn4 as 层级",
+        ".indexes.cmdb_index-18gs5gfejka3i as 父节点",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_parent": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
+                "title": "父节点"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

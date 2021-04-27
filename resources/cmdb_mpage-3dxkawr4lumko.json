@@ -41,23 +41,28 @@
         "u644d93865c5": "u644d93865c5"
       },
       {
-        "uuid": "u9849a97d0c0",
+        "uuid": "u65f651277ca",
         "name": "云服务器",
         "icon": "detail"
       },
       {
-        "uuid": "ufef2ad06230",
+        "uuid": "u7fde411d6c0",
         "name": "关系型数据库实例",
         "icon": "detail"
       },
       {
-        "uuid": "u42766fd199b",
+        "uuid": "u377a0db7e70",
         "name": "Redis",
         "icon": "detail"
       },
       {
-        "uuid": "ucfe65afde88",
+        "uuid": "u3de6aafb19e",
         "name": "MongoDB",
+        "icon": "detail"
+      },
+      {
+        "uuid": "u802bd79c6cc",
+        "name": "SLB",
         "icon": "detail"
       }
     ]
@@ -68,7 +73,8 @@
       "cmdb_mpage-2hnmfmpnhx1q",
       "cmdb_mpage-dq1o9efwwt3q",
       "cmdb_mpage-nw2swrmv17uf",
-      "cmdb_mpage-3pesr96yutx07"
+      "cmdb_mpage-3pesr96yutx07",
+      "cmdb_mpage-n7tct5wx9s5e"
     ],
     "cmdb_index-mpage_component": "cmdb_mcomponent-m_tabs",
     "cmdb_index-mpage_component_type": "LAYOUT"

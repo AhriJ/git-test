@@ -1,0 +1,223 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3nbzul1rku7yw",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "Agent上报服务器常用查询",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-3bn8no4n0zd71"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
+        },
+        {
+          "field": "data.hostname",
+          "op": "=",
+          "value": "{var:vars.name}"
+        },
+        {
+          "field": "indexes.cmdb_index-2c3gcau1bnk85",
+          "op": "=",
+          "value": "{var:vars.private_ip}"
+        },
+        {
+          "field": "indexes.cmdb_index-y0cucwrj1yoo",
+          "op": "=",
+          "value": "{var:vars.server_type}"
+        },
+        {
+          "field": "vars.name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-system_server.inode.mtime",
+          "op": "=",
+          "value": "{var:vars.mtime}"
+        },
+        {
+          "field": "vars.mtime",
+          "op": "\u003e",
+          "value": 0
+        },
+        {
+          "field": "vars.private_ip",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.server_type",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-agent_status",
+          "op": "=",
+          "value": "{var:vars.state}"
+        },
+        {
+          "field": "vars.state",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-26mgotsn8v2tg",
+          "op": "=",
+          "value": "{var:vars.system_type}"
+        },
+        {
+          "field": "vars.system_type",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": ".indexes.cmdb_index-system_server",
+          "op": "!=",
+          "value": "$null"
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "multi": true,
+      "selects": [
+        ".data.hostname as 主机名",
+        ".indexes.cmdb_index-agent_status as Agent 状态",
+        ".data.cpu",
+        ".data.memory as 内存",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-system_server.data.os.os_dist as 发行版",
+        ".indexes.cmdb_index-system_server.data.os.os_dist_ver as 发行版版本",
+        ".indexes.cmdb_index-system_server.data.agent.local_config.proxy_endpoints as 代理地址",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网 IP",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 公网 IP",
+        ".indexes.cmdb_index-system_server.data.os.kernel_ver as 内核版本",
+        ".indexes.cmdb_index-system_server.data.agent.version as Agent 版本",
+        ".indexes.cmdb_index-system_server.data.agent.run_level.current as 运行等级",
+        ".indexes.cmdb_index-system_server.data.agent.uptime as 运行时长",
+        ".indexes.cmdb_index-system_server.inode.mtime as 最后上报时间"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "title": "root",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string",
+                "title": "主机名"
+              },
+              "private_ip": {
+                "type": "string",
+                "title": "内网 IP"
+              },
+              "server_type": {
+                "type": "string",
+                "title": "服务器类型",
+                "default": "$empty",
+                "enum": [
+                  "$empty",
+                  "裸金属",
+                  "虚拟机",
+                  "云主机"
+                ],
+                "enumNames": [
+                  "所有",
+                  "裸金属",
+                  "私有云",
+                  "公有云"
+                ]
+              },
+              "state": {
+                "type": "string",
+                "title": "Agent 状态",
+                "enum": [
+                  "$empty",
+                  "CREATED",
+                  "RUNNING",
+                  "STOPED",
+                  "REPORTED"
+                ],
+                "enumNames": [
+                  "所有",
+                  "已安装",
+                  "运行中",
+                  "已停止",
+                  "已上报"
+                ],
+                "default": "$empty"
+              },
+              "system_type": {
+                "type": "string",
+                "title": "操作系统",
+                "enum": [
+                  "$empty",
+                  "Windows",
+                  "Linux"
+                ],
+                "enumNames": [
+                  "所有",
+                  "Windows",
+                  "Linux"
+                ],
+                "default": "$empty"
+              },
+              "mtime": {
+                "type": "number",
+                "title": "最后上报时间",
+                "default": 0,
+                "format": "date-time"
+              }
+            },
+            "required": []
+          }
+        }
+      },
+      "limit": 10,
+      "offset": 0
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

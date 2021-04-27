@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_view-39ptos74of8wn",
+    "schema_id": "cmdb_schema_view-0",
+    "name": "ugame 资源管理",
+    "namespace": "",
+    "descr": "ugame",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data_config": {},
+    "view_config": {
+      "super_mode": false,
+      "update": null,
+      "viewData": [
+        "cmdb_view-xyjqpak7546b",
+        "cmdb_view-3kze2yi11n51b",
+        "cmdb_view-3qscbeaolho9g",
+        "cmdb_view-3inil9kyxmkdc"
+      ],
+      "forms": [],
+      "type": "layout"
+    }
+  },
+  "indexes": {
+    "cmdb_index-1wkybv4ibhek2": "cmdb_mpage-rt8i99bqaqqw",
+    "cmdb_index-34dq54hx3o6o6": "cmdb_mpage-34fu93gqnrih4"
+  }
+}

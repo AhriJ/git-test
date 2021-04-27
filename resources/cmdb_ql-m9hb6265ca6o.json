@@ -27,8 +27,18 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_tree",
-          "op": "=",
+          "field": "vars.indexes_external_id",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_private_ips",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_public_ips",
+          "op": "=~",
           "value": "$empty"
         },
         {
@@ -72,9 +82,9 @@
                   "value": "{var:vars.inode_name}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                  "field": ".indexes.cmdb_index-external_id",
                   "op": "=",
-                  "value": "{var:vars.indexes_tree}"
+                  "value": "{var:vars.indexes_external_id}"
                 },
                 {
                   "field": ".indexes.cmdb_index-3bxtoukdedsor",
@@ -100,6 +110,16 @@
                   "field": ".indexes.cmdb_index-3ly0jzx6ccciz",
                   "op": "=",
                   "value": "{var:vars.indexes_system_disk}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-2c3gcau1bnk85",
+                  "op": "=",
+                  "value": "{var:vars.indexes_private_ips}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-xgm9kh3lu3mg",
+                  "op": "=",
+                  "value": "{var:vars.indexes_public_ips}"
                 }
               ]
             }
@@ -121,27 +141,24 @@
       "selects": [
         ".inode.name as 名称",
         ".data.monitor as 监控",
-        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
-        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
-        ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
+        ".indexes.cmdb_index-external_id as 实例ID",
         ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
         ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
         ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
-        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
-        ".data.memory as 内存",
-        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
-        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
-        ".data.cpu as CPU核数",
-        ".indexes.cmdb_index-39833o1pvvbm7 as OS",
-        ".indexes.cmdb_index-region as 所在区域",
         ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
+        ".indexes.cmdb_index-1yhey410ex3f2 as VPC",
+        ".data.cpu as CPU核数",
+        ".data.memory as 内存",
+        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
+        ".indexes.cmdb_index-39833o1pvvbm7 as OS",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-region as 所在区域",
         ".indexes.cmdb_index-1yam7nytu0lzp as 镜像",
         ".indexes.cmdb_index-26lrotpomsf9d as 关联云服务",
         ".indexes.cmdb_index-25d3b7mowaj2c as 关联数据盘",
         ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
-        ".indexes.cmdb_index-external_id as 唯一ID",
         ".indexes.cmdb_index-3ly0jzx6ccciz as 系统盘",
-        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
         ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
@@ -157,6 +174,10 @@
               "inode_name": {
                 "type": "string",
                 "title": "名称"
+              },
+              "indexes_external_id": {
+                "type": "string",
+                "title": "实例ID"
               },
               "indexes_tree": {
                 "type": "string",
@@ -208,6 +229,14 @@
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-27h0eudlvmbpm\u0026select_mode=single\u0026spec=id\u0026widget=table",
                 "title": "系统盘"
+              },
+              "indexes_private_ips": {
+                "type": "string",
+                "title": "内网IP"
+              },
+              "indexes_public_ips": {
+                "type": "string",
+                "title": "外网IP"
               }
             }
           }

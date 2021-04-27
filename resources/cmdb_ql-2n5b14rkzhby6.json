@@ -32,6 +32,11 @@
           "value": "$empty"
         },
         {
+          "field": "vars.indexes_external_id",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
           "field": "vars.indexes_subnet",
           "op": "=",
           "value": "$empty"
@@ -65,9 +70,9 @@
                   "value": "{var:vars.inode_name}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                  "field": ".indexes.cmdb_index-external_id",
                   "op": "=",
-                  "value": "{var:vars.indexes_tree}"
+                  "value": "{var:vars.indexes_external_id}"
                 },
                 {
                   "field": ".indexes.cmdb_index-3bxtoukdedsor",
@@ -90,6 +95,21 @@
                   "value": "{var:vars.indexes_public_ips}"
                 }
               ]
+            },
+            {
+              "field": ".indexes.cmdb_index-18gs5gfejka3i",
+              "op": "=",
+              "value": "{var:vars.indexes_tree}"
+            },
+            {
+              "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i",
+              "op": "=",
+              "value": "{var:vars.indexes_tree}"
+            },
+            {
+              "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i",
+              "op": "=",
+              "value": "{var:vars.indexes_tree}"
             }
           ]
         },
@@ -112,15 +132,16 @@
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏",
         ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服",
         ".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务",
-        ".indexes.cmdb_index-zone as 可用区",
-        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-external_id as 实例ID",
         ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
         ".data.cpu as CPU核数",
         ".data.memory as 内存",
-        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
-        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
         ".indexes.cmdb_index-39833o1pvvbm7 as OS",
         ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
+        ".indexes.cmdb_index-3lofvn1raniji as 创建时间",
         ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
@@ -151,6 +172,10 @@
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select",
                 "title": "业务树"
+              },
+              "indexes_external_id": {
+                "type": "string",
+                "title": "实例ID"
               },
               "indexes_subnet": {
                 "type": "string",

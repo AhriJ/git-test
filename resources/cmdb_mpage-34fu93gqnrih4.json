@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-34fu93gqnrih4",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "ugame 资源管理模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-3uszv7dvxl793"
+    },
+    "children": {
+      "children.1d6a8c5af28d.state.__lib__.view_id": "cmdb_view-39ptos74of8wn"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

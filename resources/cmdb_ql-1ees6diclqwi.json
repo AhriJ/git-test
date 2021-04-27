@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-1ees6diclqwi",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "VPC",
+    "name": "VPC常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -27,8 +27,8 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_cloud_account",
-          "op": "=",
+          "field": "vars.indexes_instance_id",
+          "op": "=~",
           "value": "$empty"
         },
         {
@@ -45,29 +45,35 @@
                   "value": "{var:vars.inode_name}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-cloud_account",
+                  "field": ".indexes.cmdb_index-external_id",
                   "op": "=",
-                  "value": "{var:vars.indexes_cloud_account}"
+                  "value": "{var:vars.indexes_instance_id}"
                 }
               ]
             }
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-cloud_account as 云账户",
-        ".indexes.cmdb_index-external_id as 唯一ID",
-        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-external_id as 实例ID",
         ".indexes.cmdb_index-region as 所属区域",
         ".data.ipv6_cidr as IPv6 CIDR",
         ".indexes.cmdb_index-26lrotpomsf9d as 所属云服务",
         ".data.cidr as VPC的IPv4 CIDR",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -78,6 +84,10 @@
                 "type": "string",
                 "title": "名称"
               },
+              "indexes_instance_id": {
+                "type": "string",
+                "title": "实例ID"
+              },
               "indexes_cloud_account": {
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
@@ -86,12 +96,7 @@
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

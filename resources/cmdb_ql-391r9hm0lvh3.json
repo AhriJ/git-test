@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-391r9hm0lvh3",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "证书管理",
+    "name": "证书管理常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -23,6 +23,11 @@
         },
         {
           "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_instance_id",
           "op": "=~",
           "value": "$empty"
         },
@@ -48,34 +53,45 @@
                   "field": ".indexes.cmdb_index-15vdkzcny1lr3",
                   "op": "=",
                   "value": "{var:vars.indexes_project_info}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+                  "op": "=",
+                  "value": "{var:vars.indexes_instance_id}"
                 }
               ]
             }
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
         ".indexes.cmdb_index-19weuw20ws2lq as 证书类型",
         ".indexes.cmdb_index-3p7x9dyxwkhiv as 证书生效时间",
         ".data.product_zh_name as 颁发者",
-        ".indexes.cmdb_index-cloud_account as 关联云账户",
         ".data.alias as 备注名称",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID",
-        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-15vdkzcny1lr3 as 资源组",
+        ".indexes.cmdb_index-144b6sef0cp4k as 证书过期时间",
         ".indexes.cmdb_index-26lrotpomsf9d as 服务",
         ".indexes.cmdb_index-region as 所在区域",
         ".data.domain as 主域名",
-        ".indexes.cmdb_index-15vdkzcny1lr3 as 资源组",
-        ".indexes.cmdb_index-144b6sef0cp4k as 证书过期时间",
         ".indexes.cmdb_index-ulk4ifz5gp89 as 证书套餐类型",
         ".indexes.cmdb_index-q28jpmetvivl as 证书包含的多个域名",
         ".data.validity_period as 证书有效期(月)",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -86,6 +102,10 @@
                 "type": "string",
                 "title": "名称"
               },
+              "indexes_instance_id": {
+                "type": "string",
+                "title": "实例ID"
+              },
               "indexes_project_info": {
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2unnfmh3tk3ax\u0026select_mode=single\u0026spec=id\u0026widget=table",
@@ -94,12 +114,7 @@
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

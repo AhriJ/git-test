@@ -25,7 +25,13 @@
       },
       "required": []
     },
-    "indexes": []
+    "indexes": [
+      {
+        "id": "cmdb_index-18gs5gfejka3i",
+        "required": false,
+        "key": "tree"
+      }
+    ]
   },
   "indexes": {
     "cmdb_schema_index_plugin-0": "cmdb_schema_u_crf_slb-0"

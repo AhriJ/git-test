@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-8b0lysadzksm",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "共享资源模版",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-f6k17vmc0ne9"
+    },
+    "children": {
+      "children.abc99a3c4c9d.state.__lib__.view_id": "cmdb_view-2adl7f1rhawz1"
+    }
+  },
+  "indexes": {
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

@@ -32,12 +32,12 @@
         "name": "告警地址"
       },
       {
-        "field": ".indexes.cmdb_index-1a6ad1dt6cl66",
-        "name": "通知方式"
+        "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-309gefsjwfa5q",
+        "name": "业务节点\u003e外部ID"
       },
       {
-        "field": ".indexes.cmdb_index-18gs5gfejka3i",
-        "name": "业务节点"
+        "field": ".indexes.cmdb_index-1a6ad1dt6cl66",
+        "name": "通知方式"
       },
       {
         "field": ".inode.mtime",
@@ -66,7 +66,7 @@
               {
                 "field": ".indexes.cmdb_index-18gs5gfejka3i",
                 "op": "=",
-                "value": "$empty",
+                "value": null,
                 "is_array": false,
                 "widget": "select",
                 "pkg_id": "cmdb_x-27b31pmpzp61d"
@@ -77,7 +77,7 @@
       }
     ],
     "conditions": [],
-    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_webhook_manage-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-3fsgbvko7e0pc as 告警级别\",\".indexes.cmdb_index-k1fvsgfi2zw1 as 告警地址\",\".indexes.cmdb_index-1a6ad1dt6cl66 as 通知方式\",\".indexes.cmdb_index-18gs5gfejka3i as 业务节点\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"业务节点\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_webhook_manage-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"}]}]}],\"function\":\"db\",\"selects\":[\".inode.name as 名称\",\".inode.descr as 描述\",\".indexes.cmdb_index-3fsgbvko7e0pc as 告警级别\",\".indexes.cmdb_index-k1fvsgfi2zw1 as 告警地址\",\".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-309gefsjwfa5q as 业务节点\u003e外部ID\",\".indexes.cmdb_index-1a6ad1dt6cl66 as 通知方式\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"业务节点\"}}}}},\"sorts\":[],\"objects\":[\"$conditions\"],\"multi\":true}",
     "advanced": false,
     "batch_edit_data": {
       "wf_id": "cmdb_workflow-2rutvr70sraje",

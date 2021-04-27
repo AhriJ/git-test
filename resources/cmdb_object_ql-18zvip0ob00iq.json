@@ -1,0 +1,104 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-18zvip0ob00iq",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "关系型数据库-hgame",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_crf_cloud_rds-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".data.monitor as 监控",
+        ".indexes.cmdb_index-1ao5gi4u1uksf as 访问地址",
+        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
+        ".indexes.cmdb_index-vendor as 所属供应商",
+        ".indexes.cmdb_index-cloud_resource_config as 关联云资源配置",
+        ".data.version as 数据库版本",
+        ".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机",
+        ".indexes.cmdb_index-26lrotpomsf9d as 服务",
+        ".indexes.cmdb_index-1yhey410ex3f2 as 所属VPC",
+        ".indexes.cmdb_index-3si1uf8kjn4xt as 状态",
+        ".indexes.cmdb_index-15vdkzcny1lr3 as 资源组",
+        ".indexes.cmdb_index-g3g32q8xcffi as 关联主节点",
+        ".indexes.cmdb_index-zone as 可用区",
+        ".data.cpu as CPU核数",
+        ".indexes.cmdb_index-36a7ibddg5piq as 磁盘容量",
+        ".indexes.cmdb_index-3jfp8m3pk5cgh as 角色",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-1h2jo6o503e6n as 到期时间",
+        ".indexes.cmdb_index-1su5ji5jtlwup as 内存大小",
+        ".indexes.cmdb_index-region as 所在区域",
+        ".data.quota.qps as 每秒查询数量",
+        ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
+        ".indexes.cmdb_index-cloud_account as 关联云账户",
+        ".indexes.cmdb_index-vendor as 所属供应商",
+        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外ID",
+        ".indexes.cmdb_index-cloud_resource_config as 所属云资源配置",
+        ".data.connect.host as HOST",
+        ".data.connect.port as 端口",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

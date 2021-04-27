@@ -1,0 +1,144 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1y982hci0bco",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "弹性公网IP",
+    "namespace": "",
+    "descr": "阿里云",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-xgm9kh3lu3mg",
+        "name": "外网IP"
+      },
+      {
+        "field": ".data.addressStatus",
+        "name": "状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-2mikgqe9du6lv",
+        "name": "云服务器"
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "实例ID"
+      },
+      {
+        "field": ".data.bandwidth",
+        "name": "带宽"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "所属供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "服务"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": null,
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x-1khvopz12rtt7"
+              },
+              {
+                "field": ".indexes.cmdb_index-2mikgqe9du6lv",
+                "op": "=",
+                "value": null,
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_u_crf_server-0_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-region",
+                "op": "=~",
+                "value": null,
+                "is_array": false
+              },
+              {
+                "field": "",
+                "op": ""
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_eip-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_instance_id\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.data_addressStatus\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_cloud_server\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-2m0a8cdlkeajw\",\"op\":\"=\",\"value\":\"{var:vars.indexes_instance_id}\"},{\"field\":\".indexes.cmdb_index-vendor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud}\"},{\"field\":\".indexes.cmdb_index-2mikgqe9du6lv\",\"op\":\"=\",\"value\":\"{var:vars.indexes_cloud_server}\"},{\"field\":\".data.addressStatus\",\"op\":\"=\",\"value\":\"{var:vars.data_addressStatus}\"}]}]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP\",\".data.addressStatus as 状态\",\".indexes.cmdb_index-2mikgqe9du6lv as 云服务器\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".data.bandwidth as 带宽\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-vendor as 所属供应商\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".indexes.cmdb_index-cloud_account as 关联云账户\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_cloud_server\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-15o9z0my1neyo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"云服务器\"},\"data_addressStatus\":{\"type\":\"string\",\"title\":\"状态\"},\"indexes_instance_id\":{\"type\":\"string\",\"title\":\"实例ID\"}}}}}}",
+    "advanced": true,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-zil3jswntam2",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-16gprplboh4dg"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-1ln8sxjicuhlv",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3kn3bxxma80xb",
+      "data": null
+    },
+    "ql": "cmdb_ql-14hc244intrza",
+    "object_id": "cmdb_object_ql-19qtaswhmq05y",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-30ygeqxxna8na"
+  }
+}

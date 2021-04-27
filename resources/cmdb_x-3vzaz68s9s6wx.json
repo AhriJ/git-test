@@ -24,16 +24,8 @@
         "name": "监控"
       },
       {
-        "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name",
-        "name": "游戏"
-      },
-      {
-        "field": ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name",
-        "name": "区服"
-      },
-      {
-        "field": ".indexes.cmdb_index-18gs5gfejka3i.inode.name",
-        "name": "服务"
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "实例ID"
       },
       {
         "field": ".data.size",
@@ -44,24 +36,8 @@
         "name": "版本"
       },
       {
-        "field": ".indexes.cmdb_index-26lrotpomsf9d",
-        "name": "服务"
-      },
-      {
-        "field": ".data.billing_mode",
-        "name": "计费方式"
-      },
-      {
-        "field": ".indexes.cmdb_index-1p0r59rn877tq",
-        "name": "到期时间"
-      },
-      {
         "field": ".indexes.cmdb_index-2tnsr7pzwgp4e",
         "name": "IP"
-      },
-      {
-        "field": ".indexes.cmdb_index-3lofvn1raniji",
-        "name": "资源创建时间"
       },
       {
         "field": ".data.port",
@@ -76,12 +52,24 @@
         "name": "所在区域"
       },
       {
-        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
-        "name": "实例ID"
-      },
-      {
         "field": ".indexes.cmdb_index-3bxtoukdedsor",
         "name": "虚拟交换机"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "服务"
+      },
+      {
+        "field": ".data.billing_mode",
+        "name": "计费方式"
+      },
+      {
+        "field": ".indexes.cmdb_index-1p0r59rn877tq",
+        "name": "到期时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
       },
       {
         "field": ".inode.mtime",
@@ -161,7 +149,7 @@
       }
     ],
     "conditions": [],
-    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_redis-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$null\"},{\"field\":\"vars.indexes_vpc\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_subnet\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"},{\"field\":\".indexes.cmdb_index-1yhey410ex3f2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_vpc}\"},{\"field\":\".indexes.cmdb_index-3bxtoukdedsor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_subnet}\"}]}]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".data.monitor as 监控\",\".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 游戏\",\".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-18gs5gfejka3i.inode.name as 区服\",\".indexes.cmdb_index-18gs5gfejka3i.inode.name as 服务\",\".data.size as 内存大小\",\".data.redis_version as 版本\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".data.billing_mode as 计费方式\",\".indexes.cmdb_index-1p0r59rn877tq as 到期时间\",\".indexes.cmdb_index-2tnsr7pzwgp4e as IP\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".data.port as 连接端口\",\".indexes.cmdb_index-1yhey410ex3f2 as VPC\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"业务树\"},\"indexes_vpc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_subnet\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"虚拟交换机\"},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"}}}}}}",
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_u_crf_redis-0\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_instance_id\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_vpc\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_subnet\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_tree\",\"op\":\"=\",\"value\":\"$null\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-2m0a8cdlkeajw\",\"op\":\"=\",\"value\":\"{var:vars.indexes_instance_id}\"},{\"field\":\".indexes.cmdb_index-18gs5gfejka3i\",\"op\":\"=\",\"value\":\"{var:vars.indexes_tree}\"},{\"field\":\".indexes.cmdb_index-1yhey410ex3f2\",\"op\":\"=\",\"value\":\"{var:vars.indexes_vpc}\"},{\"field\":\".indexes.cmdb_index-3bxtoukdedsor\",\"op\":\"=\",\"value\":\"{var:vars.indexes_subnet}\"}]}]}],\"objects\":[\"$conditions\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".data.monitor as 监控\",\".indexes.cmdb_index-2m0a8cdlkeajw as 实例ID\",\".data.size as 内存大小\",\".data.redis_version as 版本\",\".indexes.cmdb_index-2tnsr7pzwgp4e as IP\",\".data.port as 连接端口\",\".indexes.cmdb_index-1yhey410ex3f2 as VPC\",\".indexes.cmdb_index-region as 所在区域\",\".indexes.cmdb_index-3bxtoukdedsor as 虚拟交换机\",\".indexes.cmdb_index-26lrotpomsf9d as 服务\",\".data.billing_mode as 计费方式\",\".indexes.cmdb_index-1p0r59rn877tq as 到期时间\",\".indexes.cmdb_index-3lofvn1raniji as 资源创建时间\",\".inode.mtime as 最后修改时间\",\"inode.last_editor as 最后修改者\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_instance_id\":{\"type\":\"string\",\"title\":\"实例ID\"},\"indexes_tree\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2kvjel8j1ler4\u0026select_mode=single\u0026spec=id\u0026widget=select\",\"title\":\"业务树\"},\"indexes_vpc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"VPC\"},\"indexes_cloud\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\"indexes_subnet\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"虚拟交换机\"},\"indexes_cloud_resource_conf\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"indexes_cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"}}}}}}",
     "advanced": true,
     "batch_edit_data": {
       "wf_id": "cmdb_workflow-tus77x84z068",
