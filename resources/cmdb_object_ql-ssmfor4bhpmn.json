@@ -40,14 +40,12 @@
       "function": "db",
       "selects": [
         ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-cloud_account as 云账户",
-        ".indexes.cmdb_index-external_id as 唯一ID",
-        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
+        ".indexes.cmdb_index-external_id as 实例ID",
         ".indexes.cmdb_index-region as 所属区域",
         ".data.ipv6_cidr as IPv6 CIDR",
         ".indexes.cmdb_index-26lrotpomsf9d as 所属云服务",
         ".data.cidr as VPC的IPv4 CIDR",
+        ".indexes.cmdb_index-3lofvn1raniji as 资源创建时间",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],

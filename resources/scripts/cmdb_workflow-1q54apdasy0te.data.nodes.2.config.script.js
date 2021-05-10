@@ -218,11 +218,6 @@
          "field": ".data.index_id",
          "op": "=",
          "value": index.inode.id,
-       },
-       {
-         "field": ".indexes.cmdb_index-1m8g2lnhu7s0u",
-         "op": "!-",
-         "value": input.excludeSchemaId
        }
      ],
      "objects": [

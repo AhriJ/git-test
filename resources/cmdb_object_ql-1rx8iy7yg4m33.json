@@ -17,9 +17,34 @@
     "content": {
       "conditions": [
         {
-          "field": ".inode.schema_id",
-          "op": "=",
-          "value": "cmdb_schema_x-3bn8no4n0zd71"
+          "field": "inode.schema_id",
+          "op": "=-",
+          "value": {
+            "conditions": [
+              {
+                "field": ".inode.schema_id",
+                "op": "=-",
+                "value": [
+                  "cmdb_schema_schema_x-0"
+                ]
+              }
+            ],
+            "objects": [
+              "cmdb_schema_x-3bn8no4n0zd71"
+            ],
+            "sorts": [],
+            "multi": true,
+            "selects": [
+              ".inode.name",
+              ".inode.schema_id",
+              ".inode.lock",
+              ".inode.mtime",
+              ".inode.last_editor"
+            ],
+            "comment": "",
+            "function": "db",
+            "vars": {}
+          }
         },
         {
           "field": "vars.id",
@@ -39,50 +64,21 @@
       ],
       "function": "db",
       "selects": [
-        ".inode.name as 名称",
-        ".inode.descr as 描述",
-        ".indexes.cmdb_index-system_server as 关联上报服务器",
-        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网IP",
-        ".indexes.cmdb_index-xgm9kh3lu3mg as 外网IP",
-        ".indexes.cmdb_index-y0cucwrj1yoo as 服务器类型",
-        ".indexes.cmdb_index-1xiozej60zk1l as 所在区域",
-        ".indexes.cmdb_index-290dn7d3j221q as 所在VPC",
-        ".indexes.cmdb_index-bpcupqkeo9v2 as 所在宿主机",
-        ".indexes.cmdb_index-3cqrpc9lj8yg8 as 带外实例状态",
-        ".indexes.cmdb_index-agent_status as agent状态",
-        ".indexes.cmdb_index-cloud_account as 关联云账户",
-        ".indexes.cmdb_index-2e0wp2v7psuk2 as 关联虚拟交换机",
-        ".indexes.cmdb_index-serial_number as 序列号",
-        ".indexes.cmdb_index-yz6fqyqux7uo as 关联公网IP",
-        ".indexes.cmdb_index-skh7uvjm6fk as 标签",
-        ".indexes.cmdb_index-3nenrn062pzmn as 资源组",
-        ".indexes.cmdb_index-1k4ffo3pyiwrv as 付费类型",
-        ".indexes.cmdb_index-f1z0t1y883dx as 实例规格",
-        ".indexes.cmdb_index-2cmm4wsl0x4is as 网络类型",
-        ".indexes.cmdb_index-1mq1ie4eq3np3 as AliCloud 资源组",
-        ".data.kernel as 内核版本",
-        ".data.os as 操作系统",
-        ".data.cpu as vCPU 核数",
+        ".data.hostname as 主机名",
+        ".indexes.cmdb_index-agent_status as Agent 状态",
+        ".data.cpu",
         ".data.memory as 内存",
-        ".data.launch_time as 启动时间",
-        ".data.hostname as HOSTNAME",
-        ".data.agent_version as Agent版本",
-        ".data.agent_level as Agent运行等级",
-        ".data.description as 描述",
-        ".indexes.cmdb_index-vendor as 供应商",
-        ".indexes.cmdb_index-external_id as 外部ID",
-        ".indexes.cmdb_index-36je1wggke5wj as 关联资源模板",
-        ".indexes.cmdb_index-dzm41ig72dbn as 带外实例类型",
-        ".indexes.cmdb_index-3jvclg63itz7m as 带外产品",
-        ".indexes.cmdb_index-2m0a8cdlkeajw as 带外实例ID",
-        ".indexes.cmdb_index-sync_marker as 同步标记",
-        ".indexes.cmdb_index-status as 状态",
-        ".indexes.cmdb_index-1puskjh9jltjw as 实例创建时间(timestamp)",
-        ".indexes.cmdb_index-3m0bddfcx1u4v as 实例释放时间(timestamp)",
-        ".indexes.cmdb_index-26mgotsn8v2tg as 操作系统类型",
-        ".indexes.cmdb_index-maep9bejx114 as 业务",
-        ".inode.mtime as 最后修改时间",
-        "inode.last_editor as 最后修改者"
+        ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
+        ".indexes.cmdb_index-system_server.data.os.os_dist as 发行版",
+        ".indexes.cmdb_index-system_server.data.os.os_dist_ver as 发行版版本",
+        ".indexes.cmdb_index-system_server.data.agent.local_config.proxy_endpoints as 代理地址",
+        ".indexes.cmdb_index-2c3gcau1bnk85 as 内网 IP",
+        ".indexes.cmdb_index-xgm9kh3lu3mg as 公网 IP",
+        ".indexes.cmdb_index-system_server.data.os.kernel_ver as 内核版本",
+        ".indexes.cmdb_index-system_server.data.agent.version as Agent 版本",
+        ".indexes.cmdb_index-system_server.data.agent.run_level.current as 运行等级",
+        ".indexes.cmdb_index-system_server.data.agent.uptime as 运行时长",
+        ".indexes.cmdb_index-system_server.inode.mtime as 最后上报时间"
       ],
       "vars": {
         "type": "object",

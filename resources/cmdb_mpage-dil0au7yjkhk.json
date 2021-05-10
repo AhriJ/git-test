@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-dil0au7yjkhk",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "Tar包（模型\u0026关联\u0026数据模版\u0026视图模版）(自定义)",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_ql-26o9s71c25slz"
+    },
+    "state": {},
+    "children": [],
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-tar",
+    "cmdb_index-mpage_component_type": "TAR"
+  }
+}
