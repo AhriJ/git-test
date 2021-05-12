@@ -60,7 +60,7 @@
         ".inode.descr as 描述",
         ".indexes.cmdb_index-3fsgbvko7e0pc as 告警级别",
         ".indexes.cmdb_index-k1fvsgfi2zw1 as 告警地址",
-        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-309gefsjwfa5q as 业务节点\u003e外部ID",
+        ".indexes.cmdb_index-18gs5gfejka3i.indexes.cmdb_index-309gefsjwfa5q as 业务节点",
         ".indexes.cmdb_index-1a6ad1dt6cl66 as 通知方式",
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"

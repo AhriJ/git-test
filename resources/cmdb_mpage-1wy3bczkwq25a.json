@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1wy3bczkwq25a",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "卡片",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hoverable": false,
+      "size": "small",
+      "title": "页面黑名单 (修改后，2分钟生效)",
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "7dd11088e5e3"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-10ja4qr0kg28u"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_card",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

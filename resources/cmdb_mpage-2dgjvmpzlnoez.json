@@ -1,0 +1,66 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2dgjvmpzlnoez",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "JsonSchema表单",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.form_data": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.form_data.name": "FULL_EXPORTED",
+      "state.form_data.type": "FULL_EXPORTED",
+      "state.form_data.scope": "FULL_EXPORTED",
+      "state.form_data.permission": "FULL_EXPORTED",
+      "state.form_data.operator": "FULL_EXPORTED",
+      "state.form_data.parent_permissions": "FULL_EXPORTED",
+      "state.form_data.model_ids": "FULL_EXPORTED",
+      "state.form_data.pkg_ids": "SEMI_EXPORTED",
+      "state.form_data.operators": "FULL_EXPORTED",
+      "state.form_data.pkd_ids": "FULL_EXPORTED",
+      "state.form_data.model_id": "FULL_EXPORTED",
+      "state.form_data.operations": "FULL_EXPORTED",
+      "state.form_data.config_id": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.0": "SEMI_EXPORTED",
+      "state.form_data.pkg_ids.0.select_all": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.0.pkg_id": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.0.conditions": "SEMI_EXPORTED",
+      "state.form_data.pkg_ids.0.conditions.0": "SEMI_EXPORTED",
+      "state.form_data.pkg_ids.0.conditions.0.field": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.0.conditions.0.op": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.0.conditions.0.value": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.1": "SEMI_EXPORTED",
+      "state.form_data.pkg_ids.1.select_all": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.1.pkg_id": "FULL_EXPORTED",
+      "state.form_data.pkg_ids.1.conditions": "FULL_EXPORTED",
+      "state.form_data.org": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "schema": "{\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"title\":\"名称\"}},\"required\":[\"scope\",\"model_ids\",\"name\"]}",
+      "form_data": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-form_render",
+    "cmdb_index-mpage_component_type": "INPUT"
+  }
+}

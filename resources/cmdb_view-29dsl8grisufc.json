@@ -43,6 +43,16 @@
             "open_type": "link",
             "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-29dsl8grisufc"
           }
+        },
+        "data.monitor": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": "cmdb_view-3j2jizmpk5mnc",
+            "open_type": "link",
+            "type": "custom",
+            "href": "$app=./cmdb_mpage-179ib72vxt3na\u0026view_id=cmdb_view-3j2jizmpk5mnc"
+          }
         }
       },
       "workOrderList": []

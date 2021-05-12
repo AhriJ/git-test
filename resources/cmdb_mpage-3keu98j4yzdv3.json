@@ -1,0 +1,156 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3keu98j4yzdv3",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "更新权限",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.input.schema": "FULL_EXPORTED",
+      "state.onSuccess.0": "SEMI_EXPORTED",
+      "state.onSuccess.1.args": "FULL_EXPORTED",
+      "state.input.id": "FULL_EXPORTED",
+      "state.onSuccess.0.args": "FULL_EXPORTED",
+      "state.output": "SEMI_EXPORTED",
+      "state.output.result": "FULL_EXPORTED",
+      "state.output.result_name": "FULL_EXPORTED",
+      "state.__trigger__": "SEMI_EXPORTED",
+      "state.input": "SEMI_EXPORTED",
+      "state.onSuccess.2.trigger": "FULL_EXPORTED",
+      "state.onSuccess": "SEMI_EXPORTED",
+      "state.onSuccess.0.trigger": "FULL_EXPORTED",
+      "state.onSuccess.1.trigger": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.input.descr": "FULL_EXPORTED",
+      "state.onFail.0": "SEMI_EXPORTED",
+      "state.onFail.0.args": "FULL_EXPORTED",
+      "state.onSuccess.2": "SEMI_EXPORTED",
+      "state.onSuccess.2.args": "FULL_EXPORTED",
+      "state.input.name": "FULL_EXPORTED",
+      "state.output.message": "FULL_EXPORTED",
+      "state.__trigger__.createWfJob": "FULL_EXPORTED",
+      "state.input.pkg_id": "FULL_EXPORTED",
+      "state.onFail": "SEMI_EXPORTED",
+      "state.onFail.0.trigger": "FULL_EXPORTED",
+      "state.onSuccess.1": "SEMI_EXPORTED",
+      "state.input.content_type": "FULL_EXPORTED",
+      "state.input.request_content_type": "FULL_EXPORTED",
+      "state.input.response_content_type": "FULL_EXPORTED",
+      "state.input.disable": "FULL_EXPORTED",
+      "state.input.immediately": "FULL_EXPORTED",
+      "state.input.methods": "FULL_EXPORTED",
+      "state.input.timeout_ts": "FULL_EXPORTED",
+      "state.input.endpoint_id": "FULL_EXPORTED",
+      "state.input.type": "FULL_EXPORTED",
+      "state.input.scope": "FULL_EXPORTED",
+      "state.input.permission": "FULL_EXPORTED",
+      "state.input.operator": "SEMI_EXPORTED",
+      "state.input.permission_id": "FULL_EXPORTED",
+      "state.input.operator.0": "FULL_EXPORTED",
+      "state.input.parent_permissions": "SEMI_EXPORTED",
+      "state.input.model_ids": "SEMI_EXPORTED",
+      "state.input.model_ids.0": "FULL_EXPORTED",
+      "state.input.model_ids.1": "FULL_EXPORTED",
+      "state.input.model_ids.2": "FULL_EXPORTED",
+      "state.input.model_ids.3": "FULL_EXPORTED",
+      "state.input.model_ids.4": "FULL_EXPORTED",
+      "state.input.model_ids.5": "FULL_EXPORTED",
+      "state.input.model_ids.6": "FULL_EXPORTED",
+      "state.input.model_ids.7": "FULL_EXPORTED",
+      "state.input.model_ids.8": "FULL_EXPORTED",
+      "state.input.model_ids.9": "FULL_EXPORTED",
+      "state.input.pkd_ids": "SEMI_EXPORTED",
+      "state.input.pkd_ids.0": "FULL_EXPORTED",
+      "state.input.pkd_ids.1": "FULL_EXPORTED",
+      "state.input.pkd_ids.2": "FULL_EXPORTED",
+      "state.input.pkd_ids.3": "FULL_EXPORTED",
+      "state.input.pkd_ids.4": "FULL_EXPORTED",
+      "state.input.pkd_ids.5": "FULL_EXPORTED",
+      "state.input.pkd_ids.6": "FULL_EXPORTED",
+      "state.input.pkd_ids.7": "FULL_EXPORTED",
+      "state.input.pkd_ids.8": "FULL_EXPORTED",
+      "state.input.pkd_ids.9": "FULL_EXPORTED",
+      "state.input.pkd_ids.10": "FULL_EXPORTED",
+      "state.input.pkd_ids.11": "FULL_EXPORTED",
+      "state.input.operators": "SEMI_EXPORTED",
+      "state.input.operators.0": "FULL_EXPORTED",
+      "state.input.advanced": "FULL_EXPORTED",
+      "state.input.parent_permissions.0": "FULL_EXPORTED",
+      "state.input.parent_permissions.1": "FULL_EXPORTED",
+      "state.input.parent_permissions.2": "FULL_EXPORTED",
+      "state.input.parent_permissions.3": "FULL_EXPORTED",
+      "state.input.parent_permissions.4": "FULL_EXPORTED",
+      "state.input.parent_permissions.5": "FULL_EXPORTED",
+      "state.input.parent_permissions.6": "FULL_EXPORTED",
+      "state.input.parent_permissions.7": "FULL_EXPORTED",
+      "state.input.parent_permissions.8": "FULL_EXPORTED",
+      "state.input.parent_permissions.9": "FULL_EXPORTED",
+      "state.input.config_id": "FULL_EXPORTED",
+      "state.input.operations": "SEMI_EXPORTED",
+      "state.input.operations.0": "FULL_EXPORTED",
+      "state.input.pkg_ids": "SEMI_EXPORTED",
+      "state.input.pkg_ids.0": "SEMI_EXPORTED",
+      "state.input.pkg_ids.0.pkg_id": "FULL_EXPORTED",
+      "state.input.pkg_ids.0.select_all": "FULL_EXPORTED",
+      "state.input.pkg_ids.0.conditions": "FULL_EXPORTED",
+      "state.input.pkg_ids.1": "SEMI_EXPORTED",
+      "state.input.pkg_ids.1.pkg_id": "FULL_EXPORTED",
+      "state.input.pkg_ids.1.select_all": "FULL_EXPORTED",
+      "state.input.pkg_ids.1.conditions": "FULL_EXPORTED",
+      "state.input..indexes.cmdb_index-1eidp4p9mgzz9": "FULL_EXPORTED",
+      "state.input..indexes.cmdb_index-1ha10lmxevbq7": "FULL_EXPORTED",
+      "state.input..inode.name": "FULL_EXPORTED",
+      "state.input..inode.id": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_workflow-3qzb6k3aewt6y",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      }
+    },
+    "state": {
+      "onSuccess": [
+        {
+          "args": []
+        },
+        {
+          "args": []
+        },
+        {
+          "args": []
+        }
+      ],
+      "onFail": [
+        {
+          "args": []
+        }
+      ],
+      "input": {
+        ".indexes.cmdb_index-1eidp4p9mgzz9": [],
+        ".indexes.cmdb_index-1ha10lmxevbq7": []
+      },
+      "output": {
+        "output": {}
+      },
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-wf",
+    "cmdb_index-mpage_component_type": "WORKFLOW"
+  }
+}
