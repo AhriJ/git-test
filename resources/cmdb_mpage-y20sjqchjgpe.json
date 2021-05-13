@@ -30,7 +30,7 @@
       }
     },
     "state": {
-      "tpl": "${Domain()}/grafana",
+      "tpl": "${Domain()}:81/grafana/",
       "__trigger__": {}
     },
     "children": {},
