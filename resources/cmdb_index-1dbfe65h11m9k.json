@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-1dbfe65h11m9k",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "关联到多个第三方账户类型",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "cmdb_schema_u_third_party_type-0",
+    "schema": {
+      "format": "ql-selector?id=cmdb_ql-2k9jxumcuv176\u0026select_mode=multi\u0026spec=id-list",
+      "type": "$index_type"
+    },
+    "multi": true
+  },
+  "indexes": {}
+}

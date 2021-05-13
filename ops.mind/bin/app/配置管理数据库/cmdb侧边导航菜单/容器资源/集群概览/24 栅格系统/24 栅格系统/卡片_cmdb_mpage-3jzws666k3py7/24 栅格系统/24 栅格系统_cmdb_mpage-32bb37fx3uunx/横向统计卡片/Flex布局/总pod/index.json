@@ -1,0 +1,284 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-sm1caahj6xje",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "总pod",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.total_rows": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-3g4ve90oqi0e8",
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": true,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-2gq0fel8tqdg0",
+            "cmdb_x-z9wbwpbqhfat",
+            "cmdb_x-3i6ubgxnbnd24",
+            "cmdb_x-13gp86t8p0w65",
+            "cmdb_x-17uwnmeprhnc",
+            "cmdb_x-1k1fjm0xzjooa",
+            "cmdb_x-1xwi1fwuqoyfk",
+            "cmdb_x-1qmv4roveyoif",
+            "cmdb_x-dgrw61zgk9s8",
+            "cmdb_x-1xrlda3ooq5cg"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "kibana-1-c5qcx",
+            "zrbdocking-a-26-kd949",
+            "zipkin-1-h4zk5",
+            "zrbdocking-a-27-build",
+            "zycfcdocking-a-35-xx4r6",
+            "zipkin-2-8g9kg",
+            "zrbdocking-a-28-build",
+            "zycfcdocking-a-46-build",
+            "zipkin-2-d5dtx",
+            "zrbdocking-a-30-build"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "data.pod_ip": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "data.restartCount": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-3ezpmtsrvgq7y": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2e9nrdrd3nkxl",
+            "cmdb_x-1xbmlxy40fwi7",
+            "cmdb_x-1nopiavzda0jo",
+            "cmdb_x-hqt9kasq3mxr",
+            "cmdb_x-2e9nrdrd3nkxl",
+            "cmdb_x-1xbmlxy40fwi7",
+            "cmdb_x-xn57abvpsz1n",
+            "cmdb_x-1garyqnxrcaji",
+            "cmdb_x-kwhbul30ie11",
+            "cmdb_x-xn57abvpsz1n"
+          ]
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": [
+            "1615975659644",
+            "1615975659653",
+            "1615975659644",
+            "1615975659653",
+            "1615975659685",
+            "1615975659644",
+            "1615975659653",
+            "1615975659685",
+            "1615975659644",
+            "1615975659653"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2avr542dra1vv_kibana-1-c5qcx",
+            "cmdb_x-2avr542dra1vv_zrbdocking-a-26-kd949",
+            "cmdb_x-2avr542dra1vv_zipkin-1-h4zk5",
+            "cmdb_x-2avr542dra1vv_zrbdocking-a-27-build",
+            "cmdb_x-2avr542dra1vv_zycfcdocking-a-35-xx4r6",
+            "cmdb_x-2avr542dra1vv_zipkin-2-8g9kg",
+            "cmdb_x-2avr542dra1vv_zrbdocking-a-28-build",
+            "cmdb_x-2avr542dra1vv_zycfcdocking-a-46-build",
+            "cmdb_x-2avr542dra1vv_zipkin-2-d5dtx",
+            "cmdb_x-2avr542dra1vv_zrbdocking-a-30-build"
+          ]
+        },
+        "indexes.cmdb_index-1agv8l7p6c6nw": {
+          "action_config": {},
+          "data": [
+            "kibana-1",
+            "zrbdocking-a-26",
+            "zipkin-1",
+            "zrbdocking-a-27",
+            "zycfcdocking-a-35",
+            "zipkin-2",
+            "zrbdocking-a-28",
+            "zycfcdocking-a-46",
+            "zipkin-2",
+            "zrbdocking-a-30"
+          ]
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "indexes.cmdb_index-2xrqab21ltbpt": {
+          "action_config": {},
+          "data": [
+            "BestEffort",
+            "Burstable",
+            "BestEffort",
+            "BestEffort",
+            "Burstable",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort"
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659,
+            1615975659
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso"
+          ]
+        },
+        "indexes.cmdb_index-3984yht257mxc": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv",
+            "cmdb_x-2avr542dra1vv"
+          ]
+        }
+      },
+      "total_rows": "",
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {},
+        "vars.indexes_index_3": {},
+        "vars.indexes_index_2": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

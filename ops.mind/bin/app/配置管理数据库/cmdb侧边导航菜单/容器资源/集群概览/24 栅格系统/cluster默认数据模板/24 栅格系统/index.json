@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-upegisrzje9s",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "24 栅格系统",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.10e2d1928125.state.__vars__.vars.indexes_index_1.value": "{var: state.loop.item.inode.name}",
+      "children.343781274991.state.text": "{var: children.10e2d1928125.state.total_rows}",
+      "children.10e2d1928125.state.__vars__.vars.indexes_cluster.value": "{var: state.loop.item.inode.id}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "10e2d1928125",
+        "md": 24
+      },
+      {
+        "uuid": "343781274991"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-210zjauy4zfg",
+      "cmdb_mpage-10b86cjp53hyu"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

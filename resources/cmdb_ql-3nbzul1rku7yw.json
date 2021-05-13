@@ -116,15 +116,17 @@
         "$conditions"
       ],
       "sorts": [],
+      "limit": 10,
+      "offset": 0,
       "multi": true,
       "selects": [
         ".data.hostname as 主机名",
+        ".data.monitor",
         ".indexes.cmdb_index-agent_status as Agent 状态",
         ".data.cpu",
         ".data.memory as 内存",
         ".indexes.cmdb_index-26mgotsn8v2tg as 系统类型",
         ".indexes.cmdb_index-system_server.data.os.os_dist as 发行版",
-        ".indexes.cmdb_index-system_server.data.os.os_dist_ver as 发行版版本",
         ".indexes.cmdb_index-system_server.data.agent.local_config.proxy_endpoints as 代理地址",
         ".indexes.cmdb_index-2c3gcau1bnk85 as 内网 IP",
         ".indexes.cmdb_index-xgm9kh3lu3mg as 公网 IP",
@@ -212,9 +214,7 @@
             "required": []
           }
         }
-      },
-      "limit": 10,
-      "offset": 0
+      }
     }
   },
   "indexes": {

@@ -1,0 +1,44 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_third_party_account-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "第三方账户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "config": {
+          "type": "object",
+          "title": "账户配置",
+          "properties": {},
+          "required": []
+        }
+      },
+      "required": []
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-3sxfka1psyqfx",
+        "required": false,
+        "key": "account_type"
+      },
+      {
+        "id": "cmdb_index-external_id",
+        "required": false,
+        "key": "external_id"
+      }
+    ]
+  },
+  "indexes": {}
+}

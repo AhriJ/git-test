@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-261a35ic40l75",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "到期时间",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "expiredtime",
+    "field_name": "到期时间",
+    "field_type": "integer",
+    "searched": false,
+    "is_array": null,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": "date-time"
+    },
+    "boolean_option": {
+      "default": false,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": false,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-3nuzm1zkad41w",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

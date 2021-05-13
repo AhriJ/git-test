@@ -3,7 +3,7 @@
     "org": "",
     "id": "cmdb_ql-q9zq0pp1wqgw",
     "schema_id": "cmdb_schema_ql-0",
-    "name": "云服务器详情",
+    "name": "云服务器详情常用查询",
     "namespace": "",
     "descr": "",
     "ctime": 0,
@@ -32,17 +32,7 @@
           "value": "$empty"
         },
         {
-          "field": "vars.indexes_cloud_resource_config",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
           "field": "vars.indexes_cloud",
-          "op": "=",
-          "value": "$empty"
-        },
-        {
-          "field": "vars.indexes_cloud_resource_config",
           "op": "=",
           "value": "$empty"
         },
@@ -74,6 +64,11 @@
           "value": "$empty"
         },
         {
+          "field": "vars.indexes_outband_id",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
           "field": "$or",
           "op": "=-",
           "value": [
@@ -92,19 +87,9 @@
                   "value": "{var:vars.indexes_subnet}"
                 },
                 {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
-                },
-                {
                   "field": ".indexes.cmdb_index-vendor",
                   "op": "=",
                   "value": "{var:vars.indexes_cloud}"
-                },
-                {
-                  "field": ".indexes.cmdb_index-cloud_resource_config",
-                  "op": "=",
-                  "value": "{var:vars.indexes_cloud_resource_config}"
                 },
                 {
                   "field": ".indexes.cmdb_index-1yam7nytu0lzp",
@@ -130,13 +115,24 @@
                   "field": ".indexes.cmdb_index-1yhey410ex3f2",
                   "op": "=",
                   "value": "{var:vars.indexes_vpc}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+                  "op": "=",
+                  "value": "{var:vars.indexes_outband_id}"
                 }
               ]
             }
           ]
         }
       ],
-      "function": "db",
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
       "selects": [
         ".inode.name as 名称",
         ".inode.descr as 描述",
@@ -162,6 +158,8 @@
         ".inode.mtime as 最后修改时间",
         "inode.last_editor as 最后修改者"
       ],
+      "comment": "",
+      "function": "db",
       "vars": {
         "type": "object",
         "properties": {
@@ -176,11 +174,6 @@
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-uccuaj952qrz\u0026select_mode=single\u0026spec=id\u0026widget=table",
                 "title": "虚拟交换机"
-              },
-              "indexes_cloud_resource_config": {
-                "type": "string",
-                "format": "ql-selector?id=cmdb_ql-3vq9vp1duudy0\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属云资源配置"
               },
               "indexes_cloud": {
                 "type": "string",
@@ -217,16 +210,15 @@
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-arr7rcbqtcnx\u0026select_mode=single\u0026spec=id\u0026widget=table",
                 "title": "VPC"
+              },
+              "indexes_outband_id": {
+                "type": "string",
+                "title": "带外ID"
               }
             }
           }
         }
-      },
-      "sorts": [],
-      "objects": [
-        "$conditions"
-      ],
-      "multi": true
+      }
     }
   },
   "indexes": {

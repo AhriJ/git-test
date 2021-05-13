@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-25pmy4fjjo93g",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "外部ID",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "external_id",
+    "field_name": "外部ID",
+    "field_type": "string",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": "",
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "cmdb_x-i_5f9d2583",
+    "required": false,
+    "config_plugin_id": "cmdb_x-2jg7qbk18z2s8"
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_91092299",
+    "cmdb_index-jtko9owh6qwz": "cmdb_x-2jg7qbk18z2s8"
+  }
+}

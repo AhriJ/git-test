@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2cd6jd7og7qf4",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "共享带宽的带宽峰值",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "bandwidth_limit",
+    "field_name": "共享带宽的带宽峰值",
+    "field_type": "integer",
+    "searched": false,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": false,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s738g1hwqt2w",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

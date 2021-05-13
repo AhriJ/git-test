@@ -1,0 +1,73 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_x-2nsk6iscxoet8",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "namespace",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "selfLink": {
+          "type": "string",
+          "title": "selfLink"
+        },
+        "uid": {
+          "type": "string",
+          "title": "uid"
+        },
+        "resourceVersion": {
+          "type": "string",
+          "title": "resourceVersion"
+        },
+        "creationTimestamp": {
+          "type": "string",
+          "title": "creationTimestamp"
+        },
+        "phase": {
+          "type": "string",
+          "title": "phase"
+        },
+        "annotations": {
+          "type": "object",
+          "title": "annotations",
+          "properties": {},
+          "required": []
+        }
+      },
+      "required": []
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-3984yht257mxc",
+        "required": false,
+        "key": "cluster"
+      },
+      {
+        "id": "cmdb_index-sync_marker",
+        "required": true,
+        "key": "index_2"
+      },
+      {
+        "id": "cmdb_index-external_id",
+        "required": true,
+        "key": "index_3"
+      }
+    ]
+  },
+  "indexes": {}
+}

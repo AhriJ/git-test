@@ -1,0 +1,47 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2fsa03lbpshdo",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "关联集群",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "cluster",
+    "field_name": "关联集群",
+    "field_type": "id",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": null
+    },
+    "boolean_option": {
+      "default": null,
+      "format": null
+    },
+    "object_option": [],
+    "index_id": "cmdb_x-14h8xe64h34p7",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-1rpqm2p9dxpuq": "cmdb_x-s_4fd39dad",
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_68ffce9f"
+  }
+}

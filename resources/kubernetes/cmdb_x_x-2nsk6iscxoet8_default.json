@@ -1,0 +1,191 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_x-2nsk6iscxoet8_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "namespace默认数据模板",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-yli8bik6k3z7",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-3984yht257mxc",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-yli8bik6k3z7",
+        "name": "应用"
+      },
+      {
+        "field": ".indexes.cmdb_index-3984yht257mxc",
+        "name": "关联集群"
+      },
+      {
+        "field": ".data.name",
+        "name": "name"
+      },
+      {
+        "field": ".data.selfLink",
+        "name": "selfLink"
+      },
+      {
+        "field": ".data.uid",
+        "name": "uid"
+      },
+      {
+        "field": ".data.resourceVersion",
+        "name": "resourceVersion"
+      },
+      {
+        "field": ".data.creationTimestamp",
+        "name": "creationTimestamp"
+      },
+      {
+        "field": ".data.phase",
+        "name": "phase"
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "name": "同步标记"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-yli8bik6k3z7",
+        "show": true,
+        "pkg_id": "cmdb_x-15acccvw314cc",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-3984yht257mxc",
+        "show": true,
+        "pkg_id": "cmdb_x_x-q68xq6bbwn31_default",
+        "widget": "table"
+      },
+      {
+        "field": ".data.name",
+        "show": true
+      },
+      {
+        "field": ".data.selfLink",
+        "show": true
+      },
+      {
+        "field": ".data.uid",
+        "show": true
+      },
+      {
+        "field": ".data.resourceVersion",
+        "show": true
+      },
+      {
+        "field": ".data.creationTimestamp",
+        "show": true
+      },
+      {
+        "field": ".data.phase",
+        "show": true
+      },
+      {
+        "field": ".data.annotations",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "show": true
+      }
+    ],
+    "ql": "cmdb_ql-2d8fpgcaf985w",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-25vvdnd2fhpvh",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".indexes.cmdb_index-yli8bik6k3z7\",\".indexes.cmdb_index-3984yht257mxc\",\".data.name\",\".data.selfLink\",\".data.uid\",\".data.resourceVersion\",\".data.creationTimestamp\",\".data.phase\",\".data.annotations\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\"],\"enumNames\":[\"名称\",\"描述\",\"应用\",\"关联集群\",\"name\",\"selfLink\",\"uid\",\"resourceVersion\",\"creationTimestamp\",\"phase\",\"annotations\",\"同步标记\",\"外部ID\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".indexes.cmdb_index-yli8bik6k3z7\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-38cdtixkcxeft\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"应用\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-yli8bik6k3z7' }}\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-3984yht257mxc' }}\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\",\"ui:hidden\":\"{{ rootValue.field !== '.data.name' }}\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\",\"ui:hidden\":\"{{ rootValue.field !== '.data.selfLink' }}\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\",\"ui:hidden\":\"{{ rootValue.field !== '.data.uid' }}\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\",\"ui:hidden\":\"{{ rootValue.field !== '.data.resourceVersion' }}\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\",\"ui:hidden\":\"{{ rootValue.field !== '.data.creationTimestamp' }}\"},\".data.phase\":{\"type\":\"string\",\"title\":\"phase\",\"ui:hidden\":\"{{ rootValue.field !== '.data.phase' }}\"},\".data.annotations\":{\"type\":\"object\",\"title\":\"annotations\",\"properties\":{},\"required\":[],\"ui:hidden\":\"{{ rootValue.field !== '.data.annotations' }}\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-sync_marker' }}\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-external_id' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-3oocscxkd2d1s"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-tiw5wtsiptuf",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-yli8bik6k3z7\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-38cdtixkcxeft\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"应用\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\"},\".data.phase\":{\"type\":\"string\",\"title\":\"phase\"},\".data.annotations\":{\"type\":\"object\",\"title\":\"annotations\",\"properties\":{},\"required\":[]},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-31zj670vq0ouu",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-yli8bik6k3z7\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-38cdtixkcxeft\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"应用\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\"},\".data.phase\":{\"type\":\"string\",\"title\":\"phase\"},\".data.annotations\":{\"type\":\"object\",\"title\":\"annotations\",\"properties\":{},\"required\":[]},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\"]}"
+    },
+    "object_id": "cmdb_object_ql-1d8n10e4jrntm"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_78cfd18d"
+  }
+}

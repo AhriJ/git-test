@@ -1,0 +1,291 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-20a81da827p78",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "pod",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.indexes_index_1.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.total_rows": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_3.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_3": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_index_3.op": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-16enr0sg4jzcn",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-3apgcy5pd4llq",
+            "cmdb_x-1u7t3khint8om",
+            "cmdb_x-3b6yqpqlicb07",
+            "cmdb_x-731ys1hzdgow",
+            "cmdb_x-19py0ubpk69hj",
+            "cmdb_x-2wbw499jg1m3t",
+            "cmdb_x-1g6mpawz9x2ev",
+            "cmdb_x-17lvfht0f3mc1",
+            "cmdb_x-3diy9q8myy525",
+            "cmdb_x-3ao5t1kg0fn2g"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "vipship-a-335-mwchz",
+            "vipship-a-345-build",
+            "vipship-a-346-build",
+            "vipship-a-347-build",
+            "vipship-a-348-build",
+            "vipship-a-349-build",
+            "vipship-b-302-build",
+            "vipship-b-303-build",
+            "vipship-b-304-build",
+            "vipship-b-305-build"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "data.pod_ip": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "data.restartCount": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-3ezpmtsrvgq7y": {
+          "action_config": {},
+          "data": [
+            "172.19.13.128",
+            "172.19.13.140",
+            "172.19.13.119",
+            "172.19.13.122",
+            "172.19.13.122",
+            "172.19.13.128",
+            "172.19.13.128",
+            "172.19.13.138",
+            "172.19.13.122",
+            "172.19.13.122"
+          ]
+        },
+        "indexes.cmdb_index-3t0rhwr9t1xhh": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-osud1hj1k0gu": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": [
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678",
+            "1615869119678"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "shuhe-test_vipship-a-335-mwchz",
+            "shuhe-test_vipship-a-345-build",
+            "shuhe-test_vipship-a-346-build",
+            "shuhe-test_vipship-a-347-build",
+            "shuhe-test_vipship-a-348-build",
+            "shuhe-test_vipship-a-349-build",
+            "shuhe-test_vipship-b-302-build",
+            "shuhe-test_vipship-b-303-build",
+            "shuhe-test_vipship-b-304-build",
+            "shuhe-test_vipship-b-305-build"
+          ]
+        },
+        "indexes.cmdb_index-1agv8l7p6c6nw": {
+          "action_config": {},
+          "data": [
+            "vipship-a-335",
+            "vipship-a-345",
+            "vipship-a-346",
+            "vipship-a-347",
+            "vipship-a-348",
+            "vipship-a-349",
+            "vipship-b-302",
+            "vipship-b-303",
+            "vipship-b-304",
+            "vipship-b-305"
+          ]
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "indexes.cmdb_index-2xrqab21ltbpt": {
+          "action_config": {},
+          "data": [
+            "Burstable",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort",
+            "BestEffort"
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119,
+            1615869119
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {},
+        "vars.indexes_index_3": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

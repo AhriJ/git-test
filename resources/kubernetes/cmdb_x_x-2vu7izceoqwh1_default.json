@@ -1,0 +1,222 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_x-2vu7izceoqwh1_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "node默认数据模板",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-3984yht257mxc",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".data.aaa",
+        "name": "aaa"
+      },
+      {
+        "field": ".indexes.cmdb_index-1p6obb3s2rrww",
+        "name": "内存"
+      },
+      {
+        "field": ".indexes.cmdb_index-1vlm3pwe7dem5",
+        "name": "CPU"
+      },
+      {
+        "field": ".data.addresses",
+        "name": "监听地址"
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "name": "同步标记"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-bvwwqmxkpo3h",
+        "name": "是否存活"
+      },
+      {
+        "field": ".data.name",
+        "name": "name"
+      },
+      {
+        "field": ".data.selfLink",
+        "name": "selfLink"
+      },
+      {
+        "field": ".data.uid",
+        "name": "uid"
+      },
+      {
+        "field": ".data.resourceVersion",
+        "name": "resourceVersion"
+      },
+      {
+        "field": ".data.creationTimestamp",
+        "name": "creationTimestamp"
+      },
+      {
+        "field": ".indexes.cmdb_index-3984yht257mxc",
+        "name": "关联集群"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".data.aaa",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-1p6obb3s2rrww",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-1vlm3pwe7dem5",
+        "show": true
+      },
+      {
+        "field": ".data.labels",
+        "show": true
+      },
+      {
+        "field": ".data.annotations",
+        "show": true
+      },
+      {
+        "field": ".data.addresses",
+        "show": true
+      },
+      {
+        "field": ".data.capacity",
+        "show": true
+      },
+      {
+        "field": ".data.allocatable",
+        "show": true
+      },
+      {
+        "field": ".data.status",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-sync_marker",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-bvwwqmxkpo3h",
+        "show": true
+      },
+      {
+        "field": ".data.name",
+        "show": true
+      },
+      {
+        "field": ".data.selfLink",
+        "show": true
+      },
+      {
+        "field": ".data.uid",
+        "show": true
+      },
+      {
+        "field": ".data.resourceVersion",
+        "show": true
+      },
+      {
+        "field": ".data.creationTimestamp",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-3984yht257mxc",
+        "show": true,
+        "pkg_id": "cmdb_x_x-q68xq6bbwn31_default",
+        "widget": "table"
+      }
+    ],
+    "ql": "cmdb_ql-g7ajo5bueb1v",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-1nlbb0lq1lg54",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".data.aaa\",\".indexes.cmdb_index-1p6obb3s2rrww\",\".indexes.cmdb_index-1vlm3pwe7dem5\",\".data.labels\",\".data.annotations\",\".data.addresses\",\".data.capacity\",\".data.allocatable\",\".data.status\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-bvwwqmxkpo3h\",\".data.name\",\".data.selfLink\",\".data.uid\",\".data.resourceVersion\",\".data.creationTimestamp\",\".indexes.cmdb_index-3984yht257mxc\"],\"enumNames\":[\"名称\",\"描述\",\"aaa\",\"内存\",\"CPU\",\"labels\",\"注释\",\"监听地址\",\"节点资源容量\",\"节点资源使用量\",\"status\",\"同步标记\",\"外部ID\",\"是否存活\",\"name\",\"selfLink\",\"uid\",\"resourceVersion\",\"creationTimestamp\",\"关联集群\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".data.aaa\":{\"type\":\"string\",\"title\":\"aaa\",\"ui:hidden\":\"{{ rootValue.field !== '.data.aaa' }}\"},\".indexes.cmdb_index-1p6obb3s2rrww\":{\"type\":\"integer\",\"format\":\"cmdb-unit\",\"title\":\"内存\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-1p6obb3s2rrww' }}\"},\".indexes.cmdb_index-1vlm3pwe7dem5\":{\"type\":\"integer\",\"title\":\"CPU\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-1vlm3pwe7dem5' }}\"},\".data.labels\":{\"type\":\"object\",\"title\":\"labels\",\"properties\":{},\"required\":[],\"ui:hidden\":\"{{ rootValue.field !== '.data.labels' }}\"},\".data.annotations\":{\"type\":\"object\",\"title\":\"注释\",\"properties\":{},\"required\":[],\"ui:hidden\":\"{{ rootValue.field !== '.data.annotations' }}\"},\".data.addresses\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"title\":\"监听地址\",\"ui:hidden\":\"{{ rootValue.field !== '.data.addresses' }}\"},\".data.capacity\":{\"type\":\"object\",\"title\":\"节点资源容量\",\"properties\":{},\"required\":[],\"ui:hidden\":\"{{ rootValue.field !== '.data.capacity' }}\"},\".data.allocatable\":{\"type\":\"object\",\"title\":\"节点资源使用量\",\"properties\":{},\"required\":[],\"ui:hidden\":\"{{ rootValue.field !== '.data.allocatable' }}\"},\".data.status\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"status\",\"properties\":{},\"required\":[]},\"title\":\"status\",\"ui:hidden\":\"{{ rootValue.field !== '.data.status' }}\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-sync_marker' }}\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-external_id' }}\"},\".indexes.cmdb_index-bvwwqmxkpo3h\":{\"type\":\"boolean\",\"title\":\"是否存活\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-bvwwqmxkpo3h' }}\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\",\"ui:hidden\":\"{{ rootValue.field !== '.data.name' }}\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\",\"ui:hidden\":\"{{ rootValue.field !== '.data.selfLink' }}\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\",\"ui:hidden\":\"{{ rootValue.field !== '.data.uid' }}\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\",\"ui:hidden\":\"{{ rootValue.field !== '.data.resourceVersion' }}\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\",\"ui:hidden\":\"{{ rootValue.field !== '.data.creationTimestamp' }}\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-3984yht257mxc' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-2hhrddzyd5q18"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-cvxddj556c4v",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.aaa\":{\"type\":\"string\",\"title\":\"aaa\"},\".indexes.cmdb_index-1p6obb3s2rrww\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"cmdb-unit\",\"title\":\"内存\"},\".indexes.cmdb_index-1vlm3pwe7dem5\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"CPU\"},\".data.labels\":{\"type\":\"object\",\"title\":\"labels\",\"properties\":{},\"required\":[]},\".data.annotations\":{\"type\":\"object\",\"title\":\"注释\",\"properties\":{},\"required\":[]},\".data.addresses\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"title\":\"监听地址\"},\".data.capacity\":{\"type\":\"object\",\"title\":\"节点资源容量\",\"properties\":{},\"required\":[]},\".data.allocatable\":{\"type\":\"object\",\"title\":\"节点资源使用量\",\"properties\":{},\"required\":[]},\".data.status\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"status\",\"properties\":{},\"required\":[]},\"title\":\"status\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-bvwwqmxkpo3h\":{\"type\":\"boolean\",\"default\":null,\"title\":\"是否存活\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-bvwwqmxkpo3h\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2wvyhb7z0lb0r",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.aaa\":{\"type\":\"string\",\"title\":\"aaa\"},\".indexes.cmdb_index-1p6obb3s2rrww\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"cmdb-unit\",\"title\":\"内存\"},\".indexes.cmdb_index-1vlm3pwe7dem5\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"title\":\"CPU\"},\".data.labels\":{\"type\":\"object\",\"title\":\"labels\",\"properties\":{},\"required\":[]},\".data.annotations\":{\"type\":\"object\",\"title\":\"注释\",\"properties\":{},\"required\":[]},\".data.addresses\":{\"type\":\"array\",\"items\":{\"type\":\"string\"},\"title\":\"监听地址\"},\".data.capacity\":{\"type\":\"object\",\"title\":\"节点资源容量\",\"properties\":{},\"required\":[]},\".data.allocatable\":{\"type\":\"object\",\"title\":\"节点资源使用量\",\"properties\":{},\"required\":[]},\".data.status\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"title\":\"status\",\"properties\":{},\"required\":[]},\"title\":\"status\"},\".indexes.cmdb_index-sync_marker\":{\"type\":\"string\",\"title\":\"同步标记\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-bvwwqmxkpo3h\":{\"type\":\"boolean\",\"default\":null,\"title\":\"是否存活\"},\".data.name\":{\"type\":\"string\",\"title\":\"name\"},\".data.selfLink\":{\"type\":\"string\",\"title\":\"selfLink\"},\".data.uid\":{\"type\":\"string\",\"title\":\"uid\"},\".data.resourceVersion\":{\"type\":\"string\",\"title\":\"resourceVersion\"},\".data.creationTimestamp\":{\"type\":\"string\",\"title\":\"creationTimestamp\"},\".indexes.cmdb_index-3984yht257mxc\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联集群\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-sync_marker\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-bvwwqmxkpo3h\"]}"
+    },
+    "object_id": "cmdb_object_ql-3tbwfehcey6nu"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_eeba8ba8"
+  }
+}

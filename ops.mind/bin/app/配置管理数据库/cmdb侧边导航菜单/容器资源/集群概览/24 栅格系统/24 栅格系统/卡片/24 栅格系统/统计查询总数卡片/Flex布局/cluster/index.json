@@ -1,0 +1,56 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-dnszw914py4j",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "cluster",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.total_rows": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-1wqxdic03g5qq",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-114bxipd9lhbp",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "查询统计",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.ql_list.0": "SEMI_EXPORTED",
+      "state.ql_list.0.name": "FULL_EXPORTED",
+      "state.ql_list.0.count": "FULL_EXPORTED",
+      "state.ql_list.0.id": "FULL_EXPORTED",
+      "state.ql_list": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.ql_list.1": "SEMI_EXPORTED",
+      "state.ql_list.1.name": "FULL_EXPORTED",
+      "state.ql_list.1.count": "FULL_EXPORTED",
+      "state.ql_list.1.id": "FULL_EXPORTED",
+      "state.ql_list.2": "SEMI_EXPORTED",
+      "state.ql_list.2.name": "FULL_EXPORTED",
+      "state.ql_list.2.count": "FULL_EXPORTED",
+      "state.ql_list.2.id": "FULL_EXPORTED",
+      "state.ql_list.3": "SEMI_EXPORTED",
+      "state.ql_list.3.name": "FULL_EXPORTED",
+      "state.ql_list.3.count": "FULL_EXPORTED",
+      "state.ql_list.3.id": "FULL_EXPORTED",
+      "state.ql": "FULL_EXPORTED",
+      "state.ql_list.0.conditions": "FULL_EXPORTED",
+      "state.ql_list.1.conditions": "FULL_EXPORTED",
+      "state.ql_list.2.conditions": "FULL_EXPORTED",
+      "state.ql_list.3.conditions": "FULL_EXPORTED",
+      "state.condition": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "ql_list": [
+        {
+          "conditions": {}
+        },
+        {
+          "conditions": {}
+        },
+        {
+          "conditions": {}
+        },
+        {
+          "conditions": {}
+        }
+      ],
+      "ql": "",
+      "condition": {},
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-325ei0cjeb1u5",
+    "cmdb_index-mpage_component_type": "BUSINESS"
+  }
+}

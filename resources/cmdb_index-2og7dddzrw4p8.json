@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-2og7dddzrw4p8",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "支付状态",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "string",
+    "multi": false,
+    "schema": {
+      "type": "$index_type",
+      "enum": [
+        "Unpaid",
+        "Paid",
+        "Cancelled"
+      ],
+      "enumNames": [
+        "未支付",
+        "已支付",
+        "已作废"
+      ]
+    }
+  },
+  "indexes": {}
+}

@@ -1,0 +1,99 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-20l5cedl1s7eg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "cluster默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.total_rows": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-1wqxdic03g5qq",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-2avr542dra1vv"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "shuhe-test"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "9f4fbba3b6d6",
+        "index": 0,
+        "inserted": false,
+        "inserted_name": "名称"
+      },
+      {
+        "uuid": "3546794c2aba",
+        "index": 1,
+        "inserted": true,
+        "inserted_name": "namespace数量"
+      },
+      {
+        "uuid": "b60755515e46",
+        "index": 2,
+        "inserted": true,
+        "inserted_name": "node数量"
+      },
+      {
+        "uuid": "eb32aa0ecd3d",
+        "index": 3,
+        "inserted": true,
+        "inserted_name": "pod数量"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-1d2ctckrqteuo",
+      "cmdb_mpage-upegisrzje9s",
+      "cmdb_mpage-2cewfzus0g5ws",
+      "cmdb_mpage-3uf4tgwsinh5l"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

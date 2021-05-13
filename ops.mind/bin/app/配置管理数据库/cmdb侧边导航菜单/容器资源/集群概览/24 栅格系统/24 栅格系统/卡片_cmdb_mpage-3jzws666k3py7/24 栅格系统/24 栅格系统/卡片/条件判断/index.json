@@ -1,0 +1,71 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-zbmsne7o3vzk",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "条件判断",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.value": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED"
+    },
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "value": "{var: state.__lib__.linux}",
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"windows\":{\"type\":\"number\"},\"linux\":{\"type\":\"number\"}},\"required\":[]}",
+      "__lib__": {
+        "windows": "",
+        "linux": ""
+      },
+      "__trigger__": {}
+    },
+    "children": {
+      "children.a396f25c450a.children.6e2ed8e79c3d.state.data.0.y": "{var: state.__lib__.windows}",
+      "children.a396f25c450a.children.6e2ed8e79c3d.state.data.1.y": "{var: state.__lib__.linux}",
+      "children.2fa77d54db87.state.value": "{var: state.__lib__.windows}",
+      "children.2fa77d54db87.children.a06fdf2ac872.children.e9b282a8fa7d.state.data.0.y": "{var: state.__lib__.windows}",
+      "children.2fa77d54db87.children.a06fdf2ac872.children.e9b282a8fa7d.state.data.1.y": "{var: state.__lib__.linux}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "ea0162c9f953",
+        "case": "$empty"
+      },
+      {
+        "uuid": "ae422b574ef5",
+        "case": "0"
+      },
+      {
+        "uuid": "2fa77d54db87",
+        "case": null
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2a5gf21lcxsvb",
+      "cmdb_mpage-3iq0rige2ry54",
+      "cmdb_mpage-2lyaxd7uocrr4"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-1dxqjqjgjv2mf",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

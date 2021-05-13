@@ -1,0 +1,105 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_x-q68xq6bbwn31_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "cluster默认数据模板",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".data.host",
+        "name": "host"
+      },
+      {
+        "field": ".data.token",
+        "name": "token"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".data.host",
+        "show": true
+      },
+      {
+        "field": ".data.token",
+        "show": true
+      }
+    ],
+    "ql": "cmdb_ql-2nitt1oxr29r1",
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-1xtrst8ichutl",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".data.host\",\".data.token\"],\"enumNames\":[\"名称\",\"描述\",\"host\",\"token\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".data.host\":{\"type\":\"string\",\"title\":\"host\",\"ui:hidden\":\"{{ rootValue.field !== '.data.host' }}\"},\".data.token\":{\"type\":\"string\",\"title\":\"token\",\"ui:hidden\":\"{{ rootValue.field !== '.data.token' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-70s01qqu82tm"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-pq2ne0sky3n0",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.host\":{\"type\":\"string\",\"title\":\"host\"},\".data.token\":{\"type\":\"string\",\"title\":\"token\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".data.host\",\".data.token\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-2mhzna0zfexye",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.host\":{\"type\":\"string\",\"title\":\"host\"},\".data.token\":{\"type\":\"string\",\"title\":\"token\"}},\"required\":[\".inode.name\",\".data.host\",\".data.token\"]}"
+    },
+    "object_id": "cmdb_object_ql-15s2eme3l5ttx"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_4fd39dad"
+  }
+}

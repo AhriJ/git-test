@@ -1,0 +1,300 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2tkb9sa1kgyvs",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "总pod数",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.indexes_index_2": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_index_2.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_2.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-3g4ve90oqi0e8",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "conditions": true,
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [
+        {}
+      ],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-17c2dly6uq3ic",
+            "cmdb_x-1y1g81335lxt3",
+            "cmdb_x-25f1v7mwfi257",
+            "cmdb_x-2106xucju4ech",
+            "cmdb_x-1o03ksb0no8jj",
+            "cmdb_x-3f7iag4pn4ip2",
+            "cmdb_x-1t4sns9svvqbq",
+            "cmdb_x-2mfg1chuj3uy",
+            "cmdb_x-rzibiyeyuxz",
+            "cmdb_x-s57owdftb7a8"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "oneservices-a-426-45hd2",
+            "oneservices-a-426-bsg9r",
+            "oneservices-a-426-cf2bn",
+            "oneservices-a-426-hgphz",
+            "oneservices-a-431-build",
+            "oneservices-b-292-mjd66",
+            "oneservices-b-292-nh8tt",
+            "oneservices-b-292-vxlck",
+            "oneservices-b-292-xtxqv",
+            "oneservices-b-294-build"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "data.pod_ip": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "data.restartCount": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-3ezpmtsrvgq7y": {
+          "action_config": {},
+          "data": [
+            "172.19.13.130",
+            "172.19.13.116",
+            "172.19.13.135",
+            "172.19.13.124",
+            "172.19.13.124",
+            "172.19.13.128",
+            "172.19.13.122",
+            "172.19.13.126",
+            "172.19.13.134",
+            "172.19.13.140"
+          ]
+        },
+        "indexes.cmdb_index-3t0rhwr9t1xhh": {
+          "action_config": {},
+          "data": [
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices",
+            "oneservices"
+          ]
+        },
+        "indexes.cmdb_index-osud1hj1k0gu": {
+          "action_config": {},
+          "data": [
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test",
+            "shuhe-test"
+          ]
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": [
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286",
+            "1615173959286"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "shuhe-test_oneservices-a-426-45hd2",
+            "shuhe-test_oneservices-a-426-bsg9r",
+            "shuhe-test_oneservices-a-426-cf2bn",
+            "shuhe-test_oneservices-a-426-hgphz",
+            "shuhe-test_oneservices-a-431-build",
+            "shuhe-test_oneservices-b-292-mjd66",
+            "shuhe-test_oneservices-b-292-nh8tt",
+            "shuhe-test_oneservices-b-292-vxlck",
+            "shuhe-test_oneservices-b-292-xtxqv",
+            "shuhe-test_oneservices-b-294-build"
+          ]
+        },
+        "indexes.cmdb_index-1agv8l7p6c6nw": {
+          "action_config": {},
+          "data": [
+            "oneservices-a-426",
+            "oneservices-a-426",
+            "oneservices-a-426",
+            "oneservices-a-426",
+            "oneservices-a-431",
+            "oneservices-b-292",
+            "oneservices-b-292",
+            "oneservices-b-292",
+            "oneservices-b-292",
+            "oneservices-b-294"
+          ]
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "indexes.cmdb_index-2xrqab21ltbpt": {
+          "action_config": {},
+          "data": [
+            "Burstable",
+            "Burstable",
+            "Burstable",
+            "Burstable",
+            "BestEffort",
+            "Burstable",
+            "Burstable",
+            "Burstable",
+            "Burstable",
+            "BestEffort"
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959,
+            1615173959
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {},
+        "vars.indexes_index_3": {},
+        "vars.indexes_index_2": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "104a7ef21111",
+        "index": 0,
+        "inserted": false,
+        "inserted_name": "名称"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2i1yuwjg9n38b"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

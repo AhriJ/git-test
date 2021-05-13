@@ -1,0 +1,21 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2nh2yqr6j5ki2",
+    "schema_id": "cmdb_schema_x-schema_plugin",
+    "name": "IM.mind",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {},
+  "indexes": {
+    "cmdb_index-1h838qkf66fgl": "cmdb_plugin-9i7c76fgrgua",
+    "cmdb_index-1v7ez1guly8u6": "cmdb_x-s_55964e97"
+  }
+}

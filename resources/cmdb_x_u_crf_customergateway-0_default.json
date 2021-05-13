@@ -1,0 +1,188 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_u_crf_customergateway-0_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_对端网关默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".data.ipadd",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "show": true,
+        "pkg_id": "cmdb_x_x-3iwnis61xatk1_default",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "show": true,
+        "pkg_id": "cmdb_x_vendor-0_default",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "show": true,
+        "pkg_id": "cmdb_x_x-6iplof81wxv_default",
+        "widget": "table"
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".data.ipadd",
+        "name": "对端IP"
+      },
+      {
+        "field": ".indexes.cmdb_index-region",
+        "name": "所在区域"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_account",
+        "name": "关联云账户"
+      },
+      {
+        "field": ".indexes.cmdb_index-3lofvn1raniji",
+        "name": "资源创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-26lrotpomsf9d",
+        "name": "服务"
+      },
+      {
+        "field": ".indexes.cmdb_index-external_id",
+        "name": "外部ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-2m0a8cdlkeajw",
+        "name": "带外ID"
+      },
+      {
+        "field": ".indexes.cmdb_index-vendor",
+        "name": "所属供应商"
+      },
+      {
+        "field": ".indexes.cmdb_index-cloud_resource_config",
+        "name": "关联云资源配置"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_account",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-vendor",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              },
+              {
+                "field": ".indexes.cmdb_index-cloud_resource_config",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-37bhehg21kuli",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".data.ipadd\",\".indexes.cmdb_index-region\",\".indexes.cmdb_index-cloud_account\",\".indexes.cmdb_index-3lofvn1raniji\",\".indexes.cmdb_index-26lrotpomsf9d\",\".indexes.cmdb_index-external_id\",\".indexes.cmdb_index-2m0a8cdlkeajw\",\".indexes.cmdb_index-vendor\",\".indexes.cmdb_index-cloud_resource_config\"],\"enumNames\":[\"名称\",\"描述\",\"对端IP\",\"所在区域\",\"关联云账户\",\"资源创建时间\",\"服务\",\"外部ID\",\"带外ID\",\"所属供应商\",\"关联云资源配置\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".data.ipadd\":{\"type\":\"string\",\"title\":\"对端IP\",\"ui:hidden\":\"{{ rootValue.field !== '.data.ipadd' }}\"},\".indexes.cmdb_index-region\":{\"type\":\"string\",\"title\":\"所在区域\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-region' }}\"},\".indexes.cmdb_index-cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2slkiorxqvqqa\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cloud_account' }}\"},\".indexes.cmdb_index-3lofvn1raniji\":{\"type\":\"integer\",\"format\":\"date-time\",\"title\":\"资源创建时间\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-3lofvn1raniji' }}\"},\".indexes.cmdb_index-26lrotpomsf9d\":{\"type\":\"string\",\"title\":\"服务\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-26lrotpomsf9d' }}\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-external_id' }}\"},\".indexes.cmdb_index-2m0a8cdlkeajw\":{\"type\":\"string\",\"title\":\"带外ID\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2m0a8cdlkeajw' }}\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-154b4p63g843q\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-vendor' }}\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1bz88j91qrv48\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cloud_resource_config' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-2cqv5aw9wutc2"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-3i9fm2uuvjzy8",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.ipadd\":{\"type\":\"string\",\"title\":\"对端IP\"},\".indexes.cmdb_index-region\":{\"type\":\"string\",\"title\":\"所在区域\"},\".indexes.cmdb_index-cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2slkiorxqvqqa\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\".indexes.cmdb_index-3lofvn1raniji\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"资源创建时间\"},\".indexes.cmdb_index-26lrotpomsf9d\":{\"type\":\"string\",\"title\":\"服务\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-2m0a8cdlkeajw\":{\"type\":\"string\",\"title\":\"带外ID\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-154b4p63g843q\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1bz88j91qrv48\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3g9dcf12s2v33",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".data.ipadd\":{\"type\":\"string\",\"title\":\"对端IP\"},\".indexes.cmdb_index-region\":{\"type\":\"string\",\"title\":\"所在区域\"},\".indexes.cmdb_index-cloud_account\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-2slkiorxqvqqa\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云账户\"},\".indexes.cmdb_index-3lofvn1raniji\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"资源创建时间\"},\".indexes.cmdb_index-26lrotpomsf9d\":{\"type\":\"string\",\"title\":\"服务\"},\".indexes.cmdb_index-external_id\":{\"type\":\"string\",\"title\":\"外部ID\"},\".indexes.cmdb_index-2m0a8cdlkeajw\":{\"type\":\"string\",\"title\":\"带外ID\"},\".indexes.cmdb_index-vendor\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-154b4p63g843q\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"所属供应商\"},\".indexes.cmdb_index-cloud_resource_config\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1bz88j91qrv48\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联云资源配置\"}},\"required\":[\".inode.name\"]}"
+    },
+    "ql": "cmdb_ql-15g44kmmdoul6",
+    "object_id": "cmdb_object_ql-1jqwn35wrb5yl"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-1ul4igye50ufq"
+  }
+}

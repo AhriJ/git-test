@@ -1,0 +1,61 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-tfsta4pi0dbs",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "容器资源",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "logo": {},
+      "name": "容器资源",
+      "icon": "Partition",
+      "openKeys": [],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "ce9ad1c4ad5d"
+      },
+      {
+        "uuid": "e4b9fbf892ff"
+      },
+      {
+        "uuid": "04aac819718b"
+      },
+      {
+        "uuid": "f838dcf184da"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3tpbqgadrxz39",
+      "cmdb_mpage-uaanqqeu2ufu",
+      "cmdb_mpage-3ejlf57e7nasv",
+      "cmdb_mpage-2z2mddz9jip4q"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-nav",
+    "cmdb_index-mpage_component_type": "SITEMAP"
+  }
+}

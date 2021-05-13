@@ -1,0 +1,123 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_x-2vu7izceoqwh1",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "node",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "aaa": {
+          "type": "string",
+          "title": "aaa"
+        },
+        "labels": {
+          "type": "object",
+          "title": "labels",
+          "properties": {},
+          "required": []
+        },
+        "annotations": {
+          "type": "object",
+          "title": "注释",
+          "properties": {},
+          "required": []
+        },
+        "addresses": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "监听地址"
+        },
+        "capacity": {
+          "type": "object",
+          "title": "节点资源容量",
+          "properties": {},
+          "required": []
+        },
+        "allocatable": {
+          "type": "object",
+          "title": "节点资源使用量",
+          "properties": {},
+          "required": []
+        },
+        "status": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "status",
+            "properties": {},
+            "required": []
+          },
+          "title": "status"
+        },
+        "name": {
+          "type": "string",
+          "title": "name"
+        },
+        "selfLink": {
+          "type": "string",
+          "title": "selfLink"
+        },
+        "uid": {
+          "type": "string",
+          "title": "uid"
+        },
+        "resourceVersion": {
+          "type": "string",
+          "title": "resourceVersion"
+        },
+        "creationTimestamp": {
+          "type": "string",
+          "title": "creationTimestamp"
+        }
+      },
+      "required": []
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-1p6obb3s2rrww",
+        "required": false,
+        "key": "memory"
+      },
+      {
+        "id": "cmdb_index-1vlm3pwe7dem5",
+        "required": false,
+        "key": "CPU"
+      },
+      {
+        "id": "cmdb_index-sync_marker",
+        "required": true,
+        "key": "index_2"
+      },
+      {
+        "id": "cmdb_index-external_id",
+        "required": true,
+        "key": "index_3"
+      },
+      {
+        "id": "cmdb_index-bvwwqmxkpo3h",
+        "required": true,
+        "key": "index_4"
+      },
+      {
+        "id": "cmdb_index-3984yht257mxc",
+        "required": false,
+        "key": "cluster"
+      }
+    ]
+  },
+  "indexes": {}
+}

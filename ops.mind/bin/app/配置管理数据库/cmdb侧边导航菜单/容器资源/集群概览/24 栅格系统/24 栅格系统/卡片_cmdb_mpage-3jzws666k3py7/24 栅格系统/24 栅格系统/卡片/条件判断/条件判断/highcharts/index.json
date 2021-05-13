@@ -1,0 +1,64 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2xcoqdgnp3k0g",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "highcharts",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "theme": "elementary",
+      "title": {
+        "text": ""
+      },
+      "subtitle": {},
+      "legend": {},
+      "xAxis": {
+        "title": {}
+      },
+      "yAxis": {
+        "title": {}
+      },
+      "zAxis": {
+        "title": {}
+      },
+      "chart": {
+        "height": "270px"
+      },
+      "dataLabels": false,
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": [
+      {
+        "uuid": "e9b282a8fa7d"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-2bggu3gq48v3v"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_highcharts",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

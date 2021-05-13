@@ -24,7 +24,6 @@
       "forms": [
         {
           "default": null,
-          "title": "名称",
           "field": ".inode.name",
           "pkg_id": null,
           "ui_status": "show",
@@ -42,7 +41,6 @@
         },
         {
           "field": ".indexes.cmdb_index-y0cucwrj1yoo",
-          "title": "服务器类型",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -51,7 +49,6 @@
         },
         {
           "field": ".indexes.cmdb_index-3cqrpc9lj8yg8",
-          "title": "带外实例状态",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -69,7 +66,6 @@
         },
         {
           "field": ".indexes.cmdb_index-vendor",
-          "title": "供应商",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -78,7 +74,6 @@
         },
         {
           "field": ".indexes.cmdb_index-external_id",
-          "title": "外部ID",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -87,7 +82,6 @@
         },
         {
           "field": ".indexes.cmdb_index-sync_marker",
-          "title": "同步标记",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -96,7 +90,6 @@
         },
         {
           "field": ".indexes.cmdb_index-status",
-          "title": "状态",
           "ui_status": "show",
           "default": null,
           "pkg_id": null,
@@ -118,6 +111,16 @@
       "type": "list",
       "data_id": "cmdb_x-9mh7fqhpbhg3",
       "action_config": {
+        "data.hostname": {
+          "action_config": {
+            "action_type": "link",
+            "view_id": null,
+            "user_view_id": null,
+            "open_type": "link",
+            "type": "default",
+            "href": "$app=./cmdb_mpage-1rvfxvkuc1e3z\u0026view_id=cmdb_view-27qiqdwzlkuvk"
+          }
+        },
         "inode.name": {
           "action_config": {
             "action_type": "link",

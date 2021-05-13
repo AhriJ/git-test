@@ -1,0 +1,44 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-s_eeba8ba8",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "node",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "menu_visible": true,
+    "describe": null,
+    "name": "node",
+    "group": "系统",
+    "id": "",
+    "pkg_id": "cmdb_x_x-2vu7izceoqwh1_default",
+    "workflows": {
+      "create": "cmdb_workflow-2wvyhb7z0lb0r",
+      "delete": "cmdb_workflow-2hhrddzyd5q18",
+      "update": "cmdb_workflow-cvxddj556c4v",
+      "batch_update": "cmdb_workflow-1nlbb0lq1lg54"
+    },
+    "ql_id": "cmdb_ql-g7ajo5bueb1v",
+    "icon": null
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_x-2vu7izceoqwh1",
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-1d4bdf4or9bae",
+      "cmdb_x-2gb09unfryehr",
+      "cmdb_x-i_4405f339",
+      "cmdb_x-i_5f9d2583",
+      "cmdb_x-i_77043f6f",
+      "cmdb_x-14h8xe64h34p7"
+    ]
+  }
+}

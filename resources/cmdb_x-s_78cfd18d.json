@@ -1,0 +1,41 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-s_78cfd18d",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "namespace",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "menu_visible": true,
+    "describe": null,
+    "name": "namespace",
+    "group": "",
+    "id": "",
+    "pkg_id": "cmdb_x_x-2nsk6iscxoet8_default",
+    "workflows": {
+      "create": "cmdb_workflow-31zj670vq0ouu",
+      "delete": "cmdb_workflow-3oocscxkd2d1s",
+      "update": "cmdb_workflow-tiw5wtsiptuf",
+      "batch_update": "cmdb_workflow-25vvdnd2fhpvh"
+    },
+    "ql_id": "cmdb_ql-2d8fpgcaf985w",
+    "icon": null
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_x-2nsk6iscxoet8",
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-14h8xe64h34p7",
+      "cmdb_x-i_4405f339",
+      "cmdb_x-i_5f9d2583"
+    ]
+  }
+}

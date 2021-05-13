@@ -1,0 +1,49 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1gd5liy51on5k",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "最大带宽",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "max_dk",
+    "field_name": "最大带宽",
+    "field_type": "integer",
+    "searched": false,
+    "is_array": null,
+    "string_option": {
+      "pattern": null,
+      "enum": null,
+      "default": null,
+      "format": null,
+      "enumNames": null
+    },
+    "number_option": {
+      "minimum": null,
+      "maximum": null,
+      "default": null,
+      "format": "cmdb-unit"
+    },
+    "boolean_option": {
+      "default": false,
+      "format": null
+    },
+    "object_option": [],
+    "id": "",
+    "index_id": "",
+    "required": false,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-3llcalgrmpkdb",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

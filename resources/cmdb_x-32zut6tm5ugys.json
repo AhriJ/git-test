@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-32zut6tm5ugys",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "分配内存",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "limit_mem",
+    "field_name": "分配内存",
+    "field_type": "integer",
+    "searched": true,
+    "is_array": false,
+    "string_option": null,
+    "number_option": {
+      "format": "cmdb-unit"
+    },
+    "boolean_option": null,
+    "object_option": [],
+    "id": "",
+    "index_id": "cmdb_x-1fnrr4hz1jwfh",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_68ffce9f"
+  }
+}

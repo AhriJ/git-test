@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1pkg1m8opv2p2",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "订单类型",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "OrderType",
+    "field_name": "订单类型",
+    "field_type": "string",
+    "searched": true,
+    "is_array": false,
+    "string_option": {
+      "enum": "New\nRenew\nUpgrade\nRefund",
+      "enumNames": "新购\n续费\n升级\n退款"
+    },
+    "number_option": null,
+    "boolean_option": null,
+    "object_option": [],
+    "id": "",
+    "index_id": "cmdb_x-35w9oj4zysccw",
+    "required": false,
+    "config_plugin_id": null
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-2aqzwlcevwygq",
+    "cmdb_index-jtko9owh6qwz": ""
+  }
+}

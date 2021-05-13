@@ -1,0 +1,25 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-276ax0ox8htws",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "关联多个云资源_对端网关",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-bzc5xt4nqos"
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "cmdb_x-1ul4igye50ufq",
+    "cmdb_index-24s4gq55rc6q2": true,
+    "cmdb_index-2juvlwf06k1a1": "cmdb_x_u_crf_customergateway-0_default",
+    "cmdb_index-3b01as46nc0b7": true
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-25l2adrpawvs1",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "内存统计查询总数卡片",
+    "namespace": "/lib",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "padding": "10px"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "hoverable": false,
+      "__lib_schema__": "{\"type\":\"object\",\"properties\":{\"value\":{\"type\":\"string\",\"title\":\"值\"}},\"required\":[]}",
+      "__lib__": {},
+      "__trigger__": {}
+    },
+    "children": {
+      "children.40441fdf37fa.children.e5941bdf4967.config.resId": "{var: state.__lib__.ql_id}",
+      "children.40441fdf37fa.children.c1a246771938.state.text": "{var: state.__lib__.title}",
+      "children.40441fdf37fa.children.16288b4aedd3.state.text": "{var: state.__lib__.value}"
+    },
+    "childrenConfig": [
+      {
+        "uuid": "40441fdf37fa"
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-3ejgi8wx1vqt1"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_card",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

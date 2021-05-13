@@ -1,0 +1,89 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-267i9ocaqz5bp",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "订单列表",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_orders-0"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-1dfd0rjwlgvj6 as 消费类型",
+        ".data.PretaxGrossAmount as 原始金额",
+        ".data.PretaxAmount as 订单应付金额",
+        ".data.CommodityCode as 商品Code",
+        ".indexes.cmdb_index-2og7dddzrw4p8 as 支付状态",
+        ".indexes.cmdb_index-2rwdrvs5q66sf as 订单类型",
+        ".indexes.cmdb_index-cjvss6o3umj1 as 订单编号",
+        ".indexes.cmdb_index-2niqdv1yu69i7 as 产品代码",
+        ".data.Currency as 币种",
+        ".indexes.cmdb_index-1gos9bpua3dp2 as 创建时间",
+        ".indexes.cmdb_index-2fcz6japikb2w as 支付时间",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

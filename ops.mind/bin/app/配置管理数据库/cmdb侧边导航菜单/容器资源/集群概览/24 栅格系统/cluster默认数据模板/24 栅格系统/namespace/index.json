@@ -1,0 +1,260 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-210zjauy4zfg",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "namespace",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.indexes_index_1.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.total_rows": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cluster": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_cluster.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_cluster.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-3lvzl497x8kdx",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-1x7yg6zrst7gu",
+            "cmdb_x-7wqapisiz0k8",
+            "cmdb_x-15tgrha4w3rr6",
+            "cmdb_x-1kac3oi79ucgm",
+            "cmdb_x-bkhookxpvmj1",
+            "cmdb_x-iyjpvpatpcba",
+            "cmdb_x-1kcfep87ww2x9",
+            "cmdb_x-aokamboa0r4u",
+            "cmdb_x-3uqvdjc32ans",
+            "cmdb_x-1m03ers3sows"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "xraymgr",
+            "yillion",
+            "yntrustdocking",
+            "zdtfront",
+            "zhihechannel",
+            "zhongandocking",
+            "zhongxinchannel",
+            "zipkin",
+            "zrbdocking",
+            "zycfcdocking"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "data.name": {
+          "action_config": {},
+          "data": [
+            "xraymgr",
+            "yillion",
+            "yntrustdocking",
+            "zdtfront",
+            "zhihechannel",
+            "zhongandocking",
+            "zhongxinchannel",
+            "zipkin",
+            "zrbdocking",
+            "zycfcdocking"
+          ]
+        },
+        "data.selfLink": {
+          "action_config": {},
+          "data": [
+            "/api/v1/namespaces/xraymgr",
+            "/api/v1/namespaces/yillion",
+            "/api/v1/namespaces/yntrustdocking",
+            "/api/v1/namespaces/zdtfront",
+            "/api/v1/namespaces/zhihechannel",
+            "/api/v1/namespaces/zhongandocking",
+            "/api/v1/namespaces/zhongxinchannel",
+            "/api/v1/namespaces/zipkin",
+            "/api/v1/namespaces/zrbdocking",
+            "/api/v1/namespaces/zycfcdocking"
+          ]
+        },
+        "data.uid": {
+          "action_config": {},
+          "data": [
+            "f5d58b94-1aec-11ea-ae5c-00163e06cb7a",
+            "d3689b55-9973-11ea-9a48-00163e146ccf",
+            "f80222b6-09ad-11ea-bebd-00163e0abb5a",
+            "301580bf-2173-11ea-9a48-00163e146ccf",
+            "bea525a4-a18e-11ea-a0c5-00163e06cb7a",
+            "0c60b509-09ae-11ea-ae5c-00163e06cb7a",
+            "62ac05a8-1a2b-11ea-ae5c-00163e06cb7a",
+            "c94b70b6-f9f3-11e9-ae5c-00163e06cb7a",
+            "20b19153-09ae-11ea-9a48-00163e146ccf",
+            "352d3af7-09ae-11ea-bebd-00163e0abb5a"
+          ]
+        },
+        "data.resourceVersion": {
+          "action_config": {},
+          "data": [
+            "12331816",
+            "68108983",
+            "5478010",
+            "15047829",
+            "72831784",
+            "5478310",
+            "12019587",
+            "327766",
+            "5478643",
+            "5478935"
+          ]
+        },
+        "data.creationTimestamp": {
+          "action_config": {},
+          "data": [
+            "2019-12-10T01:32:42Z",
+            "2020-05-19T01:55:33Z",
+            "2019-11-18T02:48:58Z",
+            "2019-12-18T08:48:39Z",
+            "2020-05-29T09:28:24Z",
+            "2019-11-18T02:49:32Z",
+            "2019-12-09T02:27:02Z",
+            "2019-10-29T02:28:26Z",
+            "2019-11-18T02:50:06Z",
+            "2019-11-18T02:50:40Z"
+          ]
+        },
+        "data.phase": {
+          "action_config": {},
+          "data": [
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active",
+            "Active"
+          ]
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": [
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078",
+            "1615970200078"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2avr542dra1vv_xraymgr",
+            "cmdb_x-2avr542dra1vv_yillion",
+            "cmdb_x-2avr542dra1vv_yntrustdocking",
+            "cmdb_x-2avr542dra1vv_zdtfront",
+            "cmdb_x-2avr542dra1vv_zhihechannel",
+            "cmdb_x-2avr542dra1vv_zhongandocking",
+            "cmdb_x-2avr542dra1vv_zhongxinchannel",
+            "cmdb_x-2avr542dra1vv_zipkin",
+            "cmdb_x-2avr542dra1vv_zrbdocking",
+            "cmdb_x-2avr542dra1vv_zycfcdocking"
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970201,
+            1615970201,
+            1615970201,
+            1615970201
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_cluster": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

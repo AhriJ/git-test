@@ -1,0 +1,72 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_u_crf_customergateway-0",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "云资源_对端网关",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "ipadd": {
+          "type": "string",
+          "title": "对端IP"
+        }
+      },
+      "required": []
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-region",
+        "required": false,
+        "key": "region"
+      },
+      {
+        "id": "cmdb_index-cloud_account",
+        "required": false,
+        "key": "cloud_account"
+      },
+      {
+        "id": "cmdb_index-3lofvn1raniji",
+        "required": false,
+        "key": "created_at"
+      },
+      {
+        "id": "cmdb_index-26lrotpomsf9d",
+        "required": false,
+        "key": "cloud_service"
+      },
+      {
+        "id": "cmdb_index-external_id",
+        "required": false,
+        "key": "external_id"
+      },
+      {
+        "id": "cmdb_index-2m0a8cdlkeajw",
+        "required": false,
+        "key": "outband_id"
+      },
+      {
+        "id": "cmdb_index-vendor",
+        "required": false,
+        "key": "cloud"
+      },
+      {
+        "id": "cmdb_index-cloud_resource_config",
+        "required": false,
+        "key": "cloud_resource_conf"
+      }
+    ]
+  },
+  "indexes": {}
+}

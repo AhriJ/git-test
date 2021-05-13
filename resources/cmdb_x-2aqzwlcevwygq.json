@@ -1,0 +1,46 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-2aqzwlcevwygq",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "云资源_订单列表_自定义",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "orders",
+    "name": "云资源_订单列表_自定义",
+    "describe": null,
+    "group": null,
+    "config_id": null,
+    "pkg_id": "cmdb_x_u_orders-0_default",
+    "workflows": {
+      "create": "cmdb_workflow-3bjfyp2zjhik3",
+      "delete": "cmdb_workflow-cgfxd16eahk3",
+      "update": "cmdb_workflow-2108prvg6ik9s",
+      "batch_update": "cmdb_workflow-34g4idwfaqaz6"
+    },
+    "ql_id": "cmdb_ql-xzyfvexzyijj"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_orders-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-2yfqedoszsale",
+      "cmdb_x-u566clziuivs",
+      "cmdb_x-uiuvh0g0rklz",
+      "cmdb_x-35w9oj4zysccw",
+      "cmdb_x-23ojuxbu8l06m",
+      "cmdb_x-1t70tqb6h0nc0",
+      "cmdb_x-fvom4sy756ei",
+      "cmdb_x-3mw47kocrjpk9"
+    ]
+  }
+}

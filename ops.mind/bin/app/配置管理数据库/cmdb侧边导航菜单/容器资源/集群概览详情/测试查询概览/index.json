@@ -1,0 +1,30 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-36tl6hpcwtus0",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "测试查询概览",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "config": {
+      "resId": "cmdb_mpage-2f8d1bmi908kz"
+    },
+    "children": {
+      "children.8127479b6248.state.__lib__.view_id": "cmdb_view-2ojyygvpwpcky"
+    },
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

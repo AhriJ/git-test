@@ -1,0 +1,142 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2rsd8it2zi2tr",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "活跃pod常用查询",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-1d1rbamd0vh7y"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_1",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_index_3",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "$and",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$or",
+              "op": "=-",
+              "value": [
+                {
+                  "field": "$and",
+                  "op": "=-",
+                  "value": [
+                    {
+                      "field": ".indexes.cmdb_index-bvwwqmxkpo3h",
+                      "op": "=",
+                      "value": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field": "$or",
+              "op": "=-",
+              "value": [
+                {
+                  "field": "$and",
+                  "op": "=-",
+                  "value": [
+                    {
+                      "field": ".inode.name",
+                      "op": "=",
+                      "value": "{var:vars.inode_name}"
+                    },
+                    {
+                      "field": ".indexes.cmdb_index-3ezpmtsrvgq7y",
+                      "op": "=",
+                      "value": "{var:vars.indexes_index_1}"
+                    },
+                    {
+                      "field": ".indexes.cmdb_index-3984yht257mxc",
+                      "op": "=",
+                      "value": "{var:vars.indexes_index_3}"
+                    },
+                    {
+                      "field": ".indexes.cmdb_index-3984yht257mxc",
+                      "op": "!=",
+                      "value": "$null"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "objects": [
+        "$conditions"
+      ],
+      "sorts": [],
+      "limit": 50,
+      "offset": 0,
+      "multi": true,
+      "selects": [
+        ".inode.name as 名称",
+        ".indexes.cmdb_index-3984yht257mxc as 关联到集群",
+        ".indexes.cmdb_index-3ezpmtsrvgq7y as 关联node",
+        ".indexes.cmdb_index-1agv8l7p6c6nw as 关联service",
+        ".indexes.cmdb_index-bvwwqmxkpo3h as 是否存活",
+        ".indexes.cmdb_index-32326r2df4ow6 as 分配CPU",
+        ".indexes.cmdb_index-16dmbzom80bvt as 分配内存"
+      ],
+      "comment": "",
+      "function": "db",
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_index_1": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-g7ajo5bueb1v\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联node"
+              },
+              "indexes_index_3": {
+                "type": "string",
+                "format": "cmdb-object-selector-id",
+                "title": "关联集群"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

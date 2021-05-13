@@ -1,0 +1,42 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1zeua6d8nrcbi",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "统计查询总数卡片",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "cmdb_mpage-2un4yeokcbzma",
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.43466cebf1da.state.__lib__.title": "总 node 数",
+      "children.43466cebf1da.state.__lib__.ql_id": "cmdb_ql-2yupr9mj83xgk"
+    },
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-lib",
+    "cmdb_index-mpage_component_type": "LIB"
+  }
+}

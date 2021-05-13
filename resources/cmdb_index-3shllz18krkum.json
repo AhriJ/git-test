@@ -1,0 +1,28 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-3shllz18krkum",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "所属区域",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "string",
+    "multi": false,
+    "schema": {
+      "type": "$index_type"
+    }
+  },
+  "indexes": {}
+}

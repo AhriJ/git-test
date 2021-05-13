@@ -1,0 +1,203 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1o87cottia9bp",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "活跃node数",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.total_rows": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name.op": "FULL_EXPORTED",
+      "state.__vars__.vars.inode_name.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_index_1.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-36gp5hoeytl0y",
+      "hide": false,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-rg4b4rj818dl",
+            "cmdb_x-2y49qz4mb6vip",
+            "cmdb_x-agk3g7d3vo0n",
+            "cmdb_x-6riz6bwqhdqf",
+            "cmdb_x-1c0uqpkg90brp",
+            "cmdb_x-1ctewxfg1z2vl",
+            "cmdb_x-31vg0458918z6",
+            "cmdb_x-1svtuzhtc0yac",
+            "cmdb_x-1hq13jsz6zqqv",
+            "cmdb_x-2pjw4j58r2j5t"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "10.72.152.91",
+            "10.72.152.30",
+            "10.72.152.100",
+            "10.72.153.18",
+            "10.72.152.57",
+            "10.72.152.35",
+            "10.72.152.38",
+            "10.72.152.58",
+            "10.72.152.64",
+            "10.72.152.79"
+          ]
+        },
+        "data.uid": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "data.resourceVersion": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "data.creationTimestamp": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-1vlm3pwe7dem5": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-1p6obb3s2rrww": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-3984yht257mxc": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j",
+            "cmdb_x-2f2p1595gpl4j"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

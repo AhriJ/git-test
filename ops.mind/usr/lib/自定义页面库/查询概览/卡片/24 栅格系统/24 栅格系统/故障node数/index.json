@@ -1,0 +1,128 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-3p0665pzbe0z4",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "故障node数",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.total_rows": "FULL_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "config.resId": "FULL_EXPORTED",
+      "config": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name": "SEMI_EXPORTED",
+      "state.__vars__.vars.inode_name.op": "FULL_EXPORTED",
+      "state.__vars__.vars.inode_name.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1": "SEMI_EXPORTED",
+      "state.__vars__.vars.indexes_index_1.op": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1.value": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-2bnimoy4w9x2t",
+      "hide": false,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": []
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": []
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": []
+        },
+        "data.name": {
+          "action_config": {},
+          "data": []
+        },
+        "data.selfLink": {
+          "action_config": {},
+          "data": []
+        },
+        "data.uid": {
+          "action_config": {},
+          "data": []
+        },
+        "data.resourceVersion": {
+          "action_config": {},
+          "data": []
+        },
+        "data.creationTimestamp": {
+          "action_config": {},
+          "data": []
+        },
+        "data.addresses": {
+          "action_config": {},
+          "data": []
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": []
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": []
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": []
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": []
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": []
+        },
+        "indexes.cmdb_index-3984yht257mxc": {
+          "action_config": {},
+          "data": []
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

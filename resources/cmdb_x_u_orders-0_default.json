@@ -1,0 +1,194 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x_u_orders-0_default",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "云资源_订单列表_自定义默认数据模板",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "conditions": [],
+    "forms": [
+      {
+        "field": ".inode.name",
+        "show": true
+      },
+      {
+        "field": ".inode.descr",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "show": true,
+        "pkg_id": "cmdb_x-2be0tz2k84feb",
+        "widget": "table"
+      },
+      {
+        "field": ".indexes.cmdb_index-1dfd0rjwlgvj6",
+        "show": true
+      },
+      {
+        "field": ".data.PretaxGrossAmount",
+        "show": true
+      },
+      {
+        "field": ".data.PretaxAmount",
+        "show": true
+      },
+      {
+        "field": ".data.CommodityCode",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2og7dddzrw4p8",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2rwdrvs5q66sf",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-cjvss6o3umj1",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2niqdv1yu69i7",
+        "show": true
+      },
+      {
+        "field": ".data.Currency",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-1gos9bpua3dp2",
+        "show": true
+      },
+      {
+        "field": ".indexes.cmdb_index-2fcz6japikb2w",
+        "show": true
+      }
+    ],
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".inode.descr",
+        "name": "描述"
+      },
+      {
+        "field": ".indexes.cmdb_index-18gs5gfejka3i",
+        "name": "业务树"
+      },
+      {
+        "field": ".indexes.cmdb_index-1dfd0rjwlgvj6",
+        "name": "消费类型"
+      },
+      {
+        "field": ".data.PretaxGrossAmount",
+        "name": "原始金额"
+      },
+      {
+        "field": ".data.PretaxAmount",
+        "name": "订单应付金额"
+      },
+      {
+        "field": ".data.CommodityCode",
+        "name": "商品Code"
+      },
+      {
+        "field": ".indexes.cmdb_index-2og7dddzrw4p8",
+        "name": "支付状态"
+      },
+      {
+        "field": ".indexes.cmdb_index-2rwdrvs5q66sf",
+        "name": "订单类型"
+      },
+      {
+        "field": ".indexes.cmdb_index-cjvss6o3umj1",
+        "name": "订单编号"
+      },
+      {
+        "field": ".indexes.cmdb_index-2niqdv1yu69i7",
+        "name": "产品代码"
+      },
+      {
+        "field": ".data.Currency",
+        "name": "币种"
+      },
+      {
+        "field": ".indexes.cmdb_index-1gos9bpua3dp2",
+        "name": "创建时间"
+      },
+      {
+        "field": ".indexes.cmdb_index-2fcz6japikb2w",
+        "name": "支付时间"
+      },
+      {
+        "field": ".inode.mtime",
+        "name": "最后修改时间"
+      },
+      {
+        "field": "inode.last_editor",
+        "name": "最后修改者"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-18gs5gfejka3i",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-34g4idwfaqaz6",
+      "data": "{\"type\":\"object\",\"properties\":{\"field\":{\"type\":\"string\",\"title\":\"字段\",\"enum\":[\".inode.name\",\".inode.descr\",\".indexes.cmdb_index-18gs5gfejka3i\",\".indexes.cmdb_index-1dfd0rjwlgvj6\",\".data.PretaxGrossAmount\",\".data.PretaxAmount\",\".data.CommodityCode\",\".indexes.cmdb_index-2og7dddzrw4p8\",\".indexes.cmdb_index-2rwdrvs5q66sf\",\".indexes.cmdb_index-cjvss6o3umj1\",\".indexes.cmdb_index-2niqdv1yu69i7\",\".data.Currency\",\".indexes.cmdb_index-1gos9bpua3dp2\",\".indexes.cmdb_index-2fcz6japikb2w\"],\"enumNames\":[\"名称\",\"描述\",\"业务树\",\"消费类型\",\"原始金额\",\"订单应付金额\",\"商品Code\",\"支付状态\",\"订单类型\",\"订单编号\",\"产品代码\",\"币种\",\"创建时间\",\"支付时间\"]},\".inode.name\":{\"type\":\"string\",\"title\":\"名称\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.name' }}\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\",\"ui:hidden\":\"{{ rootValue.field !== '.inode.descr' }}\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务树\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-18gs5gfejka3i' }}\"},\".indexes.cmdb_index-1dfd0rjwlgvj6\":{\"type\":\"string\",\"enum\":[\"Subscription\",\"PayAsYouGo\"],\"title\":\"消费类型\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-1dfd0rjwlgvj6' }}\"},\".data.PretaxGrossAmount\":{\"type\":\"number\",\"title\":\"原始金额\",\"ui:hidden\":\"{{ rootValue.field !== '.data.PretaxGrossAmount' }}\"},\".data.PretaxAmount\":{\"type\":\"number\",\"title\":\"订单应付金额\",\"ui:hidden\":\"{{ rootValue.field !== '.data.PretaxAmount' }}\"},\".data.CommodityCode\":{\"type\":\"string\",\"title\":\"商品Code\",\"ui:hidden\":\"{{ rootValue.field !== '.data.CommodityCode' }}\"},\".indexes.cmdb_index-2og7dddzrw4p8\":{\"type\":\"string\",\"enum\":[\"Unpaid\",\"Paid\",\"Cancelled\"],\"title\":\"支付状态\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2og7dddzrw4p8' }}\"},\".indexes.cmdb_index-2rwdrvs5q66sf\":{\"type\":\"string\",\"enum\":[\"New\",\"Renew\",\"Upgrade\",\"Refund\"],\"title\":\"订单类型\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2rwdrvs5q66sf' }}\"},\".indexes.cmdb_index-cjvss6o3umj1\":{\"type\":\"string\",\"title\":\"订单编号\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-cjvss6o3umj1' }}\"},\".indexes.cmdb_index-2niqdv1yu69i7\":{\"type\":\"string\",\"title\":\"产品代码\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2niqdv1yu69i7' }}\"},\".data.Currency\":{\"type\":\"string\",\"title\":\"币种\",\"ui:hidden\":\"{{ rootValue.field !== '.data.Currency' }}\"},\".indexes.cmdb_index-1gos9bpua3dp2\":{\"type\":\"integer\",\"format\":\"date-time\",\"title\":\"创建时间\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-1gos9bpua3dp2' }}\"},\".indexes.cmdb_index-2fcz6japikb2w\":{\"type\":\"integer\",\"format\":\"date-time\",\"title\":\"支付时间\",\"ui:hidden\":\"{{ rootValue.field !== '.indexes.cmdb_index-2fcz6japikb2w' }}\"}}}"
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-cgfxd16eahk3"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-2108prvg6ik9s",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务树\"},\".indexes.cmdb_index-1dfd0rjwlgvj6\":{\"type\":\"string\",\"enum\":[\"Subscription\",\"PayAsYouGo\"],\"enumNames\":[\"预付费\",\"后付费\"],\"title\":\"消费类型\"},\".data.PretaxGrossAmount\":{\"type\":\"number\",\"title\":\"原始金额\"},\".data.PretaxAmount\":{\"type\":\"number\",\"title\":\"订单应付金额\"},\".data.CommodityCode\":{\"type\":\"string\",\"title\":\"商品Code\"},\".indexes.cmdb_index-2og7dddzrw4p8\":{\"type\":\"string\",\"enum\":[\"Unpaid\",\"Paid\",\"Cancelled\"],\"enumNames\":[\"未支付\",\"已支付\",\"已作废\"],\"title\":\"支付状态\"},\".indexes.cmdb_index-2rwdrvs5q66sf\":{\"type\":\"string\",\"enum\":[\"New\",\"Renew\",\"Upgrade\",\"Refund\"],\"enumNames\":[\"新购\",\"续费\",\"升级\",\"退款\"],\"title\":\"订单类型\"},\".indexes.cmdb_index-cjvss6o3umj1\":{\"type\":\"string\",\"title\":\"订单编号\"},\".indexes.cmdb_index-2niqdv1yu69i7\":{\"type\":\"string\",\"title\":\"产品代码\"},\".data.Currency\":{\"type\":\"string\",\"title\":\"币种\"},\".indexes.cmdb_index-1gos9bpua3dp2\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"创建时间\"},\".indexes.cmdb_index-2fcz6japikb2w\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"支付时间\"},\"id\":{\"type\":\"string\",\"ui:hidden\":true}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cjvss6o3umj1\"]}"
+    },
+    "editable": true,
+    "new_data": {
+      "wf_id": "cmdb_workflow-3bjfyp2zjhik3",
+      "data": "{\"type\":\"object\",\"properties\":{\".inode.name\":{\"type\":\"string\",\"title\":\"名称\"},\".inode.descr\":{\"type\":\"string\",\"format\":\"textarea\",\"title\":\"描述\"},\".indexes.cmdb_index-18gs5gfejka3i\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-1mgjkjvojduoo\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"业务树\"},\".indexes.cmdb_index-1dfd0rjwlgvj6\":{\"type\":\"string\",\"enum\":[\"Subscription\",\"PayAsYouGo\"],\"enumNames\":[\"预付费\",\"后付费\"],\"title\":\"消费类型\"},\".data.PretaxGrossAmount\":{\"type\":\"number\",\"title\":\"原始金额\"},\".data.PretaxAmount\":{\"type\":\"number\",\"title\":\"订单应付金额\"},\".data.CommodityCode\":{\"type\":\"string\",\"title\":\"商品Code\"},\".indexes.cmdb_index-2og7dddzrw4p8\":{\"type\":\"string\",\"enum\":[\"Unpaid\",\"Paid\",\"Cancelled\"],\"enumNames\":[\"未支付\",\"已支付\",\"已作废\"],\"title\":\"支付状态\"},\".indexes.cmdb_index-2rwdrvs5q66sf\":{\"type\":\"string\",\"enum\":[\"New\",\"Renew\",\"Upgrade\",\"Refund\"],\"enumNames\":[\"新购\",\"续费\",\"升级\",\"退款\"],\"title\":\"订单类型\"},\".indexes.cmdb_index-cjvss6o3umj1\":{\"type\":\"string\",\"title\":\"订单编号\"},\".indexes.cmdb_index-2niqdv1yu69i7\":{\"type\":\"string\",\"title\":\"产品代码\"},\".data.Currency\":{\"type\":\"string\",\"title\":\"币种\"},\".indexes.cmdb_index-1gos9bpua3dp2\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"创建时间\"},\".indexes.cmdb_index-2fcz6japikb2w\":{\"type\":\"integer\",\"min\":null,\"max\":null,\"default\":null,\"format\":\"date-time\",\"title\":\"支付时间\"}},\"required\":[\".inode.name\",\".indexes.cmdb_index-cjvss6o3umj1\"]}"
+    },
+    "ql": "cmdb_ql-xzyfvexzyijj",
+    "object_id": "cmdb_object_ql-3g2x5f1ctczy7"
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": true,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-2aqzwlcevwygq"
+  }
+}

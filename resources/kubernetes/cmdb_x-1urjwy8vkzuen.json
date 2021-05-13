@@ -1,0 +1,114 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1urjwy8vkzuen",
+    "schema_id": "cmdb_schema_x-ghkfn72ezw6k",
+    "name": "总pod数",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "selects": [
+      {
+        "field": ".inode.name",
+        "name": "名称"
+      },
+      {
+        "field": ".indexes.cmdb_index-3984yht257mxc",
+        "name": "关联到集群"
+      },
+      {
+        "field": ".indexes.cmdb_index-3ezpmtsrvgq7y",
+        "name": "关联node"
+      },
+      {
+        "field": ".indexes.cmdb_index-1agv8l7p6c6nw",
+        "name": "关联service"
+      },
+      {
+        "field": ".indexes.cmdb_index-bvwwqmxkpo3h",
+        "name": "是否存活"
+      },
+      {
+        "field": ".indexes.cmdb_index-32326r2df4ow6",
+        "name": "分配CPU"
+      },
+      {
+        "field": ".indexes.cmdb_index-16dmbzom80bvt",
+        "name": "分配内存"
+      }
+    ],
+    "vars": [
+      {
+        "field": "$or",
+        "op": "=-",
+        "value": [
+          {
+            "field": "$and",
+            "op": "=-",
+            "value": [
+              {
+                "field": ".inode.name",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-3ezpmtsrvgq7y",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false,
+                "widget": "table",
+                "pkg_id": "cmdb_x_x-2vu7izceoqwh1_default"
+              },
+              {
+                "field": ".indexes.cmdb_index-osud1hj1k0gu",
+                "op": "=",
+                "value": "$empty",
+                "is_array": false
+              },
+              {
+                "field": ".indexes.cmdb_index-3t0rhwr9t1xhh",
+                "op": "=~",
+                "value": "$empty",
+                "is_array": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "conditions": [],
+    "content": "{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=\",\"value\":\"cmdb_schema_x-1d1rbamd0vh7y\"},{\"field\":\"vars.inode_name\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_index_1\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_index_3\",\"op\":\"=\",\"value\":\"$empty\"},{\"field\":\"vars.indexes_index_2\",\"op\":\"=~\",\"value\":\"$empty\"},{\"field\":\"$or\",\"op\":\"=-\",\"value\":[{\"field\":\"$and\",\"op\":\"=-\",\"value\":[{\"field\":\".inode.name\",\"op\":\"=\",\"value\":\"{var:vars.inode_name}\"},{\"field\":\".indexes.cmdb_index-3ezpmtsrvgq7y\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_1}\"},{\"field\":\".indexes.cmdb_index-3984yht257mxc\",\"op\":\"!=\",\"value\":\"$null\"},{\"field\":\".indexes.cmdb_index-3984yht257mxc\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_3}\"},{\"field\":\".indexes.cmdb_index-3t0rhwr9t1xhh\",\"op\":\"=\",\"value\":\"{var:vars.indexes_index_2}\"}]}]}],\"objects\":[\"$conditions\"],\"sorts\":[\".indexes.cmdb_index-16dmbzom80bvt as 分配内存\"],\"limit\":500,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name as 名称\",\".indexes.cmdb_index-3984yht257mxc as 关联到集群\",\".indexes.cmdb_index-3ezpmtsrvgq7y as 关联node\",\".indexes.cmdb_index-1agv8l7p6c6nw as 关联service\",\".indexes.cmdb_index-bvwwqmxkpo3h as 是否存活\",\".indexes.cmdb_index-32326r2df4ow6 as 分配CPU\",\".indexes.cmdb_index-16dmbzom80bvt as 分配内存\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{\"type\":\"object\",\"properties\":{\"vars\":{\"type\":\"object\",\"properties\":{\"inode_name\":{\"type\":\"string\",\"title\":\"名称\"},\"indexes_index_1\":{\"type\":\"string\",\"format\":\"ql-selector?id=cmdb_ql-g7ajo5bueb1v\u0026select_mode=single\u0026spec=id\u0026widget=table\",\"title\":\"关联node\"},\"indexes_index_3\":{\"type\":\"string\",\"format\":\"cmdb-object-selector-id\",\"title\":\"关联集群\"},\"indexes_index_2\":{\"type\":\"string\",\"format\":\"cmdb-object-selector-id\",\"title\":\"关联namespace\"}}}}}}",
+    "advanced": true,
+    "batch_edit_data": {
+      "wf_id": "cmdb_workflow-169vrihngq03p",
+      "data": null
+    },
+    "delete_data": {
+      "wf_id": "cmdb_workflow-1ass2scjhfsde"
+    },
+    "edit_data": {
+      "wf_id": "cmdb_workflow-24no7pq4duyyv",
+      "data": null
+    },
+    "editable": false,
+    "new_data": {
+      "wf_id": "cmdb_workflow-1l1u3y2nu2o4b",
+      "data": null
+    },
+    "ql": "cmdb_ql-3g4ve90oqi0e8",
+    "object_id": "cmdb_object_ql-3f16fbwzuhdz5",
+    "forms": null
+  },
+  "indexes": {
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-5idpkmb7eqne": "cmdb_x-s_68ffce9f"
+  }
+}

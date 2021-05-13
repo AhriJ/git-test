@@ -1,0 +1,26 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-i_730d9706",
+    "schema_id": "cmdb_schema_x-2bbnpb7xawvdc",
+    "name": "关联namespace",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "index_id": "cmdb_index-2aqsjpl6r07fz",
+    "schema": {}
+  },
+  "indexes": {
+    "cmdb_index-1m8g2lnhu7s0u": "cmdb_x-s_78cfd18d",
+    "cmdb_index-24s4gq55rc6q2": false,
+    "cmdb_index-2juvlwf06k1a1": "cmdb_x_x-2nsk6iscxoet8_default",
+    "cmdb_index-3b01as46nc0b7": true
+  }
+}

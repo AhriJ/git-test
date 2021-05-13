@@ -1,0 +1,29 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_index-3ezpmtsrvgq7y",
+    "schema_id": "cmdb_schema_index-0",
+    "name": "关联node",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "permits": {
+      "r": "cmdb_operation-read",
+      "w": "cmdb_operation-update"
+    },
+    "type": "cmdb_schema_x-2vu7izceoqwh1",
+    "schema": {
+      "type": "$index_type",
+      "format": "cmdb-object-selector-id",
+      "default": "{\"conditions\":[{\"field\":\"inode.schema_id\",\"op\":\"=-\",\"value\":{\"conditions\":[{\"field\":\".inode.schema_id\",\"op\":\"=-\",\"value\":[\"cmdb_schema_schema_x-0\"]}],\"objects\":[\"cmdb_schema_x-2vu7izceoqwh1\"],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":true,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}}],\"objects\":[],\"sorts\":[],\"limit\":50,\"offset\":0,\"multi\":false,\"selects\":[\".inode.name\",\".inode.schema_id\",\".inode.lock\",\".inode.mtime\",\".inode.last_editor\"],\"comment\":\"\",\"function\":\"db\",\"vars\":{}}"
+    }
+  },
+  "indexes": {}
+}

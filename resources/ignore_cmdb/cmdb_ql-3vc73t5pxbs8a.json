@@ -1,0 +1,95 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-3vc73t5pxbs8a",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "第三方账户默认数据模板",
+    "namespace": "/ignore_cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_third_party_account-0"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_account_type",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-3sxfka1psyqfx",
+                  "op": "=",
+                  "value": "{var:vars.indexes_account_type}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-3sxfka1psyqfx as 账户类型",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_account_type": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2k9jxumcuv176\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "账户类型"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

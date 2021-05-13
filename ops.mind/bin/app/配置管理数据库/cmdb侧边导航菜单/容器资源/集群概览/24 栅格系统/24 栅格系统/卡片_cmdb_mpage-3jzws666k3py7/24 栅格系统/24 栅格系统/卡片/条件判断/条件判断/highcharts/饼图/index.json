@@ -1,0 +1,73 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-2bggu3gq48v3v",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "饼图",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.data.0": "SEMI_EXPORTED",
+      "state.data.0.y": "FULL_EXPORTED",
+      "state.data.0.name": "NOT_EXPORTED",
+      "state.data.1": "SEMI_EXPORTED",
+      "state.data.1.y": "FULL_EXPORTED",
+      "state.data.1.name": "NOT_EXPORTED",
+      "state.data": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.data.2": "SEMI_EXPORTED",
+      "state.data.2.y": "SEMI_EXPORTED",
+      "state.data.2.name": "SEMI_EXPORTED"
+    },
+    "config": {
+      "autoRefreshInterval": 0,
+      "cmdbCache": "R+W+",
+      "hide": false,
+      "style": {
+        "margin": "",
+        "padding": "",
+        "color": "",
+        "fontSize": "",
+        "background": "",
+        "textAlign": ""
+      },
+      "jump": {
+        "target": "default",
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      },
+      "resId": ""
+    },
+    "state": {
+      "pointStart": 1,
+      "data": [
+        {
+          "y": 0,
+          "name": "活跃pod"
+        },
+        {
+          "y": 0,
+          "name": "非活跃pod"
+        }
+      ],
+      "__trigger__": {}
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-m_highcharts_pie",
+    "cmdb_index-mpage_component_type": "UNKNOWN"
+  }
+}

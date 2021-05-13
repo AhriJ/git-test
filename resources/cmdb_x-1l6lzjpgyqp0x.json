@@ -1,0 +1,35 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1l6lzjpgyqp0x",
+    "schema_id": "cmdb_schema_x-2cc07zkxuurwn",
+    "name": "内存",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "field_id": "memory",
+    "field_name": "内存",
+    "field_type": "integer",
+    "searched": true,
+    "is_array": false,
+    "string_option": null,
+    "number_option": {
+      "format": "cmdb-unit"
+    },
+    "boolean_option": null,
+    "object_option": [],
+    "id": "",
+    "index_id": "cmdb_x-1d4bdf4or9bae",
+    "required": false
+  },
+  "indexes": {
+    "cmdb_index-36ylwj69mshlq": "cmdb_x-s_eeba8ba8"
+  }
+}

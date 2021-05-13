@@ -1,0 +1,86 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_object_ql-3g2x5f1ctczy7",
+    "schema_id": "cmdb_schema_object_ql-0",
+    "name": "云资源_订单列表_自定义默认数据模板",
+    "namespace": "/ignore_cmdb",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_u_orders-0"
+        },
+        {
+          "field": "vars.id",
+          "op": "=",
+          "value": " "
+        },
+        {
+          "field": "inode.id",
+          "op": "=",
+          "value": "{var:vars.id}"
+        },
+        {
+          "field": "inode.archived",
+          "op": "=",
+          "value": 2
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-18gs5gfejka3i as 业务树",
+        ".indexes.cmdb_index-1dfd0rjwlgvj6 as 消费类型",
+        ".data.PretaxGrossAmount as 原始金额",
+        ".data.PretaxAmount as 订单应付金额",
+        ".data.CommodityCode as 商品Code",
+        ".indexes.cmdb_index-2og7dddzrw4p8 as 支付状态",
+        ".indexes.cmdb_index-2rwdrvs5q66sf as 订单类型",
+        ".indexes.cmdb_index-cjvss6o3umj1 as 订单编号",
+        ".indexes.cmdb_index-2niqdv1yu69i7 as 产品代码",
+        ".data.Currency as 币种",
+        ".indexes.cmdb_index-1gos9bpua3dp2 as 创建时间",
+        ".indexes.cmdb_index-2fcz6japikb2w as 支付时间",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "title": "模型ID"
+              }
+            },
+            "required": [
+              "id"
+            ]
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": false
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

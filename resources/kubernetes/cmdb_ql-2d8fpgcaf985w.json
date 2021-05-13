@@ -1,0 +1,118 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_ql-2d8fpgcaf985w",
+    "schema_id": "cmdb_schema_ql-0",
+    "name": "namespace默认数据模板",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "content": {
+      "conditions": [
+        {
+          "field": ".inode.schema_id",
+          "op": "=",
+          "value": "cmdb_schema_x-2nsk6iscxoet8"
+        },
+        {
+          "field": "vars.inode_name",
+          "op": "=~",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_application",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "vars.indexes_cluster",
+          "op": "=",
+          "value": "$empty"
+        },
+        {
+          "field": "$or",
+          "op": "=-",
+          "value": [
+            {
+              "field": "$and",
+              "op": "=-",
+              "value": [
+                {
+                  "field": ".inode.name",
+                  "op": "=",
+                  "value": "{var:vars.inode_name}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-yli8bik6k3z7",
+                  "op": "=",
+                  "value": "{var:vars.indexes_application}"
+                },
+                {
+                  "field": ".indexes.cmdb_index-3984yht257mxc",
+                  "op": "=",
+                  "value": "{var:vars.indexes_cluster}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "function": "db",
+      "selects": [
+        ".inode.name as 名称",
+        ".inode.descr as 描述",
+        ".indexes.cmdb_index-yli8bik6k3z7 as 应用",
+        ".indexes.cmdb_index-3984yht257mxc as 关联集群",
+        ".data.name as name",
+        ".data.selfLink as selfLink",
+        ".data.uid as uid",
+        ".data.resourceVersion as resourceVersion",
+        ".data.creationTimestamp as creationTimestamp",
+        ".data.phase as phase",
+        ".indexes.cmdb_index-sync_marker as 同步标记",
+        ".indexes.cmdb_index-external_id as 外部ID",
+        ".inode.mtime as 最后修改时间",
+        "inode.last_editor as 最后修改者"
+      ],
+      "vars": {
+        "type": "object",
+        "properties": {
+          "vars": {
+            "type": "object",
+            "properties": {
+              "inode_name": {
+                "type": "string",
+                "title": "名称"
+              },
+              "indexes_application": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-38cdtixkcxeft\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "应用"
+              },
+              "indexes_cluster": {
+                "type": "string",
+                "format": "ql-selector?id=cmdb_ql-2nitt1oxr29r1\u0026select_mode=single\u0026spec=id\u0026widget=table",
+                "title": "关联集群"
+              }
+            }
+          }
+        }
+      },
+      "sorts": [],
+      "objects": [
+        "$conditions"
+      ],
+      "multi": true
+    }
+  },
+  "indexes": {
+    "cmdb_index-is_public": true
+  }
+}

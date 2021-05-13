@@ -1,0 +1,38 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_x-q68xq6bbwn31",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "cluster",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "host": {
+          "type": "string",
+          "title": "host"
+        },
+        "token": {
+          "type": "string",
+          "title": "token"
+        }
+      },
+      "required": [
+        "host",
+        "token"
+      ]
+    },
+    "indexes": []
+  },
+  "indexes": {}
+}

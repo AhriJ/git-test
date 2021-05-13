@@ -1,0 +1,40 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-1fjd34aeefj4y",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "第三方账户",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "third_party_account",
+    "name": "第三方账户",
+    "describe": null,
+    "group": "IM.mind",
+    "config_id": null,
+    "pkg_id": "cmdb_x_u_third_party_account-0_default",
+    "workflows": {
+      "create": "cmdb_workflow-1kcdhw0efmgme",
+      "delete": "cmdb_workflow-2i43lh3tb3001",
+      "update": "cmdb_workflow-2alhsddigsj2n",
+      "batch_update": "cmdb_workflow-3475omsnzllpi"
+    },
+    "ql_id": "cmdb_ql-3vc73t5pxbs8a"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_third_party_account-0",
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-j7i2qt0spsqv",
+      "cmdb_x-i_5f9d2583"
+    ]
+  }
+}

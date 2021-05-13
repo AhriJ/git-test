@@ -1,0 +1,48 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-s_68ffce9f",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "pod",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "menu_visible": true,
+    "describe": null,
+    "name": "pod",
+    "group": "系统",
+    "id": "",
+    "pkg_id": "cmdb_x_x-1d1rbamd0vh7y_default",
+    "workflows": {
+      "create": "cmdb_workflow-1l1u3y2nu2o4b",
+      "delete": "cmdb_workflow-1ass2scjhfsde",
+      "update": "cmdb_workflow-24no7pq4duyyv",
+      "batch_update": "cmdb_workflow-169vrihngq03p"
+    },
+    "ql_id": "cmdb_ql-1iwd71vjkby2p",
+    "icon": null
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_x-1d1rbamd0vh7y",
+    "cmdb_index-3b01as46nc0b7": false,
+    "cmdb_index-mzedvy1l9wcv": [
+      "cmdb_x-1fnrr4hz1jwfh",
+      "cmdb_x-1h01xkf4zes4i",
+      "cmdb_x-i_f405ced3",
+      "cmdb_x-i_4405f339",
+      "cmdb_x-i_5f9d2583",
+      "cmdb_x-i_759e293b",
+      "cmdb_x-i_77043f6f",
+      "cmdb_x-i_269bc979",
+      "cmdb_x-1o9s3geuft4r",
+      "cmdb_x-14h8xe64h34p7"
+    ]
+  }
+}

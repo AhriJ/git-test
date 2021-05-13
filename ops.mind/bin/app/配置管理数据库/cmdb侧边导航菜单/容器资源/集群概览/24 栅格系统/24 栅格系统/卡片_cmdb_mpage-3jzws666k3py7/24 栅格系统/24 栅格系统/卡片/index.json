@@ -1,0 +1,82 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-as2z78y13zw8",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "卡片",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {},
+    "config": {
+      "resId": "",
+      "style": {
+        "margin": "0 0 10px 0"
+      },
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "__trigger__": {}
+    },
+    "children": {
+      "children.01c63a974543.children.04c31e05d41d.state.data.0.y": "{var: children.d8e567fb979c.state.total_rows}",
+      "children.01c63a974543.children.04c31e05d41d.state.data.1.y": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.8f18d8abf96d.state.__lib__.windows": "{var: children.d8e567fb979c.state.total_rows}",
+      "children.8f18d8abf96d.state.__lib__.linux": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.50a46af3716f.children.48ef9a3a9e20.state.data.0.y": "{var: children.8f18d8abf96d.state.__lib__.windows}",
+      "children.50a46af3716f.children.48ef9a3a9e20.state.data.1.y": "{var: children.8f18d8abf96d.state.__lib__.linux}",
+      "children.5eaa18c2a94c.children.1fe832b0bd6b.state.data.0.y": "{var: children.d8e567fb979c.state.total_rows}",
+      "children.5eaa18c2a94c.children.1fe832b0bd6b.state.data.1.y": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.7077094b8258.state.__lib__.windows": "{var: children.d8e567fb979c.state.total_rows}",
+      "children.7077094b8258.state.__lib__.linux": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.7077094b8258.children.dc47506f85b6.state.data.0.y": "{var: children.d8e567fb979c.state.total_rows}",
+      "children.7077094b8258.children.dc47506f85b6.state.data.1.y": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.ea1b36ce2905.state.__lib__.windows": "{var: children.c7d215c4e563.state.total_rows}",
+      "children.ea1b36ce2905.state.__lib__.linux": "{var: children.cec9903fda7b.state.total_rows}",
+      "children.ea1b36ce2905.state.__lib__.pod": "{var: children.cec9903fda7b.state.total_rows}",
+      "children.d8e567fb979c.state.total_rows": null,
+      "children.c7d215c4e563.state.total_rows": 0,
+      "children.cec9903fda7b.state.total_rows": 0
+    },
+    "childrenConfig": [
+      {
+        "uuid": "ea1b36ce2905",
+        "md": 24
+      },
+      {
+        "uuid": "d8e567fb979c",
+        "md": 6
+      },
+      {
+        "uuid": "c7d215c4e563",
+        "md": 6
+      },
+      {
+        "uuid": "cec9903fda7b",
+        "md": 6
+      }
+    ]
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [
+      "cmdb_mpage-zbmsne7o3vzk",
+      "cmdb_mpage-w3kj91tmcfos",
+      "cmdb_mpage-35th7q4zdiz2y",
+      "cmdb_mpage-264vtzqzik696"
+    ],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-24grid",
+    "cmdb_index-mpage_component_type": "LAYOUT"
+  }
+}

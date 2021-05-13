@@ -1,0 +1,108 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_schema_x-1d1rbamd0vh7y",
+    "schema_id": "cmdb_schema_schema_x-0",
+    "name": "pod",
+    "namespace": "/kubernetes",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "data": {
+      "type": "object",
+      "title": "资源",
+      "properties": {
+        "pod_ip": {
+          "type": "string",
+          "title": "pod_ip"
+        },
+        "restartCount": {
+          "type": "number",
+          "title": "restartCount"
+        },
+        "lables": {
+          "type": "object",
+          "title": "lables",
+          "properties": {},
+          "required": []
+        },
+        "annotations": {
+          "type": "object",
+          "title": "annotations",
+          "properties": {},
+          "required": []
+        },
+        "ownerReferences": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "title": "ownerReferences",
+            "properties": {},
+            "required": []
+          },
+          "title": "ownerReferences"
+        }
+      },
+      "required": []
+    },
+    "indexes": [
+      {
+        "id": "cmdb_index-16dmbzom80bvt",
+        "required": false,
+        "key": "limit_mem"
+      },
+      {
+        "id": "cmdb_index-32326r2df4ow6",
+        "required": false,
+        "key": "limit_cpu"
+      },
+      {
+        "id": "cmdb_index-3ezpmtsrvgq7y",
+        "required": true,
+        "key": "index_1"
+      },
+      {
+        "id": "cmdb_index-sync_marker",
+        "required": true,
+        "key": "index_4"
+      },
+      {
+        "id": "cmdb_index-external_id",
+        "required": true,
+        "key": "index_5"
+      },
+      {
+        "id": "cmdb_index-1agv8l7p6c6nw",
+        "required": false,
+        "key": "index_6"
+      },
+      {
+        "id": "cmdb_index-bvwwqmxkpo3h",
+        "required": false,
+        "key": "index_7"
+      },
+      {
+        "id": "cmdb_index-2xrqab21ltbpt",
+        "required": false,
+        "key": "index_8"
+      },
+      {
+        "id": "cmdb_index-2aqsjpl6r07fz",
+        "required": false,
+        "key": "namespace"
+      },
+      {
+        "id": "cmdb_index-3984yht257mxc",
+        "required": false,
+        "key": "cluster"
+      }
+    ]
+  },
+  "indexes": {}
+}

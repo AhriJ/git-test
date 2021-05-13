@@ -111,7 +111,7 @@
               "indexes_cloud": {
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2d8iub3cpe16p\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "所属供应商"
+                "title": "供应商"
               },
               "indexes_cloud_resource_config": {
                 "type": "string",
@@ -121,7 +121,7 @@
               "indexes_cloud_account": {
                 "type": "string",
                 "format": "ql-selector?id=cmdb_ql-2ibcn2a79yxct\u0026select_mode=single\u0026spec=id\u0026widget=table",
-                "title": "云账户"
+                "title": "关联云账户"
               }
             }
           }

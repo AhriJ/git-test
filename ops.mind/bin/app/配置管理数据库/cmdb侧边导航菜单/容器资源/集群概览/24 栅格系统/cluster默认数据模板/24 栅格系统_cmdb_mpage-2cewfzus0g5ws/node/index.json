@@ -1,0 +1,318 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_mpage-1y7qm0rc0cmn0",
+    "schema_id": "cmdb_schema_mpage-1",
+    "name": "node",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "publics": {
+      "state.__vars__.vars.indexes_index_1.value": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1": "SEMI_EXPORTED",
+      "state.__vars__": "SEMI_EXPORTED",
+      "state": "SEMI_EXPORTED",
+      "state.total_rows": "FULL_EXPORTED",
+      "state.__vars__.vars.indexes_index_1.op": "FULL_EXPORTED"
+    },
+    "config": {
+      "resId": "cmdb_ql-1f6vo7izawyvt",
+      "hide": true,
+      "style": {},
+      "jump": {
+        "vars": []
+      },
+      "mind": {
+        "children": []
+      }
+    },
+    "state": {
+      "setting": {
+        "sorts": []
+      },
+      "rowSelection": {
+        "objects": [],
+        "pkg_list": []
+      },
+      "initialVars": {},
+      "workOrderList": [],
+      "conditionsConfig": [],
+      "varsFieldMap": {},
+      "__trigger__": {},
+      "__table_data__": {
+        "inode.id": {
+          "data": [
+            "cmdb_x-13pgym4muc5ql",
+            "cmdb_x-1wphxzd3lt01z",
+            "cmdb_x-3qiqlpf7a9zeo",
+            "cmdb_x-13185rvy3q7vz",
+            "cmdb_x-1l2xm794w4fe7",
+            "cmdb_x-1i5a4f43cp0pd",
+            "cmdb_x-pk77obcm4c9x",
+            "cmdb_x-38zq068k2qo0t",
+            "cmdb_x-kwhbul30ie11",
+            "cmdb_x-3s0tcqmqzn0bv"
+          ]
+        },
+        "inode.name": {
+          "action_config": {},
+          "data": [
+            "172.19.1.38",
+            "172.19.13.115",
+            "172.19.13.116",
+            "172.19.13.117",
+            "172.19.13.118",
+            "172.19.13.119",
+            "172.19.13.120",
+            "172.19.13.121",
+            "172.19.13.122",
+            "172.19.13.123"
+          ]
+        },
+        "inode.descr": {
+          "action_config": {},
+          "data": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        },
+        "data.name": {
+          "action_config": {},
+          "data": [
+            "172.19.1.38",
+            "172.19.13.115",
+            "172.19.13.116",
+            "172.19.13.117",
+            "172.19.13.118",
+            "172.19.13.119",
+            "172.19.13.120",
+            "172.19.13.121",
+            "172.19.13.122",
+            "172.19.13.123"
+          ]
+        },
+        "data.selfLink": {
+          "action_config": {},
+          "data": [
+            "/api/v1/nodes/172.19.1.38",
+            "/api/v1/nodes/172.19.13.115",
+            "/api/v1/nodes/172.19.13.116",
+            "/api/v1/nodes/172.19.13.117",
+            "/api/v1/nodes/172.19.13.118",
+            "/api/v1/nodes/172.19.13.119",
+            "/api/v1/nodes/172.19.13.120",
+            "/api/v1/nodes/172.19.13.121",
+            "/api/v1/nodes/172.19.13.122",
+            "/api/v1/nodes/172.19.13.123"
+          ]
+        },
+        "data.uid": {
+          "action_config": {},
+          "data": [
+            "b8b41399-f8a8-11e9-bebd-00163e0abb5a",
+            "d3678b82-f8a6-11e9-8d1a-00163e0abb5a",
+            "b90e3d28-f8a8-11e9-bebd-00163e0abb5a",
+            "d36b7e8e-f8a6-11e9-8d5a-00163e06cb7a",
+            "b8f9ae01-f8a8-11e9-ae5c-00163e06cb7a",
+            "b8c571b3-f8a8-11e9-9a48-00163e146ccf",
+            "b8ddf99c-f8a8-11e9-ae5c-00163e06cb7a",
+            "ce58e2d9-f8a6-11e9-8d1a-00163e0abb5a",
+            "913fe03b-fb2f-11e9-bebd-00163e0abb5a",
+            "916fa0f3-fb2f-11e9-9a48-00163e146ccf"
+          ]
+        },
+        "data.resourceVersion": {
+          "action_config": {},
+          "data": [
+            "225520076",
+            "225520040",
+            "225520078",
+            "225520082",
+            "225520050",
+            "225520047",
+            "225520085",
+            "225520081",
+            "225520093",
+            "225520055"
+          ]
+        },
+        "data.creationTimestamp": {
+          "action_config": {},
+          "data": [
+            "2019-10-27T10:58:34Z",
+            "2019-10-27T10:45:00Z",
+            "2019-10-27T10:58:35Z",
+            "2019-10-27T10:45:00Z",
+            "2019-10-27T10:58:35Z",
+            "2019-10-27T10:58:34Z",
+            "2019-10-27T10:58:35Z",
+            "2019-10-27T10:44:52Z",
+            "2019-10-30T16:08:53Z",
+            "2019-10-30T16:08:53Z"
+          ]
+        },
+        "data.addresses": {
+          "action_config": {},
+          "data": [
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ],
+            [
+              null,
+              null
+            ]
+          ]
+        },
+        "indexes.cmdb_index-osud1hj1k0gu": {
+          "action_config": {},
+          "data": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "indexes.cmdb_index-sync_marker": {
+          "action_config": {},
+          "data": [
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074",
+            "1615970200074"
+          ]
+        },
+        "indexes.cmdb_index-external_id": {
+          "action_config": {},
+          "data": [
+            "cmdb_x-2avr542dra1vv_172.19.1.38",
+            "cmdb_x-2avr542dra1vv_172.19.13.115",
+            "cmdb_x-2avr542dra1vv_172.19.13.116",
+            "cmdb_x-2avr542dra1vv_172.19.13.117",
+            "cmdb_x-2avr542dra1vv_172.19.13.118",
+            "cmdb_x-2avr542dra1vv_172.19.13.119",
+            "cmdb_x-2avr542dra1vv_172.19.13.120",
+            "cmdb_x-2avr542dra1vv_172.19.13.121",
+            "cmdb_x-2avr542dra1vv_172.19.13.122",
+            "cmdb_x-2avr542dra1vv_172.19.13.123"
+          ]
+        },
+        "indexes.cmdb_index-bvwwqmxkpo3h": {
+          "action_config": {},
+          "data": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        "inode.mtime": {
+          "action_config": {},
+          "data": [
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200,
+            1615970200
+          ]
+        },
+        "inode.last_editor": {
+          "action_config": {},
+          "data": [
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso",
+            "cmdb_account-v1:misso"
+          ]
+        }
+      },
+      "__vars__": {
+        "vars.inode_name": {},
+        "vars.indexes_index_1": {}
+      }
+    },
+    "children": {},
+    "childrenConfig": []
+  },
+  "indexes": {
+    "cmdb_index-mpage_children": [],
+    "cmdb_index-mpage_component": "cmdb_mcomponent-data_table",
+    "cmdb_index-mpage_component_type": "DATA_TABLE"
+  }
+}

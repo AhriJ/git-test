@@ -1,0 +1,37 @@
+{
+  "inode": {
+    "org": "",
+    "id": "cmdb_x-11tnv6ke5ul7a",
+    "schema_id": "cmdb_schema_x-schema",
+    "name": "云资源_边缘节点",
+    "namespace": "",
+    "descr": "",
+    "ctime": 0,
+    "mtime": 0,
+    "creator": "",
+    "last_editor": "",
+    "archived": false,
+    "lock": ""
+  },
+  "data": {
+    "icon": "sever",
+    "menu_visible": true,
+    "id": "crf_edge_node",
+    "name": "云资源_边缘节点",
+    "describe": null,
+    "group": "CloudResource",
+    "config_id": null,
+    "pkg_id": "cmdb_x_u_crf_edge_node-0_default",
+    "workflows": {
+      "create": "cmdb_workflow-u8uy7ih7x22g",
+      "delete": "cmdb_workflow-3kevnm9arupqi",
+      "update": "cmdb_workflow-1ktyzby9ly3z6",
+      "batch_update": "cmdb_workflow-36n8npl6lvzuy"
+    },
+    "ql_id": "cmdb_ql-273bwipeq7as0"
+  },
+  "indexes": {
+    "cmdb_index-1llredm1yz8zm": "cmdb_schema_u_crf_edge_node-0",
+    "cmdb_index-mzedvy1l9wcv": []
+  }
+}
